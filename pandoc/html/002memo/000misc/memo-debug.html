@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>memo of debug</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">memo of debug</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#makefile"><span class="toc-section-number">1</span> makefile</a><ul>
+<li><a href="#else-应该小写"><span class="toc-section-number">1.1</span> ELSE 应该小写。</a></li>
+</ul></li>
+</ul>
+</nav>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
+<h1 id="makefile"><span class="header-section-number">1</span> makefile</h1>
+<h2 id="else-应该小写"><span class="header-section-number">1.1</span> ELSE 应该小写。</h2>
+<p>现象：</p>
+<p>编译seprator错误。同时指向行号为后面的foreach处</p>
+<p>解决：</p>
+<p>ELSE 应该小写。</p>
+<pre><code>ifeq ($(ADD_HEXO_HEAD),TRUE)
+  @echo start hexo head output...
+  $$(file &gt;$$@.tmp,$$(call def_hexo_md_head,$(subst $(SUFFIX_TO),,$(notdir $(1)))))
+# @echo $$(TBFILENAME)+2
+# @echo $(subst $(SUFFIX_TO),,$(notdir $(1)))+1#直接函数填入才能取到。
+  @echo convert to utf8
+  iconv -f GBK -t UTF-8 $$@.tmp &gt;$$@
+  @echo start pandoc $(SUFFIX_FROM)2$(SUFFIX_TO)...
+  pandoc $$&lt; -o - &gt;&gt;$$@
+  @echo delete .tmp file...
+  del $$@.tmp
+ELSE
+  @echo start pandoc $(SUFFIX_FROM)2$(SUFFIX_TO)...
+  pandoc $$&lt; -o $$@
+endif
+$(foreach temp,$(OBJ_PATH_MDS),$(eval $(call PROGRAM_template,$(temp))))</code></pre>
+</body>
+</html>

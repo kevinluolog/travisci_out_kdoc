@@ -1,0 +1,158 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>1 字符文件编码 &#8212; memo of study  文档</title>
+    <link rel="stylesheet" href="../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="1 makefiles" href="001.make/makefile.html" />
+    <link rel="prev" title="1 study" href="study.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="001.make/makefile.html" title="1 makefiles"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="study.html" title="1 study"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> 字符文件编码</a><ul>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.1</span> 参考链接</a></li>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.2</span> 字符编码小知识</a><ul>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.2.1</span> 1，字符集</a></li>
+<li><a class="reference internal" href="#bom"><span class="sectnum">1.2.2</span> 2，BOM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="study.html"
+                        title="上一章"><span class="sectnum">1</span> study</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="001.make/makefile.html"
+                        title="下一章"><span class="sectnum">1</span> makefiles</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1><a class="toc-backref" href="#id5"><span class="sectnum">1</span> 字符文件编码</a><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">contents</p>
+<ul class="auto-toc simple">
+<li><p><a class="reference internal" href="#id1" id="id5"><span class="sectnum">1</span> 字符文件编码</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id2" id="id6"><span class="sectnum">1.1</span> 参考链接</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id7"><span class="sectnum">1.2</span> 字符编码小知识</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id4" id="id8"><span class="sectnum">1.2.1</span> 1，字符集</a></p></li>
+<li><p><a class="reference internal" href="#bom" id="id9"><span class="sectnum">1.2.2</span> 2，BOM</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id6"><span class="sectnum">1.1</span> 参考链接</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="http://www.gnu.org/software/libiconv/">libiconv gnu官方 itro&amp;download</a></p>
+<p><a class="reference external" href="https://blog.csdn.net/seanyxie/article/details/89151903">浅析windows下字符集和文件编码存储/utf8/gbk</a></p>
+<p><a class="reference external" href="https://www.cnblogs.com/yzl050819/p/6667702.html">UNICODE编码UTF-16中的BigEndian（FEFF）和LittleEndian（FFFE）形象描述</a></p>
+<p>` &lt;&gt;`__</p>
+<p>` &lt;&gt;`__</p>
+</div>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id7"><span class="sectnum">1.2</span> 字符编码小知识</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>中文字集进化，GB2312-&gt;GBK 通称他们叫做 “DBCS”（Double Byte Charecter Set 双字节字符集）。</p>
+<p>中文windows notepad存盘默认用的ansi编码，也就是对应gbk字符集。</p>
+<div class="section" id="id4">
+<h3><a class="toc-backref" href="#id8"><span class="sectnum">1.2.1</span> 1，字符集</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>这里主要讲两种字符集，DBCS和UCS</p>
+<p>UCS规定如何编码，</p>
+<p>UTF规定如何传输、保存这个编码。UTF8、UTF7、UTF16都是被广泛接受的方案。</p>
+</div>
+<div class="section" id="bom">
+<h3><a class="toc-backref" href="#id9"><span class="sectnum">1.2.2</span> 2，BOM</a><a class="headerlink" href="#bom" title="永久链接至标题">¶</a></h3>
+<p>BOM是在一个文本文件之前，用来标记改文件编码方式的一种记录方式，windows下是这样做的，linux不知道。</p>
+<p>UCS编码中 ”ZERO WIDTH NO-BREAK SPACE”的字符，它的编码是FEFF。而FFFE在UCS中是不存在的字符。</p>
+<p>FEFF，就表明这个字节流是Big-Endian的
+FFFE，就表明这个字节流是Little-Endian的。</p>
+<p>UTF8不需要BOM来表明字节顺序，但可以用BOM来表明编码方式。
+EFBBBF，就知道这是UTF8编码。</p>
+<p>假如文件用UTF8无BOM格式来保存文件，那就不能靠BOM头来判断是否是utf8编码的，而要对文件中的数据进行简单的编码分析来确定文件的编码格式，也就是对文件的二进制进行分析，和对应编码的字符集进行匹配，最终确定其编码格式。</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="001.make/makefile.html" title="1 makefiles"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="study.html" title="1 study"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, kevinluo.
+    </div>
+  </body>
+</html>

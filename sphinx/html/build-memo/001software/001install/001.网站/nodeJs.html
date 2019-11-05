@@ -1,0 +1,265 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>1 node.JS &#8212; memo of study  文档</title>
+    <link rel="stylesheet" href="../../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="1 rss" href="rss.html" />
+    <link rel="prev" title="1 jekyll" href="jekyll.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="rss.html" title="1 rss"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="jekyll.html" title="1 jekyll"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> node.JS</a><ul>
+<li><a class="reference internal" href="#install"><span class="sectnum">1.1</span> install</a><ul>
+<li><a class="reference internal" href="#reference"><span class="sectnum">1.1.1</span> reference</a></li>
+<li><a class="reference internal" href="#setting"><span class="sectnum">1.1.2</span> setting</a><ul>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.1.2.1</span> 环境变量</a></li>
+<li><a class="reference internal" href="#npmcache"><span class="sectnum">1.1.2.2</span> 配置npm在安装全局模块时的路径和缓存cache的路径</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#npm"><span class="sectnum">1.1.3</span> npm</a><ul>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.1.3.1</span> 淘宝NPM镜像安装</a></li>
+<li><a class="reference internal" href="#help"><span class="sectnum">1.1.3.2</span> help</a></li>
+<li><a class="reference internal" href="#command"><span class="sectnum">1.1.3.3</span> command</a><ul>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.1.3.3.1</span> install</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#npmmodule"><span class="sectnum">1.1.4</span> 哪里可以检索可以用npm安装的module?</a></li>
+<li><a class="reference internal" href="#tips"><span class="sectnum">1.1.5</span> tips</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="jekyll.html"
+                        title="上一章"><span class="sectnum">1</span> jekyll</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="rss.html"
+                        title="下一章"><span class="sectnum">1</span> rss</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="node-js">
+<h1><a class="toc-backref" href="#id5"><span class="sectnum">1</span> node.JS</a><a class="headerlink" href="#node-js" title="永久链接至标题">¶</a></h1>
+<div class="contents topic" id="id1">
+<p class="topic-title first">目录</p>
+<ul class="auto-toc simple">
+<li><p><a class="reference internal" href="#node-js" id="id5"><span class="sectnum">1</span> node.JS</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#install" id="id6"><span class="sectnum">1.1</span> install</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#reference" id="id7"><span class="sectnum">1.1.1</span> reference</a></p></li>
+<li><p><a class="reference internal" href="#setting" id="id8"><span class="sectnum">1.1.2</span> setting</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id2" id="id9"><span class="sectnum">1.1.2.1</span> 环境变量</a></p></li>
+<li><p><a class="reference internal" href="#npmcache" id="id10"><span class="sectnum">1.1.2.2</span> 配置npm在安装全局模块时的路径和缓存cache的路径</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#npm" id="id11"><span class="sectnum">1.1.3</span> npm</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id3" id="id12"><span class="sectnum">1.1.3.1</span> 淘宝NPM镜像安装</a></p></li>
+<li><p><a class="reference internal" href="#help" id="id13"><span class="sectnum">1.1.3.2</span> help</a></p></li>
+<li><p><a class="reference internal" href="#command" id="id14"><span class="sectnum">1.1.3.3</span> command</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id4" id="id15"><span class="sectnum">1.1.3.3.1</span> install</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#npmmodule" id="id16"><span class="sectnum">1.1.4</span> 哪里可以检索可以用npm安装的module?</a></p></li>
+<li><p><a class="reference internal" href="#tips" id="id17"><span class="sectnum">1.1.5</span> tips</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="install">
+<h2><a class="toc-backref" href="#id6"><span class="sectnum">1.1</span> install</a><a class="headerlink" href="#install" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://nodejs.org/en/">download here</a></p>
+<div class="section" id="reference">
+<h3><a class="toc-backref" href="#id7"><span class="sectnum">1.1.1</span> reference</a><a class="headerlink" href="#reference" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://blog.csdn.net/antma/article/details/86104068">node.js 安装详细步骤教程</a></p>
+<p><a class="reference external" href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023025235359040">廖雪峰的官方网站Node.js来龙去脉教程</a></p>
+<p>为什么NODEJS 基本命令 <a class="reference external" href="https://blog.csdn.net/a331790021/article/details/75661785">nodejs的整体安装与使用详细步骤！小白必读！</a></p>
+<p>` &lt;&gt;`__</p>
+<p>` &lt;&gt;`__</p>
+</div>
+<div class="section" id="setting">
+<h3><a class="toc-backref" href="#id8"><span class="sectnum">1.1.2</span> setting</a><a class="headerlink" href="#setting" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id2">
+<h4><a class="toc-backref" href="#id9"><span class="sectnum">1.1.2.1</span> 环境变量</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<p>msi安装版本已经配置PAHT，
+非安装版，执行nodevars.bat</p>
+</div>
+<div class="section" id="npmcache">
+<h4><a class="toc-backref" href="#id10"><span class="sectnum">1.1.2.2</span> 配置npm在安装全局模块时的路径和缓存cache的路径</a><a class="headerlink" href="#npmcache" title="永久链接至标题">¶</a></h4>
+<p>可以先用 <cite>npm config ls -l</cite> 看一下当前配置变量</p>
+<p>非安装版，npm -g 安装module时，自动放到node_modules目录下面。</p>
+<p><a class="reference external" href="https://blog.csdn.net/antma/article/details/86104068">node.js 安装详细步骤教程-重配全局模块下载目录</a></p>
+<p>在执行例如npm install webpack -g等命令全局安装的时候，默认会将模块安装在 <cite>C:Users用户名AppDataRoaming路径下的npm和npm_cache中</cite> ，不方便管理且占用C盘空间</p>
+<p>这里配置自定义的全局模块安装目录，在node.js安装目录下新建两个文件夹</p>
+<ol class="arabic simple">
+<li><p>node_global和node_cache，然后在cmd命令下执行如下两个命令：</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">config</span> <span class="nb">set</span> <span class="n">prefix</span> <span class="s2">&quot;D:\Program Files</span><span class="se">\n</span><span class="s2">odejs</span><span class="se">\n</span><span class="s2">ode_global&quot;</span>
+<span class="n">npm</span> <span class="n">config</span> <span class="nb">set</span> <span class="n">cache</span> <span class="s2">&quot;D:\Program Files</span><span class="se">\n</span><span class="s2">odejs</span><span class="se">\n</span><span class="s2">ode_cache&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic" start="2">
+<li><p>加入环境变量 NODE_PATH</p>
+<p>环境变量 -&gt; 系统变量中新建一个变量名为 “NODE_PATH”， 值为“D:Program Filesnodejsnode_modules”</p>
+</li>
+<li><p>用户变量里的Path</p>
+<p>编辑用户变量里的Path，将相应npm的路径改为：D:Program Filesnodejsnode_global</p>
+</li>
+<li><p>测试</p>
+<p>在cmd命令下执行 <cite>npm install webpack -g</cite> 然后安装成功后可以看到自定义的两个文件夹已生效</p>
+<p>webpack 也已安装成功，执行 npm webpack -v 可以看到所安装webpack的版本号</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="npm">
+<h3><a class="toc-backref" href="#id11"><span class="sectnum">1.1.3</span> npm</a><a class="headerlink" href="#npm" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id3">
+<h4><a class="toc-backref" href="#id12"><span class="sectnum">1.1.3.1</span> 淘宝NPM镜像安装</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h4>
+<p><a class="reference external" href="http://npm.taobao.org/">淘宝NPM镜像安装</a></p>
+<p>你可以使用我们定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm:</p>
+<p>安装cnpm:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm install -g cnpm --registry=https://registry.npm.taobao.org
+</pre></div>
+</div>
+<p>使用：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cnpm install [name]
+</pre></div>
+</div>
+</div>
+<div class="section" id="help">
+<h4><a class="toc-backref" href="#id13"><span class="sectnum">1.1.3.2</span> help</a><a class="headerlink" href="#help" title="永久链接至标题">¶</a></h4>
+<p>where &lt;command&gt; is one of:</p>
+<blockquote>
+<div><p>access, adduser, audit, bin, bugs, c, cache, ci, cit,
+clean-install, clean-install-test, completion, config,
+create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+edit, explore, get, help, help-search, hook, i, init,
+install, install-ci-test, install-test, it, link, list, ln,
+login, logout, ls, org, outdated, owner, pack, ping, prefix,
+profile, prune, publish, rb, rebuild, repo, restart, root,
+run, run-script, s, se, search, set, shrinkwrap, star,
+stars, start, stop, t, team, test, token, tst, un,
+uninstall, unpublish, unstar, up, update, v, version, view,
+whoami</p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">h</span>  <span class="n">quick</span> <span class="n">help</span> <span class="n">on</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span>
+<span class="n">npm</span> <span class="o">-</span><span class="n">l</span>            <span class="n">display</span> <span class="n">full</span> <span class="n">usage</span> <span class="n">info</span>
+<span class="n">npm</span> <span class="n">help</span> <span class="o">&lt;</span><span class="n">term</span><span class="o">&gt;</span>   <span class="n">search</span> <span class="k">for</span> <span class="n">help</span> <span class="n">on</span> <span class="o">&lt;</span><span class="n">term</span><span class="o">&gt;</span>
+<span class="n">npm</span> <span class="n">help</span> <span class="n">npm</span>      <span class="n">involved</span> <span class="n">overview</span>
+
+<span class="n">npm</span> <span class="n">config</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="command">
+<h4><a class="toc-backref" href="#id14"><span class="sectnum">1.1.3.3</span> command</a><a class="headerlink" href="#command" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id4">
+<h5><a class="toc-backref" href="#id15"><span class="sectnum">1.1.3.3.1</span> install</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h5>
+<p>npm install (in package directory, no arguments):</p>
+<p>Install the dependencies in the local node_modules folder.</p>
+<p>By default, npm install will install all modules listed as dependencies in package.json(5).</p>
+</div>
+</div>
+</div>
+<div class="section" id="npmmodule">
+<h3><a class="toc-backref" href="#id16"><span class="sectnum">1.1.4</span> 哪里可以检索可以用npm安装的module?</a><a class="headerlink" href="#npmmodule" title="永久链接至标题">¶</a></h3>
+<p>象python package的pypi网站， sublime package的http://packagecontrol.io</p>
+<p>??</p>
+</div>
+<div class="section" id="tips">
+<h3><a class="toc-backref" href="#id17"><span class="sectnum">1.1.5</span> tips</a><a class="headerlink" href="#tips" title="永久链接至标题">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="rss.html" title="1 rss"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="jekyll.html" title="1 jekyll"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, kevinluo.
+    </div>
+  </body>
+</html>

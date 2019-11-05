@@ -1,0 +1,193 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>1 batch &#8212; memo of study  文档</title>
+    <link rel="stylesheet" href="../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="1 readyToDo" href="../../002plan/readyToDo.html" />
+    <link rel="prev" title="1 网站资源站点" href="../001install/001.网站/网站资源站点.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../../002plan/readyToDo.html" title="1 readyToDo"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="../001install/001.网站/网站资源站点.html" title="1 网站资源站点"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> batch</a><ul>
+<li><a class="reference internal" href="#tips"><span class="sectnum">1.1</span> tips</a><ul>
+<li><a class="reference internal" href="#cd-dp0"><span class="sectnum">1.1.1</span> %cd%和%~dp0的区别</a></li>
+<li><a class="reference internal" href="#pushd-dp0-popd"><span class="sectnum">1.1.2</span> pushd “%~dp0” popd</a></li>
+<li><a class="reference internal" href="#setlocal-enabledelayedexpansion"><span class="sectnum">1.1.3</span> setlocal enabledelayedexpansion</a></li>
+<li><a class="reference internal" href="#cd-cmd"><span class="sectnum">1.1.4</span> %CD% 引用当前目录，可用在CMD直接进启动目录</a></li>
+<li><a class="reference internal" href="#setlocal-endlocal"><span class="sectnum">1.1.5</span> Setlocal 与 Endlocal 命令</a></li>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.1.6</span> 复合语句连接符（&amp;、&amp;&amp;和||）</a></li>
+<li><a class="reference internal" href="#cmd"><span class="sectnum">1.1.7</span> cmd命令太长分成多行的写法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="../001install/001.网站/网站资源站点.html"
+                        title="上一章"><span class="sectnum">1</span> 网站资源站点</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="../../002plan/readyToDo.html"
+                        title="下一章"><span class="sectnum">1</span> readyToDo</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="batch">
+<h1><a class="toc-backref" href="#id3"><span class="sectnum">1</span> batch</a><a class="headerlink" href="#batch" title="永久链接至标题">¶</a></h1>
+<div class="contents topic" id="id1">
+<p class="topic-title first">目录</p>
+<ul class="auto-toc simple">
+<li><p><a class="reference internal" href="#batch" id="id3"><span class="sectnum">1</span> batch</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#tips" id="id4"><span class="sectnum">1.1</span> tips</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#cd-dp0" id="id5"><span class="sectnum">1.1.1</span> %cd%和%~dp0的区别</a></p></li>
+<li><p><a class="reference internal" href="#pushd-dp0-popd" id="id6"><span class="sectnum">1.1.2</span> pushd “%~dp0” popd</a></p></li>
+<li><p><a class="reference internal" href="#setlocal-enabledelayedexpansion" id="id7"><span class="sectnum">1.1.3</span> setlocal enabledelayedexpansion</a></p></li>
+<li><p><a class="reference internal" href="#cd-cmd" id="id8"><span class="sectnum">1.1.4</span> %CD% 引用当前目录，可用在CMD直接进启动目录</a></p></li>
+<li><p><a class="reference internal" href="#setlocal-endlocal" id="id9"><span class="sectnum">1.1.5</span> Setlocal 与 Endlocal 命令</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id10"><span class="sectnum">1.1.6</span> 复合语句连接符（&amp;、&amp;&amp;和||）</a></p></li>
+<li><p><a class="reference internal" href="#cmd" id="id11"><span class="sectnum">1.1.7</span> cmd命令太长分成多行的写法</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="tips">
+<h2><a class="toc-backref" href="#id4"><span class="sectnum">1.1</span> tips</a><a class="headerlink" href="#tips" title="永久链接至标题">¶</a></h2>
+<div class="section" id="cd-dp0">
+<h3><a class="toc-backref" href="#id5"><span class="sectnum">1.1.1</span> %cd%和%~dp0的区别</a><a class="headerlink" href="#cd-dp0" title="永久链接至标题">¶</a></h3>
+<p>&lt;<a class="reference external" href="https://www.jianshu.com/p/5a1a882ead95">https://www.jianshu.com/p/5a1a882ead95</a>&gt;</p>
+<ol class="arabic">
+<li><p>%cd% 可以用在批处理文件中，也可以用在命令行中；</p>
+<p>展开后，是驱动器盘符:+当前目录，如在dos窗口中进入c:dir目录下面，</p>
+<p>输入：echo %cd% ，则显示为：c:dir 。</p>
+</li>
+<li><p>%~dp0只可以用在批处理文件中，它是由它所在的批处理文件的目录位置决定的，是批处理文件所在的盘符:+路径。在执行这个批处理文件的过程中，它展开后的内容是不会改变的。</p></li>
+</ol>
+</div>
+<div class="section" id="pushd-dp0-popd">
+<h3><a class="toc-backref" href="#id6"><span class="sectnum">1.1.2</span> pushd “%~dp0” popd</a><a class="headerlink" href="#pushd-dp0-popd" title="永久链接至标题">¶</a></h3>
+<p>进入执行文件所在目录，并且把原先目录推入目录栈，popd就是回到原先的目录</p>
+<p>&lt;<a class="reference external" href="https://www.cnblogs.com/suanec/p/8026964.html">https://www.cnblogs.com/suanec/p/8026964.html</a>&gt;</p>
+<p>pushd和popd在linux中可以用来方便地在多个目录之间切换。</p>
+</div>
+<div class="section" id="setlocal-enabledelayedexpansion">
+<h3><a class="toc-backref" href="#id7"><span class="sectnum">1.1.3</span> setlocal enabledelayedexpansion</a><a class="headerlink" href="#setlocal-enabledelayedexpansion" title="永久链接至标题">¶</a></h3>
+<p>是扩展本地环境变量延迟, !!引用
+&lt;<a class="reference external" href="https://www.jb51.net/article/29323.htm">https://www.jb51.net/article/29323.htm</a>&gt;</p>
+</div>
+<div class="section" id="cd-cmd">
+<h3><a class="toc-backref" href="#id8"><span class="sectnum">1.1.4</span> %CD% 引用当前目录，可用在CMD直接进启动目录</a><a class="headerlink" href="#cd-cmd" title="永久链接至标题">¶</a></h3>
+<p>if “%CD%”==”%~dp0” cd /d “%HOMEDRIVE%%HOMEPATH%”</p>
+</div>
+<div class="section" id="setlocal-endlocal">
+<h3><a class="toc-backref" href="#id9"><span class="sectnum">1.1.5</span> Setlocal 与 Endlocal 命令</a><a class="headerlink" href="#setlocal-endlocal" title="永久链接至标题">¶</a></h3>
+<p>开始与终止批处理文件中环境改动的本地化操作。在执行 Setlocal 之后所做的环境改动只限于批处理文件。要还原原先的设置，必须执行 Endlocal。达到批处理文件结尾时，对于该批处理文件的每个尚未执行的 Setlocal 命令，都会有一个隐含的 Endlocal 被执行。</p>
+</div>
+<div class="section" id="id2">
+<h3><a class="toc-backref" href="#id10"><span class="sectnum">1.1.6</span> 复合语句连接符（&amp;、&amp;&amp;和||）</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<ul>
+<li><p>&amp; […] command1 &amp; command2</p>
+<p>用来分隔一个命令行中的多个命令。Cmd.exe 运行第一个命令，然后运行第二个命令。</p>
+</li>
+<li><p>&amp;&amp; […] command1 &amp;&amp; command2</p>
+<p>只有在符号 &amp;&amp; 前面的命令成功时，才用于运行该符号后面的命令。Cmd.exe 运行第一个命令，然后只有在第一个命令运行成功时才运行第二个命令。</p>
+</li>
+<li><p>|| […] command1 || command2</p>
+<p>只有在符号 || 前面的命令失败时，才用于运行符号 || 后面的命令。Cmd.exe 运行第一个命令，然后只有在第一个命令未能运行成功（接收到大于零的错误代码）时才运行第二个命令。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="cmd">
+<h3><a class="toc-backref" href="#id11"><span class="sectnum">1.1.7</span> cmd命令太长分成多行的写法</a><a class="headerlink" href="#cmd" title="永久链接至标题">¶</a></h3>
+<p>连接符是“^”</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ec</span><span class="o">^</span>
+<span class="n">ho</span> <span class="n">hello</span> <span class="n">world</span>
+<span class="n">pause</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="../../002plan/readyToDo.html" title="1 readyToDo"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="../001install/001.网站/网站资源站点.html" title="1 网站资源站点"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, kevinluo.
+    </div>
+  </body>
+</html>

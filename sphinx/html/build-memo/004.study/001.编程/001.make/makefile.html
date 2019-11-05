@@ -1,0 +1,414 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>1 makefiles &#8212; memo of study  文档</title>
+    <link rel="stylesheet" href="../../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="prev" title="1 字符文件编码" href="../字符文件编码.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="../字符文件编码.html" title="1 字符文件编码"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> makefiles</a><ul>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.1</span> 案例</a><ul>
+<li><a class="reference internal" href="#makefile"><span class="sectnum">1.1.1</span> 通用makefile,自动遍历子目录源文件，自动生成依赖。</a></li>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.1.2</span> makefile操作系统检测方法</a></li>
+<li><a class="reference internal" href="#next"><span class="sectnum">1.1.3</span> next</a></li>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.1.4</span> next</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="../字符文件编码.html"
+                        title="上一章"><span class="sectnum">1</span> 字符文件编码</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="makefiles">
+<h1><a class="toc-backref" href="#id5"><span class="sectnum">1</span> makefiles</a><a class="headerlink" href="#makefiles" title="永久链接至标题">¶</a></h1>
+<div class="contents topic" id="id1">
+<p class="topic-title first">目录</p>
+<ul class="auto-toc simple">
+<li><p><a class="reference internal" href="#makefiles" id="id5"><span class="sectnum">1</span> makefiles</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id2" id="id6"><span class="sectnum">1.1</span> 案例</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#makefile" id="id7"><span class="sectnum">1.1.1</span> 通用makefile,自动遍历子目录源文件，自动生成依赖。</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id8"><span class="sectnum">1.1.2</span> makefile操作系统检测方法</a></p></li>
+<li><p><a class="reference internal" href="#next" id="id9"><span class="sectnum">1.1.3</span> next</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id10"><span class="sectnum">1.1.4</span> next</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id6"><span class="sectnum">1.1</span> 案例</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="section" id="makefile">
+<h3><a class="toc-backref" href="#id7"><span class="sectnum">1.1.1</span> 通用makefile,自动遍历子目录源文件，自动生成依赖。</a><a class="headerlink" href="#makefile" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://blog.csdn.net/yuliying/article/details/49635485">一份通用makefile,自动遍历子目录源文件，自动生成依赖Ubuntu和OSX</a></p>
+<p>这份makefile可以将当前makefile所在文件夹以及所有子文件夹中的cpp文件打包成静态库/动态库/可执行文件.
+自动生成所有依赖关系，修改任何文件都可以触发重新编译相应依赖的文件。</p>
+<p>在Ubuntu 和 OSX 系统测试通过。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>SHELL = /bin/bash
+
+AllDirs := $(shell ls -R | grep &#39;^\./.*:$$&#39; | awk &#39;{gsub(&quot;:&quot;,&quot;&quot;);print}&#39;) .
+Sources := $(foreach n,$(AllDirs) , $(wildcard $(n)/*.cpp))
+Objs := $(patsubst %.cpp,%.o, $(Sources))
+Deps := $(patsubst %.cpp,%.d, $(Sources))
+StaticLib := libyy.a
+DynamicLib := libyy.so
+Bin := yy
+
+#AllLibs : $(DynamicLib)
+#AllLibs : $(StaticLib)
+AllLibs : $(Bin)
+
+CC = g++
+CXXFLAGS = -g -O2 -fPIC -Wall
+CPPFLAGS = $(foreach n,$(AllDirs) , -I$(n))
+LDFLAGS = -lstdc++
+
+$(StaticLib) : $(Objs)
+    ar rcs $@ $^
+
+$(DynamicLib) : $(Objs)
+    g++ -shared -o $@ $^ $(LDFLAGS)
+
+$(Bin) : $(Objs)
+    g++ $(Objs) -o $@
+
+%.d : %.cpp
+    $(CC) -MT&quot;$(&lt;:.cpp=.o) $@&quot; -MM $(CXXFLAGS) $(CPPFLAGS) $&lt; &gt; $@
+
+sinclude $(Deps)
+
+.PHONY : clean
+clean:
+    rm -f $(Objs) $(Deps) $(StaticLib) $(DynamicLib) $(Bin)
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3><a class="toc-backref" href="#id8"><span class="sectnum">1.1.2</span> makefile操作系统检测方法</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<p>使用两个简单的技巧检测操作系统：</p>
+<ol class="arabic simple">
+<li><p>首先是环境变量 OS</p></li>
+<li><p>然后uname命令</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ifeq ($(OS),Windows_NT)     # is Windows_NT on XP, 2000, 7, Vista, 10...
+    detected_OS := Windows
+else
+    detected_OS := $(shell uname)  # same as &quot;uname -s&quot;
+endif
+</pre></div>
+</div>
+<p>或者更安全的方式，如果不是在Windows上并且uname不可用：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ifeq ($(OS),Windows_NT)
+    detected_OS := Windows
+else
+    detected_OS := $(shell sh -c &#39;uname 2&gt;/dev/null || echo Unknown&#39;)
+endif
+</pre></div>
+</div>
+<p>如果你想区分Cygwin / MinGW / MSYS / Windows，肯杰克逊提出了一个有趣的选择。看到他的答案看起来像这样：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ifeq &#39;$(findstring ;,$(PATH))&#39; &#39;;&#39;
+    detected_OS := Windows
+else
+    detected_OS := $(shell uname 2&gt;/dev/null || echo Unknown)
+    detected_OS := $(patsubst CYGWIN%,Cygwin,$(detected_OS))
+    detected_OS := $(patsubst MSYS%,MSYS,$(detected_OS))
+    detected_OS := $(patsubst MINGW%,MSYS,$(detected_OS))
+endif
+</pre></div>
+</div>
+<p>然后您可以根据以下内容选择相关内容detected_OS：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ifeq ($(detected_OS),Windows)
+    CFLAGS += -D WIN32
+endif
+ifeq ($(detected_OS),Darwin)        # Mac OS X
+    CFLAGS += -D OSX
+endif
+ifeq ($(detected_OS),Linux)
+    CFLAGS   +=   -D LINUX
+endif
+ifeq ($(detected_OS),GNU)           # Debian GNU Hurd
+    CFLAGS   +=   -D GNU_HURD
+endif
+ifeq ($(detected_OS),GNU/kFreeBSD)  # Debian kFreeBSD
+    CFLAGS   +=   -D GNU_kFreeBSD
+endif
+ifeq ($(detected_OS),FreeBSD)
+    CFLAGS   +=   -D FreeBSD
+endif
+ifeq ($(detected_OS),NetBSD)
+    CFLAGS   +=   -D NetBSD
+endif
+ifeq ($(detected_OS),DragonFly)
+    CFLAGS   +=   -D DragonFly
+endif
+ifeq ($(detected_OS),Haiku)
+    CFLAGS   +=   -D Haiku
+endif
+</pre></div>
+</div>
+<p>笔记：</p>
+<p>命令uname与uname -s因为option -s（–kernel-name）是默认值相同。看看为什么uname -s比这更好uname -o。</p>
+<p>使用OS（而不是uname）简化了识别算法。您仍然可以单独使用uname，但您必须处理if/else块以检查所有MinGW，Cygwin等变体。</p>
+<p>环境变量OS始终设置为”Windows_NT”不同的Windows版本（请参阅%OS%Wikipedia上的环境变量）。</p>
+<p>另一种方法OS是环境变量MSVC（它检查MS Visual Studio的存在，请参阅使用Visual C ++的示例）。</p>
+<p>下面我提供一个使用make和gcc构建共享库的完整示例：<em>.so或者</em>.dll取决于平台。这个例子尽可能简单易懂。</p>
+<p>要在Windows上安装make，gcc请参阅Cygwin或MinGW。</p>
+<p>我的例子基于五个文件</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>├── lib
+│   └── Makefile
+│   └── hello.h
+│   └── hello.c
+└── app
+    └── Makefile
+    └── main.c
+</pre></div>
+</div>
+<p>提醒:Makefile使用制表缩进。在示例文件下面复制粘贴时的注意事项。</p>
+<p>这两个Makefile文件</p>
+<ol class="arabic">
+<li><p>lib/Makefile</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ifeq ($(OS),Windows_NT)
+    uname_S := Windows
+else
+    uname_S := $(shell uname -s)
+endif
+
+ifeq ($(uname_S), Windows)
+    target = hello.dll
+endif
+ifeq ($(uname_S), Linux)
+    target = libhello.so
+endif
+#ifeq ($(uname_S), .....) #See https://stackoverflow.com/a/27776822/938111
+#    target = .....
+#endif
+
+%.o: %.c
+    gcc  -c $&lt;  -fPIC  -o $@
+    # -c $&lt;  =&gt; $&lt; is first file after &#39;:&#39; =&gt; Compile hello.c
+    # -fPIC  =&gt; Position-Independent Code (required for shared lib)
+    # -o $@  =&gt; $@ is the target =&gt; Output file (-o) is hello.o
+
+$(target): hello.o
+    gcc  $^  -shared  -o $@
+    # $^      =&gt; $^ expand to all prerequisites (after &#39;:&#39;) =&gt; hello.o
+    # -shared =&gt; Generate shared library
+    # -o $@   =&gt; Output file (-o) is $@ (libhello.so or hello.dll)
+</pre></div>
+</div>
+</li>
+<li><p>app/Makefile</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ifeq ($(OS),Windows_NT)
+    uname_S := Windows
+else
+    uname_S := $(shell uname -s)
+endif
+
+ifeq ($(uname_S), Windows)
+    target = app.exe
+endif
+ifeq ($(uname_S), Linux)
+    target = app
+endif
+#ifeq ($(uname_S), .....) #See https://stackoverflow.com/a/27776822/938111
+#    target = .....
+#endif
+
+%.o: %.c
+    gcc  -c $&lt; -I ../lib  -o $@
+    # -c $&lt;     =&gt; compile (-c) $&lt; (first file after :) = main.c
+    # -I ../lib =&gt; search headers (*.h) in directory ../lib
+    # -o $@     =&gt; output file (-o) is $@ (target) = main.o
+
+$(target): main.o
+    gcc  $^  -L../lib  -lhello  -o $@
+    # $^       =&gt; $^ (all files after the :) = main.o (here only one file)
+    # -L../lib =&gt; look for libraries in directory ../lib
+    # -lhello  =&gt; use shared library hello (libhello.so or hello.dll)
+    # -o $@    =&gt; output file (-o) is $@ (target) = &quot;app.exe&quot; or &quot;app&quot;
+</pre></div>
+</div>
+</li>
+</ol>
+<p>要了解更多信息，请阅读cfi指出的自动变量文档。</p>
+<p>源代码</p>
+<ul>
+<li><p>lib/hello.h</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#ifndef HELLO_H_</span>
+<span class="c1">#define HELLO_H_</span>
+
+<span class="n">const</span> <span class="n">char</span><span class="o">*</span> <span class="n">hello</span><span class="p">();</span>
+
+<span class="c1">#endif</span>
+</pre></div>
+</div>
+</li>
+<li><p>lib/hello.c</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &quot;hello.h&quot;</span>
+
+<span class="n">const</span> <span class="n">char</span><span class="o">*</span> <span class="n">hello</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;hello&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>app/main.c</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &quot;hello.h&quot; //hello()</span>
+<span class="c1">#include &lt;stdio.h&gt; //puts()</span>
+
+<span class="nb">int</span> <span class="n">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">const</span> <span class="n">char</span><span class="o">*</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">hello</span><span class="p">();</span>
+    <span class="n">puts</span><span class="p">(</span><span class="nb">str</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>构建</p>
+<p>修复Makefile（通过一个制表替换前导空格）的复制粘贴。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">sed</span>  <span class="s1">&#39;s/^  */</span><span class="se">\t</span><span class="s1">/&#39;</span>  <span class="o">-</span><span class="n">i</span>  <span class="o">*/</span><span class="n">Makefile</span>
+</pre></div>
+</div>
+<p>make两个平台上的命令都是相同的。给定的输出是在类Unix操作系统上：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">make</span> <span class="o">-</span><span class="n">C</span> <span class="n">lib</span>
+
+  <span class="n">make</span><span class="p">:</span> <span class="n">Entering</span> <span class="n">directory</span> <span class="s1">&#39;/tmp/lib&#39;</span>
+  <span class="n">gcc</span>  <span class="o">-</span><span class="n">c</span> <span class="n">hello</span><span class="o">.</span><span class="n">c</span>  <span class="o">-</span><span class="n">fPIC</span>  <span class="o">-</span><span class="n">o</span> <span class="n">hello</span><span class="o">.</span><span class="n">o</span>
+  <span class="c1"># -c hello.c  =&gt; hello.c is first file after &#39;:&#39; =&gt; Compile hello.c</span>
+  <span class="c1"># -fPIC       =&gt; Position-Independent Code (required for shared lib)</span>
+  <span class="c1"># -o hello.o  =&gt; hello.o is the target =&gt; Output file (-o) is hello.o</span>
+  <span class="n">gcc</span>  <span class="n">hello</span><span class="o">.</span><span class="n">o</span>  <span class="o">-</span><span class="n">shared</span>  <span class="o">-</span><span class="n">o</span> <span class="n">libhello</span><span class="o">.</span><span class="n">so</span>
+  <span class="c1"># hello.o        =&gt; hello.o is the first after &#39;:&#39; =&gt; Link hello.o</span>
+  <span class="c1"># -shared        =&gt; Generate shared library</span>
+  <span class="c1"># -o libhello.so =&gt; Output file (-o) is libhello.so (libhello.so or hello.dll)</span>
+  <span class="n">make</span><span class="p">:</span> <span class="n">Leaving</span> <span class="n">directory</span> <span class="s1">&#39;/tmp/lib&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">make</span> <span class="o">-</span><span class="n">C</span> <span class="n">app</span>
+  <span class="n">make</span><span class="p">:</span> <span class="n">Entering</span> <span class="n">directory</span> <span class="s1">&#39;/tmp/app&#39;</span>
+  <span class="n">gcc</span>  <span class="o">-</span><span class="n">c</span> <span class="n">main</span><span class="o">.</span><span class="n">c</span> <span class="o">-</span><span class="n">I</span> <span class="o">../</span><span class="n">lib</span>  <span class="o">-</span><span class="n">o</span> <span class="n">main</span><span class="o">.</span><span class="n">o</span>
+  <span class="c1"># -c main.c =&gt; compile (-c) main.c (first file after :) = main.cpp</span>
+  <span class="c1"># -I ../lib =&gt; search headers (*.h) in directory ../lib</span>
+  <span class="c1"># -o main.o =&gt; output file (-o) is main.o (target) = main.o</span>
+  <span class="n">gcc</span>  <span class="n">main</span><span class="o">.</span><span class="n">o</span>  <span class="o">-</span><span class="n">L</span><span class="o">../</span><span class="n">lib</span>  <span class="o">-</span><span class="n">lhello</span>  <span class="o">-</span><span class="n">o</span> <span class="n">app</span>
+  <span class="c1"># main.o   =&gt; main.o (all files after the :) = main.o (here only one file)</span>
+  <span class="c1"># -L../lib =&gt; look for libraries in directory ../lib</span>
+  <span class="c1"># -lhello  =&gt; use shared library hello (libhello.so or hello.dll)</span>
+  <span class="c1"># -o app   =&gt; output file (-o) is app.exe (target) = &quot;app.exe&quot; or &quot;app&quot;</span>
+  <span class="n">make</span><span class="p">:</span> <span class="n">Leaving</span> <span class="n">directory</span> <span class="s1">&#39;/tmp/app&#39;</span>
+</pre></div>
+</div>
+<p>运行</p>
+<p>应用程序需要知道共享库的位置。</p>
+<p>在Windows上，一个简单的解决方案是复制应用程序所在的库：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cp -v lib/hello.dll app
+`lib/hello.dll&#39; -&gt; `app/hello.dll&#39;
+</pre></div>
+</div>
+<p>在类Unix操作系统上，您可以使用LD_LIBRARY_PATH环境变量：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">export</span> <span class="n">LD_LIBRARY_PATH</span><span class="o">=</span><span class="n">lib</span>
+</pre></div>
+</div>
+<p>在Windows上运行该命令：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">app</span><span class="o">/</span><span class="n">app</span><span class="o">.</span><span class="n">exe</span>
+<span class="n">hello</span>
+</pre></div>
+</div>
+<p>在类Unix操作系统上运行命令：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">app</span><span class="o">/</span><span class="n">app</span>
+<span class="n">hello</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="next">
+<h3><a class="toc-backref" href="#id9"><span class="sectnum">1.1.3</span> next</a><a class="headerlink" href="#next" title="永久链接至标题">¶</a></h3>
+</div>
+<div class="section" id="id4">
+<h3><a class="toc-backref" href="#id10"><span class="sectnum">1.1.4</span> next</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="../字符文件编码.html" title="1 字符文件编码"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, kevinluo.
+    </div>
+  </body>
+</html>

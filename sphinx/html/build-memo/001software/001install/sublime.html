@@ -1,0 +1,1114 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>1 sublime &#8212; memo of study  文档</title>
+    <link rel="stylesheet" href="../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="1 Little Tools" href="tools.html" />
+    <link rel="prev" title="1 sphinx" href="sphinx.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="tools.html" title="1 Little Tools"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="sphinx.html" title="1 sphinx"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> sublime</a><ul>
+<li><a class="reference internal" href="#basic-information"><span class="sectnum">1.1</span> basic information</a></li>
+<li><a class="reference internal" href="#website"><span class="sectnum">1.2</span> website</a></li>
+<li><a class="reference internal" href="#install-components"><span class="sectnum">1.3</span> install components</a><ul>
+<li><a class="reference internal" href="#package-control-install"><span class="sectnum">1.3.1</span> package control install</a><ul>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.3.1.1</span> 如果想要删除插件，</a></li>
+<li><a class="reference internal" href="#package-control"><span class="sectnum">1.3.1.2</span> 用Package Control安装插件的方法</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sublimegit-package-install"><span class="sectnum">1.3.2</span> sublimegit package install</a><ul>
+<li><a class="reference internal" href="#sumlimegit-usage"><span class="sectnum">1.3.2.1</span> sumlimeGit usage用法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.4</span> 有用的插件</a><ul>
+<li><a class="reference internal" href="#converttoutf8"><span class="sectnum">1.4.1</span> ConvertToUTF8</a></li>
+<li><a class="reference internal" href="#markdown"><span class="sectnum">1.4.2</span> markdown, 也可以用简书直接编辑查看</a><ul>
+<li><a class="reference internal" href="#markdownediting"><span class="sectnum">1.4.2.1</span> MarkdownEditing</a></li>
+<li><a class="reference internal" href="#omnimarkuppreviewer"><span class="sectnum">1.4.2.2</span> OmniMarkupPreviewer</a><ul>
+<li><a class="reference internal" href="#toc-render-preview"><span class="sectnum">1.4.2.2.1</span> TOC render Preview支持</a></li>
+<li><a class="reference internal" href="#omnimarkuppreviewerlatex"><span class="sectnum">1.4.2.2.2</span> OmniMarkupPreviewer中支持LaTeX公式显示：</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#markdown-extended"><span class="sectnum">1.4.2.3</span> Markdown Extended</a></li>
+<li><a class="reference internal" href="#markdownlivepreview-alt-m-sublime"><span class="sectnum">1.4.2.4</span> MarkdownLivePreview [alt+m 在sublime启动并列窗口,实时查看结果]</a></li>
+<li><a class="reference internal" href="#markdowntoc"><span class="sectnum">1.4.2.5</span> MarkdownTOC</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#restructuredtext-improved"><span class="sectnum">1.4.3</span> reStructuredText Improved</a></li>
+<li><a class="reference internal" href="#restructured-text-rst-snippets"><span class="sectnum">1.4.4</span> Restructured Text (RST) Snippets</a></li>
+<li><a class="reference internal" href="#anaconda-python-completion"><span class="sectnum">1.4.5</span> Anaconda - python completion</a></li>
+<li><a class="reference internal" href="#hexviewer"><span class="sectnum">1.4.6</span> HexViewer</a></li>
+<li><a class="reference internal" href="#latex-tools"><span class="sectnum">1.4.7</span> latex tools</a></li>
+<li><a class="reference internal" href="#path-tools"><span class="sectnum">1.4.8</span> Path Tools</a></li>
+<li><a class="reference internal" href="#timenow"><span class="sectnum">1.4.9</span> timenow</a></li>
+<li><a class="reference internal" href="#sidebarenhancements"><span class="sectnum">1.4.10</span> Side​Bar​Enhancements</a></li>
+<li><a class="reference internal" href="#chineseopenconvert"><span class="sectnum">1.4.11</span> Chinese​Open​Convert</a></li>
+<li><a class="reference internal" href="#dictionaryautocomplete"><span class="sectnum">1.4.12</span> Dictionary​Auto​Complete</a></li>
+<li><a class="reference internal" href="#chinese-english-bilingual-dictionary"><span class="sectnum">1.4.13</span> Chinese-English Bilingual Dictionary</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#package"><span class="sectnum">1.5</span> 其它package汇总</a><ul>
+<li><a class="reference internal" href="#markdown-numbered-headers"><span class="sectnum">1.5.1</span> Markdown Numbered Headers</a></li>
+<li><a class="reference internal" href="#insert-nums"><span class="sectnum">1.5.2</span> Insert Nums:</a><ul>
+<li><a class="reference internal" href="#examples"><span class="sectnum">1.5.2.1</span> Examples:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#emmet"><span class="sectnum">1.5.3</span> emmet</a></li>
+<li><a class="reference internal" href="#valign"><span class="sectnum">1.5.4</span> VAlign</a></li>
+<li><a class="reference internal" href="#alignment"><span class="sectnum">1.5.5</span> Alignment</a></li>
+<li><a class="reference internal" href="#ctags"><span class="sectnum">1.5.6</span> Ctags</a></li>
+<li><a class="reference internal" href="#docblockr"><span class="sectnum">1.5.7</span> DocBlockr</a></li>
+<li><a class="reference internal" href="#jsformat"><span class="sectnum">1.5.8</span> JsFormat</a></li>
+<li><a class="reference internal" href="#tag"><span class="sectnum">1.5.9</span> Tag</a></li>
+<li><a class="reference internal" href="#brackethighlighter"><span class="sectnum">1.5.10</span> BracketHighlighter</a></li>
+<li><a class="reference internal" href="#clipboard-history"><span class="sectnum">1.5.11</span> Clipboard History</a></li>
+<li><a class="reference internal" href="#scss"><span class="sectnum">1.5.12</span> SCSS</a></li>
+<li><a class="reference internal" href="#sublime-linter"><span class="sectnum">1.5.13</span> Sublime Linter</a></li>
+<li><a class="reference internal" href="#sublime-codeintel"><span class="sectnum">1.5.14</span> Sublime CodeIntel</a></li>
+<li><a class="reference internal" href="#copy-filepath-with-line-numbers"><span class="sectnum">1.5.15</span> Copy Filepath With Line Numbers</a></li>
+<li><a class="reference internal" href="#file-downloader"><span class="sectnum">1.5.16</span> file-downloader</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tips"><span class="sectnum">1.6</span> tips</a><ul>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.6.1</span> 快捷键介绍</a></li>
+<li><a class="reference internal" href="#id5"><span class="sectnum">1.6.2</span> 列编辑模式</a></li>
+<li><a class="reference internal" href="#hex"><span class="sectnum">1.6.3</span> hex查看模式</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#faq"><span class="sectnum">1.7</span> FAQ</a><ul>
+<li><a class="reference internal" href="#id6"><span class="sectnum">1.7.1</span> 字体怎么调整回来</a></li>
+<li><a class="reference internal" href="#utf8"><span class="sectnum">1.7.2</span> 缺省保存为UTF8文件</a></li>
+<li><a class="reference internal" href="#id7"><span class="sectnum">1.7.3</span> 为何始终在当前标签打开文件？</a></li>
+<li><a class="reference internal" href="#id8"><span class="sectnum">1.7.4</span> 总是在新窗口中打开文件?</a></li>
+<li><a class="reference internal" href="#sublime-text"><span class="sectnum">1.7.5</span> sublime text的菜单栏隐藏了怎么再显示出来？</a></li>
+<li><a class="reference internal" href="#sublimetext"><span class="sectnum">1.7.6</span> SublimeText快速插入多行递增数字</a></li>
+<li><a class="reference internal" href="#sublime-ctrl-shift-f"><span class="sectnum">1.7.7</span> sublime ctrl+shift+f快捷键失效的原因</a></li>
+<li><a class="reference internal" href="#id9"><span class="sectnum">1.7.8</span> 怎么列编辑操作</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#latex"><span class="sectnum">1.8</span> LaTex公式案例</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="sphinx.html"
+                        title="上一章"><span class="sectnum">1</span> sphinx</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="tools.html"
+                        title="下一章"><span class="sectnum">1</span> Little Tools</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sublime">
+<h1><a class="toc-backref" href="#id10"><span class="sectnum">1</span> sublime</a><a class="headerlink" href="#sublime" title="永久链接至标题">¶</a></h1>
+<div class="contents topic" id="id1">
+<p class="topic-title first">目录</p>
+<ul class="auto-toc simple">
+<li><p><a class="reference internal" href="#sublime" id="id10"><span class="sectnum">1</span> sublime</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#basic-information" id="id11"><span class="sectnum">1.1</span> basic information</a></p></li>
+<li><p><a class="reference internal" href="#website" id="id12"><span class="sectnum">1.2</span> website</a></p></li>
+<li><p><a class="reference internal" href="#install-components" id="id13"><span class="sectnum">1.3</span> install components</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#package-control-install" id="id14"><span class="sectnum">1.3.1</span> package control install</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id2" id="id15"><span class="sectnum">1.3.1.1</span> 如果想要删除插件，</a></p></li>
+<li><p><a class="reference internal" href="#package-control" id="id16"><span class="sectnum">1.3.1.2</span> 用Package Control安装插件的方法</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#sublimegit-package-install" id="id17"><span class="sectnum">1.3.2</span> sublimegit package install</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#sumlimegit-usage" id="id18"><span class="sectnum">1.3.2.1</span> sumlimeGit usage用法</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id3" id="id19"><span class="sectnum">1.4</span> 有用的插件</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#converttoutf8" id="id20"><span class="sectnum">1.4.1</span> ConvertToUTF8</a></p></li>
+<li><p><a class="reference internal" href="#markdown" id="id21"><span class="sectnum">1.4.2</span> markdown, 也可以用简书直接编辑查看</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#markdownediting" id="id22"><span class="sectnum">1.4.2.1</span> MarkdownEditing</a></p></li>
+<li><p><a class="reference internal" href="#omnimarkuppreviewer" id="id23"><span class="sectnum">1.4.2.2</span> OmniMarkupPreviewer</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#toc-render-preview" id="id24"><span class="sectnum">1.4.2.2.1</span> TOC render Preview支持</a></p></li>
+<li><p><a class="reference internal" href="#omnimarkuppreviewerlatex" id="id25"><span class="sectnum">1.4.2.2.2</span> OmniMarkupPreviewer中支持LaTeX公式显示：</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#markdown-extended" id="id26"><span class="sectnum">1.4.2.3</span> Markdown Extended</a></p></li>
+<li><p><a class="reference internal" href="#markdownlivepreview-alt-m-sublime" id="id27"><span class="sectnum">1.4.2.4</span> MarkdownLivePreview [alt+m 在sublime启动并列窗口,实时查看结果]</a></p></li>
+<li><p><a class="reference internal" href="#markdowntoc" id="id28"><span class="sectnum">1.4.2.5</span> MarkdownTOC</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#restructuredtext-improved" id="id29"><span class="sectnum">1.4.3</span> reStructuredText Improved</a></p></li>
+<li><p><a class="reference internal" href="#restructured-text-rst-snippets" id="id30"><span class="sectnum">1.4.4</span> Restructured Text (RST) Snippets</a></p></li>
+<li><p><a class="reference internal" href="#anaconda-python-completion" id="id31"><span class="sectnum">1.4.5</span> Anaconda - python completion</a></p></li>
+<li><p><a class="reference internal" href="#hexviewer" id="id32"><span class="sectnum">1.4.6</span> HexViewer</a></p></li>
+<li><p><a class="reference internal" href="#latex-tools" id="id33"><span class="sectnum">1.4.7</span> latex tools</a></p></li>
+<li><p><a class="reference internal" href="#path-tools" id="id34"><span class="sectnum">1.4.8</span> Path Tools</a></p></li>
+<li><p><a class="reference internal" href="#timenow" id="id35"><span class="sectnum">1.4.9</span> timenow</a></p></li>
+<li><p><a class="reference internal" href="#sidebarenhancements" id="id36"><span class="sectnum">1.4.10</span> Side​Bar​Enhancements</a></p></li>
+<li><p><a class="reference internal" href="#chineseopenconvert" id="id37"><span class="sectnum">1.4.11</span> Chinese​Open​Convert</a></p></li>
+<li><p><a class="reference internal" href="#dictionaryautocomplete" id="id38"><span class="sectnum">1.4.12</span> Dictionary​Auto​Complete</a></p></li>
+<li><p><a class="reference internal" href="#chinese-english-bilingual-dictionary" id="id39"><span class="sectnum">1.4.13</span> Chinese-English Bilingual Dictionary</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#package" id="id40"><span class="sectnum">1.5</span> 其它package汇总</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#markdown-numbered-headers" id="id41"><span class="sectnum">1.5.1</span> Markdown Numbered Headers</a></p></li>
+<li><p><a class="reference internal" href="#insert-nums" id="id42"><span class="sectnum">1.5.2</span> Insert Nums:</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#examples" id="id43"><span class="sectnum">1.5.2.1</span> Examples:</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#emmet" id="id44"><span class="sectnum">1.5.3</span> emmet</a></p></li>
+<li><p><a class="reference internal" href="#valign" id="id45"><span class="sectnum">1.5.4</span> VAlign</a></p></li>
+<li><p><a class="reference internal" href="#alignment" id="id46"><span class="sectnum">1.5.5</span> Alignment</a></p></li>
+<li><p><a class="reference internal" href="#ctags" id="id47"><span class="sectnum">1.5.6</span> Ctags</a></p></li>
+<li><p><a class="reference internal" href="#docblockr" id="id48"><span class="sectnum">1.5.7</span> DocBlockr</a></p></li>
+<li><p><a class="reference internal" href="#jsformat" id="id49"><span class="sectnum">1.5.8</span> JsFormat</a></p></li>
+<li><p><a class="reference internal" href="#tag" id="id50"><span class="sectnum">1.5.9</span> Tag</a></p></li>
+<li><p><a class="reference internal" href="#brackethighlighter" id="id51"><span class="sectnum">1.5.10</span> BracketHighlighter</a></p></li>
+<li><p><a class="reference internal" href="#clipboard-history" id="id52"><span class="sectnum">1.5.11</span> Clipboard History</a></p></li>
+<li><p><a class="reference internal" href="#scss" id="id53"><span class="sectnum">1.5.12</span> SCSS</a></p></li>
+<li><p><a class="reference internal" href="#sublime-linter" id="id54"><span class="sectnum">1.5.13</span> Sublime Linter</a></p></li>
+<li><p><a class="reference internal" href="#sublime-codeintel" id="id55"><span class="sectnum">1.5.14</span> Sublime CodeIntel</a></p></li>
+<li><p><a class="reference internal" href="#copy-filepath-with-line-numbers" id="id56"><span class="sectnum">1.5.15</span> Copy Filepath With Line Numbers</a></p></li>
+<li><p><a class="reference internal" href="#file-downloader" id="id57"><span class="sectnum">1.5.16</span> file-downloader</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#tips" id="id58"><span class="sectnum">1.6</span> tips</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id4" id="id59"><span class="sectnum">1.6.1</span> 快捷键介绍</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id60"><span class="sectnum">1.6.2</span> 列编辑模式</a></p></li>
+<li><p><a class="reference internal" href="#hex" id="id61"><span class="sectnum">1.6.3</span> hex查看模式</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#faq" id="id62"><span class="sectnum">1.7</span> FAQ</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id6" id="id63"><span class="sectnum">1.7.1</span> 字体怎么调整回来</a></p></li>
+<li><p><a class="reference internal" href="#utf8" id="id64"><span class="sectnum">1.7.2</span> 缺省保存为UTF8文件</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id65"><span class="sectnum">1.7.3</span> 为何始终在当前标签打开文件？</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id66"><span class="sectnum">1.7.4</span> 总是在新窗口中打开文件?</a></p></li>
+<li><p><a class="reference internal" href="#sublime-text" id="id67"><span class="sectnum">1.7.5</span> sublime text的菜单栏隐藏了怎么再显示出来？</a></p></li>
+<li><p><a class="reference internal" href="#sublimetext" id="id68"><span class="sectnum">1.7.6</span> SublimeText快速插入多行递增数字</a></p></li>
+<li><p><a class="reference internal" href="#sublime-ctrl-shift-f" id="id69"><span class="sectnum">1.7.7</span> sublime ctrl+shift+f快捷键失效的原因</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id70"><span class="sectnum">1.7.8</span> 怎么列编辑操作</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#latex" id="id71"><span class="sectnum">1.8</span> LaTex公式案例</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="basic-information">
+<h2><a class="toc-backref" href="#id11"><span class="sectnum">1.1</span> basic information</a><a class="headerlink" href="#basic-information" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="website">
+<h2><a class="toc-backref" href="#id12"><span class="sectnum">1.2</span> website</a><a class="headerlink" href="#website" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>main page</p></li>
+<li><p>package get</p></li>
+<li><p>help</p></li>
+<li><p>tutorial</p></li>
+</ul>
+</div>
+<div class="section" id="install-components">
+<h2><a class="toc-backref" href="#id13"><span class="sectnum">1.3</span> install components</a><a class="headerlink" href="#install-components" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li><p>portable sublime</p></li>
+<li><p>package control install</p></li>
+<li><p>sublimeGit</p></li>
+</ol>
+<div class="section" id="package-control-install">
+<h3><a class="toc-backref" href="#id14"><span class="sectnum">1.3.1</span> package control install</a><a class="headerlink" href="#package-control-install" title="永久链接至标题">¶</a></h3>
+<p>portable sublime 缺省没有安装，可2个方法安装</p>
+<ol class="arabic">
+<li><p>tools-package control install</p>
+<p>装完此菜单消失，preferences出现-&gt;package setting; -&gt;package control</p>
+</li>
+<li><p>2种另外的方法，自动和手动</p>
+<p><a class="reference external" href="https://packagecontrol.io/installation">页面查看2种另外的方法</a>
+在页面查看2种另外的方法，自动和手动</p>
+</li>
+</ol>
+<div class="section" id="id2">
+<h4><a class="toc-backref" href="#id15"><span class="sectnum">1.3.1.1</span> 如果想要删除插件，</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Ctrl+Shift+P调出命令面板，输入remove，调出Remove Package选项并回车，选择要删除的插件即可，当然，更新插件，upgrade \003work\002memo\001software\001install，通过简单的几个命令就可以方便的管理我们的插件了
+</pre></div>
+</div>
+</div>
+<div class="section" id="package-control">
+<h4><a class="toc-backref" href="#id16"><span class="sectnum">1.3.1.2</span> 用Package Control安装插件的方法</a><a class="headerlink" href="#package-control" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>按下Ctrl+Shift+P调出命令面板
+输入install 调出 Install Package 选项并回车，然后在列表中选中要安装的插件。
+不爽的是，有的网络环境可能会不允许访问陌生的网络环境从而设置一道防火墙，而Sublime Text3貌似无法设置代理，可能就获取不到安装包列表了。
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="sublimegit-package-install">
+<h3><a class="toc-backref" href="#id17"><span class="sectnum">1.3.2</span> sublimegit package install</a><a class="headerlink" href="#sublimegit-package-install" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>tools-command palette ctl+shift+p
+pci package control install
+等待载入package information,然后在命令行输入sublimeGit
+安装完后，在
+preference-&gt;package Settings-&gt; 此处出现安装的sublimeGit
+同时在
+preference-&gt;package settings-&gt; package control -&gt; user setting 中可以看到已经增加选项
+</pre></div>
+</div>
+<div class="section" id="sumlimegit-usage">
+<h4><a class="toc-backref" href="#id18"><span class="sectnum">1.3.2.1</span> sumlimeGit usage用法</a><a class="headerlink" href="#sumlimegit-usage" title="永久链接至标题">¶</a></h4>
+<p><a class="reference external" href="https://sublimegit.readthedocs.io/en/latest/">https://sublimegit.readthedocs.io/en/latest/</a></p>
+<ul class="simple">
+<li><p>【下面的有些问题，看readthedocs就行了】</p></li>
+</ul>
+<p><a class="reference external" href="https://docs.sublimegit.net/tutorial.html">full tutorial, go to</a></p>
+<p><a class="reference external" href="https://sublimegit.readthedocs.io/en/latest/tutorial.html">https://sublimegit.readthedocs.io/en/latest/tutorial.html</a></p>
+<p><a class="reference external" href="https://docs.sublimegit.net/quickstart.html">how to get set up</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id19"><span class="sectnum">1.4</span> 有用的插件</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://blog.csdn.net/enjoyyl/article/details/50057491#%20_90">超级文本编辑器Sublime
+Text3</a></p>
+<div class="section" id="converttoutf8">
+<h3><a class="toc-backref" href="#id20"><span class="sectnum">1.4.1</span> ConvertToUTF8</a><a class="headerlink" href="#converttoutf8" title="永久链接至标题">¶</a></h3>
+<p>比上面的那个要方便，直接在菜单栏中可以转了，专为中文设计，妈妈再也不通担心中文乱码问题了</p>
+</div>
+<div class="section" id="markdown">
+<h3><a class="toc-backref" href="#id21"><span class="sectnum">1.4.2</span> markdown, 也可以用简书直接编辑查看</a><a class="headerlink" href="#markdown" title="永久链接至标题">¶</a></h3>
+<div class="section" id="markdownediting">
+<h4><a class="toc-backref" href="#id22"><span class="sectnum">1.4.2.1</span> MarkdownEditing</a><a class="headerlink" href="#markdownediting" title="永久链接至标题">¶</a></h4>
+</div>
+<div class="section" id="omnimarkuppreviewer">
+<h4><a class="toc-backref" href="#id23"><span class="sectnum">1.4.2.2</span> OmniMarkupPreviewer</a><a class="headerlink" href="#omnimarkuppreviewer" title="永久链接至标题">¶</a></h4>
+<div class="section" id="toc-render-preview">
+<h5><a class="toc-backref" href="#id24"><span class="sectnum">1.4.2.2.1</span> TOC render Preview支持</a><a class="headerlink" href="#toc-render-preview" title="永久链接至标题">¶</a></h5>
+<p>右键menu preview markdown in browser, export/copy markdown as html</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1. 如果你发现它不支持markdown目录的预览生成，那么不是它不行，是你没配置。
+   当然首先是装markdwon TOC插件
+
+2. 复制Preferences -&gt; Package Settings -&gt; OmniMarkupPreviewer -&gt; Settings - Default 中的内容到Settings - Users中，
+
+3. 并在 // MarkdownRenderer options区域，即
+“renderer_options-MarkdownRenderer”: 中添加&quot;toc&quot;，代码如下
+        &quot;extensions&quot;: [&quot;tables&quot;, &quot;strikeout&quot;, &quot;fenced_code&quot;, &quot;codehilite&quot;, &quot;toc&quot;]
+
+4. 然后通过Ctrl+Alt+O快捷键生成HTML预览，或者Ctrl+Alt+X导出。
+</pre></div>
+</div>
+</div>
+<div class="section" id="omnimarkuppreviewerlatex">
+<h5><a class="toc-backref" href="#id25"><span class="sectnum">1.4.2.2.2</span> OmniMarkupPreviewer中支持LaTeX公式显示：</a><a class="headerlink" href="#omnimarkuppreviewerlatex" title="永久链接至标题">¶</a></h5>
+<p>1.设置。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>公式的渲染使用了MathJax库，所以需要在OmniMarkupPreviewer的设置中，将&quot;mathjax_enabled&quot;设置为“true”。之后MathJax会在后端自动下载。
+</pre></div>
+</div>
+<p>2.可能是网速的原因，MathJax库下载很慢，所以可以选择手动安装。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[下载MathJax](https://github.com/downloads/timonwong/OmniMarkupPreviewer/mathjax.zip)
+
+    然后解压到下面的目录里：Sublime Text 2\\003work\002memo\001software\001install\OmniMarkupPreviewer\public
+    之后在目录“Sublime Text 2\\003work\002memo\001software\001install\OmniMarkupPreviewer”中创建一个空文件MATHJAX.DOWNLOADED这样子MathJax就安装成功了。
+    测试，输入下面内容：
+    This expression
+    $\sqrt{3x-1}+(1+x)^2$ is an example of a $\LaTeX$ inline equation.he Lorenz Equations:
+    $$\begin{aligned}\dot{x} &amp; = \sigma(y-x) \\\dot{y} &amp; = \rho x - y - xz \\\dot{z} &amp; = -\beta z + xy\end{aligned}$$
+</pre></div>
+</div>
+<p>在Sublime Text 3中使用命令：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Ctrl+Alt+O：在浏览器中预览
+Ctrl+Alt+X：输出为HTML文件
+Ctrl+Alt+C：复制为HTML文件
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="markdown-extended">
+<h4><a class="toc-backref" href="#id26"><span class="sectnum">1.4.2.3</span> Markdown Extended</a><a class="headerlink" href="#markdown-extended" title="永久链接至标题">¶</a></h4>
+</div>
+<div class="section" id="markdownlivepreview-alt-m-sublime">
+<h4><a class="toc-backref" href="#id27"><span class="sectnum">1.4.2.4</span> MarkdownLivePreview [alt+m 在sublime启动并列窗口,实时查看结果]</a><a class="headerlink" href="#markdownlivepreview-alt-m-sublime" title="永久链接至标题">¶</a></h4>
+</div>
+<div class="section" id="markdowntoc">
+<h4><a class="toc-backref" href="#id28"><span class="sectnum">1.4.2.5</span> MarkdownTOC</a><a class="headerlink" href="#markdowntoc" title="永久链接至标题">¶</a></h4>
+<p>Sublime Text 3 plugin for generating a Table of Contents (TOC) in a
+Markdown document.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/naokazuterada/MarkdownTOC#%20features">Features</a></p></li>
+<li><p><a class="reference external" href="https://github.com/naokazuterada/MarkdownTOC#%20usage">Usage</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="restructuredtext-improved">
+<h3><a class="toc-backref" href="#id29"><span class="sectnum">1.4.3</span> reStructuredText Improved</a><a class="headerlink" href="#restructuredtext-improved" title="永久链接至标题">¶</a></h3>
+<p>Headings and terms (from definition lists) are available as symbols, so
+you can use CTRL-R to jump to them.</p>
+</div>
+<div class="section" id="restructured-text-rst-snippets">
+<h3><a class="toc-backref" href="#id30"><span class="sectnum">1.4.4</span> Restructured Text (RST) Snippets</a><a class="headerlink" href="#restructured-text-rst-snippets" title="永久链接至标题">¶</a></h3>
+<p>装完后preferences-package setting中的名字为，sumlime-rst-completion</p>
+<p><a class="reference external" href="https://packagecontrol.io/003work002memo001software001install/Restructured%20Text%20(RST)%20Snippets">Restructured Text (RST)
+Snippets</a></p>
+<ul class="simple">
+<li><p>用法链接</p>
+<ul>
+<li><p><a class="reference external" href="H:tmp_H001.work002git000study000miscsublime-rst-completionREADME.rst">本地README</a></p></li>
+<li><p><a class="reference external" href="https://github.com/kevinluolog/sublime-rst-completion/blob/master/README.rst">Git-README</a></p></li>
+</ul>
+</li>
+<li><p>快捷键</p>
+<ul>
+<li><p>magic table</p>
+<ol class="arabic simple">
+<li><p>grid table <code class="docutils literal notranslate"><span class="pre">ctrl+t,</span> <span class="pre">enter</span></code></p>
+<ol class="arabic simple">
+<li><p>keep the column width fixed, <code class="docutils literal notranslate"><span class="pre">ctrl+t,</span> <span class="pre">r</span></code>
+(<code class="docutils literal notranslate"><span class="pre">super+shift+t,</span> <span class="pre">r</span></code> in Mac)</p></li>
+<li><p>merge simple cells: <code class="docutils literal notranslate"><span class="pre">ctrl+t,</span> <span class="pre">down</span></code> <code class="docutils literal notranslate"><span class="pre">ctrl+t,</span> <span class="pre">up</span></code></p></li>
+</ol>
+</li>
+<li><p>simple table <code class="docutils literal notranslate"><span class="pre">ctrl+t,</span> <span class="pre">s</span></code></p></li>
+</ol>
+</li>
+<li><p>Adjust header level： <code class="docutils literal notranslate"><span class="pre">ctrl+-</span></code> | <code class="docutils literal notranslate"><span class="pre">ctrl+keypad-</span></code></p></li>
+<li><p>补齐: <code class="docutils literal notranslate"><span class="pre">tab</span></code></p></li>
+<li><p>jump between headers: <code class="docutils literal notranslate"><span class="pre">alt+down</span></code> | <code class="docutils literal notranslate"><span class="pre">alt+up</span></code></p></li>
+<li><p>add new footnote: <code class="docutils literal notranslate"><span class="pre">alt+shift+f</span></code></p></li>
+<li><p>go back to the reference with <code class="docutils literal notranslate"><span class="pre">shift+up</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>-usage snippets</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 44%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>shortcut</p></th>
+<th class="head"><p>result</p></th>
+<th class="head"><p>key binding</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">h1</span></code></p></td>
+<td><p>Header level 1</p></td>
+<td><p>see <code class="docutils literal notranslate"><span class="pre">Headers</span></code>_</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">h2</span></code></p></td>
+<td><p>Header level 2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">h3</span></code></p></td>
+<td><p>Header level 3</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">e</span></code></p></td>
+<td><p>emphasis</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ctrlalti</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td></td>
+<td><p>(<code class="docutils literal notranslate"><span class="pre">supershifti</span></code> on Mac)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">se</span></code></p></td>
+<td><p>strong emphasis</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ctrlaltb</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>(bold)</p></td>
+<td><p>(<code class="docutils literal notranslate"><span class="pre">supershiftb</span></code> on Mac)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">lit</span></code></p></td>
+<td><p>literal text</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ctrlaltk</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">literal</span></code></p></td>
+<td><p>(inline code)</p></td>
+<td><p>(<code class="docutils literal notranslate"><span class="pre">supershiftk</span></code> on Mac)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">list</span></code></p></td>
+<td><p>unordered list</p></td>
+<td><p>see <code class="docutils literal notranslate"><span class="pre">Smart</span> <span class="pre">Lists</span></code>_</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">listn</span></code></p></td>
+<td><p>ordered list</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">listan</span></code></p></td>
+<td><p>auto ordered list</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">def</span></code></p></td>
+<td><p>term definition</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">code</span></code></p></td>
+<td><p>codeblock (sphinx)</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">source</span></code></p></td>
+<td><p>preformatted (<code class="docutils literal notranslate"><span class="pre">::</span></code> block)</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">img</span></code></p></td>
+<td><p>image</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">fig</span></code></p></td>
+<td><p>figure</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">table</span></code></p></td>
+<td><p>simple table</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">link</span></code></p></td>
+<td><p>refered hyperlink</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">linki</span></code></p></td>
+<td><p>embeded hyperlink</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">fn</span></code></p></td>
+<td><p>autonumbered</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cite</span></code></p></td>
+<td><p>footnote or cite</p></td>
+<td><p>Footnotes</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">quote</span></code></p></td>
+<td><p>Quotation (<code class="docutils literal notranslate"><span class="pre">epigraph</span></code>)</p></td>
+<td><p>Tables</p></td>
+</tr>
+</tbody>
+</table>
+<p>接上：</p>
+<p>shortcut</p>
+<p><code class="docutils literal notranslate"><span class="pre">attention</span></code> <code class="docutils literal notranslate"><span class="pre">caution</span></code> <code class="docutils literal notranslate"><span class="pre">danger</span></code> <code class="docutils literal notranslate"><span class="pre">error</span></code> <code class="docutils literal notranslate"><span class="pre">hint</span></code> <code class="docutils literal notranslate"><span class="pre">important</span></code>
+<code class="docutils literal notranslate"><span class="pre">note</span></code> <code class="docutils literal notranslate"><span class="pre">tip</span></code> <code class="docutils literal notranslate"><span class="pre">warning</span></code></p>
+<p>-编译Python项目文档</p>
+<p>Python的项目文档，大都基于 reStructuredText 撰写， Sphinx 发布，如何在
+Sublime 中，通过按 Ctrl + B 直接编译工程呢？很简单，点击 Tools –&gt; Build
+System –&gt; New Build System ，输入</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;shell_cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;make html&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>保存，打开你工程的 Makefile 文件，然后按 Ctrl + Shift + B
+选择你刚才保存的那个名字，就可以自动编译成html文档了。</p>
+</div>
+<div class="section" id="anaconda-python-completion">
+<h3><a class="toc-backref" href="#id31"><span class="sectnum">1.4.5</span> Anaconda - python completion</a><a class="headerlink" href="#anaconda-python-completion" title="永久链接至标题">¶</a></h3>
+<p>Anaconda 强大的补全工具, 还能实时看文档, 转到定义, 自动格式化代码</p>
+<p><a class="reference external" href="http://damnwidget.github.io/anaconda/">doc</a></p>
+<p><a class="reference external" href="http://damnwidget.github.io/anaconda/">http://damnwidget.github.io/anaconda/</a></p>
+</div>
+<div class="section" id="hexviewer">
+<h3><a class="toc-backref" href="#id32"><span class="sectnum">1.4.6</span> HexViewer</a><a class="headerlink" href="#hexviewer" title="永久链接至标题">¶</a></h3>
+<p>hex查看模式</p>
+</div>
+<div class="section" id="latex-tools">
+<h3><a class="toc-backref" href="#id33"><span class="sectnum">1.4.7</span> latex tools</a><a class="headerlink" href="#latex-tools" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://github.com/SublimeText/LaTeXTools">git latextools项目</a></p>
+<p><a class="reference external" href="https://latextools.readthedocs.io/en/latest/">DOC on readthedocs</a></p>
+<ul>
+<li><p>配套</p>
+<ol class="arabic">
+<li><p>sumatrapdf</p>
+<p><a class="reference external" href="https://www.sumatrapdfreader.org/free-pdf-reader.html">sumatraPdf网址</a>
+<a class="reference external" href="https://github.com/sumatrapdfreader/sumatrapdf">gitREP
+sumatrpdf</a></p>
+</li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="section" id="path-tools">
+<h3><a class="toc-backref" href="#id34"><span class="sectnum">1.4.8</span> Path Tools</a><a class="headerlink" href="#path-tools" title="永久链接至标题">¶</a></h3>
+<p>Open the Command Palette (Ctrl/Super + Shift + P) and enter one of the
+following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Insert</span> <span class="n">File</span> <span class="n">Path</span>
+<span class="n">Insert</span> <span class="n">File</span> <span class="n">Directory</span>
+<span class="n">Insert</span> <span class="n">File</span> <span class="n">Name</span>
+<span class="n">Insert</span> <span class="n">Path</span> <span class="n">Relative</span> <span class="n">to</span> <span class="n">Project</span>
+<span class="n">Insert</span> <span class="n">Directory</span> <span class="n">Relative</span> <span class="n">to</span> <span class="n">Project</span>
+<span class="n">Copy</span> <span class="n">File</span> <span class="n">Path</span>
+<span class="n">Copy</span> <span class="n">File</span> <span class="n">Directory</span>
+<span class="n">Copy</span> <span class="n">File</span> <span class="n">Name</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="timenow">
+<h3><a class="toc-backref" href="#id35"><span class="sectnum">1.4.9</span> timenow</a><a class="headerlink" href="#timenow" title="永久链接至标题">¶</a></h3>
+<p>插入日期时间</p>
+</div>
+<div class="section" id="sidebarenhancements">
+<h3><a class="toc-backref" href="#id36"><span class="sectnum">1.4.10</span> Side​Bar​Enhancements</a><a class="headerlink" href="#sidebarenhancements" title="永久链接至标题">¶</a></h3>
+<p>*.html文件，按f5 自动启动chrome浏览设置</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span> <span class="s2">&quot;keys&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;ctrl+shift+c&quot;</span><span class="p">],</span> <span class="s2">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;copy_path&quot;</span> <span class="p">},</span>
+    <span class="o">//</span><span class="n">chrome</span>
+    <span class="p">{</span> <span class="s2">&quot;keys&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;f5&quot;</span><span class="p">],</span> <span class="s2">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;side_bar_files_open_with&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;paths&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="s2">&quot;application&quot;</span><span class="p">:</span> <span class="s2">&quot;C:</span><span class="se">\\</span><span class="s2">Program Files</span><span class="se">\\</span><span class="s2">Google</span><span class="se">\\</span><span class="s2">Chrome</span><span class="se">\\</span><span class="s2">Application</span><span class="se">\\</span><span class="s2">chrome.exe&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;extensions&quot;</span><span class="p">:</span><span class="s2">&quot;.html&quot;</span><span class="o">//</span><span class="n">匹配任何文件类型</span>
+            <span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="chineseopenconvert">
+<h3><a class="toc-backref" href="#id37"><span class="sectnum">1.4.11</span> Chinese​Open​Convert</a><a class="headerlink" href="#chineseopenconvert" title="永久链接至标题">¶</a></h3>
+<p>window install:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="o">-</span><span class="n">b</span> <span class="n">st3</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">rexdf</span><span class="o">/</span><span class="n">SublimeChineseConvert</span><span class="o">.</span><span class="n">git</span> <span class="s2">&quot;%APPDATA%\Sublime Text 3</span><span class="se">\\</span><span class="s2">003work</span><span class="se">\002</span><span class="s2">memo</span><span class="se">\001</span><span class="s2">software</span><span class="se">\001</span><span class="s2">install\ChineseOpenConvert&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dictionaryautocomplete">
+<h3><a class="toc-backref" href="#id38"><span class="sectnum">1.4.12</span> Dictionary​Auto​Complete</a><a class="headerlink" href="#dictionaryautocomplete" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://packagecontrol.io/packages/DictionaryAutoComplete">Dictionary​Auto​Complete</a></p>
+<p>注意：</p>
+<p>发生了不取词的问题。原因是：user setting 文件中“encoding”:
+“ISO-8859-1”,不能为空。</p>
+<p>触发取词改成f1键，输入时需要小写</p>
+<p>手动安装cndict,因为Dictionary​Auto​Complet安装时，不能改成f1键</p>
+<p>到这里<a class="reference external" href="https://github.com/divinites/cndict.git">下载</a></p>
+<p>设置</p>
+<ul>
+<li><p>command 设置自动完成切换，总的和package内 Two commands are added in
+the Command Palette (Ctrl+Shift+P):</p>
+<ul class="simple">
+<li><p>Dictionary Auto Complete: Toggle : Activate/deactivate this
+plug-in.</p></li>
+<li><p>Auto Complete: Toggle : Activate/deactivate the sublime
+auto-completion.</p></li>
+</ul>
+</li>
+<li><p>手动跳出来，Ctrl + Space</p>
+<p>Just type Ctrl + Space to show auto-completion,</p>
+</li>
+<li><p>自动跳出词语</p>
+<p>allow auto-complete to always show suggestions by changing your
+<strong>‘Settings - User’</strong> for example like this:
+“auto_complete_selector”: “text, comment, string”</p>
+</li>
+<li><p>词库</p></li>
+</ul>
+<p><a class="reference external" href="https://github.com/kpym/FrequencyDictionaries">FrequencyDictionaries on
+github</a></p>
+<ul class="simple">
+<li><p>dictionary :</p></li>
+</ul>
+<p>A path to alternative dictionary to use in place of the default
+dictionary used for spell-checking. This allows you for example to use a
+frequency dictionary that will show in first place the most used words.</p>
+<p>in preference-&gt; packagesettin-&gt;autodictionarycomplete-&gt;user-setting:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;languages&quot;</span><span class="p">:</span> <span class="p">{</span>
+  <span class="s2">&quot;en_US&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="o">//</span> <span class="n">this</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">encoding</span> <span class="k">for</span> <span class="n">the</span> <span class="n">default</span> <span class="n">ST</span> <span class="n">dictionary</span>
+    <span class="s2">&quot;encoding&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="o">//</span> <span class="n">you</span> <span class="n">can</span> <span class="n">overwrite</span> <span class="n">here</span> <span class="n">the</span> <span class="n">default</span> <span class="n">dictionary</span>
+    <span class="o">//</span> <span class="k">for</span> <span class="n">example</span> <span class="n">by</span> <span class="n">putting</span>
+    <span class="o">//</span> <span class="s2">&quot;dictionary&quot;</span> <span class="p">:</span> <span class="s2">&quot;Packages/User/frequency_en.txt&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;dictionary&quot;</span> <span class="p">:</span> <span class="s2">&quot;Packages/User/kl-dict/large_en.txt&quot;</span>
+  <span class="p">},</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="chinese-english-bilingual-dictionary">
+<h3><a class="toc-backref" href="#id39"><span class="sectnum">1.4.13</span> Chinese-English Bilingual Dictionary</a><a class="headerlink" href="#chinese-english-bilingual-dictionary" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://packagecontrol.io/packages/Chinese-English%20Bilingual%20Dictionary">Chinese-English Bilingual
+Dictionary</a></p>
+<ul class="simple">
+<li><p>Usage:</p></li>
+</ul>
+<p>Ctrl+Alt+Y: 有道词典 Youdao</p>
+<p>Ctrl+Alt+C: 金山词典 Jinshan</p>
+<p>Select a word you want to translate, use corresponding key-mappings,
+then depending on the configuration “format”,</p>
+<ul>
+<li><p>There are three possible parameter for format:</p>
+<ul class="simple">
+<li><p>“popup”:</p></li>
+</ul>
+<p>a tooltips pop-up will show up, it will not be embeded in but just
+float on the view. close it by ESC or Crtl+Shift+D</p>
+<ul class="simple">
+<li><p>“phantom”:</p></li>
+</ul>
+<p>a block of phantom will show up just below the line: Using
+Crtl+Shift+D to Erase all Phantoms</p>
+<ul class="simple">
+<li><p>“pannel”:</p></li>
+</ul>
+<p>This is the classical option, an Output Pannel will show up from the
+bottom.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="package">
+<h2><a class="toc-backref" href="#id40"><span class="sectnum">1.5</span> 其它package汇总</a><a class="headerlink" href="#package" title="永久链接至标题">¶</a></h2>
+<div class="section" id="markdown-numbered-headers">
+<h3><a class="toc-backref" href="#id41"><span class="sectnum">1.5.1</span> Markdown Numbered Headers</a><a class="headerlink" href="#markdown-numbered-headers" title="永久链接至标题">¶</a></h3>
+<p>like markdown TOC with additional feature of NUmber Heading</p>
+</div>
+<div class="section" id="insert-nums">
+<h3><a class="toc-backref" href="#id42"><span class="sectnum">1.5.2</span> Insert Nums:</a><a class="headerlink" href="#insert-nums" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://packagecontrol.io/packages/Insert%20Nums">https://packagecontrol.io/packages/Insert%20Nums</a></p>
+<p>inserts (consecutive) numbers across multiple selections or modifies the
+selections’ contents with expressions. Huge configurability.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Ctrl+Alt+N
+&lt;start&gt;:&lt;step&gt;
+
+The complete syntax is: &lt;start&gt;:&lt;step&gt;~&lt;format&gt;::&lt;expr&gt;@&lt;stopexpr&gt;&lt;reverse&gt;
+numbers: [&lt;start&gt;][:&lt;step&gt;][~&lt;format&gt;][::&lt;expr&gt;][@&lt;stopexpr&gt;][!]
+alpha:   &lt;start&gt;[:&lt;step&gt;][~&lt;format&gt;][@&lt;stopexpr&gt;][!]
+</pre></div>
+</div>
+<p>for the detailed syntax specification, see:
+<a class="reference external" href="https://github.com/jbrooksuk/InsertNums/blob/master/format_syntax.txt">format_syntax.txt.</a></p>
+<p>essentially Python’s “str.format” syntax</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">format</span>        <span class="p">::</span><span class="o">=</span>  <span class="p">[[</span><span class="n">fill</span><span class="p">]</span><span class="n">align</span><span class="p">][</span><span class="n">sign</span><span class="p">][</span><span class="c1">#][0][width][.precision][type]</span>
+<span class="n">fill</span>          <span class="p">::</span><span class="o">=</span>  <span class="o">&lt;</span><span class="n">a</span> <span class="n">character</span> <span class="n">other</span> <span class="n">than</span> <span class="s1">&#39;}&#39;</span><span class="o">&gt;</span>
+<span class="n">align</span>         <span class="p">::</span><span class="o">=</span>  <span class="s2">&quot;&lt;&quot;</span> <span class="o">|</span> <span class="s2">&quot;&gt;&quot;</span> <span class="o">|</span> <span class="s2">&quot;=&quot;</span> <span class="o">|</span> <span class="s2">&quot;^&quot;</span>
+<span class="n">sign</span>          <span class="p">::</span><span class="o">=</span>  <span class="s2">&quot;+&quot;</span> <span class="o">|</span> <span class="s2">&quot;-&quot;</span> <span class="o">|</span> <span class="s2">&quot; &quot;</span>
+<span class="n">width</span>         <span class="p">::</span><span class="o">=</span>  <span class="n">integer</span>
+<span class="n">precision</span>     <span class="p">::</span><span class="o">=</span>  <span class="n">integer</span>
+<span class="nb">type</span>          <span class="p">::</span><span class="o">=</span>  <span class="s2">&quot;b&quot;</span> <span class="o">|</span> <span class="s2">&quot;c&quot;</span> <span class="o">|</span> <span class="s2">&quot;d&quot;</span> <span class="o">|</span> <span class="s2">&quot;e&quot;</span> <span class="o">|</span> <span class="s2">&quot;E&quot;</span> <span class="o">|</span> <span class="s2">&quot;f&quot;</span> <span class="o">|</span> <span class="s2">&quot;F&quot;</span> <span class="o">|</span> <span class="s2">&quot;g&quot;</span> <span class="o">|</span> <span class="s2">&quot;G&quot;</span> <span class="o">|</span> <span class="s2">&quot;n&quot;</span> <span class="o">|</span> <span class="s2">&quot;o&quot;</span> <span class="o">|</span> <span class="s2">&quot;x&quot;</span> <span class="o">|</span> <span class="s2">&quot;X&quot;</span> <span class="o">|</span> <span class="s2">&quot;%&quot;</span>
+</pre></div>
+</div>
+<p>Detailed syntax definition:</p>
+<p><a class="reference external" href="https://github.com/jbrooksuk/InsertNums/blob/master/format_syntax.txt">format_syntax.txt</a></p>
+<ul>
+<li><p><strong>start</strong></p>
+<ul>
+<li><p><em>with numbers</em> (optional): A</p>
+<p><a class="reference external" href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger">[decimalinteger](http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger)</a></p>
+<p>or</p>
+<p><a class="reference external" href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber">[floatnumber](http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber)</a></p>
+<p>according to Python’s syntax specifications with an optional
+leading sign (<code class="docutils literal notranslate"><span class="pre">-</span></code> or <code class="docutils literal notranslate"><span class="pre">+</span></code>). Default: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</li>
+<li><p><em>with alphabet</em> (required): A sequence of either lower- or
+uppercase ASCII characters from the alphabet (<code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code> and
+<code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code>).</p></li>
+</ul>
+</li>
+<li><p><strong>step</strong> (optional)</p>
+<ul>
+<li><p><em>with numbers</em>: A</p>
+<p><a class="reference external" href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger">[decimalinteger](http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger)</a></p>
+<p>or</p>
+<p><a class="reference external" href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber">[floatnumber](http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-floatnumber)</a></p>
+<p>according to Python’s syntax specifications with an optional
+leading sign (<code class="docutils literal notranslate"><span class="pre">-</span></code> or <code class="docutils literal notranslate"><span class="pre">+</span></code>). Default: <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+</li>
+<li><p><em>with alphabet</em>: A</p>
+<p><a class="reference external" href="http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger">[decimalinteger](http://docs.python.org/2.6/reference/lexical_analysis.html#grammar-token-decimalinteger)</a></p>
+<p>with an optional leading sign (<code class="docutils literal notranslate"><span class="pre">-</span></code> or <code class="docutils literal notranslate"><span class="pre">+</span></code>).</p>
+</li>
+</ul>
+</li>
+<li><p><strong>format</strong> (optional)</p>
+<ul>
+<li><p><em>with numbers</em>: A format string in Python’s [Format Specific</p>
+<p>Mini-Language](<a class="reference external" href="http://docs.python.org/2.6/library/string.html#format-specification-mini-language">http://docs.python.org/2.6/library/string.html#format-specification-mini-language</a>)
+(with small and unimportant adjustments for allowed types).</p>
+</li>
+<li><p><em>with alphabet</em>: Similar to <em>with numbers</em> but a stripped-down</p>
+<p>version only for strings. This only includes the
+<code class="docutils literal notranslate"><span class="pre">[[fill]align][width]</span></code> syntax and additionally accepts a <code class="docutils literal notranslate"><span class="pre">w</span></code>
+character at the end (see above).</p>
+</li>
+</ul>
+</li>
+<li><p><strong>expr</strong> (optional)</p>
+<ul>
+<li><p><em>numbers only</em>: A valid Python expression which modifies the value
+as you please. If specified, the <em>format string</em> is applied
+afterwards. Here is a list of available variables:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">s</span></code>: The value of <code class="docutils literal notranslate"><span class="pre">step</span></code> (specified in the format query and
+defaults to <code class="docutils literal notranslate"><span class="pre">1</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n</span></code>: The number of selections</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">i</span></code>: Just an integer holding the counter for the iteration;
+starts at <code class="docutils literal notranslate"><span class="pre">0</span></code> and is increased by <code class="docutils literal notranslate"><span class="pre">1</span></code> in every loop</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_</span></code>: The current value before the expression
+(<code class="docutils literal notranslate"><span class="pre">start</span> <span class="pre">+</span> <span class="pre">i</span> <span class="pre">*</span> <span class="pre">step</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">p</span></code>: The result of the previously evaluated value (without
+formatting); <code class="docutils literal notranslate"><span class="pre">0</span></code> for the first value</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">math</span></code>, <code class="docutils literal notranslate"><span class="pre">random</span></code> and <code class="docutils literal notranslate"><span class="pre">re</span></code>: Useful modules that are
+pre-imported for you</p></li>
+</ul>
+<p><em>Note</em>: The return value does not have to be a number type, you
+can also generate strings, tuples or booleans.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>stopexpr</strong> (optional)</p>
+<p>A valid Python expression which returns a value that translates to
+true or false (in a boolean context). Theoretically this can be any
+value. You can use the same values as in <strong>expr</strong> with addition of
+the following:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">c</span></code>: The current evaluated value by the expression (without
+formatting) or just the same as <code class="docutils literal notranslate"><span class="pre">_</span></code> if there was no expression
+specified</p></li>
+</ul>
+<p>This ignores the number of selections which means that you can also
+have more or less values than selections. Especially useful when
+generating numbers from a single selection. - If there is more
+selections than numbers generated when processing the stop
+expression, all the remaining selections’ text will be deleted. - If
+there is more numbers generated than selections, all further numbers
+are joining by newlines (<code class="docutils literal notranslate"><span class="pre">&quot;\n&quot;</span></code>) and added to the last selection
+made. This can be the first selection if there is only one.</p>
+</li>
+<li><p><strong>reverse</strong> (optional)</p>
+<p>Must be <code class="docutils literal notranslate"><span class="pre">!</span></code> and results in the regions being filled in reversed
+order.</p>
+</li>
+</ul>
+<div class="section" id="examples">
+<h4><a class="toc-backref" href="#id43"><span class="sectnum">1.5.2.1</span> Examples:</a><a class="headerlink" href="#examples" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>numbers: [&lt;start&gt;][:&lt;step&gt;][~&lt;format&gt;][::&lt;expr&gt;][@&lt;stopexpr&gt;][!]
+alpha:   &lt;start&gt;[:&lt;step&gt;][~&lt;format&gt;][@&lt;stopexpr&gt;][!]
+</pre></div>
+</div>
+<p>format= [[fill]align][sign][#][0][width][.precision][type]</p>
+<ol class="arabic">
+<li><p>传统法</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1:1~0&gt;+#04d::_*1@i&gt;=10!
+1:1~0&gt; #04d::_*1@i&gt;=10!
+1:1~k&gt; #04d::_*1@i&gt;=10!
+
+~02@p==10 or ~02@_&gt;10 or ~02@i==10
+
+i|p+3 if i!= 0 else _!
+
+|re.sub(r&#39; +&#39;, &#39; &#39;, _)
+
+float加入.
+
+1:1~0&gt;+#04.2f::_*1@i&gt;=10!
+</pre></div>
+</div>
+</li>
+<li><p>移位法赋值</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span><span class="o">~</span><span class="c1">#06x::1&lt;&lt;_@_&gt;10</span>
+</pre></div>
+</div>
+</li>
+<li><p>字母</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">z</span><span class="p">:</span><span class="mi">25</span><span class="o">~</span><span class="n">w</span> <span class="ow">or</span> <span class="n">z</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="o">~</span><span class="n">w</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="emmet">
+<h3><a class="toc-backref" href="#id44"><span class="sectnum">1.5.3</span> emmet</a><a class="headerlink" href="#emmet" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>html自动补全
+ZenCoding
+不得不用的一款前端开发方面的插件，Write less , show more.安装后可直接使用，Tab键触发，Alt+Shift+W是个代码机器。
+</pre></div>
+</div>
+</div>
+<div class="section" id="valign">
+<h3><a class="toc-backref" href="#id45"><span class="sectnum">1.5.4</span> VAlign</a><a class="headerlink" href="#valign" title="永久链接至标题">¶</a></h3>
+<p>inspired by alignment, automatically align</p>
+</div>
+<div class="section" id="alignment">
+<h3><a class="toc-backref" href="#id46"><span class="sectnum">1.5.5</span> Alignment</a><a class="headerlink" href="#alignment" title="永久链接至标题">¶</a></h3>
+<p>代码对齐，如写几个变量，选中这几行，Ctrl+Alt+A，哇，齐了。</p>
+</div>
+<div class="section" id="ctags">
+<h3><a class="toc-backref" href="#id47"><span class="sectnum">1.5.6</span> Ctags</a><a class="headerlink" href="#ctags" title="永久链接至标题">¶</a></h3>
+<p>函数跳转，我的电脑上是Alt+点击 函数名称，会跳转到相应的函数</p>
+</div>
+<div class="section" id="docblockr">
+<h3><a class="toc-backref" href="#id48"><span class="sectnum">1.5.7</span> DocBlockr</a><a class="headerlink" href="#docblockr" title="永久链接至标题">¶</a></h3>
+<p>注释插件，生成幽美的注释。标准的注释，包括函数名、参数、返回值等，并以多行显示，省去手动编写。</p>
+</div>
+<div class="section" id="jsformat">
+<h3><a class="toc-backref" href="#id49"><span class="sectnum">1.5.8</span> JsFormat</a><a class="headerlink" href="#jsformat" title="永久链接至标题">¶</a></h3>
+<p>格式化js代码，这个插件很有用，我们有时在网上看到某些效果，想查看是怎么实现的，但是代码被压缩过，很难阅读，不用怕，用ST3打开，按下快捷键，即可让代码还原，莫非是武林中失传已久的“还我靓靓拳”。</p>
+</div>
+<div class="section" id="tag">
+<h3><a class="toc-backref" href="#id50"><span class="sectnum">1.5.9</span> Tag</a><a class="headerlink" href="#tag" title="永久链接至标题">¶</a></h3>
+<p>格式化标签，让乱七八糟的代码，瞬间整齐清晰。</p>
+</div>
+<div class="section" id="brackethighlighter">
+<h3><a class="toc-backref" href="#id51"><span class="sectnum">1.5.10</span> BracketHighlighter</a><a class="headerlink" href="#brackethighlighter" title="永久链接至标题">¶</a></h3>
+<p>括弧高亮显示。</p>
+</div>
+<div class="section" id="clipboard-history">
+<h3><a class="toc-backref" href="#id52"><span class="sectnum">1.5.11</span> Clipboard History</a><a class="headerlink" href="#clipboard-history" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>剪切板历史，可以保存多个复制信息，按下ctrl+alt+v，可以选择历史剪切板。
+Goto-CSS-Declaration
+跳转到css文件该class的声明处，方便修改查看，如图下所示，注意对应的css文件要同时打开才行。
+</pre></div>
+</div>
+</div>
+<div class="section" id="scss">
+<h3><a class="toc-backref" href="#id53"><span class="sectnum">1.5.12</span> SCSS</a><a class="headerlink" href="#scss" title="永久链接至标题">¶</a></h3>
+<p>支持scss的语法高亮，里面附带了好多CSS
+Snippet，无论现用或者改造成，都可节省不少时间。
+还有很多插件，jquery语法提示，jsHint等等。</p>
+</div>
+<div class="section" id="sublime-linter">
+<h3><a class="toc-backref" href="#id54"><span class="sectnum">1.5.13</span> Sublime Linter</a><a class="headerlink" href="#sublime-linter" title="永久链接至标题">¶</a></h3>
+<p>这个插件帮你找到代码中的错误。它支持很多语言：PHP, Python, Java,
+CoffeScript, CSS, HTML, JavaScript, Perl, PHP, Python, Ruby,
+XML等。Javascript需要安装Node.js引擎，其他配置详见项目主页。强烈推荐安装。</p>
+</div>
+<div class="section" id="sublime-codeintel">
+<h3><a class="toc-backref" href="#id55"><span class="sectnum">1.5.14</span> Sublime CodeIntel</a><a class="headerlink" href="#sublime-codeintel" title="永久链接至标题">¶</a></h3>
+<p>Sublime
+CodeIntel是我最喜欢的插件，它提供了很多IDE提供的功能，例如代码自动补齐，快速跳转到变量定义，在状态栏显示函数快捷信息等。
+它支持的语言有：PHP, Python, RHTML, JavaScript, Smarty, Mason, Node.js,
+XBL, Tcl, HTML, HTML5, TemplateToolkit, XUL, Django, Perl, Ruby,
+Python3.</p>
+</div>
+<div class="section" id="copy-filepath-with-line-numbers">
+<h3><a class="toc-backref" href="#id56"><span class="sectnum">1.5.15</span> Copy Filepath With Line Numbers</a><a class="headerlink" href="#copy-filepath-with-line-numbers" title="永久链接至标题">¶</a></h3>
+</div>
+<div class="section" id="file-downloader">
+<h3><a class="toc-backref" href="#id57"><span class="sectnum">1.5.16</span> file-downloader</a><a class="headerlink" href="#file-downloader" title="永久链接至标题">¶</a></h3>
+</div>
+</div>
+<div class="section" id="tips">
+<h2><a class="toc-backref" href="#id58"><span class="sectnum">1.6</span> tips</a><a class="headerlink" href="#tips" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id4">
+<h3><a class="toc-backref" href="#id59"><span class="sectnum">1.6.1</span> 快捷键介绍</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p>看这里，<a class="reference external" href="https://www.cnblogs.com/ma-dongdong/p/7653231.html">Sublime
+Text3使用指南</a></p>
+</div>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id60"><span class="sectnum">1.6.2</span> 列编辑模式</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<ol class="arabic">
+<li><p>方式一</p>
+<p>Shift+鼠标右键 or 鼠标中键</p>
+</li>
+<li><p>方式二</p>
+<p>sublime 对 列编辑模式 Key binding设置如下：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>路径：Preferences→Key Bindings
+   { &quot;keys&quot;: [&quot;ctrl+alt+up&quot;], &quot;command&quot;: &quot;select_lines&quot;, &quot;args&quot;: {&quot;forward&quot;: false} },
+   { &quot;keys&quot;: [&quot;ctrl+alt+down&quot;], &quot;command&quot;: &quot;select_lines&quot;, &quot;args&quot;: {&quot;forward&quot;: true} },
+但ctrl+alt+up/down 和windows的快捷键设置冲突，我们可以自定义上述设置
+路径：Preferences→Key Bindings – User
+[{ &quot;keys&quot;: [&quot;alt+up&quot;], &quot;command&quot;: &quot;select_lines&quot;, &quot;args&quot;: {&quot;forward&quot;: false} },
+ { &quot;keys&quot;: [&quot;alt+down&quot;], &quot;command&quot;: &quot;select_lines&quot;, &quot;args&quot;: {&quot;forward&quot;: true} },
+]
+</pre></div>
+</div>
+</li>
+<li><p>方式三</p>
+<p>选中需要进行列编辑的多行，然后按下Ctrl+Shift+L也可以开启列编辑模式。</p>
+</li>
+</ol>
+</div>
+<div class="section" id="hex">
+<h3><a class="toc-backref" href="#id61"><span class="sectnum">1.6.3</span> hex查看模式</a><a class="headerlink" href="#hex" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HexViewer</span>
+<span class="n">Ctrl</span> <span class="o">+</span> <span class="n">Shift</span> <span class="o">+</span> <span class="n">P</span>
+<span class="n">安装HexViewer</span>
+<span class="n">Tools</span> <span class="o">&gt;</span> \<span class="mi">003</span><span class="n">work</span>\<span class="mi">002</span><span class="n">memo</span>\<span class="mi">001</span><span class="n">software</span>\<span class="mi">001</span><span class="n">install</span> <span class="o">&gt;</span> <span class="n">Hex</span> <span class="n">Viewer</span> <span class="o">&gt;</span> <span class="n">Toggle</span> <span class="n">Hex</span> <span class="n">View</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="faq">
+<h2><a class="toc-backref" href="#id62"><span class="sectnum">1.7</span> FAQ</a><a class="headerlink" href="#faq" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id6">
+<h3><a class="toc-backref" href="#id63"><span class="sectnum">1.7.1</span> 字体怎么调整回来</a><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<p>preferences-&gt;font</p>
+<ul>
+<li><p>快捷键</p>
+<p>larger: ctrl+= smaller:ctrl+shift+ keypad+(注意一定要是小键盘上的+)</p>
+</li>
+<li><p>和OmnMarkupPreview中切换标题的快捷键的误用</p>
+<p>增大标题: ctrl+ 减小标题: ctrl+ keypad+</p>
+</li>
+</ul>
+</div>
+<div class="section" id="utf8">
+<h3><a class="toc-backref" href="#id64"><span class="sectnum">1.7.2</span> 缺省保存为UTF8文件</a><a class="headerlink" href="#utf8" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Preferences 设置-默认
+Preferences.sublime-settings文件：
+// 默认编码格式
+&quot;default_encoding&quot;: &quot;UTF-8&quot;,
+</pre></div>
+</div>
+<p>##怎么用正则模式查找替换</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(#{1,6}): 表示查找1到6个#的字符,()表示匹配的意思，并放入$1
+替换成$1 ：表示在原先的标题符号后面加上空格
+</pre></div>
+</div>
+<p>##出现服务找不到，preview不成功如下提示</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Error: 404 Not Found
+Sorry, the requested URL &#39;http://127.0.0.1:51004/view/28&#39; caused an error:
+&#39;buffer_id(28) is not valid (closed or unsupported file format)&#39;
+**NOTE:** If you run multiple instances of Sublime Text, you may want to adjust
+the `server_port` option in order to get this plugin work again.
+
+
+sublime Text &gt; Preferences &gt; Package Settings &gt; OmniMarkupPreviewer &gt; Settings - User
+粘贴下列的扩展去代替原来的扩展（我用了方法1）
+{
+    &quot;renderer_options-MarkdownRenderer&quot;: {
+        &quot;extensions&quot;: [&quot;tables&quot;, &quot;fenced_code&quot;, &quot;codehilite&quot;]
+    }
+}
+</pre></div>
+</div>
+<p>移除了“Strikethrough” 就好了，但是发现把这个再加回也好了。不知道什么原因</p>
+</div>
+<div class="section" id="id7">
+<h3><a class="toc-backref" href="#id65"><span class="sectnum">1.7.3</span> 为何始终在当前标签打开文件？</a><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<p>preferences-&gt;setting</p>
+<p>// KL+:
+解决始终在当前标签打开文件的问题，可能是安装了fileDiff插件带来的。</p>
+<p>“preview_on_click”: false,</p>
+</div>
+<div class="section" id="id8">
+<h3><a class="toc-backref" href="#id66"><span class="sectnum">1.7.4</span> 总是在新窗口中打开文件?</a><a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h3>
+<p>Preferences -&gt; Settings – Default -&gt;
+搜索open_files_in_new_window，将其true 改为 false 后，重启一下sublime
+text</p>
+</div>
+<div class="section" id="sublime-text">
+<h3><a class="toc-backref" href="#id67"><span class="sectnum">1.7.5</span> sublime text的菜单栏隐藏了怎么再显示出来？</a><a class="headerlink" href="#sublime-text" title="永久链接至标题">¶</a></h3>
+<p>按住alt键，就可以暂时显示菜单栏了，再次点击“显示/隐藏菜单栏”就能恢复了。</p>
+</div>
+<div class="section" id="sublimetext">
+<h3><a class="toc-backref" href="#id68"><span class="sectnum">1.7.6</span> SublimeText快速插入多行递增数字</a><a class="headerlink" href="#sublimetext" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://blog.csdn.net/cxrsdn/article/details/82496800">SublimeText快速插入多行递增数字</a></p>
+<p><a class="reference external" href="https://github.com/jbrooksuk/InsertNums">InsertNums</a></p>
+</div>
+<div class="section" id="sublime-ctrl-shift-f">
+<h3><a class="toc-backref" href="#id69"><span class="sectnum">1.7.7</span> sublime ctrl+shift+f快捷键失效的原因</a><a class="headerlink" href="#sublime-ctrl-shift-f" title="永久链接至标题">¶</a></h3>
+<p>输入法去掉相应的快捷键</p>
+</div>
+<div class="section" id="id9">
+<h3><a class="toc-backref" href="#id70"><span class="sectnum">1.7.8</span> 怎么列编辑操作</a><a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://www.sublimetext.com/docs/2/column_selection.html">Column
+Selection</a></p>
+<ul class="simple">
+<li><p>Right Mouse Button + Shift</p></li>
+<li><p>OR: Middle Mouse Button</p></li>
+<li><p>Add to selection: Ctrl</p></li>
+<li><p>Subtract from selection: Alt</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="latex">
+<h2><a class="toc-backref" href="#id71"><span class="sectnum">1.8</span> LaTex公式案例</a><a class="headerlink" href="#latex" title="永久链接至标题">¶</a></h2>
+<p>latex example:</p>
+<div class="math notranslate nohighlight">
+\[f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }\]</div>
+<p>equation.he Lorenz Equations</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}\dot{x} &amp; = \sigma(y-x) \\\dot{y} &amp; = \rho x - y - xz \\\dot{z} &amp; = -\beta z + xy\end{aligned}\end{split}\]</div>
+<p>inline an example of a LaTeX
+<span class="math notranslate nohighlight">\(\sqrt{3x-1}+(1+x)^2\)</span></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="tools.html" title="1 Little Tools"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="sphinx.html" title="1 sphinx"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, kevinluo.
+    </div>
+  </body>
+</html>

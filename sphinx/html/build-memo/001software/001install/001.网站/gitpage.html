@@ -1,0 +1,519 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>1 gitpages &#8212; memo of study  文档</title>
+    <link rel="stylesheet" href="../../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="1 hexo" href="hexo.html" />
+    <link rel="prev" title="1 github" href="github.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="hexo.html" title="1 hexo"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="github.html" title="1 github"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> gitpages</a><ul>
+<li><a class="reference internal" href="#travis-ci-kevinluolog"><span class="sectnum">1.1</span> Travis Ci-kevinluolog</a><ul>
+<li><a class="reference internal" href="#travis-ci-repo"><span class="sectnum">1.1.1</span> travis ci repo 关系</a><ul>
+<li><a class="reference internal" href="#kevinluolog-kdoc-git-push"><span class="sectnum">1.1.1.1</span> kevinluolog/kdoc.git push触发</a><ul>
+<li><a class="reference internal" href="#id1"><span class="sectnum">1.1.1.1.1</span> 触发仓/输出仓关系</a></li>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.1.1.1.2</span> 完成功能：</a><ul>
+<li><a class="reference internal" href="#rst-html"><span class="sectnum">1.1.1.1.2.1</span> .rst 转成 .html;</a><ul>
+<li><a class="reference internal" href="#kdoc"><span class="sectnum">1.1.1.1.2.1.1</span> kdoc发布 网站地址：</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rst-hexo-md-frontmatter-tag-category"><span class="sectnum">1.1.1.1.2.2</span> .rst 转成 hexo输入的 .md;(添加frontmatter信息，如tag,category)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#output"><span class="sectnum">1.1.1.1.3</span> 输出output目录结构</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#kevinluolog-hexo-klblog-src-git-push"><span class="sectnum">1.1.1.2</span> kevinluolog/hexo-klblog-src.git push触发</a><ul>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.1.1.2.1</span> 触发仓/输出仓关系</a></li>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.1.1.2.2</span> 完成功能：</a><ul>
+<li><a class="reference internal" href="#md-md"><span class="sectnum">1.1.1.2.2.1</span> 错误时间.md 转成 正确时间.md</a></li>
+<li><a class="reference internal" href="#md-html"><span class="sectnum">1.1.1.2.2.2</span> 正确时间.md 转成 网站.html;</a><ul>
+<li><a class="reference internal" href="#hexo-klblog-src"><span class="sectnum">1.1.1.2.2.2.1</span> hexo-klblog-src发布 网站地址：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5"><span class="sectnum">1.1.1.3</span> 网站生成工作步骤:</a><ul>
+<li><a class="reference internal" href="#id6"><span class="sectnum">1.1.1.3.1</span> 目标：写好即完成</a></li>
+<li><a class="reference internal" href="#windown"><span class="sectnum">1.1.1.3.2</span> 数据流路径(windown本地):</a></li>
+<li><a class="reference internal" href="#travis"><span class="sectnum">1.1.1.3.3</span> 数据流路径(travis 全自动):</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="github.html"
+                        title="上一章"><span class="sectnum">1</span> github</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="hexo.html"
+                        title="下一章"><span class="sectnum">1</span> hexo</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="gitpages">
+<h1><a class="toc-backref" href="#id11"><span class="sectnum">1</span> gitpages</a><a class="headerlink" href="#gitpages" title="永久链接至标题">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">contents</p>
+<ul class="auto-toc simple">
+<li><p><a class="reference internal" href="#gitpages" id="id11"><span class="sectnum">1</span> gitpages</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#travis-ci-kevinluolog" id="id12"><span class="sectnum">1.1</span> Travis Ci-kevinluolog</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#travis-ci-repo" id="id13"><span class="sectnum">1.1.1</span> travis ci repo 关系</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#kevinluolog-kdoc-git-push" id="id14"><span class="sectnum">1.1.1.1</span> kevinluolog/kdoc.git push触发</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id1" id="id15"><span class="sectnum">1.1.1.1.1</span> 触发仓/输出仓关系</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id16"><span class="sectnum">1.1.1.1.2</span> 完成功能：</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#rst-html" id="id17"><span class="sectnum">1.1.1.1.2.1</span> .rst 转成 .html;</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#kdoc" id="id18"><span class="sectnum">1.1.1.1.2.1.1</span> kdoc发布 网站地址：</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#rst-hexo-md-frontmatter-tag-category" id="id19"><span class="sectnum">1.1.1.1.2.2</span> .rst 转成 hexo输入的 .md;(添加frontmatter信息，如tag,category)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#output" id="id20"><span class="sectnum">1.1.1.1.3</span> 输出output目录结构</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#kevinluolog-hexo-klblog-src-git-push" id="id21"><span class="sectnum">1.1.1.2</span> kevinluolog/hexo-klblog-src.git push触发</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id3" id="id22"><span class="sectnum">1.1.1.2.1</span> 触发仓/输出仓关系</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id23"><span class="sectnum">1.1.1.2.2</span> 完成功能：</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#md-md" id="id24"><span class="sectnum">1.1.1.2.2.1</span> 错误时间.md 转成 正确时间.md</a></p></li>
+<li><p><a class="reference internal" href="#md-html" id="id25"><span class="sectnum">1.1.1.2.2.2</span> 正确时间.md 转成 网站.html;</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#hexo-klblog-src" id="id26"><span class="sectnum">1.1.1.2.2.2.1</span> hexo-klblog-src发布 网站地址：</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id5" id="id27"><span class="sectnum">1.1.1.3</span> 网站生成工作步骤:</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id6" id="id28"><span class="sectnum">1.1.1.3.1</span> 目标：写好即完成</a></p></li>
+<li><p><a class="reference internal" href="#windown" id="id29"><span class="sectnum">1.1.1.3.2</span> 数据流路径(windown本地):</a></p></li>
+<li><p><a class="reference internal" href="#travis" id="id30"><span class="sectnum">1.1.1.3.3</span> 数据流路径(travis 全自动):</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="travis-ci-kevinluolog">
+<h2><a class="toc-backref" href="#id12"><span class="sectnum">1.1</span> Travis Ci-kevinluolog</a><a class="headerlink" href="#travis-ci-kevinluolog" title="永久链接至标题">¶</a></h2>
+<div class="section" id="travis-ci-repo">
+<h3><a class="toc-backref" href="#id13"><span class="sectnum">1.1.1</span> travis ci repo 关系</a><a class="headerlink" href="#travis-ci-repo" title="永久链接至标题">¶</a></h3>
+<p>序号  触发仓&#64;分支  源仓&#64;分支  输出仓&#64;分支</p>
+<div class="section" id="kevinluolog-kdoc-git-push">
+<h4><a class="toc-backref" href="#id14"><span class="sectnum">1.1.1.1</span> kevinluolog/kdoc.git push触发</a><a class="headerlink" href="#kevinluolog-kdoc-git-push" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id1">
+<h5><a class="toc-backref" href="#id15"><span class="sectnum">1.1.1.1.1</span> 触发仓/输出仓关系</a><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h5>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 22%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>触发仓&#64;分支</p></th>
+<th class="head"><p>源仓&#64;分支</p></th>
+<th class="head"><p>输出仓&#64;分支</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="mailto:kdoc&#37;&#52;&#48;dev">kdoc<span>&#64;</span>dev</a></p></td>
+<td><p><a class="reference external" href="mailto:kdoc&#37;&#52;&#48;dev">kdoc<span>&#64;</span>dev</a></p></td>
+<td><p><a class="reference external" href="mailto:travisci_out_kdoc&#37;&#52;&#48;dev">travisci_out_kdoc<span>&#64;</span>dev</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="mailto:kdoc&#37;&#52;&#48;dev">kdoc<span>&#64;</span>dev</a></p></td>
+<td><p><a class="reference external" href="mailto:kdoc&#37;&#52;&#48;dev">kdoc<span>&#64;</span>dev</a></p></td>
+<td><p>hexo-klblog-src&#64;x5个分支</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id2">
+<h5><a class="toc-backref" href="#id16"><span class="sectnum">1.1.1.1.2</span> 完成功能：</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h5>
+<p>代码参考 根目录travis.yml</p>
+<div class="section" id="rst-html">
+<h6><a class="toc-backref" href="#id17"><span class="sectnum">1.1.1.1.2.1</span> .rst 转成 .html;</a><a class="headerlink" href="#rst-html" title="永久链接至标题">¶</a></h6>
+<ul>
+<li><p>用sphinx生成：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sphinx-build -b html $TRAVIS_BUILD_DIR/003work/003post $TRAVIS_BUILD_DIR/output/sphinx/build-post
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.html输出到本地output目录： `/output/sphinx/build-memo/*`
+.html输出到本地output目录： `/output/sphinx/build-post/*`
+</pre></div>
+</div>
+</li>
+<li><p>用git deploy：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">A</span><span class="p">;</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">empty</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;&quot;</span>
+<span class="n">git</span> <span class="n">push</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>输出到=&gt;repo0: `github.com/kevinluolog/travisci_out_kdoc@dev`
+002memo=&gt;deploy到WWWrepo3: `github.com/kevinluolog/gp-memo@gh-pages`
+003post=&gt;deploy到WWWrepo4: `github.com/kevinluolog/gp-post@gh-pages`
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="section" id="kdoc">
+<h7><a class="toc-backref" href="#id18"><span class="sectnum">1.1.1.1.2.1.1</span> kdoc发布 网站地址：</a><a class="headerlink" href="#kdoc" title="永久链接至标题">¶</a></h7>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="http://kevinluolog.github.io/gp-memo">kevinluolog.github.io gp-memo 002memo</a></p></li>
+<li><p><a class="reference external" href="http://kevinluolog.github.io/gp-memo">kevinluolog.github.io gp-post 002post</a></p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="rst-hexo-md-frontmatter-tag-category">
+<h6><a class="toc-backref" href="#id19"><span class="sectnum">1.1.1.1.2.2</span> .rst 转成 hexo输入的 .md;(添加frontmatter信息，如tag,category)</a><a class="headerlink" href="#rst-hexo-md-frontmatter-tag-category" title="永久链接至标题">¶</a></h6>
+<ul>
+<li><p>用makefile + pandoc生成：</p>
+<p>详细参考 <cite>kdoc/003work/000tools/002makefiles/001pandoc/linux/Makefile</cite></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make startconv -f $TRAVIS_BUILD_DIR/003work/000tools/002makefiles/001pandoc/linux/Makefile DIR_BASE_SRC=$TRAVIS_BUILD_DIR/003work/003post DIR_BASE_OBJ=$TRAVIS_BUILD_DIR/output/pandoc/hexomd/003post DIR_BASE_COPYTO= SUFFIX_FROM=.rst SUFFIX_TO=.md DIR_TEMPLATE=$T_DIR_TEMPLATE ADD_HEXO_TAG_FROM_DIR=post+ CTL_TOC=TRUE
+
+make startconv -f $TRAVIS_BUILD_DIR/003work/000tools/002makefiles/001pandoc/linux/Makefile DIR_BASE_SRC=$TRAVIS_BUILD_DIR/003work/003post DIR_BASE_OBJ=$TRAVIS_BUILD_DIR/output/pandoc/html/003post DIR_BASE_COPYTO= SUFFIX_FROM=.rst SUFFIX_TO=.html DIR_TEMPLATE=$T_DIR_TEMPLATE ADD_HEXO_TAG_FROM_DIR=
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.md输出到本地output目录： `/output/pandoc/hexomd/002memo/*`
+.md输出到本地output目录： `/output/pandoc/hexomd/003post/*`
+</pre></div>
+</div>
+</li>
+<li><p>用git deploy：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">A</span><span class="p">;</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">empty</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;&quot;</span>
+<span class="n">git</span> <span class="n">push</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>输出到=&gt;repo1: `github.com/kevinluolog/travisci_out_kdoc@dev`
+002memo=&gt;deploy到repo2-(@b1:b5): `hexo-klblog-src/source/_posts/kl_notes/   002memo@xxx`
+003post=&gt;deploy到repo2-(@b1-b5): `hexo-klblog-src/source/_posts/kl_notes/   002memo@xxx`
+xxx:分支 =
+     master
+     hexo-next-Gemini :注意大写，linux下大小写敏感
+     hexo-next-muse
+     hexo-next-Pisces :注意大写，linux下大小写敏感
+     hexo-maup
+</pre></div>
+</div>
+<p>deploy到rep:kevinluolog/hexo-klblog-src.git后，各分支会继续触发travis CI，把各分支上的hexo源码，编译成网站并deploy到对应的WWWrepoXXX的github分支(以repo2（kevinluolog/hexo-klblog-src.git）的分支名字命名)-分别对应repo2-(b1:b5)，和主网站repo。
+详细参考 <a class="reference internal" href="#kevinluolog-hexo-klblog-src-git-push">kevinluolog/hexo-klblog-src.git push触发</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="output">
+<h5><a class="toc-backref" href="#id20"><span class="sectnum">1.1.1.1.3</span> 输出output目录结构</a><a class="headerlink" href="#output" title="永久链接至标题">¶</a></h5>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.html：由sphinx产生
+/output/sphinx/build-memo/*
+/output/sphinx/build-post/*
+
+.md hexo：由Makefile 产生, pandoc.exe
+makefile位于/kdoc/003work/000tools/002makefiles/001pandoc/linux/
+/output/pandoc/hexomd/002memo
+/output/pandoc/hexomd/003post
+</pre></div>
+</div>
+<p>hexo源码仓库中的_posts来源，是上面output目录中的pandoc/hexomd目录中的002memo和003post. 先clone下来，用rm删除002meo和003post,再用cp从hexomd中copy过来。</p>
+</div>
+</div>
+<div class="section" id="kevinluolog-hexo-klblog-src-git-push">
+<h4><a class="toc-backref" href="#id21"><span class="sectnum">1.1.1.2</span> kevinluolog/hexo-klblog-src.git push触发</a><a class="headerlink" href="#kevinluolog-hexo-klblog-src-git-push" title="永久链接至标题">¶</a></h4>
+<p>代码参考 根目录travis.yml</p>
+<div class="section" id="id3">
+<h5><a class="toc-backref" href="#id22"><span class="sectnum">1.1.1.2.1</span> 触发仓/输出仓关系</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h5>
+<p>~：表示和前面的 触发仓&#64;分支 一样</p>
+<div class="line-block">
+<div class="line">master</div>
+<div class="line">hexo-next-Gemini :注意大写，linux下大小写敏感</div>
+<div class="line">hexo-next-muse</div>
+<div class="line">hexo-next-Pisces :注意大写，linux下大小写敏感</div>
+<div class="line">hexo-maup</div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 42%" />
+<col style="width: 14%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>序号</p></th>
+<th class="head"><p>触发仓&#64;分支</p></th>
+<th class="head"><p>源仓&#64;分支</p></th>
+<th class="head"><p>输出仓&#64;分支 gitpage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01</p></td>
+<td><p><a class="reference external" href="mailto:hexo-klblog-src&#37;&#52;&#48;master">hexo-klblog-src<span>&#64;</span>master</a></p></td>
+<td><p>~</p></td>
+<td><p><a class="reference external" href="mailto:kevinluolog&#46;github&#46;io&#37;&#52;&#48;master">kevinluolog<span>&#46;</span>github<span>&#46;</span>io<span>&#64;</span>master</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>02</p></td>
+<td><p><a class="reference external" href="mailto:hexo-klblog-src&#37;&#52;&#48;hexo-next-Gemini">hexo-klblog-src<span>&#64;</span>hexo-next-Gemini</a></p></td>
+<td><p>~</p></td>
+<td><p><a class="reference external" href="mailto:hexo-next-gemini&#37;&#52;&#48;gh-pages">hexo-next-gemini<span>&#64;</span>gh-pages</a></p></td>
+</tr>
+<tr class="row-even"><td><p>03</p></td>
+<td><p><a class="reference external" href="mailto:hexo-klblog-src&#37;&#52;&#48;hexo-next-muse">hexo-klblog-src<span>&#64;</span>hexo-next-muse</a></p></td>
+<td><p>~</p></td>
+<td><p><a class="reference external" href="mailto:hexo-next-muse&#37;&#52;&#48;gh-pages">hexo-next-muse<span>&#64;</span>gh-pages</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>04</p></td>
+<td><p><a class="reference external" href="mailto:hexo-klblog-src&#37;&#52;&#48;hexo-next-Pisces">hexo-klblog-src<span>&#64;</span>hexo-next-Pisces</a></p></td>
+<td><p>~</p></td>
+<td><p><a class="reference external" href="mailto:hexo-next-Pisces&#37;&#52;&#48;gh-pages">hexo-next-Pisces<span>&#64;</span>gh-pages</a></p></td>
+</tr>
+<tr class="row-even"><td><p>05</p></td>
+<td><p><a class="reference external" href="mailto:hexo-klblog-src&#37;&#52;&#48;hexo-maup">hexo-klblog-src<span>&#64;</span>hexo-maup</a></p></td>
+<td><p>~</p></td>
+<td><p><a class="reference external" href="mailto:hexo-maup&#37;&#52;&#48;gh-pages">hexo-maup<span>&#64;</span>gh-pages</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h5><a class="toc-backref" href="#id23"><span class="sectnum">1.1.1.2.2</span> 完成功能：</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h5>
+<p>代码参考 根目录travis.yml</p>
+<div class="section" id="md-md">
+<h6><a class="toc-backref" href="#id24"><span class="sectnum">1.1.1.2.2.1</span> 错误时间.md 转成 正确时间.md</a><a class="headerlink" href="#md-md" title="永久链接至标题">¶</a></h6>
+<p>详细代码参见 <cite>/MakefileLinuxkblog.mk /travis.yml</cite></p>
+<p>影响网站文章时间排序。最终实现正确排序，同时还需要hexo的渲染前的hook配合,把date时间，改成文件的修改时间。</p>
+<p>时间传递路径为，
+渲染用的文件创建日期post.date &lt;3= post.updated &lt;2= 文件的mtime &lt;1= 文件的首次commit时间。</p>
+<p>第&lt;1=次转换
+详细代码参见 <cite>/MakefileLinuxkblog.mk /travis.yml</cite>
+利用 <cite>git log –date=iso –format=”%ad” – “”</cite> 获取历史commit时间数据,
+<cite>tail -1</cite> 获取首次commit时间，
+<cite>touch -c -data “” -m</cite> 设置mtime</p>
+<p>第&lt;2=次转换
+hexo编译渲染时自己读取文件时间产生，尚不知在什么module里做的。</p>
+<p>第&lt;3=次转换
+详细代码参见 <cite>/klBlog/themes/next/scripts/filters/kl-touch-file-time.js</cite>
+利用 hexo钩子before_post_render 替换。</p>
+<ul>
+<li><p>用makefile + shell脚本 + git命令生成：</p>
+<p>详细代码参考 <cite>/MakefileLinuxkblog.mk</cite></p>
+<p>makefile</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make touch1 -f MakefileLinuxkblog.mk DIR_BASE_SRC=$TRAVIS_BUILD_DIR/source/_posts
+</pre></div>
+</div>
+<p>或纯脚本,单行即可。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git ls-files -z --eol | sed -e &quot;s/i\\/lf[ \\t]*w\\/lf[ \\t]*attr\\/[ \\t]*/\\n/g&quot; | while read filename; do git log --date=iso --format=&quot;%ad&quot; -- &quot;$TRAVIS_BUILD_DIR/source/_posts/$filename&quot; | tail -1 | xargs -I{} touch -c $filename --date=&quot;{}&quot; -m; done
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="md-html">
+<h6><a class="toc-backref" href="#id25"><span class="sectnum">1.1.1.2.2.2</span> 正确时间.md 转成 网站.html;</a><a class="headerlink" href="#md-html" title="永久链接至标题">¶</a></h6>
+<p>详细代码参考 <cite>/travis.yml /_config.yml</cite></p>
+<p>deploy到rep:kevinluolog/hexo-klblog-src.git后，各分支会继续触发travis CI，把各分支上的hexo源码，编译成网站并deploy到对应的WWWrepoXXX的github分支(以repo2（kevinluolog/hexo-klblog-src.git）的分支名字命名)-分别对应repo2-(b1:b5)，和主网站repo。</p>
+<ul>
+<li><p>用hexo g 生成</p>
+<p>自动把 <cite>/hexo/klBlog/source/_posts</cite> 目录中的 .md 生成hexo静态网页</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hexo</span> <span class="n">clean</span>
+<span class="n">hexo</span> <span class="n">generate</span>
+</pre></div>
+</div>
+</li>
+<li><p>用hexo deploy 发布到repo&#64;gh-pages。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sed</span> <span class="o">-</span><span class="n">i</span> <span class="s2">&quot;s/gh_token/$</span><span class="si">{GH_TOKEN}</span><span class="s2">/g&quot;</span> <span class="o">./</span><span class="n">_config</span><span class="o">.</span><span class="n">yml</span>
+<span class="n">hexo</span> <span class="n">deploy</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="section" id="hexo-klblog-src">
+<h7><a class="toc-backref" href="#id26"><span class="sectnum">1.1.1.2.2.2.1</span> hexo-klblog-src发布 网站地址：</a><a class="headerlink" href="#hexo-klblog-src" title="永久链接至标题">¶</a></h7>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="http://kevinluolog.github.io">kevinluolog.github.io master</a></p></li>
+<li><p><a class="reference external" href="http://kevinluolog.github.io/hexo-next-gemini">kevinluolog.github.io hexo-next-gemini</a></p></li>
+<li><p><a class="reference external" href="http://kevinluolog.github.io/hexo-next-muse">kevinluolog.github.io hexo-next-muse</a></p></li>
+<li><p><a class="reference external" href="http://kevinluolog.github.io/hexo-next-Pisces">kevinluolog.github.io hexo-next-Pisces</a></p></li>
+<li><p><a class="reference external" href="http://kevinluolog.github.io/hexo-maup">kevinluolog.github.io hexo-maup</a></p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id5">
+<h4><a class="toc-backref" href="#id27"><span class="sectnum">1.1.1.3</span> 网站生成工作步骤:</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id6">
+<h5><a class="toc-backref" href="#id28"><span class="sectnum">1.1.1.3.1</span> 目标：写好即完成</a><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h5>
+<p>目标是只要用sublime写好.rst文档，提交就可以直接在浏览器上看到写的东西了。即只要做完step1后,step 2,step3会自动完成，然后稍等即可以step4.</p>
+<div class="line-block">
+<div class="line">step 1: 写文档 .rst</div>
+<div class="line">step 2: .rst 2 .md(with hexo frontmatter)</div>
+<div class="line">step 3: hexo编译成静态html,并发布到托管服务器</div>
+<div class="line">stop 4: 用浏览器浏览网站</div>
+</div>
+</div>
+<div class="section" id="windown">
+<h5><a class="toc-backref" href="#id29"><span class="sectnum">1.1.1.3.2</span> 数据流路径(windown本地):</a><a class="headerlink" href="#windown" title="永久链接至标题">¶</a></h5>
+<ol class="arabic">
+<li><p>.rst 2 .md(with hexo frontmatter) (手动make)</p>
+<p>目标：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">H</span><span class="p">:</span>\\<span class="n">tmp_H</span>\\<span class="mf">001.</span><span class="n">work</span>\\<span class="mi">002</span><span class="n">git</span>\\<span class="n">kdoc</span>\\<span class="mi">003</span><span class="n">work</span>\\<span class="mi">002</span><span class="n">memo</span>
+<span class="n">H</span><span class="p">:</span>\\<span class="n">tmp_H</span>\\<span class="mf">001.</span><span class="n">work</span>\\<span class="mi">002</span><span class="n">git</span>\\<span class="n">kdoc</span>\\<span class="mi">003</span><span class="n">work</span>\\<span class="mi">003</span><span class="n">post</span>
+<span class="o">=&gt;</span>
+<span class="n">H</span><span class="p">:</span>\\<span class="n">tmp_H</span>\\<span class="mf">001.</span><span class="n">work</span>\\<span class="mf">004.</span><span class="n">env</span>\\<span class="mi">01</span><span class="n">prjsp</span>\\<span class="n">hexo</span>\\<span class="n">klBlog</span>\\<span class="n">source</span>\\<span class="n">_posts</span>\\<span class="n">kl_notes</span>
+<span class="n">H</span><span class="p">:</span>\\<span class="n">tmp_H</span>\\<span class="mf">001.</span><span class="n">work</span>\\<span class="mf">004.</span><span class="n">env</span>\\<span class="mi">01</span><span class="n">prjsp</span>\\<span class="n">hexo</span>\\<span class="n">klBlog</span>\\<span class="n">source</span>\\<span class="n">_posts</span>\\<span class="n">kl_post</span>
+</pre></div>
+</div>
+<p>command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>H:\\tmp_H\\001.work\\002git\\kdoc\\003work\\000tools\\002makefiles\\001pandoc\\rst2md_hexo_copy2.bat
+
+DIR_BASE_SRC=H:\\tmp_H\\001.work\\002git\\kdoc\\003work\\002memo ^
+DIR_BASE_OBJ=H:\\tmp_H\\001.work\\004.env\\01prjsp\\04make\\01rst2md\\tmp2 ^
+DIR_BASE_COPYTO=H:\\tmp_H\\001.work\\004.env\\01prjsp\\04make\\01rst2md\\copy2 ^
+
+此.bat用了一个临时目录，用时需要手工从copy2目录拷贝到kl_note目录。当然可以把.bat中的，obj目录直接转为kl_notes目录，就可以直接一步修改。注意把copyto目录置空。
+</pre></div>
+</div>
+</li>
+<li><p>提交 hexo编译并发布 （tracis CI 自动 ）</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tortioseGit</span><span class="p">:</span> <span class="n">H</span><span class="p">:</span>\\<span class="n">tmp_H</span>\\<span class="mf">001.</span><span class="n">work</span>\\<span class="mf">004.</span><span class="n">env</span>\\<span class="mi">01</span><span class="n">prjsp</span>\\<span class="n">hexo</span>\\<span class="n">klBlog</span>\\
+<span class="n">提交到</span> <span class="n">repo</span><span class="p">:</span> <span class="n">hexo</span><span class="o">-</span><span class="n">klblog</span><span class="o">-</span><span class="n">src</span><span class="nd">@master</span>
+<span class="n">触发travis</span> <span class="n">CI</span> <span class="n">自动</span> <span class="n">hexo编译成静态html</span> <span class="o">=&gt;</span> <span class="n">kevinluolog</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="nd">@master</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="travis">
+<h5><a class="toc-backref" href="#id30"><span class="sectnum">1.1.1.3.3</span> 数据流路径(travis 全自动):</a><a class="headerlink" href="#travis" title="永久链接至标题">¶</a></h5>
+<ol class="arabic">
+<li><p>写文档。</p>
+<p>【在clone下来的kdoc&#64;dev子目录中(003work/002memo/* 003work/003post/<a href="#id7"><span class="problematic" id="id8">*</span></a>)】</p>
+</li>
+</ol>
+<ol class="arabic" start="3">
+<li><p>提交推送。</p>
+<p>【git add . ; git commit -m “” ; git push】</p>
+</li>
+</ol>
+<ol class="arabic" start="5">
+<li><p>触发kdoc&#64;dev/travis.yml工作，编译/002memo /003post/<a href="#id9"><span class="problematic" id="id10">*</span></a>文档内容。</p>
+<p>详细参考  <a class="reference internal" href="#kevinluolog-kdoc-git-push">kevinluolog/kdoc.git push触发</a></p>
+</li>
+</ol>
+<ol class="arabic" start="4">
+<li><p>触发hexo-<a class="reference external" href="mailto:klblog-src&#46;git&#37;&#52;&#48;xxx/travis">klblog-src<span>&#46;</span>git<span>&#64;</span>xxx/travis</a>.yml工作，编译/source/_posts/文档内容。</p>
+<p>详细参考  <a href="#id31"><span class="problematic" id="id32">`kkevinluolog/hexo-klblog-src.git push触发`_</span></a></p>
+</li>
+<li><p>浏览发布网站地址 sphinx和hexo</p>
+<p>参考 <a class="reference internal" href="#kdoc">kdoc发布 网站地址：</a> sphinx</p>
+<p>参考 <a class="reference internal" href="#hexo-klblog-src">hexo-klblog-src发布 网站地址：</a>  hexo</p>
+</li>
+<li><p>生成输出 repo地址</p>
+<p><a class="reference external" href="https://github.com/travisci_out_kdoc/">kdoc的output输出仓库网址 travisci_out_kdoc</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="hexo.html" title="1 hexo"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="github.html" title="1 github"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, kevinluo.
+    </div>
+  </body>
+</html>

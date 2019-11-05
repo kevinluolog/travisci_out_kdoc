@@ -1,0 +1,1426 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>1 hexo &#8212; memo of study  文档</title>
+    <link rel="stylesheet" href="../../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="1 jekyll" href="jekyll.html" />
+    <link rel="prev" title="1 gitpages" href="gitpage.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="jekyll.html" title="1 jekyll"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="gitpage.html" title="1 gitpages"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> hexo</a><ul>
+<li><a class="reference internal" href="#install"><span class="sectnum">1.1</span> install</a><ul>
+<li><a class="reference internal" href="#hexo-module"><span class="sectnum">1.1.1</span> hexo module 安装</a></li>
+<li><a class="reference internal" href="#hexo-blog-init"><span class="sectnum">1.1.2</span> hexo blog init</a></li>
+<li><a class="reference internal" href="#configuration"><span class="sectnum">1.1.3</span> configuration</a></li>
+<li><a class="reference internal" href="#commands"><span class="sectnum">1.1.4</span> Commands</a></li>
+<li><a class="reference internal" href="#migration"><span class="sectnum">1.1.5</span> Migration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#basic-usage"><span class="sectnum">1.2</span> Basic Usage</a></li>
+<li><a class="reference internal" href="#customization"><span class="sectnum">1.3</span> Customization</a></li>
+<li><a class="reference internal" href="#theme"><span class="sectnum">1.4</span> theme分享</a><ul>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.4.1</span> 几款简单的theme</a></li>
+<li><a class="reference internal" href="#melody"><span class="sectnum">1.4.2</span> melody</a><ul>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.4.2.1</span> melody-设置</a><ul>
+<li><a class="reference internal" href="#fireworks-live2d-animation"><span class="sectnum">1.4.2.1.1</span> fireworks,live2d 白猫 animation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#next"><span class="sectnum">1.4.3</span> next</a><ul>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.4.3.1</span> next-设置</a><ul>
+<li><a class="reference internal" href="#busuanzi-count"><span class="sectnum">1.4.3.1.1</span> busuanzi_count 阅读次数/访问人数</a></li>
+<li><a class="reference internal" href="#symbols-count-time"><span class="sectnum">1.4.3.1.2</span> symbols_count_time 文章字数统计与阅读时长</a></li>
+<li><a class="reference internal" href="#hexo-next"><span class="sectnum">1.4.3.1.3</span> hexo-Next修改内容区域的宽度</a></li>
+<li><a class="reference internal" href="#animation"><span class="sectnum">1.4.3.1.4</span> 实现点击出现桃心效果animation</a></li>
+<li><a class="reference internal" href="#id5"><span class="sectnum">1.4.3.1.5</span> 目录栏链接选中颜色</a></li>
+<li><a class="reference internal" href="#custom-path"><span class="sectnum">1.4.3.1.6</span> custom path</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#maupassant-hexo-cho"><span class="sectnum">1.4.4</span> Maupassant - Hexo最简洁主题 - cho</a><ul>
+<li><a class="reference internal" href="#id6"><span class="sectnum">1.4.4.1</span> 安装</a></li>
+<li><a class="reference internal" href="#id7"><span class="sectnum">1.4.4.2</span> 设置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#hexo-plugin"><span class="sectnum">1.5</span> hexo plugin插件</a><ul>
+<li><a class="reference internal" href="#generate-flowchart-diagrams-for-hexo"><span class="sectnum">1.5.1</span> Generate flowchart diagrams for Hexo.</a></li>
+<li><a class="reference internal" href="#hexo-generator-feed"><span class="sectnum">1.5.2</span> hexo-generator-feed</a></li>
+<li><a class="reference internal" href="#hexo-generator-search"><span class="sectnum">1.5.3</span> hexo-generator-search</a></li>
+<li><a class="reference internal" href="#hexo-symbols-count-time-for-next-theme"><span class="sectnum">1.5.4</span> hexo-symbols-count-time for next theme</a></li>
+<li><a class="reference internal" href="#hexo-generator-category"><span class="sectnum">1.5.5</span> hexo-generator-category</a></li>
+<li><a class="reference internal" href="#hexo-generator-tag"><span class="sectnum">1.5.6</span> hexo-generator-tag</a></li>
+<li><a class="reference internal" href="#hexo-directory-category"><span class="sectnum">1.5.7</span> hexo-directory-category</a></li>
+<li><a class="reference internal" href="#some-module-install"><span class="sectnum">1.5.8</span> some module install</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id16"><span class="sectnum">1.6</span> hexo高级教程</a><ul>
+<li><a class="reference internal" href="#script"><span class="sectnum">1.6.1</span> 脚本Script</a></li>
+<li><a class="reference internal" href="#id17"><span class="sectnum">1.6.2</span> hexo扩展</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tips"><span class="sectnum">1.7</span> tips</a><ul>
+<li><a class="reference internal" href="#tortoisegit"><span class="sectnum">1.7.1</span> tortoiseGit使用密钥，为何每次还是需要输入用户名密码</a></li>
+<li><a class="reference internal" href="#copyright"><span class="sectnum">1.7.2</span> 怎么改掉网页底部的COPYRIGHT缺省内容？</a></li>
+<li><a class="reference internal" href="#help"><span class="sectnum">1.7.3</span> help 网址</a></li>
+<li><a class="reference internal" href="#theme-front-matter"><span class="sectnum">1.7.4</span> theme-front-matter</a></li>
+<li><a class="reference internal" href="#hexo-editor"><span class="sectnum">1.7.5</span> hexo editor 编辑器有哪些？</a></li>
+<li><a class="reference internal" href="#yeoman"><span class="sectnum">1.7.6</span> 怎么使用 yeoman 生成基础代码？</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#faq"><span class="sectnum">1.8</span> FAQ</a><ul>
+<li><a class="reference internal" href="#id18"><span class="sectnum">1.8.1</span> Hexo网站名中文乱码</a></li>
+<li><a class="reference internal" href="#id19"><span class="sectnum">1.8.2</span> 怎么列出hexo依赖插件的完整性？</a></li>
+<li><a class="reference internal" href="#id20"><span class="sectnum">1.8.3</span> 路径名和分类名分别设置，需要怎么办呢？</a></li>
+<li><a class="reference internal" href="#package-json"><span class="sectnum">1.8.4</span> package.json是什么？</a></li>
+<li><a class="reference internal" href="#fontawesome"><span class="sectnum">1.8.5</span> fontawesome是什么？</a></li>
+<li><a class="reference internal" href="#id21"><span class="sectnum">1.8.6</span> 怎么添加点击红心和汉字？</a></li>
+<li><a class="reference internal" href="#jquery-cdn"><span class="sectnum">1.8.7</span> 国内Jquery CDN 有哪些？</a></li>
+<li><a class="reference internal" href="#githubpages"><span class="sectnum">1.8.8</span> 怎么解决githubpages不能识别下划线开头的目录？</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#hexo-deploy"><span class="sectnum">1.9</span> hexo deploy 网站部署</a><ul>
+<li><a class="reference internal" href="#hexo-d"><span class="sectnum">1.9.1</span> hexo d 法</a></li>
+<li><a class="reference internal" href="#git-clone"><span class="sectnum">1.9.2</span> 直接git clone 法</a></li>
+<li><a class="reference internal" href="#ci"><span class="sectnum">1.9.3</span> CI 法，</a><ul>
+<li><a class="reference internal" href="#id22"><span class="sectnum">1.9.3.1</span> 十大CI工具:</a></li>
+<li><a class="reference internal" href="#travis-ci"><span class="sectnum">1.9.3.2</span> travis CI：</a><ul>
+<li><a class="reference internal" href="#id23"><span class="sectnum">1.9.3.2.1</span> travis CI 配置步骤:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id24"><span class="sectnum">1.9.3.3</span> travis CI 配置实例</a><ul>
+<li><a class="reference internal" href="#id25"><span class="sectnum">1.9.3.3.1</span> 创建源码新分支需要改动的文件</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#github-pageshexo"><span class="sectnum">1.9.4</span> 需求：在github pages子目录建立hexo博客</a></li>
+<li><a class="reference internal" href="#my-deploy-kevinluolog-github-io"><span class="sectnum">1.9.5</span> my deploy: kevinluolog.github.io</a><ul>
+<li><a class="reference internal" href="#repo-of-sites"><span class="sectnum">1.9.5.1</span> Repo of sites:</a></li>
+<li><a class="reference internal" href="#repo-of-hexo-source-private"><span class="sectnum">1.9.5.2</span> Repo of hexo source: private</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="gitpage.html"
+                        title="上一章"><span class="sectnum">1</span> gitpages</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="jekyll.html"
+                        title="下一章"><span class="sectnum">1</span> jekyll</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="hexo">
+<h1><a class="toc-backref" href="#id26"><span class="sectnum">1</span> hexo</a><a class="headerlink" href="#hexo" title="永久链接至标题">¶</a></h1>
+<div class="contents topic" id="id1">
+<p class="topic-title first">目录</p>
+<ul class="auto-toc simple">
+<li><p><a class="reference internal" href="#hexo" id="id26"><span class="sectnum">1</span> hexo</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#install" id="id27"><span class="sectnum">1.1</span> install</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#hexo-module" id="id28"><span class="sectnum">1.1.1</span> hexo module 安装</a></p></li>
+<li><p><a class="reference internal" href="#hexo-blog-init" id="id29"><span class="sectnum">1.1.2</span> hexo blog init</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id30"><span class="sectnum">1.1.3</span> configuration</a></p></li>
+<li><p><a class="reference internal" href="#commands" id="id31"><span class="sectnum">1.1.4</span> Commands</a></p></li>
+<li><p><a class="reference internal" href="#migration" id="id32"><span class="sectnum">1.1.5</span> Migration</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#basic-usage" id="id33"><span class="sectnum">1.2</span> Basic Usage</a></p></li>
+<li><p><a class="reference internal" href="#customization" id="id34"><span class="sectnum">1.3</span> Customization</a></p></li>
+<li><p><a class="reference internal" href="#theme" id="id35"><span class="sectnum">1.4</span> theme分享</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id2" id="id36"><span class="sectnum">1.4.1</span> 几款简单的theme</a></p></li>
+<li><p><a class="reference internal" href="#melody" id="id37"><span class="sectnum">1.4.2</span> melody</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id3" id="id38"><span class="sectnum">1.4.2.1</span> melody-设置</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#fireworks-live2d-animation" id="id39"><span class="sectnum">1.4.2.1.1</span> fireworks,live2d 白猫 animation</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#next" id="id40"><span class="sectnum">1.4.3</span> next</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id4" id="id41"><span class="sectnum">1.4.3.1</span> next-设置</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#busuanzi-count" id="id42"><span class="sectnum">1.4.3.1.1</span> busuanzi_count 阅读次数/访问人数</a></p></li>
+<li><p><a class="reference internal" href="#symbols-count-time" id="id43"><span class="sectnum">1.4.3.1.2</span> symbols_count_time 文章字数统计与阅读时长</a></p></li>
+<li><p><a class="reference internal" href="#hexo-next" id="id44"><span class="sectnum">1.4.3.1.3</span> hexo-Next修改内容区域的宽度</a></p></li>
+<li><p><a class="reference internal" href="#animation" id="id45"><span class="sectnum">1.4.3.1.4</span> 实现点击出现桃心效果animation</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id46"><span class="sectnum">1.4.3.1.5</span> 目录栏链接选中颜色</a></p></li>
+<li><p><a class="reference internal" href="#custom-path" id="id47"><span class="sectnum">1.4.3.1.6</span> custom path</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#maupassant-hexo-cho" id="id48"><span class="sectnum">1.4.4</span> Maupassant - Hexo最简洁主题 - cho</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id6" id="id49"><span class="sectnum">1.4.4.1</span> 安装</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id50"><span class="sectnum">1.4.4.2</span> 设置</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#hexo-plugin" id="id51"><span class="sectnum">1.5</span> hexo plugin插件</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#generate-flowchart-diagrams-for-hexo" id="id52"><span class="sectnum">1.5.1</span> Generate flowchart diagrams for Hexo.</a></p></li>
+<li><p><a class="reference internal" href="#hexo-generator-feed" id="id53"><span class="sectnum">1.5.2</span> hexo-generator-feed</a></p></li>
+<li><p><a class="reference internal" href="#hexo-generator-search" id="id54"><span class="sectnum">1.5.3</span> hexo-generator-search</a></p></li>
+<li><p><a class="reference internal" href="#hexo-symbols-count-time-for-next-theme" id="id55"><span class="sectnum">1.5.4</span> hexo-symbols-count-time for next theme</a></p></li>
+<li><p><a class="reference internal" href="#hexo-generator-category" id="id56"><span class="sectnum">1.5.5</span> hexo-generator-category</a></p></li>
+<li><p><a class="reference internal" href="#hexo-generator-tag" id="id57"><span class="sectnum">1.5.6</span> hexo-generator-tag</a></p></li>
+<li><p><a class="reference internal" href="#hexo-directory-category" id="id58"><span class="sectnum">1.5.7</span> hexo-directory-category</a></p></li>
+<li><p><a class="reference internal" href="#some-module-install" id="id59"><span class="sectnum">1.5.8</span> some module install</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id16" id="id60"><span class="sectnum">1.6</span> hexo高级教程</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#script" id="id61"><span class="sectnum">1.6.1</span> 脚本Script</a></p></li>
+<li><p><a class="reference internal" href="#id17" id="id62"><span class="sectnum">1.6.2</span> hexo扩展</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#tips" id="id63"><span class="sectnum">1.7</span> tips</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#tortoisegit" id="id64"><span class="sectnum">1.7.1</span> tortoiseGit使用密钥，为何每次还是需要输入用户名密码</a></p></li>
+<li><p><a class="reference internal" href="#copyright" id="id65"><span class="sectnum">1.7.2</span> 怎么改掉网页底部的COPYRIGHT缺省内容？</a></p></li>
+<li><p><a class="reference internal" href="#help" id="id66"><span class="sectnum">1.7.3</span> help 网址</a></p></li>
+<li><p><a class="reference internal" href="#theme-front-matter" id="id67"><span class="sectnum">1.7.4</span> theme-front-matter</a></p></li>
+<li><p><a class="reference internal" href="#hexo-editor" id="id68"><span class="sectnum">1.7.5</span> hexo editor 编辑器有哪些？</a></p></li>
+<li><p><a class="reference internal" href="#yeoman" id="id69"><span class="sectnum">1.7.6</span> 怎么使用 yeoman 生成基础代码？</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#faq" id="id70"><span class="sectnum">1.8</span> FAQ</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id18" id="id71"><span class="sectnum">1.8.1</span> Hexo网站名中文乱码</a></p></li>
+<li><p><a class="reference internal" href="#id19" id="id72"><span class="sectnum">1.8.2</span> 怎么列出hexo依赖插件的完整性？</a></p></li>
+<li><p><a class="reference internal" href="#id20" id="id73"><span class="sectnum">1.8.3</span> 路径名和分类名分别设置，需要怎么办呢？</a></p></li>
+<li><p><a class="reference internal" href="#package-json" id="id74"><span class="sectnum">1.8.4</span> package.json是什么？</a></p></li>
+<li><p><a class="reference internal" href="#fontawesome" id="id75"><span class="sectnum">1.8.5</span> fontawesome是什么？</a></p></li>
+<li><p><a class="reference internal" href="#id21" id="id76"><span class="sectnum">1.8.6</span> 怎么添加点击红心和汉字？</a></p></li>
+<li><p><a class="reference internal" href="#jquery-cdn" id="id77"><span class="sectnum">1.8.7</span> 国内Jquery CDN 有哪些？</a></p></li>
+<li><p><a class="reference internal" href="#githubpages" id="id78"><span class="sectnum">1.8.8</span> 怎么解决githubpages不能识别下划线开头的目录？</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#hexo-deploy" id="id79"><span class="sectnum">1.9</span> hexo deploy 网站部署</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#hexo-d" id="id80"><span class="sectnum">1.9.1</span> hexo d 法</a></p></li>
+<li><p><a class="reference internal" href="#git-clone" id="id81"><span class="sectnum">1.9.2</span> 直接git clone 法</a></p></li>
+<li><p><a class="reference internal" href="#ci" id="id82"><span class="sectnum">1.9.3</span> CI 法，</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id22" id="id83"><span class="sectnum">1.9.3.1</span> 十大CI工具:</a></p></li>
+<li><p><a class="reference internal" href="#travis-ci" id="id84"><span class="sectnum">1.9.3.2</span> travis CI：</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id23" id="id85"><span class="sectnum">1.9.3.2.1</span> travis CI 配置步骤:</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id24" id="id86"><span class="sectnum">1.9.3.3</span> travis CI 配置实例</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id25" id="id87"><span class="sectnum">1.9.3.3.1</span> 创建源码新分支需要改动的文件</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#github-pageshexo" id="id88"><span class="sectnum">1.9.4</span> 需求：在github pages子目录建立hexo博客</a></p></li>
+<li><p><a class="reference internal" href="#my-deploy-kevinluolog-github-io" id="id89"><span class="sectnum">1.9.5</span> my deploy: kevinluolog.github.io</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#repo-of-sites" id="id90"><span class="sectnum">1.9.5.1</span> Repo of sites:</a></p></li>
+<li><p><a class="reference internal" href="#repo-of-hexo-source-private" id="id91"><span class="sectnum">1.9.5.2</span> Repo of hexo source: private</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="install">
+<h2><a class="toc-backref" href="#id27"><span class="sectnum">1.1</span> install</a><a class="headerlink" href="#install" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://hexo.io/docs/">Installation guide on hexo.io</a></p>
+<p><a class="reference external" href="https://segmentfault.com/a/1190000004947261">手把手教你使用Hexo + Github Pages搭建个人独立博客</a></p>
+<div class="section" id="hexo-module">
+<h3><a class="toc-backref" href="#id28"><span class="sectnum">1.1.1</span> hexo module 安装</a><a class="headerlink" href="#hexo-module" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="n">hexo</span><span class="o">-</span><span class="n">cli</span> <span class="o">-</span><span class="n">g</span>
+</pre></div>
+</div>
+<p>hexo module安装到node目录node_modules，根目录有hexo.cmd</p>
+</div>
+<div class="section" id="hexo-blog-init">
+<h3><a class="toc-backref" href="#id29"><span class="sectnum">1.1.2</span> hexo blog init</a><a class="headerlink" href="#hexo-blog-init" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd d:/hexo
+$ npm install hexo-cli -g
+$ hexo init blog
+$ cd blog
+$ npm install
+$ hexo g # 或者hexo generate
+$ hexo s # 或者hexo server，可以在http://localhost:4000/ 查看
+</pre></div>
+</div>
+<p>另外还有其他几个常用命令：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ hexo new &quot;postName&quot; #新建文章
+$ hexo new page &quot;pageName&quot; #新建页面
+</pre></div>
+</div>
+<p>常用简写</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ hexo n == hexo new
+$ hexo g == hexo generate
+$ hexo s == hexo server
+$ hexo d == hexo deploy
+</pre></div>
+</div>
+<p>常用组合</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ hexo d -g #生成部署
+$ hexo s -g #生成预览
+</pre></div>
+</div>
+<p>现在我们打开 <code class="docutils literal notranslate"><span class="pre">http://localhost:4000/</span></code> 已经可以看到一篇内置的blog。</p>
+</div>
+<div class="section" id="configuration">
+<h3><a class="toc-backref" href="#id30"><span class="sectnum">1.1.3</span> configuration</a><a class="headerlink" href="#configuration" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://hexo.io/docs/configuration">hexo.io/docs/configuration</a></p>
+</div>
+<div class="section" id="commands">
+<h3><a class="toc-backref" href="#id31"><span class="sectnum">1.1.4</span> Commands</a><a class="headerlink" href="#commands" title="永久链接至标题">¶</a></h3>
+</div>
+<div class="section" id="migration">
+<h3><a class="toc-backref" href="#id32"><span class="sectnum">1.1.5</span> Migration</a><a class="headerlink" href="#migration" title="永久链接至标题">¶</a></h3>
+</div>
+</div>
+<div class="section" id="basic-usage">
+<h2><a class="toc-backref" href="#id33"><span class="sectnum">1.2</span> Basic Usage</a><a class="headerlink" href="#basic-usage" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="customization">
+<h2><a class="toc-backref" href="#id34"><span class="sectnum">1.3</span> Customization</a><a class="headerlink" href="#customization" title="永久链接至标题">¶</a></h2>
+<p>Permalinks</p>
+<p>Themes</p>
+<p><a class="reference external" href="https://hexo.io/zh-cn/docs/configuration.html">hexo.io-spec-配置</a></p>
+<p>Templates</p>
+<p>Variables</p>
+<p>Helpers</p>
+<p>Internationalization (i18n)</p>
+<p>Plugins</p>
+</div>
+<div class="section" id="theme">
+<h2><a class="toc-backref" href="#id35"><span class="sectnum">1.4</span> theme分享</a><a class="headerlink" href="#theme" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id2">
+<h3><a class="toc-backref" href="#id36"><span class="sectnum">1.4.1</span> 几款简单的theme</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://www.jianshu.com/p/f4ae9ee1328a">【Hexo】推荐5款简洁美观的主题</a></p>
+<p>推荐第一款。理由简单，全文字，色调浅色系不扎眼。</p>
+<ol class="arabic">
+<li><p><a class="reference external" href="https://github.com/frostfan/hexo-theme-polarbear">hexo-theme-polarbear</a></p>
+<p><a class="reference external" href="https://d2fan.com/">demo</a></p>
+</li>
+<li><p><a class="reference external" href="https://github.com/KevinOfNeu/hexo-theme-xoxo">hexo-theme-xoxo</a></p>
+<p><a class="reference external" href="https://d2fan.com/">demo</a></p>
+</li>
+<li><p><a class="reference external" href="https://github.com/iJinxin/hexo-theme-sky">hexo-theme-sky</a></p>
+<p><a class="reference external" href="https://ijinxin.github.io/">demo</a></p>
+</li>
+</ol>
+</div>
+<div class="section" id="melody">
+<h3><a class="toc-backref" href="#id37"><span class="sectnum">1.4.2</span> melody</a><a class="headerlink" href="#melody" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://molunerfinn.com/hexo-theme-melody-doc/">hexo-theme-melody-doc</a></p>
+<div class="section" id="id3">
+<h4><a class="toc-backref" href="#id38"><span class="sectnum">1.4.2.1</span> melody-设置</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h4>
+<div class="section" id="fireworks-live2d-animation">
+<h5><a class="toc-backref" href="#id39"><span class="sectnum">1.4.2.1.1</span> fireworks,live2d 白猫 animation</a><a class="headerlink" href="#fireworks-live2d-animation" title="永久链接至标题">¶</a></h5>
+<p><a class="reference external" href="https://molunerfinn.com/hexo-theme-melody-doc/third-party-support.html#installation">detail guide on melody doc</a></p>
+<ul>
+<li><p>fireworks</p>
+<p>Like the <a class="reference external" href="http://animejs.com/">anime.js</a> clicking effects</p>
+<p>Set the melody.yml</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fireworks</span><span class="p">:</span> <span class="n">true</span>
+</pre></div>
+</div>
+</li>
+<li><p>Live2D Animated model pendant</p>
+<p>install the Live2D module, which needs to be executed in the root   directory of the blog through the terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="o">--</span><span class="n">save</span> <span class="n">hexo</span><span class="o">-</span><span class="n">helper</span><span class="o">-</span><span class="n">live2d</span>
+</pre></div>
+</div>
+<p>The corresponding module is downloaded <a class="reference external" href="https://github.com/xiazeyu/live2d-widget-models">here</a> , For example,  tororo(Cute White Cat)</p>
+<p>copy all the files in packages to the node_moduels folder in the root directory of the blog.</p>
+<p>or install as following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="p">{</span><span class="n">packagename</span><span class="p">}</span>
+
+<span class="n">The</span> <span class="n">package</span> <span class="n">name</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">folder</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">packages</span><span class="o">/</span> <span class="n">such</span> <span class="k">as</span><span class="p">:</span>
+<span class="n">live2d</span><span class="o">-</span><span class="n">widget</span><span class="o">-</span><span class="n">model</span><span class="o">-</span><span class="n">chitose</span>
+<span class="n">live2d</span><span class="o">-</span><span class="n">widget</span><span class="o">-</span><span class="n">model</span><span class="o">-</span><span class="n">tororo</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="next">
+<h3><a class="toc-backref" href="#id40"><span class="sectnum">1.4.3</span> next</a><a class="headerlink" href="#next" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id4">
+<h4><a class="toc-backref" href="#id41"><span class="sectnum">1.4.3.1</span> next-设置</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h4>
+<div class="section" id="busuanzi-count">
+<h5><a class="toc-backref" href="#id42"><span class="sectnum">1.4.3.1.1</span> busuanzi_count 阅读次数/访问人数</a><a class="headerlink" href="#busuanzi-count" title="永久链接至标题">¶</a></h5>
+<ul>
+<li><p>原理：</p>
+<p>页面植入busuanzi提供的js链接代码，
+在 <code class="docutils literal notranslate"><span class="pre">\themes\next\layout\_partials\analytics\busuanzi-counter.swig</span></code> 中</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">script</span><span class="p">{{</span> <span class="n">pjax</span> <span class="p">}}</span> <span class="k">async</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>同时在相应的页面模板加入阅读次数等数据。
+其提供单页文章和全站的字数和次数信息。next分别把它放在页面标题下面和footer底部。
+其渲染过程仍不清楚，</p>
+<p>页面标题下面：</p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">\themes\next\layout\_macro\post.swig</span></code> 中,只是 <code class="docutils literal notranslate"><span class="pre">&lt;span</span> <span class="pre">class=&quot;busuanzi-value&quot;</span> <span class="pre">id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;</span></code>  没有实体，不知什么时候，渲染进去的？</p>
+<p>footer底部,全站的访问人数等数据：</p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">\themes\next\layout\_partials\analytics\busuanzi-counter.swig</span></code>  中，此处我增加了一个theme变量来控制</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="o">%-</span> <span class="k">if</span> <span class="n">theme</span><span class="o">.</span><span class="n">kl_footer_eye</span> <span class="o">===</span> <span class="n">true</span> <span class="o">%</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="symbols-count-time">
+<h5><a class="toc-backref" href="#id43"><span class="sectnum">1.4.3.1.2</span> symbols_count_time 文章字数统计与阅读时长</a><a class="headerlink" href="#symbols-count-time" title="永久链接至标题">¶</a></h5>
+<p>同样全站的显示的FOOTER, 单文章显示在文章title下面。</p>
+<p>配置使能要注意：</p>
+<p>模块说明里就说明，使能要在root/_config.yml中加入，</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">symbols_count_time</span><span class="p">:</span> <span class="c1">## 此处定义是用来控制模块计算的。下面的变量和next.yml中的配    置一起控制字数和时长显示与否。要同时设置才有效果。</span>
+  <span class="n">symbols</span><span class="p">:</span> <span class="n">true</span>
+  <span class="n">time</span><span class="p">:</span> <span class="n">true</span>
+  <span class="n">total_symbols</span><span class="p">:</span> <span class="n">false</span> <span class="c1">##kl+ true</span>
+  <span class="n">total_time</span><span class="p">:</span> <span class="n">false</span> <span class="c1">##kl+ true</span>
+  <span class="n">exclude_codeblock</span><span class="p">:</span> <span class="n">false</span> <span class="c1">##kl+ false</span>
+</pre></div>
+</div>
+<p>同时在theme的_config.yml中，同样要使能，</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">symbols_count_time</span><span class="p">:</span> <span class="c1">## 此处定义是用来控制显示的。klblog\_    config.yml中是用来控制模块计算的。下面的变量和klblog\_    config.yml中中的配置一起控制字数和时长显示与否。要同时设置才有效果。</span>
+  <span class="n">separated_meta</span><span class="p">:</span> <span class="n">true</span> <span class="c1">##kl+ true 换行显示</span>
+  <span class="n">item_text_post</span><span class="p">:</span> <span class="n">true</span> <span class="c1">##kl+ true</span>
+  <span class="n">item_text_total</span><span class="p">:</span> <span class="n">true</span> <span class="c1">##kl+ false</span>
+  <span class="n">awl</span><span class="p">:</span> <span class="mi">4</span>
+  <span class="n">wpm</span><span class="p">:</span> <span class="mi">275</span>
+</pre></div>
+</div>
+<ul>
+<li><p>删除footer底部的全站字数，时长信息。</p>
+<p>只要在 <code class="docutils literal notranslate"><span class="pre">root\_config.yml</span></code> 中</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">total_symbols</span><span class="p">:</span> <span class="n">false</span> <span class="c1">##kl+ true</span>
+<span class="n">total_time</span><span class="p">:</span> <span class="n">false</span> <span class="c1">##kl+ true</span>
+</pre></div>
+</div>
+</li>
+<li><p>文章字数统计与阅读时长，取不到数据</p>
+<p>hexo clean 一下，再编译就可以了，原因不明。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="hexo-next">
+<h5><a class="toc-backref" href="#id44"><span class="sectnum">1.4.3.1.3</span> hexo-Next修改内容区域的宽度</a><a class="headerlink" href="#hexo-next" title="永久链接至标题">¶</a></h5>
+<p><a class="reference external" href="http://theme-next.iissnan.com/faqs.html#custom-content-width">如何更改内容区域的宽度？</a></p>
+<p><a class="reference external" href="http://leeze.coding.me/2019/09/03/hexoarea/">leeze Hexo之修改内容区域的宽度</a></p>
+<p>在 <code class="docutils literal notranslate"><span class="pre">\themes\next\source\css\_variables\base.styl</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>//kl+ new,参见
+//当屏幕宽度 &lt; 1600px
+$content-desktop                = 900px;
+//当屏幕宽度 &gt;= 1600px
+$content-desktop-large          = 900px;
+$content-desktop-largest        = 900px;
+</pre></div>
+</div>
+</div>
+<div class="section" id="animation">
+<h5><a class="toc-backref" href="#id45"><span class="sectnum">1.4.3.1.4</span> 实现点击出现桃心效果animation</a><a class="headerlink" href="#animation" title="永久链接至标题">¶</a></h5>
+<p>在 <code class="docutils literal notranslate"><span class="pre">/themes/*/source/js/src下新建文件click.js</span></code> ，接着把以下粘贴到click.js文件中。</p>
+<p>代码如下：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!function(e,t,a){function n(){c(&quot;.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: &#39;&#39;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}&quot;),o(),r()}function r(){for(var e=0;e&lt;d.length;e++)d[e].alpha&lt;=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText=&quot;left:&quot;+d[e].x+&quot;px;top:&quot;+d[e].y+&quot;px;opacity:&quot;+d[e].alpha+&quot;;transform:scale(&quot;+d[e].scale+&quot;,&quot;+d[e].scale+&quot;) rotate(45deg);background:&quot;+d[e].color+&quot;;z-index:99999&quot;);requestAnimationFrame(r)}function o(){var t=&quot;function&quot;==typeof e.onclick&amp;&amp;e.onclick;e.onclick=function(e){t&amp;&amp;t(),i(e)}}function i(e){var a=t.createElement(&quot;div&quot;);a.className=&quot;heart&quot;,d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}),t.body.appendChild(a)}function c(e){var a=t.createElement(&quot;style&quot;);a.type=&quot;text/css&quot;;try{a.appendChild(t.createTextNode(e))}catch(t){a.styleSheet.cssText=e}t.getElementsByTagName(&quot;head&quot;)[0].appendChild(a)}function s(){return&quot;rgb(&quot;+~~(255*Math.random())+&quot;,&quot;+~~(255*Math.random())+&quot;,&quot;+~~(255*Math.random())+&quot;)&quot;}var d=[];e.requestAnimationFrame=function(){return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(),n()}(window,document);
+</pre></div>
+</div>
+<p>在 <code class="docutils literal notranslate"><span class="pre">\themes\*\layout\_layout.swig</span></code> 文件末尾body内添加:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;!-- 页面点击小红心 --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/clicklove.js&quot;&gt;&lt;/script&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h5><a class="toc-backref" href="#id46"><span class="sectnum">1.4.3.1.5</span> 目录栏链接选中颜色</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h5>
+<p>copy到</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>// Sidebar
+// --------------------------------------------------
+$sidebar-nav-hover-color          = $orange;
+$sidebar-highlight                = $orange;
+
+$toc-link-color                       = $grey-dim;
+$toc-link-border-color                = $grey-light;
+$toc-link-hover-color                 = black;
+$toc-link-hover-border-color          = black;
+$toc-link-active-color                = $sidebar-highlight;
+$toc-link-active-border-color         = $sidebar-highlight;
+$toc-link-active-current-color        = $sidebar-highlight;
+$toc-link-active-current-border-color = $sidebar-highlight;
+</pre></div>
+</div>
+</div>
+<div class="section" id="custom-path">
+<h5><a class="toc-backref" href="#id47"><span class="sectnum">1.4.3.1.6</span> custom path</a><a class="headerlink" href="#custom-path" title="永久链接至标题">¶</a></h5>
+</div>
+</div>
+</div>
+<div class="section" id="maupassant-hexo-cho">
+<h3><a class="toc-backref" href="#id48"><span class="sectnum">1.4.4</span> Maupassant - Hexo最简洁主题 - cho</a><a class="headerlink" href="#maupassant-hexo-cho" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://www.haomwei.com/technology/maupassant-hexo.html">大道至简——Hexo简洁主题推荐</a></p>
+<div class="section" id="id6">
+<h4><a class="toc-backref" href="#id49"><span class="sectnum">1.4.4.1</span> 安装</a><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h4>
+<p>注：若<code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">hexo-renderer-sass</span></code>安装时报错，可能是国内网络问题，请尝试使用代理或者切换至<a class="reference external" href="http://npm.taobao.org">淘宝NPM镜像</a>安装。 <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">hexo-renderer-sass</span></code></p>
+<p>出现问题: hexo 3.8.0用淘宝镜像装hexo-renderer-sass，生成的网页有问题，装hexo-renderer-scss，就没问题了。
+kl: 建议尽量用npm来安装。</p>
+<ol class="arabic">
+<li><p>安装主题和渲染器：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/    maupassant
+$ npm install hexo-renderer-pug --save
+$ npm install hexo-renderer-sass --save
+</pre></div>
+</div>
+</li>
+<li><p>编辑Hexo目录下的</p>
+<p><code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>，将<code class="docutils literal notranslate"><span class="pre">theme</span></code>的值改为<code class="docutils literal notranslate"><span class="pre">maupassant</span></code>。</p>
+</li>
+<li><p>hexo-wordcount 字数统计，阅读时长：缺省没装</p>
+<p>这是在 <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> 中设置 <code class="docutils literal notranslate"><span class="pre">wordcount:</span> <span class="pre">true</span> <span class="pre">##kl+</span> <span class="pre">false</span></code> 时报错的。</p>
+<p>参考 <a class="reference external" href="https://www.jianshu.com/p/f615e79a50d7">Hexo-文章字数统计与阅读时长</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">i</span> <span class="pre">--save</span> <span class="pre">hexo-wordcount</span></code></p>
+<p>因缺省已经使能。下面修改不用了，可以作用改动参考</p>
+<ol class="arabic">
+<li><p>在maupassant主题下的新建一个wordcount.pug文件</p>
+<p><code class="docutils literal notranslate"><span class="pre">themes\maupassant\layout\_partial\wordcount.pug</span>
+<span class="pre">wordcount.pug</span></code> 文件增加内容：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">span</span><span class="p">(</span><span class="n">class</span><span class="o">=</span><span class="s2">&quot;post-time&quot;</span><span class="p">)</span>
+  <span class="n">span</span><span class="o">.</span><span class="n">post</span><span class="o">-</span><span class="n">meta</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">text</span><span class="o">=</span> <span class="s2">&quot; | &quot;</span>
+  <span class="n">span</span><span class="p">(</span><span class="n">class</span><span class="o">=</span><span class="s2">&quot;post-meta-item-icon&quot;</span><span class="p">)</span>
+    <span class="n">i</span><span class="p">(</span><span class="n">class</span><span class="o">=</span><span class="s2">&quot;fa fa-keyboard-o&quot;</span><span class="p">)</span>
+    <span class="o">//</span> <span class="n">span</span><span class="o">.</span><span class="n">post</span><span class="o">-</span><span class="n">meta</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">text</span><span class="o">=</span> <span class="s2">&quot; 字数统计：&quot;</span>
+    <span class="n">span</span><span class="o">.</span><span class="n">post</span><span class="o">-</span><span class="n">count</span><span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">wordcount</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+    <span class="n">span</span><span class="o">.</span><span class="n">post</span><span class="o">-</span><span class="n">meta</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">text</span><span class="o">=</span> <span class="s1">&#39; 字&#39;</span>
+<span class="n">span</span><span class="p">(</span><span class="n">class</span><span class="o">=</span><span class="s2">&quot;post-time&quot;</span><span class="p">)</span> <span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span> <span class="o">|</span> <span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>
+  <span class="n">span</span><span class="p">(</span><span class="n">class</span><span class="o">=</span><span class="s2">&quot;post-meta-item-icon&quot;</span><span class="p">)</span>
+      <span class="n">i</span><span class="p">(</span><span class="n">class</span><span class="o">=</span><span class="s2">&quot;fa fa-hourglass-half&quot;</span><span class="p">)</span>
+      <span class="o">//</span> <span class="n">span</span><span class="o">.</span><span class="n">post</span><span class="o">-</span><span class="n">meta</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">text</span><span class="o">=</span> <span class="s2">&quot; 阅读时长：&quot;</span>
+      <span class="n">span</span><span class="o">.</span><span class="n">post</span><span class="o">-</span><span class="n">count</span><span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">min2read</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+      <span class="n">span</span><span class="o">.</span><span class="n">post</span><span class="o">-</span><span class="n">meta</span><span class="o">-</span><span class="n">item</span><span class="o">-</span><span class="n">text</span><span class="o">=</span> <span class="s2">&quot; 分钟&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>在 <code class="docutils literal notranslate"><span class="pre">themes\maupassant\layout\post.pug</span></code>  文件中引入wordcount.pug文件（我自定义的位置在busuanzi与disqus之间）</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">theme</span><span class="o">.</span><span class="n">busuanzi</span> <span class="o">==</span> <span class="n">true</span>
+  <span class="n">script</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;https://dn-lbstatics.qbox.me/          busuanzi/2.3/busuanzi.pure.mini.js&#39;</span><span class="p">,</span> <span class="k">async</span><span class="p">)</span>
+  <span class="n">span</span><span class="c1">#busuanzi_container_page_pv= &#39; | &#39;</span>
+    <span class="n">span</span><span class="c1">#busuanzi_value_page_pv</span>
+    <span class="n">span</span><span class="o">=</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">__</span><span class="p">(</span><span class="s1">&#39;Hits&#39;</span><span class="p">)</span>
+<span class="n">include</span> <span class="n">_partial</span><span class="o">/</span><span class="n">wordcount</span><span class="o">.</span><span class="n">pug</span>
+<span class="k">if</span> <span class="n">theme</span><span class="o">.</span><span class="n">disqus</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h4><a class="toc-backref" href="#id50"><span class="sectnum">1.4.4.2</span> 设置</a><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
+<ol class="arabic">
+<li><p>in _config.yml</p>
+<p>fontawesome:</p>
+<div class="line-block">
+<div class="line">fa-home</div>
+<div class="line">fa-th categories</div>
+<div class="line">fa-tags</div>
+<div class="line">fa-history</div>
+<div class="line">fa-user</div>
+<div class="line">fa-book</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">show_category_count</span><span class="p">:</span> <span class="n">false</span>
+<span class="n">wordcount</span><span class="p">:</span> <span class="n">true</span> <span class="c1">## 统计字数</span>
+<span class="n">widgets_on_small_screens</span><span class="p">:</span> <span class="n">true</span>
+<span class="n">busuanzi</span><span class="p">:</span> <span class="n">true</span> <span class="c1">##kl+ false，网页访问统计</span>
+
+
+<span class="n">menu</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">page</span><span class="p">:</span> <span class="n">home</span>
+    <span class="n">directory</span><span class="p">:</span> <span class="o">.</span>
+    <span class="n">icon</span><span class="p">:</span> <span class="n">fa</span><span class="o">-</span><span class="n">home</span>
+
+<span class="n">widgets</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">search</span>
+  <span class="o">-</span> <span class="n">category</span>
+  <span class="o">-</span> <span class="n">tag</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="hexo-plugin">
+<h2><a class="toc-backref" href="#id51"><span class="sectnum">1.5</span> hexo plugin插件</a><a class="headerlink" href="#hexo-plugin" title="永久链接至标题">¶</a></h2>
+<div class="section" id="generate-flowchart-diagrams-for-hexo">
+<h3><a class="toc-backref" href="#id52"><span class="sectnum">1.5.1</span> Generate flowchart diagrams for Hexo.</a><a class="headerlink" href="#generate-flowchart-diagrams-for-hexo" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://github.com/bubkoo/hexo-filter-flowchart">hexo-filter-flowchart</a></p>
+<ul>
+<li><p>install</p>
+<p>npm install –save hexo-filter-flowchart</p>
+<p>setting: 实测下面的不改动也可以显示出来</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Config</span>
+<span class="n">In</span> <span class="n">your</span> <span class="n">site</span><span class="s1">&#39;s _config.yml:</span>
+
+<span class="n">flowchart</span><span class="p">:</span>
+  <span class="c1"># raphael:   # optional, the source url of raphael.js</span>
+  <span class="c1"># flowchart: # optional, the source url of flowchart.js</span>
+  <span class="n">options</span><span class="p">:</span> <span class="c1"># options used for `drawSVG`</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>This plugin is based on <a class="reference external" href="https://github.com/adrai/flowchart.js">flowchart.js</a>, so you can defined the chart as follow:</p>
+<p><a href="#id8"><span class="problematic" id="id9">``</span></a><a href="#id10"><span class="problematic" id="id11">`</span></a>flow
+st=&gt;start: Start|past:&gt;http://www.google.com[blank]
+e=&gt;end: End:&gt;http://www.google.com
+op1=&gt;operation: My Operation|past
+op2=&gt;operation: Stuff|current
+sub1=&gt;subroutine: My Subroutine|invalid
+cond=&gt;condition: Yes
+or No?|approved:&gt;http://www.google.com
+c2=&gt;condition: Good idea|rejected
+io=&gt;inputoutput: catch something…|request</p>
+<p>st-&gt;op1(right)-&gt;cond
+cond(yes, right)-&gt;c2
+cond(no)-&gt;sub1(left)-&gt;op1
+c2(yes)-&gt;io-&gt;e
+c2(no)-&gt;op2-&gt;e
+<a href="#id12"><span class="problematic" id="id13">``</span></a><a href="#id14"><span class="problematic" id="id15">`</span></a></p>
+</div>
+<div class="section" id="hexo-generator-feed">
+<h3><a class="toc-backref" href="#id53"><span class="sectnum">1.5.2</span> hexo-generator-feed</a><a class="headerlink" href="#hexo-generator-feed" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://github.com/hexojs/hexo-generator-feed.git">github download</a></p>
+<p>Install</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm install hexo-generator-feed --save
+Hexo 3: 1.x
+Hexo 2: 0.x
+</pre></div>
+</div>
+<p>Use</p>
+<p>In the front-matter of your post, you can optionally add a description, intro or excerpt setting to write a summary for the post. Otherwise the summary will default to the excerpt or the first 140 characters of the post.</p>
+<p>Options</p>
+<p>You can configure this plugin in _config.yml.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">feed</span><span class="p">:</span>
+  <span class="nb">type</span><span class="p">:</span> <span class="n">atom</span>
+  <span class="n">path</span><span class="p">:</span> <span class="n">atom</span><span class="o">.</span><span class="n">xml</span>
+  <span class="n">limit</span><span class="p">:</span> <span class="mi">20</span>
+  <span class="n">hub</span><span class="p">:</span>
+  <span class="n">content</span><span class="p">:</span>
+  <span class="n">content_limit</span><span class="p">:</span> <span class="mi">140</span>
+  <span class="n">content_limit_delim</span><span class="p">:</span> <span class="s1">&#39; &#39;</span>
+  <span class="n">order_by</span><span class="p">:</span> <span class="o">-</span><span class="n">date</span>
+  <span class="n">icon</span><span class="p">:</span> <span class="n">icon</span><span class="o">.</span><span class="n">png</span>
+</pre></div>
+</div>
+<p>type - Feed type. (atom/rss2)
+path - Feed path. (Default: atom.xml/rss2.xml)
+limit - Maximum number of posts in the feed (Use 0 or false to show all posts)
+hub - URL of the PubSubHubbub hubs (Leave it empty if you don’t use it)
+content - (optional) set to ‘true’ to include the contents of the entire post in the feed.
+content_limit - (optional) Default length of post content used in summary. Only used, if content setting is false and no custom post description present.
+content_limit_delim - (optional) If content_limit is used to shorten post contents, only cut at the last occurrence of this delimiter before reaching the character limit. Not used by default.
+order_by - Feed order-by. (Default: -date)
+icon - (optional) Custom feed icon. Defaults to a gravatar of email specified in the main config.</p>
+</div>
+<div class="section" id="hexo-generator-search">
+<h3><a class="toc-backref" href="#id54"><span class="sectnum">1.5.3</span> hexo-generator-search</a><a class="headerlink" href="#hexo-generator-search" title="永久链接至标题">¶</a></h3>
+<p>产生搜索功能，search.XML</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm install hexo-generator-search --save
+</pre></div>
+</div>
+</div>
+<div class="section" id="hexo-symbols-count-time-for-next-theme">
+<h3><a class="toc-backref" href="#id55"><span class="sectnum">1.5.4</span> hexo-symbols-count-time for next theme</a><a class="headerlink" href="#hexo-symbols-count-time-for-next-theme" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm install hexo-symbols-count-time --save
+</pre></div>
+</div>
+</div>
+<div class="section" id="hexo-generator-category">
+<h3><a class="toc-backref" href="#id56"><span class="sectnum">1.5.5</span> hexo-generator-category</a><a class="headerlink" href="#hexo-generator-category" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm install hexo-generator-category --save
+option:
+tag_generator:
+  per_page: 10
+  order_by: -date
+</pre></div>
+</div>
+</div>
+<div class="section" id="hexo-generator-tag">
+<h3><a class="toc-backref" href="#id57"><span class="sectnum">1.5.6</span> hexo-generator-tag</a><a class="headerlink" href="#hexo-generator-tag" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm install hexo-generator-tag --save
+Options
+tag_generator:
+  per_page: 10
+  order_by: -date
+</pre></div>
+</div>
+</div>
+<div class="section" id="hexo-directory-category">
+<h3><a class="toc-backref" href="#id58"><span class="sectnum">1.5.7</span> hexo-directory-category</a><a class="headerlink" href="#hexo-directory-category" title="永久链接至标题">¶</a></h3>
+<p>Automatically add front-matter categories to Hexo article according to the article file directory.</p>
+<p>Directory is means relative form article file path to Hexo source _posts folder.</p>
+<p><a class="reference external" href="https://github.com/zthxxx/hexo-directory-category">github-hexo-directory-category</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">install</span> <span class="o">--</span><span class="n">save</span> <span class="n">hexo</span><span class="o">-</span><span class="n">directory</span><span class="o">-</span><span class="n">category</span>
+<span class="n">auto_dir_categorize</span><span class="p">:</span>
+    <span class="n">enable</span><span class="p">:</span> <span class="n">true</span>  <span class="c1"># options:true, false; default is true</span>
+    <span class="n">force</span><span class="p">:</span> <span class="n">false</span> <span class="c1"># options:true, false; default is false</span>
+<span class="n">enable</span> <span class="o">-</span> <span class="n">Enable</span> <span class="n">the</span> <span class="n">plugin</span><span class="o">.</span> <span class="n">Defaults</span> <span class="n">to</span> <span class="n">true</span><span class="o">.</span>
+<span class="n">force</span> <span class="o">-</span> <span class="n">Overwrite</span> <span class="n">article</span> <span class="n">front</span><span class="o">-</span><span class="n">matter</span> <span class="n">categories</span><span class="p">,</span> <span class="n">even</span> <span class="k">if</span> <span class="n">it</span> <span class="n">has</span> <span class="n">option</span> <span class="n">categories</span><span class="o">.</span><span class="n">Defaults</span> <span class="n">to</span> <span class="n">false</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="some-module-install">
+<h3><a class="toc-backref" href="#id59"><span class="sectnum">1.5.8</span> some module install</a><a class="headerlink" href="#some-module-install" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm install hexo-generator-search --save
+$ npm install hexo-symbols-count-time --save
+
+
+$ npm install hexo-generator-category --save
+option:
+tag_generator:
+  per_page: 10
+  order_by: -date
+
+
+$ npm install hexo-generator-tag --save
+Options
+tag_generator:
+  tag_generator:true
+  per_page: 10
+  order_by: -date
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id16">
+<h2><a class="toc-backref" href="#id60"><span class="sectnum">1.6</span> hexo高级教程</a><a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h2>
+<p>参考</p>
+<p><a class="reference external" href="https://www.jianshu.com/nb/33192262">Hexo高级教程</a></p>
+<p><a class="reference external" href="https://www.jianshu.com/p/26b5a0b59cdd">hexo脚本编写指南（一）</a></p>
+<p><a class="reference external" href="https://www.jianshu.com/p/12279cabca81">Hexo Docs（三）- 高级进阶</a></p>
+<p><a class="reference external" href="https://hexo.io/zh-cn/api/">脚本需要掌握hexo api</a></p>
+<p><a class="reference external" href="https://nodejs.org/en/docs/">nodejs doc-en</a></p>
+<p><a class="reference external" href="https://nodejs.org/en/docs/guides/debugging-getting-started/">nodejs debug guide</a></p>
+<p><a class="reference external" href="https://nodejs.org/zh-cn/docs/">nodejs doc-zh 中文</a></p>
+<p>教程</p>
+<p><a class="reference external" href="https://www.runoob.com/nodejs/nodejs-tutorial.html">Node.js 教程</a></p>
+<p><a class="reference external" href="https://www.jianshu.com/p/fe2074527ca2">hexo-generator-category 源码分析</a></p>
+<p><a class="reference external" href="https://www.jianshu.com/p/470904307d2c">hexo-generator-tag 源码分析</a></p>
+<p><a class="reference external" href="https://www.jianshu.com/p/7bec9866a04d">hexo-generator-index 源码分析</a></p>
+<p><a class="reference external" href="https://www.jianshu.com/p/c5d333e6353c">next主题的模板引擎swig语法介绍</a></p>
+<div class="section" id="script">
+<h3><a class="toc-backref" href="#id61"><span class="sectnum">1.6.1</span> 脚本Script</a><a class="headerlink" href="#script" title="永久链接至标题">¶</a></h3>
+<p>只需要把 JavaScript 文件放到 scripts 文件夹，在启动时就会自动载入。</p>
+</div>
+<div class="section" id="id17">
+<h3><a class="toc-backref" href="#id62"><span class="sectnum">1.6.2</span> hexo扩展</a><a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h3>
+<ol class="arabic simple">
+<li><p>控制台 (Console)</p></li>
+<li><p>部署器 (Deployer)</p></li>
+<li><p>过滤器 (Filter)</p></li>
+<li><p>生成器 (Generator)</p></li>
+<li><p>辅助函数 (Helper)</p></li>
+<li><p>迁移器 (Migrator)</p></li>
+<li><p>处理器 (Processor)</p></li>
+<li><p>渲染引擎 (Renderer)</p></li>
+<li><p>标签 (Tag)</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="tips">
+<h2><a class="toc-backref" href="#id63"><span class="sectnum">1.7</span> tips</a><a class="headerlink" href="#tips" title="永久链接至标题">¶</a></h2>
+<div class="section" id="tortoisegit">
+<h3><a class="toc-backref" href="#id64"><span class="sectnum">1.7.1</span> tortoiseGit使用密钥，为何每次还是需要输入用户名密码</a><a class="headerlink" href="#tortoisegit" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://gitee.com/oschina/git-osc/issues/I57KR?from=project-issue">tortoiseGit使用密钥，为何每次还是需要输入用户名密码</a></p>
+<p>Q:tortoiseGit使用密钥，为何每次还是需要输入用户名密码</p>
+<p>A:那个URL应该选择ssh的，也就是以git&#64;git.oschina.net:{username}/{repo name}
+这种形式的，你虽然把SSH key加进去了，
+但是你如果仍使用的是https方式，当然要提示输入用户名密码了。
+如，<a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:kevinluolog/hexo-klblog-src.git</p>
+<p>不过用https方式访问，也有方法可以免手工输入用户名密码的。</p>
+<p>方法1：直接带入，<a class="reference external" href="https:/">https:/</a>/{用户名}：{密码}&#64;github.com/{username}/{repo name}
+如， <cite>https://kevinluolog:XXX&#64;github.com/kevinluolog/hexo-next-muse.git</cite></p>
+<p>方法2：利用token, 当然先要创建。
+如， <cite>https://gh_token&#64;github.com/kevinluolog/hexo-next-muse.git</cite></p>
+</div>
+<div class="section" id="copyright">
+<h3><a class="toc-backref" href="#id65"><span class="sectnum">1.7.2</span> 怎么改掉网页底部的COPYRIGHT缺省内容？</a><a class="headerlink" href="#copyright" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">hexo</span>\<span class="n">klBlog</span>\<span class="n">themes</span>\<span class="n">maupassant</span><span class="o">-</span><span class="n">hexo</span>\<span class="n">layout</span>\<span class="n">_partial</span>\<span class="n">footer</span><span class="o">.</span><span class="n">pug</span><span class="p">(</span><span class="mi">7</span><span class="p">):</span>   <span class="n">a</span><span class="p">(</span><span class="n">rel</span><span class="o">=</span><span class="s1">&#39;nofollow&#39;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;_blank&#39;</span><span class="p">,</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;https://github.com/pagecho&#39;</span><span class="p">)</span>  <span class="n">Cho</span><span class="o">.</span>
+
+  <span class="c1">#footer= &#39;Copyright © &#39; + date(Date.now(), &#39;YYYY&#39;) + &#39; &#39;</span>
+    <span class="n">a</span><span class="p">(</span><span class="n">href</span><span class="o">=</span><span class="n">url_for</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">),</span> <span class="n">rel</span><span class="o">=</span><span class="s1">&#39;nofollow&#39;</span><span class="p">)</span><span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">title</span> <span class="o">+</span> <span class="s1">&#39;.&#39;</span>
+    <span class="o">|</span>  <span class="n">Powered</span> <span class="n">by</span>
+    <span class="n">a</span><span class="p">(</span><span class="n">rel</span><span class="o">=</span><span class="s1">&#39;nofollow&#39;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;_blank&#39;</span><span class="p">,</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;https://hexo.io&#39;</span><span class="p">)</span>  <span class="n">Hexo</span><span class="o">.</span>
+    <span class="n">a</span><span class="p">(</span><span class="n">rel</span><span class="o">=</span><span class="s1">&#39;nofollow&#39;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;_blank&#39;</span><span class="p">,</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;https://github.com/tufu9441/maupassant-hexo&#39;</span><span class="p">)</span>  <span class="n">Theme</span>
+    <span class="o">|</span>  <span class="n">by</span>
+    <span class="n">a</span><span class="p">(</span><span class="n">rel</span><span class="o">=</span><span class="s1">&#39;nofollow&#39;</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;_blank&#39;</span><span class="p">,</span> <span class="n">href</span><span class="o">=</span><span class="s1">&#39;https://github.com/pagecho&#39;</span><span class="p">)</span>  <span class="n">Cho</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="help">
+<h3><a class="toc-backref" href="#id66"><span class="sectnum">1.7.3</span> help 网址</a><a class="headerlink" href="#help" title="永久链接至标题">¶</a></h3>
+<p>非常详细的教程，看完照做就可以了。这个写手做事非常细致。就象博主自己讲的 – <cite>我走的很慢，但我从不后退。</cite></p>
+<p><a class="reference external" href="http://ijiaober.github.io/2014/08/02/hexo/hexo-index/">Hexo使用攻略 index</a></p>
+<p><a class="reference external" href="https://www.jianshu.com/p/efaf72aab32e">Hexo博客从搭建部署到SEO优化等详细教程</a></p>
+<p><a class="reference external" href="https://www.jianshu.com/p/efaf72aab32e">Hexo seo org</a></p>
+<p><a class="reference external" href="https://www.haomwei.com/technology/maupassant-hexo.html">hexo-theme-maupassant-中文help-大道至简——Hexo简洁主题推荐</a></p>
+<dl class="simple">
+<dt><a class="reference external" href="https://www.cnblogs.com/xljzlw/p/5137622.html">hexo主题中添加相册功能</a></dt><dd><p><a class="reference external" href="http://lwzhang.github.io/">http://lwzhang.github.io/</a></p>
+</dd>
+</dl>
+<p><a class="reference external" href="https://www.jianshu.com/p/7bec9866a04d">hexo-generator-index 源码分析</a></p>
+<p>很好的主题开发文章</p>
+<p><a class="reference external" href="https://molunerfinn.com/make-a-hexo-theme/#%E5%89%8D%E8%A8%80">Hexo主题开发经验杂谈org</a></p>
+<p>参考hexo渲染的事件，可以找到generateBefore这个钩子hook，只要在这个钩子触发的时候，判断一下存不存在data files里的配置文件_data/next.yml，存在的话就把这个配置文件替换或者合并主题本身的配置文件。Next主题采用的是覆盖，melody主题采用的是替换。各有各的好处，并不是绝对的。</p>
+<p>写法是就是在我们的temp主题目录下的scripts文件夹里（没有就创建一个），写一个js文件，内容如下：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/**
+ * Note: configs in _data/temp.yml will replace configs in   hexo.theme.config.
+ */
+hexo.on(&#39;generateBefore&#39;, function () {
+  if (hexo.locals.get) {
+    var data = hexo.locals.get(&#39;data&#39;) // 获取_data文件夹下的内容
+    data &amp;&amp; data.temp &amp;&amp; (hexo.theme.config = data.temp) // 如果temp.yml   存在，就把内容替换掉主题的config
+  }
+})
+</pre></div>
+</div>
+<p><a class="reference external" href="https://juejin.im/entry/59ba97216fb9a00a6b6e50bf">Hexo主题开发经验杂谈</a></p>
+<p>字体大清晰。文字title
+<a class="reference external" href="https://github.com/stiekel/hexo-theme-random">hexo-theme-random</a></p>
+<p><a class="reference external" href="http://chensd.com/2016-06/hexo-theme-guide.html">Hexo 主题开发指南-random-不可能不确定</a></p>
+</div>
+<div class="section" id="theme-front-matter">
+<h3><a class="toc-backref" href="#id67"><span class="sectnum">1.7.4</span> theme-front-matter</a><a class="headerlink" href="#theme-front-matter" title="永久链接至标题">¶</a></h3>
+<p>在 <code class="docutils literal notranslate"><span class="pre">\source\*.md</span></code> 文件的开头</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
+<span class="n">title</span><span class="p">:</span> <span class="n">sublime</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">09</span><span class="o">-</span><span class="mi">03</span> <span class="mi">17</span><span class="p">:</span><span class="mi">31</span><span class="p">:</span><span class="mi">37</span>
+<span class="n">toc</span><span class="p">:</span> <span class="n">true</span>
+<span class="n">mathjax</span><span class="p">:</span> <span class="n">true</span>
+<span class="n">tags</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">技术</span>
+<span class="o">-</span> <span class="n">文本编辑器</span>
+<span class="n">categories</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">技术</span>
+<span class="o">-</span> <span class="n">sublime</span>
+<span class="o">---</span>
+</pre></div>
+</div>
+<ul>
+<li><p>分类frontmatter-categories</p>
+<p id="frontmatter-categories">编辑文章的时候，直接在categories:项填写属于哪个分类，但如果分类是中文的时候，路径也会包含中文。</p>
+<p>访问路径是：</p>
+<p><code class="docutils literal notranslate"><span class="pre">*/categories/编程</span></code></p>
+<p>想要把路径名和分类名分别设置，参见 <a class="reference internal" href="#id20">路径名和分类名分别设置，需要怎么办呢？</a></p>
+</li>
+<li><p>标签frontmatter-tags</p>
+<p id="frontmatter-tags">在编辑文章的时候，tags:后面是设置标签的地方，如果有多个标签的话，可以用下面两种办法来设置：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tages</span><span class="p">:</span> <span class="p">[</span><span class="n">标签1</span><span class="p">,</span><span class="n">标签2</span><span class="p">,</span><span class="o">...</span><span class="n">标签n</span><span class="p">]</span>
+
+<span class="n">tages</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">标签1</span>
+<span class="o">-</span> <span class="n">标签2</span>
+<span class="o">...</span>
+<span class="o">-</span> <span class="n">标签n</span>
+</pre></div>
+</div>
+</li>
+<li><p>文章摘要description:</p>
+<p>首页默认显示文章摘要而非全文，可以在文章的front-matter中填写一项description:来设置你想显示的摘要，或者直接在文章内容中插入&lt;!–more–&gt;以隐藏后面的内容。</p>
+<p>若两者都未设置，则自动截取文章第一段作为摘要。</p>
+</li>
+<li><p>添加页面 layout:
+在source目录下建立相应名称的文件夹，然后在文件夹中建立index.md文件，并在index.md的front-matter中设置layout为layout: page。若需要单栏页面，就将layout设置为 layout: single-column。</p></li>
+<li><p>文章目录frontmatter-toc:</p>
+<p id="frontmatter-toc">在文章的front-matter中添加toc: true即可让该篇文章显示目录。</p>
+</li>
+<li><p>文章评论 comments:</p>
+<p>文章和页面的评论功能可以通过在front-matter中设置comments: true或comments: false来进行开启或关闭（默认开启）。</p>
+</li>
+<li><p>数学公式frontmatter-mathjax:</p>
+<p id="frontmatter-mathjax">要启用数学公式支持，请在Hexo目录的_config.yml中添加：</p>
+<ol class="arabic">
+<li><p>mathjax: true</p>
+<p>并在相应文章的front-matter中添加mathjax: true，例如：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="n">Test</span> <span class="n">Math</span>
+<span class="n">date</span><span class="p">:</span> <span class="mi">2016</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">05</span> <span class="mi">14</span><span class="p">:</span><span class="mi">16</span><span class="p">:</span><span class="mi">00</span>
+<span class="n">categories</span><span class="p">:</span> <span class="n">math</span>
+<span class="n">mathjax</span><span class="p">:</span> <span class="n">true</span>
+<span class="o">---</span>
+</pre></div>
+</div>
+<p>数学公式的默认定界符是 <cite>$$…$$和\[…\]（对于块级公式），以及$…$和\(…\)     （对于行内公式）</cite> 。</p>
+</li>
+<li><p>mathjax2: true</p>
+<p>但是，如果你的文章内容中经常出现美元符号“$”, 或者说你想将“$”用作美元符号而非行内公     式的定界符，请在Hexo目录的_config.yml中添加：</p>
+<p>而不是mathjax: true。      相应地，在需要使用数学公式的文章的front-matter中也添加mathjax2: true。</p>
+</li>
+</ol>
+</li>
+<li><p>donate: donate:</p>
+<p>enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a “donate: true” item to the front-matter.</p>
+</li>
+<li><p>timeline: (layout: timeline)</p>
+<p>网站历史时间线，在页面front-matter中设置layout: timeline可显示。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="hexo-editor">
+<h3><a class="toc-backref" href="#id68"><span class="sectnum">1.7.5</span> hexo editor 编辑器有哪些？</a><a class="headerlink" href="#hexo-editor" title="永久链接至标题">¶</a></h3>
+<ul>
+<li><p>Markdown 工具 HexoEditor</p>
+<p><a class="reference external" href="https://www.v2ex.com/amp/t/421246">一款清新的 Markdown 工具 HexoEditor，重要的是支持 Hexo 框架</a></p>
+<p><a class="reference external" href="https://github.com/zhuzhuyule/HexoEditor">github repo-hexo editor</a></p>
+</li>
+</ul>
+</div>
+<div class="section" id="yeoman">
+<h3><a class="toc-backref" href="#id69"><span class="sectnum">1.7.6</span> 怎么使用 yeoman 生成基础代码？</a><a class="headerlink" href="#yeoman" title="永久链接至标题">¶</a></h3>
+<p>现在开始项目之前，我都会搜索一下 yeoman 有没有库，生成 Hexo 主题就有 generator-hexo-theme 。如果还没有安装 yeoman ，那先用 npm 全局安装。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">i</span> <span class="o">-</span><span class="n">g</span> <span class="n">yo</span>
+</pre></div>
+</div>
+<p>安装生成器的库：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">i</span> <span class="o">-</span><span class="n">g</span> <span class="n">generator</span><span class="o">-</span><span class="n">hexo</span><span class="o">-</span><span class="n">theme</span>
+</pre></div>
+</div>
+<p>到博客目录下，进入到 themes 目录，创建一个用主题名命名的新文件夹，比如test，进入新文件夹，开始生成代码：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yo</span> <span class="n">hexo</span><span class="o">-</span><span class="n">theme</span>
+</pre></div>
+</div>
+<p>然后选择一些基本的配置，比如使用什么模板引擎，使用什么 CSS 预编译等，这里分别选择 Swig 和 Stylus。完成之后，主题目录下就会生成一些如下结构的文件：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>├── _config.yml // 主题配置文件
+├── languages // 多语言文件夹
+├── layout
+│   ├── archive.swig // 存档页模板
+│   ├── category.swig // 分类文章列表页模板
+│   ├── includes // 各页面共享的模板
+│   │   ├── layout.swig // 页面布局模板，其它的页面模板都是根据它扩展来的
+│   │   ├── pagination.swig // 翻页按钮模板
+│   │   └── recent-posts.swig // 文章列表模板
+│   ├── index.swig // 首页模板
+│   ├── page.swig // 页面详情页模板
+│   ├── post.swig // 文章详情页模板
+│   └── tag.swig // 标签文章列表页模板
+└── source
+    ├── css
+    │   └── theme.styl // 主题自定义 CSS 文件
+    ├── favicon.ico
+    └── js
+        └── theme.js // 主题 JavaScript 文件
+在Hexo的主配置文件中使用新主题，到博客根目录下找到 _config.yml 文件，找到theme行，修改如下：
+</pre></div>
+</div>
+<p>theme: test</p>
+<p>hexo s 启动博客，到浏览器看效果。</p>
+</div>
+</div>
+<div class="section" id="faq">
+<h2><a class="toc-backref" href="#id70"><span class="sectnum">1.8</span> FAQ</a><a class="headerlink" href="#faq" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id18">
+<h3><a class="toc-backref" href="#id71"><span class="sectnum">1.8.1</span> Hexo网站名中文乱码</a><a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h3>
+<p>因为站点配置文件没有使用utf-8编码造成的，所以在站点配置文件_config.yml中写中文网站名，然后把站点配置文件保存为utf-8格式。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="n">岁月留痕</span>
+<span class="n">subtitle</span><span class="p">:</span> <span class="n">kevinluo</span><span class="s1">&#39;s BLOG</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id19">
+<h3><a class="toc-backref" href="#id72"><span class="sectnum">1.8.2</span> 怎么列出hexo依赖插件的完整性？</a><a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">npm</span> <span class="n">ls</span> <span class="o">--</span><span class="n">depth</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>klBlog:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hexo</span><span class="o">-</span><span class="n">site</span><span class="nd">@0</span><span class="o">.</span><span class="mf">0.0</span> <span class="n">H</span><span class="p">:</span>\<span class="n">tmp_H</span>\<span class="mf">001.</span><span class="n">work</span>\<span class="mf">004.</span><span class="n">env</span>\<span class="mi">01</span><span class="n">prjsp</span>\<span class="n">hexo</span>\<span class="n">klBlog</span>
+<span class="o">+--</span> <span class="n">eslint</span><span class="nd">@6</span><span class="o">.</span><span class="mf">3.0</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="nd">@3</span><span class="o">.</span><span class="mf">9.0</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">deployer</span><span class="o">-</span><span class="n">git</span><span class="nd">@1</span><span class="o">.</span><span class="mf">0.0</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="nb">filter</span><span class="o">-</span><span class="n">flowchart</span><span class="nd">@1</span><span class="o">.</span><span class="mf">0.4</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">archive</span><span class="nd">@0</span><span class="o">.</span><span class="mf">1.5</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">category</span><span class="nd">@0</span><span class="o">.</span><span class="mf">1.3</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">feed</span><span class="nd">@2</span><span class="o">.</span><span class="mf">0.0</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">index</span><span class="nd">@0</span><span class="o">.</span><span class="mf">2.1</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">tag</span><span class="nd">@0</span><span class="o">.</span><span class="mf">2.0</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">renderer</span><span class="o">-</span><span class="n">ejs</span><span class="nd">@0</span><span class="o">.</span><span class="mf">3.1</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">renderer</span><span class="o">-</span><span class="n">jade</span><span class="nd">@0</span><span class="o">.</span><span class="mf">4.1</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">renderer</span><span class="o">-</span><span class="n">marked</span><span class="nd">@2</span><span class="o">.</span><span class="mf">0.0</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">renderer</span><span class="o">-</span><span class="n">pug</span><span class="nd">@0</span><span class="o">.</span><span class="mf">0.5</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">renderer</span><span class="o">-</span><span class="n">sass</span><span class="nd">@0</span><span class="o">.</span><span class="mf">4.0</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">renderer</span><span class="o">-</span><span class="n">stylus</span><span class="nd">@0</span><span class="o">.</span><span class="mf">3.3</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">server</span><span class="nd">@0</span><span class="o">.</span><span class="mf">3.3</span>
+<span class="o">+--</span> <span class="n">hexo</span><span class="o">-</span><span class="n">wordcount</span><span class="nd">@6</span><span class="o">.</span><span class="mf">0.1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id20">
+<h3><a class="toc-backref" href="#id73"><span class="sectnum">1.8.3</span> 路径名和分类名分别设置，需要怎么办呢？</a><a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h3>
+<p>设置分类名可以在文章中设置 <a class="reference internal" href="#frontmatter-categories">frontmatter-categories</a>:</p>
+<p>打开根目录下的配置文件_config.yml，找到如下位置做更改：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Category &amp; Tag</span>
+<span class="n">default_category</span><span class="p">:</span> <span class="n">uncategorized</span>
+<span class="n">category_map</span><span class="p">:</span>
+    <span class="n">编程</span><span class="p">:</span> <span class="n">programming</span>
+    <span class="n">生活</span><span class="p">:</span> <span class="n">life</span>
+    <span class="n">其他</span><span class="p">:</span> <span class="n">other</span>
+<span class="n">tag_map</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>在这里category_map:是设置分类的地方，每行一个分类，冒号前面是分类名称，后面是访问路径。</p>
+<p>可以提前在这里设置好一些分类，当编辑的文章填写了对应的分类名时，就会自动的按照对应的路径来访问。</p>
+</div>
+<div class="section" id="package-json">
+<h3><a class="toc-backref" href="#id74"><span class="sectnum">1.8.4</span> package.json是什么？</a><a class="headerlink" href="#package-json" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="http://www.fly63.com/article/detial/1070">package.json是什么？</a></p>
+<p><a class="reference external" href="https://blog.csdn.net/weixin_44051815/article/details/88114480">关于项目中package.json的理解</a></p>
+</div>
+<div class="section" id="fontawesome">
+<h3><a class="toc-backref" href="#id75"><span class="sectnum">1.8.5</span> fontawesome是什么？</a><a class="headerlink" href="#fontawesome" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://github.com/FortAwesome/Font-Awesome">github Font-Awesome lib</a></p>
+<p><a class="reference external" href="http://fontawesome.dashgame.com/">一套绝佳的图标字体库和CSS框架</a></p>
+</div>
+<div class="section" id="id21">
+<h3><a class="toc-backref" href="#id76"><span class="sectnum">1.8.6</span> 怎么添加点击红心和汉字？</a><a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h3>
+<ol class="arabic">
+<li><p>js文件</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">themes</span><span class="o">/</span><span class="nb">next</span><span class="o">/</span><span class="n">source</span><span class="o">/</span><span class="n">js</span><span class="o">/</span>
+<span class="n">hanzi</span><span class="o">.</span><span class="n">js</span>
+<span class="n">clicklove</span><span class="o">.</span><span class="n">js</span>
+</pre></div>
+</div>
+</li>
+<li><p>页面文件</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>KL+TEST
+{%- if theme.kl_click_hanzi %}
+      &lt;script src=&quot;//lib.baomitu.com/jquery/3.4.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+      &lt;!-- 页面点击汉字 --&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;/js/hanzi.js&quot;&gt;&lt;/script&gt;
+{%- endif %}
+{%- if theme.kl_click_love %}
+      &lt;!-- 页面点击小红心 --&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;/js/clicklove.js&quot;&gt;&lt;/script&gt;
+{%- endif %}
+&lt;/body&gt;
+</pre></div>
+</div>
+<p>next 中应该用root相对路径，当root在子目录中，这样JS也可以引用到, <code class="docutils literal notranslate"><span class="pre">\klBlog\themes\next\layout\_layout.swig</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{%- if theme.kl_click_hanzi %}
+      &lt;script src=&quot;//lib.baomitu.com/jquery/3.4.0/    jquery.min.js&quot;&gt;&lt;/script&gt;
+      &lt;!-- 页面点击汉字 --&gt;
+      {{- next_js(&#39;hanzi.js&#39;) }}
+{%- endif %}
+{%- if theme.kl_click_love %}
+      &lt;!-- 页面点击小红心 --&gt;
+      {{- next_js(&#39;clicklove.js&#39;) }}
+{%- endif %}
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="jquery-cdn">
+<h3><a class="toc-backref" href="#id77"><span class="sectnum">1.8.7</span> 国内Jquery CDN 有哪些？</a><a class="headerlink" href="#jquery-cdn" title="永久链接至标题">¶</a></h3>
+<ol class="arabic">
+<li><p>新浪CDN（推荐）</p>
+<p>一直好使</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Baidu CDN
+有时候不好使</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;http://libs.baidu.com/jquery/1.10.2/jquery.min.js&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>微软CDN:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;http://ajax.htmlnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="githubpages">
+<h3><a class="toc-backref" href="#id78"><span class="sectnum">1.8.8</span> 怎么解决githubpages不能识别下划线开头的目录？</a><a class="headerlink" href="#githubpages" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://blog.csdn.net/lineuman/article/details/89600484">githubpages不能识别下划线开头的目录解决方法</a></p>
+<p>使用sphinx创建的文档，资源文件夹前面会带着下划线，本地使用没有问题，提交到github上面，想使用github pages的时候提示404，原因为github pages的jekyll模版会忽略下划线开头的文件，自动忽略下划线开头的目录，从而导致引用不到CSS,JAVASCRIPT,ETC.，所以要禁用jekyll</p>
+<p>禁用方法就是在文件在项目目录下添加.nojekyll文件</p>
+<p>CDN</p>
+<p><a class="reference external" href="https://cdn.baomitu.com/">CDN前端静态资源库baomitu-used in maupassant-hexo</a></p>
+<p><a class="reference external" href="https://75team.com/cate/75cdn">75CDN奇舞团</a></p>
+</div>
+</div>
+<div class="section" id="hexo-deploy">
+<h2><a class="toc-backref" href="#id79"><span class="sectnum">1.9</span> hexo deploy 网站部署</a><a class="headerlink" href="#hexo-deploy" title="永久链接至标题">¶</a></h2>
+<p>参见 <a class="reference external" href="https://www.jianshu.com/p/efaf72aab32e">Hexo博客从搭建部署到SEO优化等详细教程</a></p>
+<div class="section" id="hexo-d">
+<h3><a class="toc-backref" href="#id80"><span class="sectnum">1.9.1</span> hexo d 法</a><a class="headerlink" href="#hexo-d" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://hexo.io/docs/deployment.html">hexo.io/docs/deployment</a></p>
+<p>安装扩展：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ npm install hexo-deployer-git --save
+</pre></div>
+</div>
+<p>需要在配置文件_config.xml中作如下修改：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">deploy</span><span class="p">:</span>
+  <span class="nb">type</span><span class="p">:</span> <span class="n">git</span>
+  <span class="n">repo</span><span class="p">:</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">jiji262</span><span class="o">/</span><span class="n">jiji262</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">git</span>
+  <span class="n">branch</span><span class="p">:</span> <span class="n">master</span>
+<span class="n">然后在命令行中执行</span>
+
+<span class="n">hexo</span> <span class="n">d</span>
+</pre></div>
+</div>
+<p>密码输入形式</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">deploy</span><span class="p">:</span>
+  <span class="nb">type</span><span class="p">:</span> <span class="n">git</span>
+  <span class="n">repo</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">kevinluolog</span><span class="p">:</span><span class="n">xxxxxx</span><span class="p">[</span><span class="n">密码</span><span class="p">]</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">kevinluolog</span><span class="o">/</span>   <span class="n">kevinluolog</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">git</span>
+  <span class="n">branch</span><span class="p">:</span> <span class="n">master</span>
+
+<span class="c1">#  repo: git@github.com:kevinluolog/kevinluolog.github.io.git</span>
+
+<span class="c1">#例如你的账号为:crown3,密码为 BBB;</span>
+<span class="c1">#那你的repo填写为下面这样即可</span>
+<span class="c1">#github: https://crown3:BBB@github.com/crown3/crown3.github.io.git</span>
+<span class="c1">#coding: https://crown3:BBB@git.coding.net/crown3/仓库名.git</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="git-clone">
+<h3><a class="toc-backref" href="#id81"><span class="sectnum">1.9.2</span> 直接git clone 法</a><a class="headerlink" href="#git-clone" title="永久链接至标题">¶</a></h3>
+</div>
+<div class="section" id="ci">
+<h3><a class="toc-backref" href="#id82"><span class="sectnum">1.9.3</span> CI 法，</a><a class="headerlink" href="#ci" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="git&#64;github.com:kevinluolog/hexo_klblog.git">hexo_klblog</a></p>
+<p>这个网址里面提到了常用的持续集成CI工具:</p>
+<p><a class="reference external" href="https://www.cnblogs.com/selimsong/p/9398738.html">好代码是管出来的——使用GitHub实现简单的CI/CD</a></p>
+<p><a class="reference external" href="https://blog.csdn.net/Xiong_IT/article/details/78675874">Hexo遇上Travis-CI：可能是最通俗易懂的自动发布博客图文教程</a></p>
+<p><a class="reference external" href="https://yq.aliyun.com/articles/675660">GitHub的CI/CD与Travis配置小记</a></p>
+<div class="section" id="id22">
+<h4><a class="toc-backref" href="#id83"><span class="sectnum">1.9.3.1</span> 十大CI工具:</a><a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Travis</span> <span class="n">CI</span>
+<span class="n">Circle</span> <span class="n">CI</span>
+<span class="n">Jenkins</span>
+<span class="n">AppVeyor</span>
+<span class="n">CodeShip</span>
+<span class="n">Drone</span>
+<span class="n">Semaphore</span> <span class="n">CI</span>
+<span class="n">Buildkite</span>
+<span class="n">Wercker</span>
+<span class="n">TeamCity</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="travis-ci">
+<h4><a class="toc-backref" href="#id84"><span class="sectnum">1.9.3.2</span> travis CI：</a><a class="headerlink" href="#travis-ci" title="永久链接至标题">¶</a></h4>
+<p>Travis可以执行多种语言的测试及构建， <a class="reference external" href="https://docs.travis-ci.com/user/languages/">官方文档</a></p>
+<p><a class="reference external" href="https://docs.travis-ci.com/user/job-lifecycle">Build Lifecycle documentation</a></p>
+<div class="section" id="id23">
+<h5><a class="toc-backref" href="#id85"><span class="sectnum">1.9.3.2.1</span> travis CI 配置步骤:</a><a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h5>
+<p>那既然需要使用travis自动化更新你的博客，travis自然需要读写你的github上的repo。github提供了token机制来供外部访问你的仓库。</p>
+<p><a class="reference external" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a></p>
+<ol class="arabic">
+<li><p>安装 travis, 并授权管理repo</p>
+<p>marketplace搜索travis,并安装。</p>
+<p>github/{user name}/personal settings/application/ travis CI configure
+选择要travis管理的repo.</p>
+</li>
+<li><p>配置github token</p>
+<p>分三步，</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>step 1: 在github中生成token，
+        github/{user name}/-&gt; setting-&gt;Developer settings-&gt; Personal access tokens -&gt; generate new token
+step 2: 再在travis网页项目中配置环境变量$GH_TOKEN，填入token
+step 3: 在blog root _config.yml deploy 中，设置gh_token访问标记
+step 4: 在.travis.yml中，在编译完后，deploy之前用sed替换，step 3 中在 _confi.yml 中的gh_token访问标记，用真正的保存在环境变量中的token替换掉。这样做的目的只是为了保密。一般repo是public的，就会泄漏token.
+</pre></div>
+</div>
+</li>
+<li><p>配置travis</p>
+<p>在travis进入仓库同步管理, <a class="reference external" href="https://travis-ci.com/kevinluolog/hexo-klblog-src/settings">here</a></p>
+<p>主要是前面的gh-token环境变量.</p>
+</li>
+<li><p>在源码仓库根目录增加.travis.yml 修改 _config.yml</p>
+<ul>
+<li><p>增加 .travis.yml</p>
+<p>注意，如果源码是在分支上要修改branches为相应的分支名，缺省是master:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">### for branch of hexo-next-muse</span>
+
+<span class="c1"># 指定语言环境</span>
+<span class="n">language</span><span class="p">:</span> <span class="n">node_js</span>
+<span class="c1"># 指定需要sudo权限</span>
+<span class="n">sudo</span><span class="p">:</span> <span class="n">required</span>
+<span class="c1"># 指定node_js版本</span>
+<span class="n">node_js</span><span class="p">:</span>
+  <span class="o">-</span> <span class="mf">10.16</span><span class="o">.</span><span class="mi">3</span>
+<span class="c1"># 指定缓存模块，可选。缓存可加快编译速度。</span>
+<span class="n">cache</span><span class="p">:</span>
+  <span class="n">directories</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">node_modules</span>
+
+<span class="c1"># 指定博客源码分支，因人而异。hexo博客源码托管在独立repo则不用设置此项</span>
+<span class="n">branches</span><span class="p">:</span>
+  <span class="n">only</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">muse</span>
+
+<span class="n">before_install</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">npm</span> <span class="n">install</span> <span class="o">-</span><span class="n">g</span> <span class="n">hexo</span><span class="o">-</span><span class="n">cli</span>
+
+<span class="c1"># Start: Build Lifecycle</span>
+<span class="n">install</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">npm</span> <span class="n">install</span>
+  <span class="o">-</span> <span class="n">npm</span> <span class="n">install</span> <span class="n">hexo</span><span class="o">-</span><span class="n">deployer</span><span class="o">-</span><span class="n">git</span> <span class="o">--</span><span class="n">save</span>
+
+<span class="c1"># 执行清缓存，生成网页操作</span>
+<span class="n">script</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">hexo</span> <span class="n">clean</span>
+  <span class="o">-</span> <span class="n">hexo</span> <span class="n">generate</span>
+
+<span class="c1"># 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署</span>
+<span class="n">after_script</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;kevinluolog&quot;</span>
+  <span class="o">-</span> <span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;kevinluolog_72@163.com&quot;</span>
+  <span class="c1"># 替换同目录下的_config.yml文件中gh_token字符串为travis后台刚才配置的变量，注意此处sed命令用了双引号。单引号无效！</span>
+  <span class="o">-</span> <span class="n">sed</span> <span class="o">-</span><span class="n">i</span> <span class="s2">&quot;s/gh_token/$</span><span class="si">{GH_TOKEN}</span><span class="s2">/g&quot;</span> <span class="o">./</span><span class="n">_config</span><span class="o">.</span><span class="n">yml</span>
+  <span class="o">-</span> <span class="n">hexo</span> <span class="n">deploy</span>
+<span class="c1"># End: Build LifeCycle</span>
+</pre></div>
+</div>
+</li>
+<li><p>修改 _config.yml</p>
+<p>1. 主要是修改deploy部分，决定gh-token和推送部署到什么repo的什么分支。
+如果是xxxx.github.io就推到master, 如果是子目录repo,则推送到gh-pages分支。</p>
+<ol class="arabic simple" start="2">
+<li><p>设置 root变量， 如果是子目录repo，则需要设置相应的子目录repo名字。这样在网页引用css等资源时可以直接引用到。因为hexo引用CSS等资源时用的是绝对目录，如/{子目录repo名}/css/xxx.css, sphinx 用的是相对目录，如 _static/css/xxx.css。 此处因为sphinx资源目录前面带了下划线， _ , 因hexo和jekyll会自动忽略下划线开头的目录，从而导致引用不到CSS,JAVASCRIPT,ETC.，所以在根目录要添加.nojekyll文件, 详细请参考 <a class="reference internal" href="#githubpages">怎么解决githubpages不能识别下划线开头的目录？</a></p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="p">:</span> <span class="o">/</span><span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">muse</span><span class="o">/</span>
+<span class="c1"># Deployment</span>
+<span class="n">deploy</span><span class="p">:</span>
+  <span class="nb">type</span><span class="p">:</span> <span class="n">git</span>
+  <span class="n">repo</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">gh_token</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">kevinluolog</span><span class="o">/</span><span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">muse</span><span class="o">.</span><span class="n">git</span>
+  <span class="n">branch</span><span class="p">:</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id24">
+<h4><a class="toc-backref" href="#id86"><span class="sectnum">1.9.3.3</span> travis CI 配置实例</a><a class="headerlink" href="#id24" title="永久链接至标题">¶</a></h4>
+<p>网站规划结构参见 <a class="reference internal" href="#my-deploy-kevinluolog-github-io">my deploy: kevinluolog.github.io</a></p>
+<p>简单讲就是，kevinluolog/hexo-klblog-src repo作为源码仓库，master分支对应主网站repo的master分支，其余分支各对应主网站的子目录网站repo的gp-pages分支。源码repo分支名称和子目录网站的仓库名要取得一样，以方便对应。每次源码有推送时，触发对应分支的travis CI启动，源码拉取-&gt;环境搭建-&gt;编译-&gt;部署，部署时是部署到对应的网站repo的gp-pages分支上的。</p>
+<p>最终的效果是，写或修改文章时只和source目录中的_post目录相关 <code class="docutils literal notranslate"><span class="pre">\hexo\klBlog\source\_posts</span></code> 改动完成提交到对应的分支后， 过2分钟左右， 对应的网站即要自动更新。非常方便和快捷，不用占用本人的时间也不用占用本机的CPU去编译和部署。同时可以的任何可以上网的地方写文章，提交。 和写程序一模一样，一个github搞定一切。</p>
+<div class="section" id="id25">
+<h5><a class="toc-backref" href="#id87"><span class="sectnum">1.9.3.3.1</span> 创建源码新分支需要改动的文件</a><a class="headerlink" href="#id25" title="永久链接至标题">¶</a></h5>
+<ol class="arabic">
+<li><p>文件.travis.yml</p>
+<p>启动分支名。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 指定博客源码分支，因人而异。hexo博客源码托管在独立repo则不用设置此项</span>
+<span class="n">branches</span><span class="p">:</span>
+  <span class="n">only</span><span class="p">:</span>
+    <span class="o">-</span> <span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">xxx</span>
+</pre></div>
+</div>
+</li>
+<li><p>文件_config.yml</p>
+<ul>
+<li><p>theme</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">theme</span><span class="p">:</span> <span class="nb">next</span>
+</pre></div>
+</div>
+</li>
+<li><p>root, 子网站根目录，要和网站repo名字相同</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">root</span><span class="p">:</span> <span class="o">/</span><span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">xxx</span><span class="o">/</span>
+</pre></div>
+</div>
+</li>
+<li><p>deloy, 推送目标仓库名</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">deploy</span><span class="p">:</span>
+  <span class="nb">type</span><span class="p">:</span> <span class="n">git</span>
+  <span class="n">repo</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">gh_token</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">kevinluolog</span><span class="o">/</span><span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">xxx</span><span class="o">.</span><span class="n">git</span>
+  <span class="n">branch</span><span class="p">:</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>其它博客定制相关文件</p>
+<p>如theme下配置文件_config.yml，next和melody支持独立配置文件在_data/next.yml 和 melody.yml</p>
+<ol class="lowerroman">
+<li><p>_data/next.yml</p>
+<ul>
+<li><p>风格</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Schemes</span>
+<span class="c1">#scheme: Muse</span>
+<span class="c1">#scheme: Mist ##kl+</span>
+<span class="c1">#scheme: Pisces</span>
+<span class="n">scheme</span><span class="p">:</span> <span class="n">Gemini</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="github-pageshexo">
+<h3><a class="toc-backref" href="#id88"><span class="sectnum">1.9.4</span> 需求：在github pages子目录建立hexo博客</a><a class="headerlink" href="#github-pageshexo" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://www.jianshu.com/p/986b975a29ae">在githubpages子目录建立hexo博客</a></p>
+<p>实现：</p>
+<ol class="arabic simple">
+<li><p>首先建立xxx.github.io的repo，xxx是你的用户名，之后开启github pages服务</p></li>
+<li><p>再建立一个bbbb的repo，bbbb是你想要的子目录</p></li>
+<li><p>设置hexo的deploy配置文件 _config.yml</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="nb">type</span><span class="p">:</span> <span class="n">git</span>
+  <span class="n">repo</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">xxx</span><span class="o">/</span><span class="n">bbbb</span><span class="o">.</span><span class="n">git</span>
+  <span class="n">branch</span><span class="p">:</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>修改_config.yml中的root选项，由”/”改为”/bbbb”</p></li>
+</ol>
+<p>github page就大概两种，一种user page必须master分支，另一种project page需要给对应的project设置一个gh-pages分支，上传好网页资源文件之后，就可以在username.github.io/projectname这样的域名访问了。</p>
+<p>网上挺多教程都不太对，自己解决了之后记录一下。</p>
+</div>
+<div class="section" id="my-deploy-kevinluolog-github-io">
+<h3><a class="toc-backref" href="#id89"><span class="sectnum">1.9.5</span> my deploy: kevinluolog.github.io</a><a class="headerlink" href="#my-deploy-kevinluolog-github-io" title="永久链接至标题">¶</a></h3>
+<div class="section" id="repo-of-sites">
+<h4><a class="toc-backref" href="#id90"><span class="sectnum">1.9.5.1</span> Repo of sites:</a><a class="headerlink" href="#repo-of-sites" title="永久链接至标题">¶</a></h4>
+<ol class="arabic">
+<li><p>kevinluolog.github.io: branch:master</p>
+<p>generated by travis Ci from repo of hexo source - branch of master</p>
+</li>
+<li><p>hexo-XXX: branch:gh-pages</p>
+<p>can be accessed by <code class="docutils literal notranslate"><span class="pre">kevinluolog.github.io/hexo-xxx</span></code></p>
+<p>generated by travis Ci from repo of hexo source - branch of hexo-XXX</p>
+</li>
+<li><p>gp: branch:gh-pages</p>
+<p>can be accessed by <code class="docutils literal notranslate"><span class="pre">kevinluolog.github.io/gp/xxx</span></code></p>
+<p>generated by sphinx etc. directly</p>
+</li>
+</ol>
+</div>
+<div class="section" id="repo-of-hexo-source-private">
+<h4><a class="toc-backref" href="#id91"><span class="sectnum">1.9.5.2</span> Repo of hexo source: private</a><a class="headerlink" href="#repo-of-hexo-source-private" title="永久链接至标题">¶</a></h4>
+<p>Travis can access with private repo.</p>
+<ul>
+<li><p>branch: master</p>
+<p>hexo source, and deploy to kevinluolog.github.io - master automatically</p>
+</li>
+<li><p>branch: hexo-xxx</p>
+<p>deploy to REPO：hexo-xxx - gh-pages, automatically.</p>
+<p>branch _config.yml for set differrent theme</p>
+<p>travis-ci triggered by source file merged in. then compile and deploy.</p>
+<p>books, created by sphinx or docutils or pandoc.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="jekyll.html" title="1 jekyll"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="gitpage.html" title="1 gitpages"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, kevinluo.
+    </div>
+  </body>
+</html>

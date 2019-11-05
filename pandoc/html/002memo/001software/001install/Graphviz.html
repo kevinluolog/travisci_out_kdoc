@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Graphviz</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Graphviz</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#install"><span class="toc-section-number">1</span> install</a></li>
+<li><a href="#tips"><span class="toc-section-number">2</span> tips</a></li>
+<li><a href="#faq"><span class="toc-section-number">3</span> faq</a></li>
+</ul>
+</nav>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
+<h1 id="install"><span class="header-section-number">1</span> install</h1>
+<ol type="1">
+<li><a href="http://www.graphviz.org/download/">download</a></li>
+<li>设置
+<ol type="i">
+<li><p>环境变量 path: ~graphviz-2.38bin</p></li>
+<li><p>font中文支持</p>
+<ul>
+<li>graphviz-2.38etcfontsfonts.conf， 指明字体文件目录</li>
+</ul>
+<blockquote>
+<pre><code>&lt;dir&gt;#WINFONTDIR#&lt;/dir&gt;
+改为
+&lt;dir&gt;C:\Windows\Fonts&lt;/dir&gt;</code></pre>
+</blockquote>
+<ul>
+<li>.dot文件指明引用哪种字体</li>
+</ul>
+<blockquote>
+<pre><code>.dot文件加入
+fontname=&quot;Microsoft YaHei&quot;
+edge [fontname=&quot;Microsoft YaHei&quot;];
+node [fontname=&quot;Microsoft YaHei&quot;];</code></pre>
+</blockquote></li>
+</ol></li>
+<li>tools</li>
+</ol>
+<blockquote>
+<ul>
+<li>~graphviz-2.38bingvedit.exe</li>
+<li>~graphviz-2.38binlefty.exe</li>
+<li>~graphviz-2.38bindotty.exe</li>
+</ul>
+</blockquote>
+<h1 id="tips"><span class="header-section-number">2</span> tips</h1>
+<h1 id="faq"><span class="header-section-number">3</span> faq</h1>
+</body>
+</html>

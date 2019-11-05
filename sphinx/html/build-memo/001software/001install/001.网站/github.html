@@ -1,0 +1,538 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>1 github &#8212; memo of study  文档</title>
+    <link rel="stylesheet" href="../../../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../_static/bizstyle.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="1 gitpages" href="gitpage.html" />
+    <link rel="prev" title="1 markdow demo" href="demo-markdown.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="gitpage.html" title="1 gitpages"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="demo-markdown.html" title="1 markdow demo"
+             accesskey="P">上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> github</a><ul>
+<li><a class="reference internal" href="#id1"><span class="sectnum">1.1</span> 参考链接</a></li>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.2</span> 工具</a><ul>
+<li><a class="reference internal" href="#gitrepo"><span class="sectnum">1.2.1</span> git恢复保存REPO文件时间信息的工具-</a><ul>
+<li><a class="reference internal" href="#metastore-meta"><span class="sectnum">1.2.1.1</span> metastore 额外加上文件meta信息</a></li>
+<li><a class="reference internal" href="#git-tools-git-restore-mtime-use-commit-times"><span class="sectnum">1.2.1.2</span> git-tools: git-restore-mtime 恢复文件时间等功能use-commit-times</a></li>
+<li><a class="reference internal" href="#what-s-the-equivalent-of-use-commit-times-for-git"><span class="sectnum">1.2.1.3</span> 参考链接1:What’s the equivalent of use-commit-times for git?</a></li>
+<li><a class="reference internal" href="#kareltucek-git-mtime-extension"><span class="sectnum">1.2.1.4</span> kareltucek/git-mtime-extension</a></li>
+<li><a class="reference internal" href="#shell-solution-optimized-1"><span class="sectnum">1.2.1.5</span> shell solution optimized 1</a></li>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.2.1.6</span> shell solution optimized 1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.3</span> 经验点滴</a><ul>
+<li><a class="reference internal" href="#id5"><span class="sectnum">1.3.1</span> 命令</a><ul>
+<li><a class="reference internal" href="#git-clone"><span class="sectnum">1.3.1.1</span> git clone</a></li>
+<li><a class="reference internal" href="#git-add"><span class="sectnum">1.3.1.2</span> git add</a></li>
+<li><a class="reference internal" href="#git-commit"><span class="sectnum">1.3.1.3</span> git commit</a></li>
+<li><a class="reference internal" href="#git-push"><span class="sectnum">1.3.1.4</span> git push</a></li>
+<li><a class="reference internal" href="#git-remote"><span class="sectnum">1.3.1.5</span> git remote</a></li>
+<li><a class="reference internal" href="#git-ls-files-z-eol"><span class="sectnum">1.3.1.6</span> git ls-files -z –eol 获取目录下文件名</a></li>
+<li><a class="reference internal" href="#git-log-1-date-iso-format-ad-filename"><span class="sectnum">1.3.1.7</span> git log -1 –date=iso –format=”%ad” – “$filename” 文件提交时间</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id6"><span class="sectnum">1.3.2</span> 跟踪远程分支</a></li>
+<li><a class="reference internal" href="#tortoisegit"><span class="sectnum">1.3.3</span> 实际命令摘录，tortoiseGit</a><ul>
+<li><a class="reference internal" href="#git-exe-pull-progress-v-no-rebase-origin-hexo-next-pisces"><span class="sectnum">1.3.3.1</span> git.exe pull –progress -v –no-rebase “origin” hexo-next-Pisces</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id7"><span class="sectnum">1.3.4</span> 离散点滴</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="demo-markdown.html"
+                        title="上一章"><span class="sectnum">1</span> markdow demo</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="gitpage.html"
+                        title="下一章"><span class="sectnum">1</span> gitpages</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="github">
+<h1><a class="toc-backref" href="#id11"><span class="sectnum">1</span> github</a><a class="headerlink" href="#github" title="永久链接至标题">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">contents</p>
+<ul class="auto-toc simple">
+<li><p><a class="reference internal" href="#github" id="id11"><span class="sectnum">1</span> github</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id1" id="id12"><span class="sectnum">1.1</span> 参考链接</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id13"><span class="sectnum">1.2</span> 工具</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#gitrepo" id="id14"><span class="sectnum">1.2.1</span> git恢复保存REPO文件时间信息的工具-</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#metastore-meta" id="id15"><span class="sectnum">1.2.1.1</span> metastore 额外加上文件meta信息</a></p></li>
+<li><p><a class="reference internal" href="#git-tools-git-restore-mtime-use-commit-times" id="id16"><span class="sectnum">1.2.1.2</span> git-tools: git-restore-mtime 恢复文件时间等功能use-commit-times</a></p></li>
+<li><p><a class="reference internal" href="#what-s-the-equivalent-of-use-commit-times-for-git" id="id17"><span class="sectnum">1.2.1.3</span> 参考链接1:What’s the equivalent of use-commit-times for git?</a></p></li>
+<li><p><a class="reference internal" href="#kareltucek-git-mtime-extension" id="id18"><span class="sectnum">1.2.1.4</span> kareltucek/git-mtime-extension</a></p></li>
+<li><p><a class="reference internal" href="#shell-solution-optimized-1" id="id19"><span class="sectnum">1.2.1.5</span> shell solution optimized 1</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id20"><span class="sectnum">1.2.1.6</span> shell solution optimized 1</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id4" id="id21"><span class="sectnum">1.3</span> 经验点滴</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#id5" id="id22"><span class="sectnum">1.3.1</span> 命令</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#git-clone" id="id23"><span class="sectnum">1.3.1.1</span> git clone</a></p></li>
+<li><p><a class="reference internal" href="#git-add" id="id24"><span class="sectnum">1.3.1.2</span> git add</a></p></li>
+<li><p><a class="reference internal" href="#git-commit" id="id25"><span class="sectnum">1.3.1.3</span> git commit</a></p></li>
+<li><p><a class="reference internal" href="#git-push" id="id26"><span class="sectnum">1.3.1.4</span> git push</a></p></li>
+<li><p><a class="reference internal" href="#git-remote" id="id27"><span class="sectnum">1.3.1.5</span> git remote</a></p></li>
+<li><p><a class="reference internal" href="#git-ls-files-z-eol" id="id28"><span class="sectnum">1.3.1.6</span> git ls-files -z –eol 获取目录下文件名</a></p></li>
+<li><p><a class="reference internal" href="#git-log-1-date-iso-format-ad-filename" id="id29"><span class="sectnum">1.3.1.7</span> git log -1 –date=iso –format=”%ad” – “$filename” 文件提交时间</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id6" id="id30"><span class="sectnum">1.3.2</span> 跟踪远程分支</a></p></li>
+<li><p><a class="reference internal" href="#tortoisegit" id="id31"><span class="sectnum">1.3.3</span> 实际命令摘录，tortoiseGit</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#git-exe-pull-progress-v-no-rebase-origin-hexo-next-pisces" id="id32"><span class="sectnum">1.3.3.1</span> git.exe pull –progress -v –no-rebase “origin” hexo-next-Pisces</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id7" id="id33"><span class="sectnum">1.3.4</span> 离散点滴</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2><a class="toc-backref" href="#id12"><span class="sectnum">1.1</span> 参考链接</a><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://git-scm.com/doc">git-scm 官方doc 网址</a></p>
+<p><a class="reference external" href="https://www.cnblogs.com/qianqiannian/p/6008140.html">Git push常见用法</a></p>
+<p><a class="reference external" href="https://blog.csdn.net/caseywei/article/details/90945295">git add -A 和 git add . 的区别</a></p>
+<p><a class="reference external" href="https://www.cnblogs.com/wuer888/p/7655856.html">git命令之git remote的用法</a></p>
+<p><a class="reference external" href="http://f.dataguru.cn/java-925217-1-1.html">git跟踪远程分支，查看本地分支追踪和远程分支的关系</a></p>
+<p><a class="reference external" href="https://www.jianshu.com/p/4ceb39ee4b2b">git跟踪远程分支，查看本地分支追踪和远程分支的关系简书</a></p>
+<p><a class="reference external" href="https://blog.csdn.net/deaidai/article/details/79639885">Git本地分支与远程分支的追踪关系</a></p>
+<p>` &lt;&gt;`__</p>
+<p>` &lt;&gt;`__</p>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id13"><span class="sectnum">1.2</span> 工具</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="section" id="gitrepo">
+<h3><a class="toc-backref" href="#id14"><span class="sectnum">1.2.1</span> git恢复保存REPO文件时间信息的工具-</a><a class="headerlink" href="#gitrepo" title="永久链接至标题">¶</a></h3>
+<p><a href="#id8"><span class="problematic" id="id9">`stackoverflow.com/ What's the equivalent of use-commit-times for git? &lt;https://stackoverflow.com/questions/1964470/whats-the-equivalent-of-use-commit-times-for-git/13284229#13284229
+&gt;`__</span></a></p>
+<div class="section" id="metastore-meta">
+<h4><a class="toc-backref" href="#id15"><span class="sectnum">1.2.1.1</span> metastore 额外加上文件meta信息</a><a class="headerlink" href="#metastore-meta" title="永久链接至标题">¶</a></h4>
+<p><a class="reference external" href="https://repo.or.cz/w/metastore.git">Making git usable for backing up file attributes too</a></p>
+<p>metastore is a tool to store the metadata of files/directories/links in a file tree to a separate file and to later compare and apply the stored metadata to said file tree.</p>
+</div>
+<div class="section" id="git-tools-git-restore-mtime-use-commit-times">
+<h4><a class="toc-backref" href="#id16"><span class="sectnum">1.2.1.2</span> git-tools: git-restore-mtime 恢复文件时间等功能use-commit-times</a><a class="headerlink" href="#git-tools-git-restore-mtime-use-commit-times" title="永久链接至标题">¶</a></h4>
+<p><a class="reference external" href="https://github.com/MestreLion/git-tools#install">MestreLion/git-tools</a></p>
+<p>git-restore-mtime
+Restore original modification time of files based on the date of the most recent commit that modified them</p>
+<p>Probably the most popular and useful tool, and the reason this repository was packaged into Debian.</p>
+<p>Git, unlike other version control systems, does not preserve the original timestamp of committed files. Whenever repositories are cloned, or branches/files are checked out, file timestamps are reset to the current date. While this behavior has its justifications (notably when using make to compile software), sometimes it is desirable to restore the original modification date of a file (for example, when generating release tarballs). As git does not provide any way to do that, git-restore-mtime tries to workaround this limitation.</p>
+<p>For more information and background, see <a class="reference external" href="http://stackoverflow.com/a/13284229/624066">stackoverflow.com/ whats-the-equivalent-of-use-commit-times</a></p>
+<p>For TravisCI users, simply add a config to .travis.yml so it clones the full repository history:</p>
+<dl class="simple">
+<dt>git:</dt><dd><p>depth: false</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="what-s-the-equivalent-of-use-commit-times-for-git">
+<h4><a class="toc-backref" href="#id17"><span class="sectnum">1.2.1.3</span> 参考链接1:What’s the equivalent of use-commit-times for git?</a><a class="headerlink" href="#what-s-the-equivalent-of-use-commit-times-for-git" title="永久链接至标题">¶</a></h4>
+<p><a href="#id8"><span class="problematic" id="id10">`stackoverflow.com/ What's the equivalent of use-commit-times for git? &lt;https://stackoverflow.com/questions/1964470/whats-the-equivalent-of-use-commit-times-for-git/13284229#13284229
+&gt;`__</span></a></p>
+<p>IMHO, not storing timestamps (and other metadata like permissions and ownership) is a big limitation of git.</p>
+<p>Linus’ rationale of timestamps being harmful just because it “confuses make” is lame:</p>
+<p>make clean is enough to fix any problems.</p>
+<p>Applies only to projects that use make, mostly C/C++. It is completely moot for scripts like Python, Perl, or documentation in general.</p>
+<p>There is only harm if you apply the timestamps. There would be no harm in storing them in repo. Applying them could be a simple –with-timestamps option for git checkout and friends (clone, pull etc), at the user’s discretion.</p>
+<p>Your arguments are valid. I’d hope somebody with some clout would make an enhancement request for git to have your suggested –with-timestamps option. – weberjn Nov 2 ‘17 at 12:40</p>
+<p>git克隆更改文件修改时间
+<a class="reference external" href="http://www.voidcn.com/article/p-pbfzuvro-bty.html">voidcn.com/article/p-pbfzuvro-bty.html</a></p>
+<p><a class="reference external" href="https://stackoverflow.com/questions/21735435/git-clone-changes-file-modification-time">stackoverflow.com/questions/21735435/git-clone-changes-file-modification-time</a></p>
+</div>
+<div class="section" id="kareltucek-git-mtime-extension">
+<h4><a class="toc-backref" href="#id18"><span class="sectnum">1.2.1.4</span> kareltucek/git-mtime-extension</a><a class="headerlink" href="#kareltucek-git-mtime-extension" title="永久链接至标题">¶</a></h4>
+<p><a class="reference external" href="https://github.com/kareltucek/git-mtime-extension">github.com/kareltucek/git-mtime-extension</a></p>
+</div>
+<div class="section" id="shell-solution-optimized-1">
+<h4><a class="toc-backref" href="#id19"><span class="sectnum">1.2.1.5</span> shell solution optimized 1</a><a class="headerlink" href="#shell-solution-optimized-1" title="永久链接至标题">¶</a></h4>
+<p>Here is an optimized version of the above shell solutions, with minor fixes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#!/bin/sh
+
+if [ &quot;$(uname)&quot; = &#39;Darwin&#39; ] ||
+   [ &quot;$(uname)&quot; = &#39;FreeBSD&#39; ]; then
+   gittouch() {
+      touch -ch -t &quot;$(date -r &quot;$(git log -1 --format=%ct &quot;$1&quot;)&quot;   &#39;+%Y%m%d%H%M.%S&#39;)&quot; &quot;$1&quot;
+   }
+else
+   gittouch() {
+      touch -ch -d &quot;$(git log -1 --format=%ci &quot;$1&quot;)&quot; &quot;$1&quot;
+   }
+fi
+
+git ls-files |
+   while IFS= read -r file; do
+      gittouch &quot;$file&quot;
+   done
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h4><a class="toc-backref" href="#id20"><span class="sectnum">1.2.1.6</span> shell solution optimized 1</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h4>
+<p>The following script incorporates the -n 1 and HEAD suggestions, works in most non-Linux environments (like Cygwin), and can be run on a checkout after the fact:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#!/bin/bash -e
+
+OS=${OS:-`uname`}
+
+get_file_rev() {
+    git rev-list -n 1 HEAD &quot;$1&quot;
+}
+
+if [ &quot;$OS&quot; = &#39;FreeBSD&#39; ]
+then
+    update_file_timestamp() {
+        file_time=`date -r &quot;$(git show --pretty=format:%at   --abbrev-commit &quot;$(get_file_rev &quot;$1&quot;)&quot; | head -n 1)&quot;   &#39;+%Y%m%d%H%M.%S&#39;`
+        touch -h -t &quot;$file_time&quot; &quot;$1&quot;
+    }
+else
+    update_file_timestamp() {
+        file_time=`git show --pretty=format:%ai --abbrev-commit   &quot;$(get_file_rev &quot;$1&quot;)&quot; | head -n 1`
+        touch -d &quot;$file_time&quot; &quot;$1&quot;
+    }
+fi
+
+OLD_IFS=$IFS
+IFS=$&#39;\n&#39;
+
+for file in `git ls-files`
+do
+    update_file_timestamp &quot;$file&quot;
+done
+
+IFS=$OLD_IFS
+
+git update-index --refresh
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id21"><span class="sectnum">1.3</span> 经验点滴</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id22"><span class="sectnum">1.3.1</span> 命令</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<div class="section" id="git-clone">
+<h4><a class="toc-backref" href="#id23"><span class="sectnum">1.3.1.1</span> git clone</a><a class="headerlink" href="#git-clone" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># 注意：如果直接显式指明clone目标目录，则一定要把repo名字写上，不然不会自动加上;   如果省略,则会自动创建repo名的目录，然后clone进这个目录
+# &lt;directory&gt;The name of a new directory to clone into. The &quot;humanish&quot;    part of the source repository is used if no directory is explicitly given    (repo for /path/to/repo.git and foo for host.xz:foo/.git). Cloning into    an existing directory is only allowed if the directory is empty  #- git    clone -b gh-pages https://$GH_TOKEN_FULL@github.com/kevinluolog/   gp-memo.git /tmp/klgit/gp-memo
+
+  - git clone -b gh-pages https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git
+# 进入到clone 创建的repo目录
+  - cd gp-memo
+</pre></div>
+</div>
+</div>
+<div class="section" id="git-add">
+<h4><a class="toc-backref" href="#id24"><span class="sectnum">1.3.1.2</span> git add</a><a class="headerlink" href="#git-add" title="永久链接至标题">¶</a></h4>
+<ul class="simple">
+<li><p>git add -A  提交所有变化</p></li>
+<li><p>git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)</p></li>
+<li><p>git add .  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git add .：他会监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(   modified)以及新文件(new)，但不包括被删除的文件。
+git add -u ：他仅监控已经被add的文件（即tracked    file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked    file）。（git add --update的缩写）
+git add -A ：是上面两个功能的合集（git add --all的缩写）
+</pre></div>
+</div>
+</div>
+<div class="section" id="git-commit">
+<h4><a class="toc-backref" href="#id25"><span class="sectnum">1.3.1.3</span> git commit</a><a class="headerlink" href="#git-commit" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># git commit -m ‘message’</span>
+<span class="c1"># -m 参数表示可以直接输入后面的“message”，如果不加 -m参数，那么是不能直接输入mess   age的，而是会调用一个编辑器一般是vim来让你输入这个message，</span>
+<span class="c1"># message即是我们用来简要说明这次提交的语句。</span>
+<span class="c1"># git commit -am ‘message’ -am等同于-a -m</span>
+<span class="c1"># -a参数可以将所有已跟踪文件中的执行修改或删除操作的文件都提交到本地仓库，即使它们   没有经过git add添加到暂存区，</span>
+<span class="c1"># 注意: 新加的文件（即没有被git系统管理的文件）是不能被提交到本地仓库的。</span>
+<span class="c1"># --allow-empty</span>
+<span class="c1"># Usually recording a commit that has the exact same tree as its sole    parent commit is a mistake, and the command prevents you from making such    a commit. This option bypasses the safety, and is primarily for use by    foreign SCM interface scripts.</span>
+  <span class="o">-</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">empty</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;kl+travis+&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="git-push">
+<h4><a class="toc-backref" href="#id26"><span class="sectnum">1.3.1.4</span> git push</a><a class="headerlink" href="#git-push" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># git push的一般形式为 git push &lt;远程主机名&gt; &lt;本地分支名&gt; &lt;远程分支名&gt; ，例如    git push origin master：refs/for/master    ，即是将本地的master分支推送到远程主机origin上的对应master分支， origin    是远程主机名。第一个master是本地分支名，第二个master是远程分支名。
+# git push origin master
+# 如果 远程分支被省略，如上则表示将本地分支推送到与之存在追踪关系的远程分支（通常两者同名），如果该远程分支不存在，则会被新建
+# git push origin ：refs/for/master
+# 如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到 远程分支，等同于 git push origin –delete master
+# git push origin
+# 如果当前分支与远程分支存在追踪关系，则本地分支和远程分支都可以省略，将当前分支推送到origin主机的对应分支
+# git push
+# 如果当前分支只有一个远程分支，那么主机名都可以省略，形如 git push，可以使用git branch -r ，查看远程的分支名
+#  关于 refs/for：
+# refs/for 的意义在于我们提交代码到服务器之后是需要经过code review    之后才能进行merge的，而refs/heads 不需要
+# 原文链接：https://blog.csdn.net/qq_37577660/article/details/78565899
+  - git push https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git
+</pre></div>
+</div>
+</div>
+<div class="section" id="git-remote">
+<h4><a class="toc-backref" href="#id27"><span class="sectnum">1.3.1.5</span> git remote</a><a class="headerlink" href="#git-remote" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git remote -v
+git init
+git add xxx
+git commit -m &#39;xxx&#39;
+git remote add origin ssh://software@172.16.0.30/~/yafeng/.git
+git push origin master
+git remote show origin
+git clone https://$GH_TOKEN_FULL@github.com/kevinluolog/gp-memo.git
+</pre></div>
+</div>
+</div>
+<div class="section" id="git-ls-files-z-eol">
+<h4><a class="toc-backref" href="#id28"><span class="sectnum">1.3.1.6</span> git ls-files -z –eol 获取目录下文件名</a><a class="headerlink" href="#git-ls-files-z-eol" title="永久链接至标题">¶</a></h4>
+<p>显示所有文件</p>
+<p><a class="reference external" href="https://www.git-scm.com/docs/git-ls-files">www.git-scm.com/docs/git-ls-files</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git ls-files -z --eol
+i/lf    w/lf    attr/                   000misc/extract.mdi/lf    w/lf    attr/                   000misc/memo-debug.mdi/lf
+
+-z: 缺省把汉字等字符以\转义码输出，加z表示以正常显示字符输出,但是加z时没有分行
+--eol： will show i/&lt;eolinfo&gt;&lt;SPACES&gt;w/&lt;eolinfo&gt;&lt;SPACES&gt;attr/&lt;eolattr&gt;&lt;SPACE*&gt;&lt;TAB&gt;&lt;file&gt;， windows下自动转换会变成 w/crlf回车换行
+</pre></div>
+</div>
+</div>
+<div class="section" id="git-log-1-date-iso-format-ad-filename">
+<h4><a class="toc-backref" href="#id29"><span class="sectnum">1.3.1.7</span> git log -1 –date=iso –format=”%ad” – “$filename” 文件提交时间</a><a class="headerlink" href="#git-log-1-date-iso-format-ad-filename" title="永久链接至标题">¶</a></h4>
+<p><a class="reference external" href="https://www.git-scm.com/docs/git-log">www.git-scm.com/docs/git-log</a></p>
+<p>查看文件最后一行： tail -1 文件名，后面必须是文件， 或者 | tail -1 管道输出的内容</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>显示各纯文件名：
+git ls-files -z --eol | sed -e &quot;s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/  g&quot;
+
+显示各文件首次COMMIT时间,注意linux下是lf,not crlr：
+git ls-files -z --eol | sed -e &quot;s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/\n/  g&quot; | while read filename; do git log --date=iso --format=&quot;%ad&quot; --   &quot;$TRAVIS_BUILD_DIR/source/_posts/$filename&quot; | tail -1; done
+输出格式：可以直接被 touch 参数 --date &quot;&quot;识别
+2019-09-26 15:09:54 +0800
+
+# touch 回创建时间
+# 下面去掉bash -c 就能工作了。 xargs可以直接传参数给touch使用的。
+# 整个过程就是用git ls-files取到文件名，再用sed取出真正的文件名，再用git   log取到全部的commit历史时间，tail   -1取到创建commit时间，利用xargs把时间作为参数送到touch -data=&quot;&quot;更新时间。
+# 这个文件修改时间更新好后，还需要hexo的一个脚本，在渲染前把创建时间设置为修改时  间。因为hexo的archive排序用的是创建时间。要不然创建时永远是clone时间。
+# klBlog\themes\next\scripts\filters\kl-touch-file-time.js
+
+# ?? - git ls-files -z --eol | sed -e &quot;s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]  */\n/g&quot; | while read filename; do git log --date=iso --format=&quot;%ad&quot; --   &quot;$TRAVIS_BUILD_DIR/source/_posts/$filename&quot; | tail -1 | xargs -I{} bash   -c &#39;touch -c $filename --date=&quot;{}&quot;&#39;; done
+  - git ls-files -z --eol | sed -e &quot;s/i\/lf[ \t]*w\/lf[ \t]*attr\/[ \t]*/  \n/g&quot; | while read filename; do git log --date=iso --format=&quot;%ad&quot; --   &quot;$TRAVIS_BUILD_DIR/source/_posts/$filename&quot; | tail -1 | xargs -I{}   touch -c $filename --date=&quot;{}&quot; -m; done
+</pre></div>
+</div>
+<p>网上参考源码片段</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#？？echo &quot;touch --date=\&quot;$(git log -1 --date=iso --format=&quot;%ad&quot; --   &quot;$filename&quot;)\&quot; -m $filename&quot;</span>
+
+<span class="c1">#??git ls-files | xargs -I{} bash -c &#39;touch &quot;{}&quot; --date=@$(git log -n1 --pretty=format:%ct -- &quot;{}&quot;)&#39;</span>
+
+<span class="c1">#??xargs -I{} bash -c &#39;touch $filename --date=&quot;{}&quot;&#39;</span>
+</pre></div>
+</div>
+<p>网上参考源码，sh批处理</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># getcheckin - Retrieve the last committed checkin date and time for
+#              each of the files in the git project.  After a &quot;pull&quot;
+#              of the project, you can update the timestamp on the
+#              pulled files to match that date/time.  There are many
+#              that don&#39;t believe that this is not a good idea, but
+#              I found it useful to get the right source file dates
+#
+#              NOTE: This script produces commands suitable for
+#                    piping into BASH or other shell
+# License: Creative Commons Attribution 3.0 United States
+# (CC by 3.0 US)
+
+##########
+# walk back to the project parent or the relative pathnames don&#39;t make
+# sense
+##########
+while [ ! -d ./.git ]
+do
+    cd ..
+done
+echo &quot;cd $(pwd)&quot;
+##########
+# Note that the date format is ISO so that touch will work
+##########
+git ls-tree -r --full-tree HEAD |\
+    sed -e &quot;s/.*\t//&quot; | while read filename; do
+    echo &quot;touch --date=\&quot;$(git log -1 --date=iso --format=&quot;%ad&quot; --   &quot;$filename&quot;)\&quot; -m $filename&quot;
+done
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3><a class="toc-backref" href="#id30"><span class="sectnum">1.3.2</span> 跟踪远程分支</a><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>从当前分支切换到‘dev’分支：
+git checkout dev
+建立并切换新分支：
+git checkout -b &#39;dev&#39;
+查看当前详细分支信息（可看到当前分支与对应的远程追踪分支）:
+git branch -vv
+查看当前远程仓库信息
+git remote -vv
+</pre></div>
+</div>
+<p>如果用git push指令时，当前分支没有跟踪远程分支（没有和远程分支建立联系），那么就会git就会报错</p>
+<p>There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+因为当前分支没有追踪远程指定的分支的话，当前分支指定的版本快照不知道要作为服务器哪一个分支的版本快照的子节点。简单来说就是：不知道要推送给哪一个分支。
+那么如何建立远程分支：</p>
+<p>克隆时自动将创建好的master分支追踪origin/master分支</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">服务器地址</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">develop</span> <span class="n">origin</span><span class="o">/</span><span class="n">develop</span>
+</pre></div>
+</div>
+<p>在远程分支的基础上建立develop分支，并且让develop分支追踪origin/develop远程分支。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">--</span><span class="nb">set</span><span class="o">-</span><span class="n">upstream</span> <span class="n">branch</span><span class="o">-</span><span class="n">name</span> <span class="n">origin</span><span class="o">/</span><span class="n">branch</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
+<p>将branch-name分支追踪远程分支origin/branch-name</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span><span class="o">/</span><span class="n">serverfix</span>
+</pre></div>
+</div>
+<p>设置当前分支跟踪远程分支origin/serverfix</p>
+<p>查看本地分支和远程分支的跟踪关系</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">vv</span>
+</pre></div>
+</div>
+<p>比如输入</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git branch -vv
+  develop   08775f9 [origin/develop] develop
+  feature_1 b41865d [origin/feature_1] feature_1
+* master    1399706 [my_github/master] init commit
+</pre></div>
+</div>
+<p>develop分支跟踪origin/develop</p>
+<p>feature_1分支跟踪origin/feature_1</p>
+<p>master跟踪了my_github/master，且当前分支为master分支</p>
+<p>那么假如我此时想要将master的改变推送到origin服务器的master分支上：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout master//切换到master分支
+...
+$ git branch -u origin/master//将当前分支跟踪origin/master
+</pre></div>
+</div>
+<p>Branch ‘master’ set up to track remote branch ‘master’ from ‘origin’.
+之后就可以执行git add和git commit了
+现在再查看一下本地和远程的分支关系：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git branch -vv
+  develop   08775f9 [origin/develop] develop
+  feature_1 b41865d [origin/feature_1] feature_1
+* master    1399706 [origin/master] init commit
+</pre></div>
+</div>
+<p>master已经跟踪了origin/master了</p>
+</div>
+<div class="section" id="tortoisegit">
+<h3><a class="toc-backref" href="#id31"><span class="sectnum">1.3.3</span> 实际命令摘录，tortoiseGit</a><a class="headerlink" href="#tortoisegit" title="永久链接至标题">¶</a></h3>
+<div class="section" id="git-exe-pull-progress-v-no-rebase-origin-hexo-next-pisces">
+<h4><a class="toc-backref" href="#id32"><span class="sectnum">1.3.3.1</span> git.exe pull –progress -v –no-rebase “origin” hexo-next-Pisces</a><a class="headerlink" href="#git-exe-pull-progress-v-no-rebase-origin-hexo-next-pisces" title="永久链接至标题">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span><span class="o">.</span><span class="n">exe</span> <span class="n">pull</span> <span class="o">--</span><span class="n">progress</span> <span class="o">-</span><span class="n">v</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">rebase</span> <span class="s2">&quot;origin&quot;</span> <span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">Pisces</span>
+
+<span class="n">From</span> <span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">kevinluolog</span><span class="o">/</span><span class="n">hexo</span><span class="o">-</span><span class="n">klblog</span><span class="o">-</span><span class="n">src</span>
+<span class="o">*</span> <span class="n">branch</span>            <span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">Pisces</span> <span class="o">-&gt;</span> <span class="n">FETCH_HEAD</span>
+<span class="o">=</span> <span class="p">[</span><span class="n">up</span> <span class="n">to</span> <span class="n">date</span><span class="p">]</span>      <span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">Pisces</span> <span class="o">-&gt;</span> <span class="n">origin</span><span class="o">/</span><span class="n">hexo</span><span class="o">-</span><span class="nb">next</span><span class="o">-</span><span class="n">Pisces</span>
+<span class="n">Already</span> <span class="n">up</span> <span class="n">to</span> <span class="n">date</span><span class="o">.</span>
+
+<span class="n">Success</span> <span class="p">(</span><span class="mi">7800</span> <span class="n">ms</span> <span class="o">@</span> <span class="mi">2019</span><span class="o">/</span><span class="mi">10</span><span class="o">/</span><span class="mi">27</span> <span class="n">星期日</span> <span class="mi">8</span><span class="p">:</span><span class="mi">50</span><span class="p">:</span><span class="mi">58</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3><a class="toc-backref" href="#id33"><span class="sectnum">1.3.4</span> 离散点滴</a><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>git clone -b gh-pages <a class="reference external" href="https://$GH_TOKEN_FULL&#64;github.com/kevinluolog/gp-memo.git">https://$GH_TOKEN_FULL&#64;github.com/kevinluolog/gp-memo.git</a>： 不写目标目录时，会把repo名gp-memo作为目录名</p></li>
+<li><p>git clone -b gh-pages <a class="reference external" href="https://$GH_TOKEN_FULL&#64;github.com/kevinluolog/gp-memo.git">https://$GH_TOKEN_FULL&#64;github.com/kevinluolog/gp-memo.git</a> /tmp/gp-memo： 写目标目录时，不会自动把repo名gp-memo作为目录名，需要显式地写上，要不会把repo内容直接写入目标目录。</p></li>
+<li><p>git commit –allow-empty -m “kl+travis+” : –allow-empty 让commit相同时不返回错exit(1),如travis CI 不会报错</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="gitpage.html" title="1 gitpages"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="demo-markdown.html" title="1 markdow demo"
+             >上一页</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2019, kevinluo.
+    </div>
+  </body>
+</html>
