@@ -9,8 +9,10 @@ INPUT sphinxmanual.cls
 INPUT sphinxmanual.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
 INPUT /usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
@@ -186,7 +188,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
@@ -198,6 +199,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty
 INPUT sphinxmessages.sty
 INPUT sphinxmessages.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 OUTPUT hipost.idx
 INPUT hipost.aux
 INPUT hipost.aux
@@ -217,8 +220,11 @@ INPUT hipost.out
 OUTPUT hipost.out
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
