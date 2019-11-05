@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.11.5)  5 NOV 2019 13:49
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.11.5)  5 NOV 2019 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,31 +910,31 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 File: gloss-english.ldf polyglossia: module for english
 )
 Package polyglossia Info: Default language is english.
-\g__fontspec_family_AdobeSongStd_int=\count145
+\g__fontspec_family_FZYingBiXingShu-S16S_int=\count145
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font Adobe Song Std/BI (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font Adobe Song Std/B (it probably doesn't exist).
+. Could not resolve font FZYingBiXingShu-S16S/BI (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font Adobe Song Std/I (it probably doesn't exist).
+. Could not resolve font FZYingBiXingShu-S16S/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font FZYingBiXingShu-S16S/I (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'AdobeSongStd(0)' created for font 'Adobe Song Std' with options
-. [Script={CJK}].
+. Font family 'FZYingBiXingShu-S16S(0)' created for font
+. 'FZYingBiXingShu-S16S' with options [Script={CJK}].
 . 
 . This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->"Adobe Song
-. Std/OT:script=hani;language=DFLT;"
+. - 'normal' (m/n) with NFSS spec.:
+. <->"FZYingBiXingShu-S16S/OT:script=hani;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 
@@ -1549,8 +1549,9 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Font Warning: Font shape `EU1/AdobeSongStd(0)/bx/n' undefined
-(Font)              using `EU1/AdobeSongStd(0)/m/n' instead on input line 59.
+LaTeX Font Warning: Font shape `EU1/FZYingBiXingShu-S16S(0)/bx/n' undefined
+(Font)              using `EU1/FZYingBiXingShu-S16S(0)/m/n' instead on input li
+ne 59.
 
 [1
 
@@ -1566,8 +1567,9 @@ LaTeX Font Warning: Font shape `EU1/AdobeSongStd(0)/bx/n' undefined
  [2]
 Chapter 1.
 
-LaTeX Font Warning: Font shape `EU1/AdobeSongStd(0)/m/it' undefined
-(Font)              using `EU1/AdobeSongStd(0)/m/n' instead on input line 73.
+LaTeX Font Warning: Font shape `EU1/FZYingBiXingShu-S16S(0)/m/it' undefined
+(Font)              using `EU1/FZYingBiXingShu-S16S(0)/m/n' instead on input li
+ne 73.
 
 [1
 
@@ -1583,7 +1585,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 2.
-[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16
+[3]
+Missing character: There is no 諡 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [4] [5] [6] [7] [8]
+Missing character: There is no 寃 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [9]
+Missing character: There is no 洊 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [10] [11] [12] [13] [14] [15] [16
 
 ]
 Chapter 3.
@@ -1601,7 +1612,15 @@ Chapter 5.
 
 ]
 Chapter 6.
-[39] [40] [41] [42] [43] [44] [45] [46
+[39]
+Missing character: There is no 缊 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [40]
+Missing character: There is no 溍 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 缊 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [41] [42] [43] [44] [45] [46
 
 ]
 Chapter 7.
@@ -1694,7 +1713,10 @@ Missing character: There is no ⒀ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒁ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒂ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒃ in font [lmroman12-regular]:mapping=tex-text!
- [54] [55] [56]
+ [54] [55]
+Missing character: There is no 榖 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [56]
 Chapter 10.
 [57
 
@@ -1723,13 +1745,20 @@ Missing character: There is no ⑼ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑽ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑾ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑿ in font [lmroman12-regular]:mapping=tex-text!
+Missing character: There is no 鷁 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
 Missing character: There is no ⒀ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒁ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒂ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒃ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒄ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒅ in font [lmroman12-regular]:mapping=tex-text!
- [70] [71] [72
+ [70]
+Missing character: There is no 鷁 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 鷁 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [71] [72
 
 ]
 Chapter 14.
@@ -1751,6 +1780,10 @@ Missing character: There is no ⒁ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒂ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒃ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑴ in font [lmroman12-regular]:mapping=tex-text!
+Missing character: There is no 罇 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 罇 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
 Missing character: There is no ⑵ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑶ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑷ in font [lmroman12-regular]:mapping=tex-text!
@@ -1767,22 +1800,94 @@ Missing character: There is no ⒀ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒁ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒂ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒃ in font [lmroman12-regular]:mapping=tex-text!
- [75] [76] [77] [78] [79] [80
+Missing character: There is no 珪 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [75]
+Missing character: There is no 朓 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [76] [77]
+Missing character: There is no 珽 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [78] [79] [80
 
 ]
 Chapter 15.
 [81] [82] [83] [84] [85]
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
+Missing character: There is no 鲙 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
- [86] [87] [88]
+ [86]
+Missing character: There is no 棅 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 濬 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 珽 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 珽 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [87] [88]
 Chapter 16.
 [89
 
-] [90] [91] [92] [93] [94] [95] [96]
+]
+Missing character: There is no 嚱 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 巉 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 豗 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 砯 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 嚱 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 嚱 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [90]
+Missing character: There is no 巉 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 豗 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 砯 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 砯 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 趦 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [91]
+Missing character: There is no 琯 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [92]
+Missing character: There is no 璠 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 琯 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 嚱 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [93]
+Missing character: There is no 璠 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [94]
+Missing character: There is no 慠 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 夬 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 珽 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 豗 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 砅 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [95]
+Missing character: There is no 嚱 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 撗 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [96]
 Chapter 17.
 Missing character: There is no ⑴ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑵ in font [lmroman12-regular]:mapping=tex-text!
@@ -1842,7 +1947,15 @@ Chapter 20.
 Chapter 21.
 [115
 
-] [116] [117] [118] [119] [120] [121] [122] [123] [124
+] [116] [117] [118] [119] [120] [121]
+Missing character: There is no 铏 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [122]
+Missing character: There is no 焴 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 祐 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [123] [124
 
 ]
 Chapter 22.
@@ -1853,7 +1966,78 @@ Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
 
 ]
 Chapter 23.
-[129] [130] [131] [132] [133] [134] [135] [136
+Missing character: There is no 輮 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 輮 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+[129]
+Missing character: There is no 跂 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 滫 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 蜹 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 惛 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 惛 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 螣 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 鼫 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 蝡 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 囋 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 囋 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 飡 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [130]
+Missing character: There is no 楛 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 楛 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 楛 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 輮 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 煣 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [131]
+Missing character: There is no 跂 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 脰 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 滫 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 滫 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [132]
+Missing character: There is no 蜹 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 惛 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 惛 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 螣 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 鼫 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 鼫 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 鸤 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [133]
+Missing character: There is no 蝡 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 囋 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 飡 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 楛 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+ [134] [135] [136
 
 ]
 Chapter 24.
@@ -1894,6 +2078,10 @@ Chapter 28.
 
 ]
 Chapter 29.
+Missing character: There is no 洩 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
+Missing character: There is no 洩 in font FZYingBiXingShu-S16S/OT:script=hani;la
+nguage=DFLT;!
 [155] [156]
 Chapter 30.
 [157
@@ -1944,8 +2132,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  29304 strings out of 493638
- 568262 string characters out of 6146796
- 602877 words of memory out of 5000000
+ 573546 string characters out of 6146796
+ 602951 words of memory out of 5000000
  32402 multiletter control sequences out of 15000+600000
  8820 words of font info for 56 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
