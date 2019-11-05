@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.11.5)  5 NOV 2019 08:57
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.11.5)  5 NOV 2019 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,26 +910,32 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 File: gloss-english.ldf polyglossia: module for english
 )
 Package polyglossia Info: Default language is english.
-\g__fontspec_family_MicrosoftYaHei_int=\count145
+\g__fontspec_family_FZXingKai-S04T_int=\count145
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font Microsoft YaHei/I (it probably doesn't exist).
+. Could not resolve font FZXingKai-S04T/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font FZXingKai-S04T/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font FZXingKai-S04T/I (it probably doesn't exist).
 .................................................
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'MicrosoftYaHei(0)' created for font 'Microsoft YaHei' with
+. Font family 'FZXingKai-S04T(0)' created for font 'FZXingKai-S04T' with
 . options [Script={CJK}].
 . 
 . This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->"Microsoft
-. YaHei/OT:script=hani;language=DFLT;"
-. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
-. <->"Microsoft YaHei/B/OT:script=hani;language=DFLT;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: - 'bold italic' (bx/it) with
-. NFSS spec.: <->"Microsoft YaHei/BI/OT:script=hani;language=DFLT;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+. - 'normal' (m/n) with NFSS spec.:
+. <->"FZXingKai-S04T/OT:script=hani;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 
 (/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty
@@ -1541,13 +1547,18 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+
+LaTeX Font Warning: Font shape `EU1/FZXingKai-S04T(0)/bx/n' undefined
+(Font)              using `EU1/FZXingKai-S04T(0)/m/n' instead on input line 59.
+
+
+[1
 
 ] [2
 
 
-]
-(./hipost.toc [1
+] (./hipost.toc [1
 
 ])
 \tf@toc=\write6
@@ -1556,8 +1567,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [2]
 Chapter 1.
 
-LaTeX Font Warning: Font shape `EU1/MicrosoftYaHei(0)/m/it' undefined
-(Font)              using `EU1/MicrosoftYaHei(0)/m/n' instead on input line 73.
+LaTeX Font Warning: Font shape `EU1/FZXingKai-S04T(0)/m/it' undefined
+(Font)              using `EU1/FZXingKai-S04T(0)/m/n' instead on input line 73.
 
 
 [1
@@ -1574,7 +1585,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 2.
-[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16
+[3]
+Missing character: There is no 諡 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [4] [5] [6] [7] [8]
+Missing character: There is no 寃 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [9]
+Missing character: There is no 洊 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [10] [11] [12] [13] [14] [15] [16
 
 ]
 Chapter 3.
@@ -1582,9 +1602,9 @@ Chapter 3.
 
 ]
 Chapter 4.
-[23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33]
+[23] [24] [25] [26] [27] [28] [29] [30] [31] [32]
 Missing character: There is no ○ in font [lmroman12-regular]:mapping=tex-text!
- [34] [35] [36
+ [33] [34] [35] [36
 
 ]
 Chapter 5.
@@ -1592,7 +1612,15 @@ Chapter 5.
 
 ]
 Chapter 6.
-[39] [40] [41] [42] [43] [44] [45] [46
+[39]
+Missing character: There is no 缊 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [40]
+Missing character: There is no 溍 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 缊 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [41] [42] [43] [44] [45] [46
 
 ]
 Chapter 7.
@@ -1685,7 +1713,10 @@ Missing character: There is no ⒀ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒁ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒂ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒃ in font [lmroman12-regular]:mapping=tex-text!
- [54] [55] [56]
+ [54] [55]
+Missing character: There is no 榖 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [56]
 Chapter 10.
 [57
 
@@ -1714,13 +1745,20 @@ Missing character: There is no ⑼ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑽ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑾ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑿ in font [lmroman12-regular]:mapping=tex-text!
+Missing character: There is no 鷁 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
 Missing character: There is no ⒀ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒁ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒂ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒃ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒄ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒅ in font [lmroman12-regular]:mapping=tex-text!
- [70] [71] [72
+ [70]
+Missing character: There is no 鷁 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 鷁 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [71] [72
 
 ]
 Chapter 14.
@@ -1742,6 +1780,10 @@ Missing character: There is no ⒁ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒂ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒃ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑴ in font [lmroman12-regular]:mapping=tex-text!
+Missing character: There is no 罇 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 罇 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
 Missing character: There is no ⑵ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑶ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑷ in font [lmroman12-regular]:mapping=tex-text!
@@ -1758,22 +1800,94 @@ Missing character: There is no ⒀ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒁ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒂ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⒃ in font [lmroman12-regular]:mapping=tex-text!
- [75] [76] [77] [78] [79] [80
+Missing character: There is no 珪 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [75]
+Missing character: There is no 朓 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [76] [77]
+Missing character: There is no 珽 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [78] [79] [80
 
 ]
 Chapter 15.
 [81] [82] [83] [84] [85]
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
+Missing character: There is no 鲙 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
- [86] [87] [88]
+ [86]
+Missing character: There is no 棅 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 濬 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 珽 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 珽 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [87] [88]
 Chapter 16.
 [89
 
-] [90] [91] [92] [93] [94] [95] [96]
+]
+Missing character: There is no 嚱 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 巉 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 豗 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 砯 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 嚱 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 嚱 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [90]
+Missing character: There is no 巉 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 豗 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 砯 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 砯 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 趦 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [91]
+Missing character: There is no 琯 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [92]
+Missing character: There is no 璠 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 琯 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 嚱 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [93]
+Missing character: There is no 璠 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [94]
+Missing character: There is no 慠 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 夬 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 珽 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 豗 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 砅 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [95]
+Missing character: There is no 嚱 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 撗 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [96]
 Chapter 17.
 Missing character: There is no ⑴ in font [lmroman12-regular]:mapping=tex-text!
 Missing character: There is no ⑵ in font [lmroman12-regular]:mapping=tex-text!
@@ -1833,7 +1947,15 @@ Chapter 20.
 Chapter 21.
 [115
 
-] [116] [117] [118] [119] [120] [121] [122] [123] [124
+] [116] [117] [118] [119] [120] [121]
+Missing character: There is no 铏 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [122]
+Missing character: There is no 焴 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 祐 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [123] [124
 
 ]
 Chapter 22.
@@ -1844,7 +1966,78 @@ Missing character: There is no ─ in font [lmroman12-regular]:mapping=tex-text!
 
 ]
 Chapter 23.
-[129] [130] [131] [132] [133] [134] [135] [136
+Missing character: There is no 輮 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 輮 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+[129]
+Missing character: There is no 跂 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 滫 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 蜹 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 惛 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 惛 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 螣 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 鼫 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 蝡 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 囋 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 囋 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 飡 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [130]
+Missing character: There is no 楛 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 楛 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 楛 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 輮 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 煣 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [131]
+Missing character: There is no 跂 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 脰 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 滫 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 滫 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [132]
+Missing character: There is no 蜹 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 惛 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 惛 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 螣 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 鼫 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 鼫 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 鸤 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [133]
+Missing character: There is no 蝡 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 囋 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 飡 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 楛 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+ [134] [135] [136
 
 ]
 Chapter 24.
@@ -1885,6 +2078,10 @@ Chapter 28.
 
 ]
 Chapter 29.
+Missing character: There is no 洩 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
+Missing character: There is no 洩 in font FZXingKai-S04T/OT:script=hani;language
+=DFLT;!
 [155] [156]
 Chapter 30.
 [157
@@ -1934,11 +2131,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 29314 strings out of 493638
- 569878 string characters out of 6146796
- 602750 words of memory out of 5000000
- 32406 multiletter control sequences out of 15000+600000
- 8844 words of font info for 59 fonts, out of 8000000 for 9000
+ 29304 strings out of 493638
+ 569562 string characters out of 6146796
+ 602888 words of memory out of 5000000
+ 32402 multiletter control sequences out of 15000+600000
+ 8820 words of font info for 56 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  54i,12n,72p,10449b,592s stack positions out of 5000i,500n,10000p,200000b,80000s
 

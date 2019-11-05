@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {4.2}1.2   第二篇 改过之法}{26}{section.4.2}
 \contentsline {section}{\numberline {4.3}1.3   第三篇 积善之方}{27}{section.4.3}
 \contentsline {section}{\numberline {4.4}1.4   第四篇 谦德之效}{32}{section.4.4}
-\contentsline {section}{\numberline {4.5}1.5   【袁了凡居士传】}{34}{section.4.5}
+\contentsline {section}{\numberline {4.5}1.5   【袁了凡居士传】}{33}{section.4.5}
 \contentsline {section}{\numberline {4.6}1.6   【袁了凡居士传】【注】}{35}{section.4.6}
 \contentsline {chapter}{\numberline {5}1   Hi,p01散文}{37}{chapter.5}
 \contentsline {section}{\numberline {5.1}1.1   post}{37}{section.5.1}
@@ -123,7 +123,7 @@
 \contentsline {subsection}{\numberline {19.2.2}1.2.2   2.景物层次，安排得当}{107}{subsection.19.2.2}
 \contentsline {subsection}{\numberline {19.2.3}1.2.3   3.远近大细，各得其宜}{107}{subsection.19.2.3}
 \contentsline {subsection}{\numberline {19.2.4}1.2.4   4.虚实手法，同时并用}{107}{subsection.19.2.4}
-\contentsline {subsection}{\numberline {19.2.5}1.2.5   5.适当点题，意义深远}{108}{subsection.19.2.5}
+\contentsline {subsection}{\numberline {19.2.5}1.2.5   5.适当点题，意义深远}{107}{subsection.19.2.5}
 \contentsline {subsection}{\numberline {19.2.6}1.2.6   6.山水画法，以大观小}{108}{subsection.19.2.6}
 \contentsline {chapter}{\numberline {20}1   艾青-大堰河——我的保姆}{109}{chapter.20}
 \contentsline {section}{\numberline {20.1}1.1   作品原文}{109}{section.20.1}
