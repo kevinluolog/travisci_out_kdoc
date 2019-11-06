@@ -19,7 +19,7 @@
 
 
 
-\setCJKmainfont{FZYingBiXingShu-S16S}
+%\setCJKmainfont{Adobe Song Std}
 
 
 \usepackage[Sonny]{fncychap}
@@ -42,12 +42,14 @@
 \setcounter{tocdepth}{0}
 
 
+%中文字体fontsize放大,kl+
+%\defaultCJKfontfeatures{Scale=2}
 \usepackage{enumitem}
 \setlistdepth{99}
 
 
 \title{memo of study}
-\date{2019 年 11 月 05 日}
+\date{2019 年 11 月 06 日}
 \release{}
 \author{kevinluo}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -843,13 +845,29 @@ Ubuntu系统中的字体文件存放在下面文件夹中
 
 {}` \textless{}\sphinxurl{http://manpages.ubuntu.com/manpages/trusty/en/man1/fc-list.1.html}\textgreater{}{}`\_\_
 
-{}` \textless{}\textgreater{}{}`\_\_
+\sphinxhref{https://www.jianshu.com/p/0ad5625e9717}{为SublimeText3配置IDE(Anaconda虚拟环境)}
 
-{}` \textless{}\textgreater{}{}`\_\_
+去掉代码边上的白框
 
-{}` \textless{}\textgreater{}{}`\_\_
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{Sublime} \PYG{o}{\PYGZgt{}} \PYG{n}{Preferences} \PYG{o}{\PYGZgt{}} \PYG{n}{Package} \PYG{n}{Settings} \PYG{o}{\PYGZgt{}} \PYG{n}{Anaconda} \PYG{o}{\PYGZgt{}} \PYG{n}{Settings} \PYG{n}{User}
+\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{anaconda\PYGZus{}linting}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:} \PYG{n}{false}\PYG{p}{\PYGZcb{}}
+\end{sphinxVerbatim}
 
-{}` \textless{}\textgreater{}{}`\_\_
+安装格式化插件Python PEP8 Autoformat，快捷键Ctrl+Shift+R。
+
+\sphinxhref{https://www.sphinx-doc.org/en/master/usage/configuration.html}{conf.py of Sphinx doc}
+
+latex\_show\_urls
+source\_suffix
+
+\sphinxhref{https://www.sphinx-doc.org/en/master/latex.html}{LaTeX customization of sphinx-doc}
+
+latex\_engine
+latex\_elements
+latex\_show\_urls
+
+\sphinxhref{https://www.sphinx-doc.org/en/master/usage/markdown.html}{Sphinx support markdown}
 
 {}` \textless{}\textgreater{}{}`\_\_
 
@@ -7695,7 +7713,7 @@ kevinluo
 \item[{Authors}] \leavevmode
 \item[{organization}] \leavevmode
 \item[{date}] \leavevmode
-2019-11-05
+2019-11-06
 
 \item[{status}] \leavevmode
 \item[{revision}] \leavevmode
