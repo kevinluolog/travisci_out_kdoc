@@ -17,166 +17,676 @@
 \contentsline {chapter}{\numberline {3}1   张英-聪训斋语}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}1.1   有之四纲十二目如下：}{17}{section.3.1}
 \contentsline {section}{\numberline {3.2}1.2   原文}{17}{section.3.2}
-\contentsline {chapter}{\numberline {4}1   袁了凡-了凡四训}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}1.1   第一篇 立命之学}{23}{section.4.1}
-\contentsline {section}{\numberline {4.2}1.2   第二篇 改过之法}{26}{section.4.2}
-\contentsline {section}{\numberline {4.3}1.3   第三篇 积善之方}{27}{section.4.3}
-\contentsline {section}{\numberline {4.4}1.4   第四篇 谦德之效}{32}{section.4.4}
-\contentsline {section}{\numberline {4.5}1.5   【袁了凡居士传】}{33}{section.4.5}
-\contentsline {section}{\numberline {4.6}1.6   【袁了凡居士传】【注】}{35}{section.4.6}
-\contentsline {chapter}{\numberline {5}1   Hi,p01散文}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}1.1   post}{37}{section.5.1}
-\contentsline {chapter}{\numberline {6}1   宋濂-送东阳马生序}{39}{chapter.6}
-\contentsline {section}{\numberline {6.1}1.1   作品原文}{40}{section.6.1}
-\contentsline {section}{\numberline {6.2}1.2   词句注释}{40}{section.6.2}
-\contentsline {section}{\numberline {6.3}1.3   白话译文}{42}{section.6.3}
-\contentsline {section}{\numberline {6.4}1.4   创作背景}{43}{section.6.4}
-\contentsline {section}{\numberline {6.5}1.5   作品鉴赏}{43}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}1.5.1   第一段}{43}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}1.5.2   第二段}{44}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}1.5.3   第三段}{44}{subsection.6.5.3}
-\contentsline {subsection}{\numberline {6.5.4}1.5.4   总结}{44}{subsection.6.5.4}
-\contentsline {section}{\numberline {6.6}1.6   名家点评}{45}{section.6.6}
-\contentsline {section}{\numberline {6.7}1.7   作者简介}{45}{section.6.7}
-\contentsline {chapter}{\numberline {7}1   岳飞-满江红·怒发冲冠}{47}{chapter.7}
-\contentsline {section}{\numberline {7.1}1.1   作品原文}{48}{section.7.1}
-\contentsline {section}{\numberline {7.2}1.2   词句注释}{48}{section.7.2}
-\contentsline {section}{\numberline {7.3}1.3   白话译文}{49}{section.7.3}
-\contentsline {section}{\numberline {7.4}1.4   创作背景}{49}{section.7.4}
-\contentsline {section}{\numberline {7.5}1.5   作品鉴赏}{49}{section.7.5}
-\contentsline {section}{\numberline {7.6}1.6   名家点评}{50}{section.7.6}
-\contentsline {section}{\numberline {7.7}1.7   作者简介}{50}{section.7.7}
-\contentsline {chapter}{\numberline {8}1   峻青-海滨仲夏夜}{51}{chapter.8}
-\contentsline {section}{\numberline {8.1}1.1   作品原文}{51}{section.8.1}
-\contentsline {section}{\numberline {8.2}1.2   注释}{52}{section.8.2}
-\contentsline {chapter}{\numberline {9}1   曹操-观沧海}{53}{chapter.9}
-\contentsline {section}{\numberline {9.1}1.1   作品原文}{53}{section.9.1}
-\contentsline {section}{\numberline {9.2}1.2   词语注释}{54}{section.9.2}
-\contentsline {section}{\numberline {9.3}1.3   白话译文}{55}{section.9.3}
-\contentsline {section}{\numberline {9.4}1.4   创作背景}{55}{section.9.4}
-\contentsline {section}{\numberline {9.5}1.5   作品鉴赏}{55}{section.9.5}
-\contentsline {section}{\numberline {9.6}1.6   名家点评}{56}{section.9.6}
-\contentsline {section}{\numberline {9.7}1.7   作者简介}{56}{section.9.7}
-\contentsline {chapter}{\numberline {10}1   朱自清-春}{57}{chapter.10}
-\contentsline {section}{\numberline {10.1}1.1   作品原文}{57}{section.10.1}
-\contentsline {chapter}{\numberline {11}1   朱自清-梅雨潭的绿}{59}{chapter.11}
-\contentsline {section}{\numberline {11.1}1.1   作品原文}{59}{section.11.1}
-\contentsline {section}{\numberline {11.2}1.2   梅雨潭位置}{60}{section.11.2}
-\contentsline {section}{\numberline {11.3}1.3   梅雨潭主要景点}{60}{section.11.3}
-\contentsline {subsection}{\numberline {11.3.1}1.3.1   通元洞}{61}{subsection.11.3.1}
-\contentsline {subsection}{\numberline {11.3.2}1.3.2   飞瀑}{61}{subsection.11.3.2}
-\contentsline {subsection}{\numberline {11.3.3}1.3.3   潭水}{61}{subsection.11.3.3}
-\contentsline {chapter}{\numberline {12}1   朱自清-背影}{63}{chapter.12}
-\contentsline {section}{\numberline {12.1}1.1   作品原文}{64}{section.12.1}
-\contentsline {section}{\numberline {12.2}1.2   词语注释编辑}{65}{section.12.2}
-\contentsline {section}{\numberline {12.3}1.3   创作背景}{65}{section.12.3}
-\contentsline {section}{\numberline {12.4}1.4   内容赏析}{65}{section.12.4}
-\contentsline {subsection}{\numberline {12.4.1}1.4.1   第一部分（第一至第三段）}{66}{subsection.12.4.1}
-\contentsline {subsection}{\numberline {12.4.2}1.4.2   第二部分（第四至第六段）}{66}{subsection.12.4.2}
-\contentsline {subsection}{\numberline {12.4.3}1.4.3   第三部分（最后一段）}{67}{subsection.12.4.3}
-\contentsline {section}{\numberline {12.5}1.5   语言特色}{67}{section.12.5}
-\contentsline {section}{\numberline {12.6}1.6   写作特色}{67}{section.12.6}
-\contentsline {section}{\numberline {12.7}1.7   行文立意}{68}{section.12.7}
-\contentsline {section}{\numberline {12.8}1.8   名家点评}{68}{section.12.8}
-\contentsline {chapter}{\numberline {13}1   朱自清-荷塘月色}{69}{chapter.13}
-\contentsline {section}{\numberline {13.1}1.1   作品原文}{69}{section.13.1}
-\contentsline {section}{\numberline {13.2}1.2   词语注释}{70}{section.13.2}
-\contentsline {chapter}{\numberline {14}1   李白-将进酒}{73}{chapter.14}
-\contentsline {section}{\numberline {14.1}1.1   作品原文}{74}{section.14.1}
-\contentsline {section}{\numberline {14.2}1.2   词句注释}{74}{section.14.2}
-\contentsline {section}{\numberline {14.3}1.3   白话译文}{75}{section.14.3}
-\contentsline {section}{\numberline {14.4}1.4   创作背景}{75}{section.14.4}
-\contentsline {section}{\numberline {14.5}1.5   作品鉴赏}{76}{section.14.5}
-\contentsline {section}{\numberline {14.6}1.6   名家点评}{78}{section.14.6}
-\contentsline {section}{\numberline {14.7}1.7   作者简介}{78}{section.14.7}
-\contentsline {chapter}{\numberline {15}1   李白-梦游天姥吟留别}{81}{chapter.15}
-\contentsline {section}{\numberline {15.1}1.1   作品原文}{82}{section.15.1}
-\contentsline {section}{\numberline {15.2}1.2   词句注释}{82}{section.15.2}
-\contentsline {section}{\numberline {15.3}1.3   白话译文}{84}{section.15.3}
-\contentsline {section}{\numberline {15.4}1.4   创作背景}{85}{section.15.4}
-\contentsline {section}{\numberline {15.5}1.5   作品鉴赏}{85}{section.15.5}
-\contentsline {section}{\numberline {15.6}1.6   名家点评}{87}{section.15.6}
-\contentsline {section}{\numberline {15.7}1.7   作者简介}{88}{section.15.7}
-\contentsline {chapter}{\numberline {16}1   李白-蜀道难}{89}{chapter.16}
-\contentsline {section}{\numberline {16.1}1.1   作品原文}{90}{section.16.1}
-\contentsline {section}{\numberline {16.2}1.2   词句注释}{90}{section.16.2}
-\contentsline {section}{\numberline {16.3}1.3   白话译文}{92}{section.16.3}
-\contentsline {section}{\numberline {16.4}1.4   创作背景}{92}{section.16.4}
-\contentsline {section}{\numberline {16.5}1.5   整体赏析}{93}{section.16.5}
-\contentsline {section}{\numberline {16.6}1.6   历代评论}{95}{section.16.6}
-\contentsline {section}{\numberline {16.7}1.7   作者简介}{96}{section.16.7}
-\contentsline {chapter}{\numberline {17}1   毛泽东-七律·长征}{97}{chapter.17}
-\contentsline {section}{\numberline {17.1}1.1   作品原文}{97}{section.17.1}
-\contentsline {section}{\numberline {17.2}1.2   词句注释}{98}{section.17.2}
-\contentsline {section}{\numberline {17.3}1.3   白话译文}{99}{section.17.3}
-\contentsline {section}{\numberline {17.4}1.4   创作背景}{99}{section.17.4}
-\contentsline {chapter}{\numberline {18}1   毛泽东-沁园春·雪}{101}{chapter.18}
-\contentsline {section}{\numberline {18.1}1.1   作品原文}{101}{section.18.1}
-\contentsline {section}{\numberline {18.2}1.2   词句注释}{102}{section.18.2}
-\contentsline {section}{\numberline {18.3}1.3   白话译文}{102}{section.18.3}
-\contentsline {section}{\numberline {18.4}1.4   创作背景}{103}{section.18.4}
-\contentsline {section}{\numberline {18.5}1.5   名家点评}{103}{section.18.5}
-\contentsline {chapter}{\numberline {19}1   老舍-济南的冬天}{105}{chapter.19}
-\contentsline {section}{\numberline {19.1}1.1   作品原文}{105}{section.19.1}
-\contentsline {section}{\numberline {19.2}1.2   写景手法}{106}{section.19.2}
-\contentsline {subsection}{\numberline {19.2.1}1.2.1   1.基调统一，色彩和谐}{106}{subsection.19.2.1}
-\contentsline {subsection}{\numberline {19.2.2}1.2.2   2.景物层次，安排得当}{107}{subsection.19.2.2}
-\contentsline {subsection}{\numberline {19.2.3}1.2.3   3.远近大细，各得其宜}{107}{subsection.19.2.3}
-\contentsline {subsection}{\numberline {19.2.4}1.2.4   4.虚实手法，同时并用}{107}{subsection.19.2.4}
-\contentsline {subsection}{\numberline {19.2.5}1.2.5   5.适当点题，意义深远}{107}{subsection.19.2.5}
-\contentsline {subsection}{\numberline {19.2.6}1.2.6   6.山水画法，以大观小}{108}{subsection.19.2.6}
-\contentsline {chapter}{\numberline {20}1   艾青-大堰河——我的保姆}{109}{chapter.20}
-\contentsline {section}{\numberline {20.1}1.1   作品原文}{109}{section.20.1}
-\contentsline {section}{\numberline {20.2}1.2   创作背景}{113}{section.20.2}
-\contentsline {section}{\numberline {20.3}1.3   作品鉴赏}{113}{section.20.3}
-\contentsline {section}{\numberline {20.4}1.4   名家点评}{114}{section.20.4}
-\contentsline {chapter}{\numberline {21}1   范仲淹-岳阳楼记}{115}{chapter.21}
-\contentsline {section}{\numberline {21.1}1.1   作品原文}{116}{section.21.1}
-\contentsline {section}{\numberline {21.2}1.2   词句注释}{116}{section.21.2}
-\contentsline {section}{\numberline {21.3}1.3   白话译文}{119}{section.21.3}
-\contentsline {section}{\numberline {21.4}1.4   创作背景}{120}{section.21.4}
-\contentsline {section}{\numberline {21.5}1.5   文学赏析}{120}{section.21.5}
-\contentsline {section}{\numberline {21.6}1.6   名家点评}{122}{section.21.6}
-\contentsline {section}{\numberline {21.7}1.7   作者简介}{123}{section.21.7}
-\contentsline {chapter}{\numberline {22}1   茅盾-白杨礼赞}{125}{chapter.22}
-\contentsline {section}{\numberline {22.1}1.1   作品原文}{125}{section.22.1}
-\contentsline {section}{\numberline {22.2}1.2   词语注释}{126}{section.22.2}
-\contentsline {chapter}{\numberline {23}1   荀子-劝学}{129}{chapter.23}
-\contentsline {section}{\numberline {23.1}1.1   作品原文}{129}{section.23.1}
-\contentsline {section}{\numberline {23.2}1.2   词句注释}{131}{section.23.2}
-\contentsline {chapter}{\numberline {24}1   郁达夫-古都的秋}{137}{chapter.24}
-\contentsline {section}{\numberline {24.1}1.1   作品原文}{137}{section.24.1}
-\contentsline {section}{\numberline {24.2}1.2   词语注释}{139}{section.24.2}
-\contentsline {chapter}{\numberline {25}1   韩愈-师说}{141}{chapter.25}
-\contentsline {section}{\numberline {25.1}1.1   作品原文}{142}{section.25.1}
-\contentsline {section}{\numberline {25.2}1.2   词句注释}{142}{section.25.2}
-\contentsline {section}{\numberline {25.3}1.3   白话译文}{144}{section.25.3}
-\contentsline {section}{\numberline {25.4}1.4   创作背景}{145}{section.25.4}
-\contentsline {section}{\numberline {25.5}1.5   文学赏析}{145}{section.25.5}
-\contentsline {section}{\numberline {25.6}1.6   名家点评}{147}{section.25.6}
-\contentsline {subsection}{\numberline {25.6.1}1.6.1   唐代}{147}{subsection.25.6.1}
-\contentsline {subsection}{\numberline {25.6.2}1.6.2   宋代}{147}{subsection.25.6.2}
-\contentsline {subsection}{\numberline {25.6.3}1.6.3   元代}{147}{subsection.25.6.3}
-\contentsline {subsection}{\numberline {25.6.4}1.6.4   明代}{147}{subsection.25.6.4}
-\contentsline {subsection}{\numberline {25.6.5}1.6.5   清代}{147}{subsection.25.6.5}
-\contentsline {chapter}{\numberline {26}1   Hi,p02读书}{149}{chapter.26}
-\contentsline {section}{\numberline {26.1}1.1   post}{149}{section.26.1}
-\contentsline {chapter}{\numberline {27}1   水浒-宋江之绰号}{151}{chapter.27}
-\contentsline {chapter}{\numberline {28}1   Hi,p03旅游}{153}{chapter.28}
-\contentsline {section}{\numberline {28.1}1.1   post}{153}{section.28.1}
-\contentsline {chapter}{\numberline {29}1   五泄瀑布}{155}{chapter.29}
-\contentsline {chapter}{\numberline {30}1   Hi,p04财经}{157}{chapter.30}
-\contentsline {section}{\numberline {30.1}1.1   post}{157}{section.30.1}
-\contentsline {chapter}{\numberline {31}1   Hi,p05技术}{159}{chapter.31}
-\contentsline {section}{\numberline {31.1}1.1   post}{159}{section.31.1}
-\contentsline {chapter}{\numberline {32}1   Hi,p06历史}{161}{chapter.32}
-\contentsline {section}{\numberline {32.1}1.1   post}{161}{section.32.1}
-\contentsline {chapter}{\numberline {33}1   瓦岗寨之李密}{163}{chapter.33}
-\contentsline {chapter}{\numberline {34}1   Hi,p07创投}{165}{chapter.34}
-\contentsline {section}{\numberline {34.1}1.1   post}{165}{section.34.1}
-\contentsline {chapter}{\numberline {35}1   风投的前生}{167}{chapter.35}
-\contentsline {chapter}{\numberline {36}1   Hi,p08写作}{169}{chapter.36}
-\contentsline {section}{\numberline {36.1}1.1   post}{169}{section.36.1}
-\contentsline {chapter}{\numberline {37}1   Hi,p09work}{171}{chapter.37}
-\contentsline {section}{\numberline {37.1}1.1   post}{171}{section.37.1}
-\contentsline {chapter}{\numberline {38}Indices and tables}{173}{chapter.38}
+\contentsline {chapter}{\numberline {4}1   白话聊斋志异}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}1.1   卷 一}{41}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}1.1.1   考 城 隍}{41}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}1.1.2   耳 中 人}{42}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}1.1.3   尸 变}{42}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}1.1.4   喷 水}{43}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}1.1.5   瞳 人 语}{43}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}1.1.6   画 壁}{44}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}1.1.7   山 魈}{45}{subsection.4.1.7}
+\contentsline {subsection}{\numberline {4.1.8}1.1.8   咬 鬼}{46}{subsection.4.1.8}
+\contentsline {subsection}{\numberline {4.1.9}1.1.9   捉 狐}{46}{subsection.4.1.9}
+\contentsline {subsection}{\numberline {4.1.10}1.1.10   荍 中 怪}{47}{subsection.4.1.10}
+\contentsline {subsection}{\numberline {4.1.11}1.1.11   宅 妖}{47}{subsection.4.1.11}
+\contentsline {subsection}{\numberline {4.1.12}1.1.12   王 六 郎}{48}{subsection.4.1.12}
+\contentsline {subsection}{\numberline {4.1.13}1.1.13   偷 桃}{49}{subsection.4.1.13}
+\contentsline {subsection}{\numberline {4.1.14}1.1.14   种 梨}{50}{subsection.4.1.14}
+\contentsline {subsection}{\numberline {4.1.15}1.1.15   劳 山 道 士}{51}{subsection.4.1.15}
+\contentsline {subsection}{\numberline {4.1.16}1.1.16   长 清 僧}{52}{subsection.4.1.16}
+\contentsline {subsection}{\numberline {4.1.17}1.1.17   蛇 人}{53}{subsection.4.1.17}
+\contentsline {subsection}{\numberline {4.1.18}1.1.18   斫 蟒}{54}{subsection.4.1.18}
+\contentsline {subsection}{\numberline {4.1.19}1.1.19   犬 奸}{54}{subsection.4.1.19}
+\contentsline {subsection}{\numberline {4.1.20}1.1.20   雹 神}{55}{subsection.4.1.20}
+\contentsline {subsection}{\numberline {4.1.21}1.1.21   狐 嫁 女}{55}{subsection.4.1.21}
+\contentsline {subsection}{\numberline {4.1.22}1.1.22   娇 娜}{57}{subsection.4.1.22}
+\contentsline {subsection}{\numberline {4.1.23}1.1.23   僧 孽}{60}{subsection.4.1.23}
+\contentsline {subsection}{\numberline {4.1.24}1.1.24   妖 术}{60}{subsection.4.1.24}
+\contentsline {subsection}{\numberline {4.1.25}1.1.25   野 狗}{61}{subsection.4.1.25}
+\contentsline {subsection}{\numberline {4.1.26}1.1.26   三 生}{61}{subsection.4.1.26}
+\contentsline {subsection}{\numberline {4.1.27}1.1.27   狐 入 瓶}{62}{subsection.4.1.27}
+\contentsline {subsection}{\numberline {4.1.28}1.1.28   鬼 哭}{62}{subsection.4.1.28}
+\contentsline {subsection}{\numberline {4.1.29}1.1.29   真 定 女}{63}{subsection.4.1.29}
+\contentsline {subsection}{\numberline {4.1.30}1.1.30   焦 螟}{63}{subsection.4.1.30}
+\contentsline {subsection}{\numberline {4.1.31}1.1.31   叶 生}{64}{subsection.4.1.31}
+\contentsline {subsection}{\numberline {4.1.32}1.1.32   四 十 千}{65}{subsection.4.1.32}
+\contentsline {subsection}{\numberline {4.1.33}1.1.33   成 仙}{65}{subsection.4.1.33}
+\contentsline {subsection}{\numberline {4.1.34}1.1.34   新 郎}{68}{subsection.4.1.34}
+\contentsline {subsection}{\numberline {4.1.35}1.1.35   灵 官}{69}{subsection.4.1.35}
+\contentsline {subsection}{\numberline {4.1.36}1.1.36   王 兰}{69}{subsection.4.1.36}
+\contentsline {subsection}{\numberline {4.1.37}1.1.37   鹰 虎 神}{71}{subsection.4.1.37}
+\contentsline {subsection}{\numberline {4.1.38}1.1.38   王 成}{71}{subsection.4.1.38}
+\contentsline {subsection}{\numberline {4.1.39}1.1.39   青 凤}{73}{subsection.4.1.39}
+\contentsline {subsection}{\numberline {4.1.40}1.1.40   画 皮}{76}{subsection.4.1.40}
+\contentsline {subsection}{\numberline {4.1.41}1.1.41   贾 儿}{77}{subsection.4.1.41}
+\contentsline {subsection}{\numberline {4.1.42}1.1.42   蛇 癖}{79}{subsection.4.1.42}
+\contentsline {section}{\numberline {4.2}1.2   卷 二}{80}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}1.2.1   金 世 成}{80}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}1.2.2   董 生}{80}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}1.2.3   龁 石}{81}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}1.2.4   庙 鬼}{81}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}1.2.5   陆 判}{82}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}1.2.6   婴 宁}{85}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}1.2.7   聂 小 倩}{89}{subsection.4.2.7}
+\contentsline {subsection}{\numberline {4.2.8}1.2.8   义 鼠}{92}{subsection.4.2.8}
+\contentsline {subsection}{\numberline {4.2.9}1.2.9   地 震}{92}{subsection.4.2.9}
+\contentsline {subsection}{\numberline {4.2.10}1.2.10   海 公 子}{92}{subsection.4.2.10}
+\contentsline {subsection}{\numberline {4.2.11}1.2.11   丁 前 溪}{93}{subsection.4.2.11}
+\contentsline {subsection}{\numberline {4.2.12}1.2.12   海 大 鱼}{94}{subsection.4.2.12}
+\contentsline {subsection}{\numberline {4.2.13}1.2.13   张 老 相 公}{94}{subsection.4.2.13}
+\contentsline {subsection}{\numberline {4.2.14}1.2.14   水 莽 草}{94}{subsection.4.2.14}
+\contentsline {subsection}{\numberline {4.2.15}1.2.15   造 畜}{96}{subsection.4.2.15}
+\contentsline {subsection}{\numberline {4.2.16}1.2.16   凤 阳 士 人}{96}{subsection.4.2.16}
+\contentsline {subsection}{\numberline {4.2.17}1.2.17   耿 十 八}{98}{subsection.4.2.17}
+\contentsline {subsection}{\numberline {4.2.18}1.2.18   珠 儿}{99}{subsection.4.2.18}
+\contentsline {subsection}{\numberline {4.2.19}1.2.19   小 官 人}{101}{subsection.4.2.19}
+\contentsline {subsection}{\numberline {4.2.20}1.2.20   胡 四 姐}{101}{subsection.4.2.20}
+\contentsline {subsection}{\numberline {4.2.21}1.2.21   祝 翁}{102}{subsection.4.2.21}
+\contentsline {subsection}{\numberline {4.2.22}1.2.22   猪 婆 龙}{103}{subsection.4.2.22}
+\contentsline {subsection}{\numberline {4.2.23}1.2.23   某 公}{103}{subsection.4.2.23}
+\contentsline {subsection}{\numberline {4.2.24}1.2.24   快 刀}{103}{subsection.4.2.24}
+\contentsline {subsection}{\numberline {4.2.25}1.2.25   侠 女}{104}{subsection.4.2.25}
+\contentsline {subsection}{\numberline {4.2.26}1.2.26   酒 友}{106}{subsection.4.2.26}
+\contentsline {subsection}{\numberline {4.2.27}1.2.27   莲 香}{107}{subsection.4.2.27}
+\contentsline {subsection}{\numberline {4.2.28}1.2.28   阿 宝}{111}{subsection.4.2.28}
+\contentsline {subsection}{\numberline {4.2.29}1.2.29   九 山 王}{113}{subsection.4.2.29}
+\contentsline {subsection}{\numberline {4.2.30}1.2.30   遵 化 署 狐}{115}{subsection.4.2.30}
+\contentsline {subsection}{\numberline {4.2.31}1.2.31   张 诚}{115}{subsection.4.2.31}
+\contentsline {subsection}{\numberline {4.2.32}1.2.32   汾 州 狐}{117}{subsection.4.2.32}
+\contentsline {subsection}{\numberline {4.2.33}1.2.33   巧 娘}{118}{subsection.4.2.33}
+\contentsline {subsection}{\numberline {4.2.34}1.2.34   吴 令}{121}{subsection.4.2.34}
+\contentsline {subsection}{\numberline {4.2.35}1.2.35   口 技}{121}{subsection.4.2.35}
+\contentsline {subsection}{\numberline {4.2.36}1.2.36   狐 联}{122}{subsection.4.2.36}
+\contentsline {subsection}{\numberline {4.2.37}1.2.37   潍 水 狐}{122}{subsection.4.2.37}
+\contentsline {subsection}{\numberline {4.2.38}1.2.38   红 玉}{123}{subsection.4.2.38}
+\contentsline {subsection}{\numberline {4.2.39}1.2.39   龙}{125}{subsection.4.2.39}
+\contentsline {subsection}{\numberline {4.2.40}1.2.40   林 四 娘}{126}{subsection.4.2.40}
+\contentsline {section}{\numberline {4.3}1.3   卷 三}{127}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}1.3.1   江 中}{127}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}1.3.2   鲁 公 女}{127}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}1.3.3   道 士}{129}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}1.3.4   胡 氏}{130}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}1.3.5   戏 术}{132}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}1.3.6   丐 僧}{132}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}1.3.7   伏 狐}{132}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.8}1.3.8   蛰 龙}{133}{subsection.4.3.8}
+\contentsline {subsection}{\numberline {4.3.9}1.3.9   苏 仙}{133}{subsection.4.3.9}
+\contentsline {subsection}{\numberline {4.3.10}1.3.10   李 伯 言}{134}{subsection.4.3.10}
+\contentsline {subsection}{\numberline {4.3.11}1.3.11   黄 九 郎}{135}{subsection.4.3.11}
+\contentsline {subsection}{\numberline {4.3.12}1.3.12   金 陵 女 子}{137}{subsection.4.3.12}
+\contentsline {subsection}{\numberline {4.3.13}1.3.13   汤 公}{138}{subsection.4.3.13}
+\contentsline {subsection}{\numberline {4.3.14}1.3.14   阎 罗}{139}{subsection.4.3.14}
+\contentsline {subsection}{\numberline {4.3.15}1.3.15   连 琐}{139}{subsection.4.3.15}
+\contentsline {subsection}{\numberline {4.3.16}1.3.16   单 道 士}{141}{subsection.4.3.16}
+\contentsline {subsection}{\numberline {4.3.17}1.3.17   白 于 玉}{142}{subsection.4.3.17}
+\contentsline {subsection}{\numberline {4.3.18}1.3.18   夜 叉 国}{145}{subsection.4.3.18}
+\contentsline {subsection}{\numberline {4.3.19}1.3.19   小 髻}{147}{subsection.4.3.19}
+\contentsline {subsection}{\numberline {4.3.20}1.3.20   西 僧}{148}{subsection.4.3.20}
+\contentsline {subsection}{\numberline {4.3.21}1.3.21   老 饕}{148}{subsection.4.3.21}
+\contentsline {subsection}{\numberline {4.3.22}1.3.22   连 城}{149}{subsection.4.3.22}
+\contentsline {subsection}{\numberline {4.3.23}1.3.23   霍 生}{151}{subsection.4.3.23}
+\contentsline {subsection}{\numberline {4.3.24}1.3.24   汪 士 秀}{152}{subsection.4.3.24}
+\contentsline {subsection}{\numberline {4.3.25}1.3.25   商 三 官}{153}{subsection.4.3.25}
+\contentsline {subsection}{\numberline {4.3.26}1.3.26   于 江}{154}{subsection.4.3.26}
+\contentsline {subsection}{\numberline {4.3.27}1.3.27   小 二}{154}{subsection.4.3.27}
+\contentsline {subsection}{\numberline {4.3.28}1.3.28   庚 娘}{156}{subsection.4.3.28}
+\contentsline {subsection}{\numberline {4.3.29}1.3.29   宫 梦 弼}{158}{subsection.4.3.29}
+\contentsline {subsection}{\numberline {4.3.30}1.3.30   鸲 鹆}{161}{subsection.4.3.30}
+\contentsline {subsection}{\numberline {4.3.31}1.3.31   刘 海 石}{161}{subsection.4.3.31}
+\contentsline {subsection}{\numberline {4.3.32}1.3.32   谕 鬼}{162}{subsection.4.3.32}
+\contentsline {subsection}{\numberline {4.3.33}1.3.33   泥 鬼}{163}{subsection.4.3.33}
+\contentsline {subsection}{\numberline {4.3.34}1.3.34   梦 别}{163}{subsection.4.3.34}
+\contentsline {subsection}{\numberline {4.3.35}1.3.35   犬 灯}{163}{subsection.4.3.35}
+\contentsline {subsection}{\numberline {4.3.36}1.3.36   番 僧}{164}{subsection.4.3.36}
+\contentsline {subsection}{\numberline {4.3.37}1.3.37   狐 妾}{164}{subsection.4.3.37}
+\contentsline {subsection}{\numberline {4.3.38}1.3.38   雷 曹}{166}{subsection.4.3.38}
+\contentsline {subsection}{\numberline {4.3.39}1.3.39   赌 符}{168}{subsection.4.3.39}
+\contentsline {subsection}{\numberline {4.3.40}1.3.40   阿 霞}{168}{subsection.4.3.40}
+\contentsline {subsection}{\numberline {4.3.41}1.3.41   李 司 鉴}{170}{subsection.4.3.41}
+\contentsline {subsection}{\numberline {4.3.42}1.3.42   五 羖 大 夫}{170}{subsection.4.3.42}
+\contentsline {subsection}{\numberline {4.3.43}1.3.43   毛 狐}{170}{subsection.4.3.43}
+\contentsline {subsection}{\numberline {4.3.44}1.3.44   翩 翩}{171}{subsection.4.3.44}
+\contentsline {subsection}{\numberline {4.3.45}1.3.45   黑 兽}{173}{subsection.4.3.45}
+\contentsline {section}{\numberline {4.4}1.4   卷 四}{173}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}1.4.1   余 德}{173}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}1.4.2   杨 千 总}{174}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}1.4.3   瓜 异}{174}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}1.4.4   青 梅}{174}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}1.4.5   罗 刹 海 市}{178}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}1.4.6   田 七 郎}{181}{subsection.4.4.6}
+\contentsline {subsection}{\numberline {4.4.7}1.4.7   产 龙}{184}{subsection.4.4.7}
+\contentsline {subsection}{\numberline {4.4.8}1.4.8   保 住}{184}{subsection.4.4.8}
+\contentsline {subsection}{\numberline {4.4.9}1.4.9   公 孙 九 娘}{185}{subsection.4.4.9}
+\contentsline {subsection}{\numberline {4.4.10}1.4.10   促 织}{187}{subsection.4.4.10}
+\contentsline {subsection}{\numberline {4.4.11}1.4.11   柳 秀 才}{189}{subsection.4.4.11}
+\contentsline {subsection}{\numberline {4.4.12}1.4.12   水 灾}{190}{subsection.4.4.12}
+\contentsline {subsection}{\numberline {4.4.13}1.4.13   诸 城 某 甲}{190}{subsection.4.4.13}
+\contentsline {subsection}{\numberline {4.4.14}1.4.14   库 官}{190}{subsection.4.4.14}
+\contentsline {subsection}{\numberline {4.4.15}1.4.15   酆 都 御 史}{191}{subsection.4.4.15}
+\contentsline {subsection}{\numberline {4.4.16}1.4.16   龙 无 目}{191}{subsection.4.4.16}
+\contentsline {subsection}{\numberline {4.4.17}1.4.17   狐 谐}{192}{subsection.4.4.17}
+\contentsline {subsection}{\numberline {4.4.18}1.4.18   雨 钱}{193}{subsection.4.4.18}
+\contentsline {subsection}{\numberline {4.4.19}1.4.19   妾 击 贼}{194}{subsection.4.4.19}
+\contentsline {subsection}{\numberline {4.4.20}1.4.20   驱 怪}{194}{subsection.4.4.20}
+\contentsline {subsection}{\numberline {4.4.21}1.4.21   姊 妹 易 嫁}{195}{subsection.4.4.21}
+\contentsline {subsection}{\numberline {4.4.22}1.4.22   续 黄 粱}{196}{subsection.4.4.22}
+\contentsline {subsection}{\numberline {4.4.23}1.4.23   龙 取 水}{199}{subsection.4.4.23}
+\contentsline {subsection}{\numberline {4.4.24}1.4.24   小 猎 犬}{199}{subsection.4.4.24}
+\contentsline {subsection}{\numberline {4.4.25}1.4.25   棋 鬼}{200}{subsection.4.4.25}
+\contentsline {subsection}{\numberline {4.4.26}1.4.26   辛 十 四 娘}{201}{subsection.4.4.26}
+\contentsline {subsection}{\numberline {4.4.27}1.4.27   白 莲 教}{204}{subsection.4.4.27}
+\contentsline {subsection}{\numberline {4.4.28}1.4.28   双 灯}{205}{subsection.4.4.28}
+\contentsline {subsection}{\numberline {4.4.29}1.4.29   捉 鬼 射 狐}{206}{subsection.4.4.29}
+\contentsline {subsection}{\numberline {4.4.30}1.4.30   蹇 偿 债}{206}{subsection.4.4.30}
+\contentsline {subsection}{\numberline {4.4.31}1.4.31   头 滚}{207}{subsection.4.4.31}
+\contentsline {subsection}{\numberline {4.4.32}1.4.32   鬼 作 筵}{207}{subsection.4.4.32}
+\contentsline {subsection}{\numberline {4.4.33}1.4.33   胡 四 相 公}{208}{subsection.4.4.33}
+\contentsline {subsection}{\numberline {4.4.34}1.4.34   念 秧}{209}{subsection.4.4.34}
+\contentsline {subsection}{\numberline {4.4.35}1.4.35   蛙 曲}{213}{subsection.4.4.35}
+\contentsline {subsection}{\numberline {4.4.36}1.4.36   鼠 戏}{214}{subsection.4.4.36}
+\contentsline {subsection}{\numberline {4.4.37}1.4.37   泥 书 生}{214}{subsection.4.4.37}
+\contentsline {subsection}{\numberline {4.4.38}1.4.38   土 地 夫 人}{214}{subsection.4.4.38}
+\contentsline {subsection}{\numberline {4.4.39}1.4.39   寒 月 芙 蕖}{215}{subsection.4.4.39}
+\contentsline {subsection}{\numberline {4.4.40}1.4.40   酒 狂}{216}{subsection.4.4.40}
+\contentsline {section}{\numberline {4.5}1.5   卷 五}{218}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}1.5.1   阳 武 侯}{218}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}1.5.2   赵 城 虎}{218}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}1.5.3   螳 螂 捕 蛇}{219}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}1.5.4   武 技}{219}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}1.5.5   小 人}{220}{subsection.4.5.5}
+\contentsline {subsection}{\numberline {4.5.6}1.5.6   秦 生}{220}{subsection.4.5.6}
+\contentsline {subsection}{\numberline {4.5.7}1.5.7   鸦 头}{221}{subsection.4.5.7}
+\contentsline {subsection}{\numberline {4.5.8}1.5.8   酒 虫}{223}{subsection.4.5.8}
+\contentsline {subsection}{\numberline {4.5.9}1.5.9   木 雕 美 人}{224}{subsection.4.5.9}
+\contentsline {subsection}{\numberline {4.5.10}1.5.10   封 三 娘}{224}{subsection.4.5.10}
+\contentsline {subsection}{\numberline {4.5.11}1.5.11   狐 梦}{227}{subsection.4.5.11}
+\contentsline {subsection}{\numberline {4.5.12}1.5.12   布 客}{228}{subsection.4.5.12}
+\contentsline {subsection}{\numberline {4.5.13}1.5.13   农 人}{229}{subsection.4.5.13}
+\contentsline {subsection}{\numberline {4.5.14}1.5.14   章 阿 端}{229}{subsection.4.5.14}
+\contentsline {subsection}{\numberline {4.5.15}1.5.15   馎 饦 媪}{231}{subsection.4.5.15}
+\contentsline {subsection}{\numberline {4.5.16}1.5.16   金 永 年}{232}{subsection.4.5.16}
+\contentsline {subsection}{\numberline {4.5.17}1.5.17   花 姑 子}{232}{subsection.4.5.17}
+\contentsline {subsection}{\numberline {4.5.18}1.5.18   武 孝 廉}{234}{subsection.4.5.18}
+\contentsline {subsection}{\numberline {4.5.19}1.5.19   西 湖 主}{236}{subsection.4.5.19}
+\contentsline {subsection}{\numberline {4.5.20}1.5.20   孝 子}{239}{subsection.4.5.20}
+\contentsline {subsection}{\numberline {4.5.21}1.5.21   狮 子}{239}{subsection.4.5.21}
+\contentsline {subsection}{\numberline {4.5.22}1.5.22   阎 王}{239}{subsection.4.5.22}
+\contentsline {subsection}{\numberline {4.5.23}1.5.23   土 偶}{240}{subsection.4.5.23}
+\contentsline {subsection}{\numberline {4.5.24}1.5.24   长 治 女 子}{240}{subsection.4.5.24}
+\contentsline {subsection}{\numberline {4.5.25}1.5.25   义 犬}{241}{subsection.4.5.25}
+\contentsline {subsection}{\numberline {4.5.26}1.5.26   鄱 阳 神}{242}{subsection.4.5.26}
+\contentsline {subsection}{\numberline {4.5.27}1.5.27   伍 秋 月}{242}{subsection.4.5.27}
+\contentsline {subsection}{\numberline {4.5.28}1.5.28   莲 花 公 主}{244}{subsection.4.5.28}
+\contentsline {subsection}{\numberline {4.5.29}1.5.29   绿 衣 女}{246}{subsection.4.5.29}
+\contentsline {subsection}{\numberline {4.5.30}1.5.30   黎 氏}{246}{subsection.4.5.30}
+\contentsline {subsection}{\numberline {4.5.31}1.5.31   荷 花 三 娘 子}{247}{subsection.4.5.31}
+\contentsline {subsection}{\numberline {4.5.32}1.5.32   骂 鸭}{249}{subsection.4.5.32}
+\contentsline {subsection}{\numberline {4.5.33}1.5.33   柳 氏 子}{249}{subsection.4.5.33}
+\contentsline {subsection}{\numberline {4.5.34}1.5.34   上 仙}{250}{subsection.4.5.34}
+\contentsline {subsection}{\numberline {4.5.35}1.5.35   侯 静 山}{251}{subsection.4.5.35}
+\contentsline {subsection}{\numberline {4.5.36}1.5.36   钱 流}{251}{subsection.4.5.36}
+\contentsline {subsection}{\numberline {4.5.37}1.5.37   郭 生}{251}{subsection.4.5.37}
+\contentsline {subsection}{\numberline {4.5.38}1.5.38   金 生 色}{252}{subsection.4.5.38}
+\contentsline {subsection}{\numberline {4.5.39}1.5.39   彭 海 秋}{254}{subsection.4.5.39}
+\contentsline {subsection}{\numberline {4.5.40}1.5.40   堪 舆}{256}{subsection.4.5.40}
+\contentsline {subsection}{\numberline {4.5.41}1.5.41   窦 氏}{256}{subsection.4.5.41}
+\contentsline {subsection}{\numberline {4.5.42}1.5.42   梁 彦}{258}{subsection.4.5.42}
+\contentsline {subsection}{\numberline {4.5.43}1.5.43   龙 肉}{258}{subsection.4.5.43}
+\contentsline {section}{\numberline {4.6}1.6   卷 六}{258}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}1.6.1   潞 令}{258}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}1.6.2   马 介 甫}{259}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}1.6.3   魁 星}{262}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}1.6.4   厍 将 军}{263}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}1.6.5   绛 妃}{263}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.6}1.6.6   河 间 生}{264}{subsection.4.6.6}
+\contentsline {subsection}{\numberline {4.6.7}1.6.7   云 翠 仙}{265}{subsection.4.6.7}
+\contentsline {subsection}{\numberline {4.6.8}1.6.8   跳 神}{267}{subsection.4.6.8}
+\contentsline {subsection}{\numberline {4.6.9}1.6.9   铁 布 衫 法}{267}{subsection.4.6.9}
+\contentsline {subsection}{\numberline {4.6.10}1.6.10   大 力 将 军}{268}{subsection.4.6.10}
+\contentsline {subsection}{\numberline {4.6.11}1.6.11   白 莲 教}{269}{subsection.4.6.11}
+\contentsline {subsection}{\numberline {4.6.12}1.6.12   颜 氏}{269}{subsection.4.6.12}
+\contentsline {subsection}{\numberline {4.6.13}1.6.13   杜 翁}{270}{subsection.4.6.13}
+\contentsline {subsection}{\numberline {4.6.14}1.6.14   小 谢}{271}{subsection.4.6.14}
+\contentsline {subsection}{\numberline {4.6.15}1.6.15   缢 鬼}{274}{subsection.4.6.15}
+\contentsline {subsection}{\numberline {4.6.16}1.6.16   吴 门 画 工}{274}{subsection.4.6.16}
+\contentsline {subsection}{\numberline {4.6.17}1.6.17   林 氏}{275}{subsection.4.6.17}
+\contentsline {subsection}{\numberline {4.6.18}1.6.18   胡 大 姑}{276}{subsection.4.6.18}
+\contentsline {subsection}{\numberline {4.6.19}1.6.19   细 侯}{277}{subsection.4.6.19}
+\contentsline {subsection}{\numberline {4.6.20}1.6.20   狼 三 则}{279}{subsection.4.6.20}
+\contentsline {subsection}{\numberline {4.6.21}1.6.21   美 人 首}{279}{subsection.4.6.21}
+\contentsline {subsection}{\numberline {4.6.22}1.6.22   刘 亮 采}{280}{subsection.4.6.22}
+\contentsline {subsection}{\numberline {4.6.23}1.6.23   蕙 芳}{280}{subsection.4.6.23}
+\contentsline {subsection}{\numberline {4.6.24}1.6.24   山 神}{281}{subsection.4.6.24}
+\contentsline {subsection}{\numberline {4.6.25}1.6.25   萧 七}{281}{subsection.4.6.25}
+\contentsline {subsection}{\numberline {4.6.26}1.6.26   乱 离 二 则}{283}{subsection.4.6.26}
+\contentsline {subsection}{\numberline {4.6.27}1.6.27   豢 蛇}{284}{subsection.4.6.27}
+\contentsline {subsection}{\numberline {4.6.28}1.6.28   雷 公}{284}{subsection.4.6.28}
+\contentsline {subsection}{\numberline {4.6.29}1.6.29   菱 角}{285}{subsection.4.6.29}
+\contentsline {subsection}{\numberline {4.6.30}1.6.30   饿 鬼}{286}{subsection.4.6.30}
+\contentsline {subsection}{\numberline {4.6.31}1.6.31   考 弊 司}{287}{subsection.4.6.31}
+\contentsline {subsection}{\numberline {4.6.32}1.6.32   阎 罗}{288}{subsection.4.6.32}
+\contentsline {subsection}{\numberline {4.6.33}1.6.33   大 人}{288}{subsection.4.6.33}
+\contentsline {subsection}{\numberline {4.6.34}1.6.34   向 杲}{289}{subsection.4.6.34}
+\contentsline {subsection}{\numberline {4.6.35}1.6.35   董 公 子}{290}{subsection.4.6.35}
+\contentsline {subsection}{\numberline {4.6.36}1.6.36   周 三}{290}{subsection.4.6.36}
+\contentsline {subsection}{\numberline {4.6.37}1.6.37   鸽 异}{291}{subsection.4.6.37}
+\contentsline {subsection}{\numberline {4.6.38}1.6.38   聂 政}{292}{subsection.4.6.38}
+\contentsline {subsection}{\numberline {4.6.39}1.6.39   冷 生}{293}{subsection.4.6.39}
+\contentsline {subsection}{\numberline {4.6.40}1.6.40   狐 惩 淫}{293}{subsection.4.6.40}
+\contentsline {subsection}{\numberline {4.6.41}1.6.41   山 市}{294}{subsection.4.6.41}
+\contentsline {subsection}{\numberline {4.6.42}1.6.42   江 城}{294}{subsection.4.6.42}
+\contentsline {subsection}{\numberline {4.6.43}1.6.43   孙 生}{297}{subsection.4.6.43}
+\contentsline {subsection}{\numberline {4.6.44}1.6.44   八 大 王}{298}{subsection.4.6.44}
+\contentsline {subsection}{\numberline {4.6.45}1.6.45   戏 缢}{300}{subsection.4.6.45}
+\contentsline {section}{\numberline {4.7}1.7   卷 七}{300}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}1.7.1   罗 祖}{300}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}1.7.2   刘 姓}{301}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}1.7.3   邵 女}{302}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}1.7.4   巩 仙}{307}{subsection.4.7.4}
+\contentsline {subsection}{\numberline {4.7.5}1.7.5   二 商}{309}{subsection.4.7.5}
+\contentsline {subsection}{\numberline {4.7.6}1.7.6   沂 水 秀 才}{310}{subsection.4.7.6}
+\contentsline {subsection}{\numberline {4.7.7}1.7.7   梅 女}{310}{subsection.4.7.7}
+\contentsline {subsection}{\numberline {4.7.8}1.7.8   郭 秀 才}{313}{subsection.4.7.8}
+\contentsline {subsection}{\numberline {4.7.9}1.7.9   死 僧}{313}{subsection.4.7.9}
+\contentsline {subsection}{\numberline {4.7.10}1.7.10   阿 英}{314}{subsection.4.7.10}
+\contentsline {subsection}{\numberline {4.7.11}1.7.11   桔 树}{316}{subsection.4.7.11}
+\contentsline {subsection}{\numberline {4.7.12}1.7.12   赤 字}{317}{subsection.4.7.12}
+\contentsline {subsection}{\numberline {4.7.13}1.7.13   牛 成 章}{317}{subsection.4.7.13}
+\contentsline {subsection}{\numberline {4.7.14}1.7.14   青 娥}{318}{subsection.4.7.14}
+\contentsline {subsection}{\numberline {4.7.15}1.7.15   镜 听}{321}{subsection.4.7.15}
+\contentsline {subsection}{\numberline {4.7.16}1.7.16   牛 癀}{321}{subsection.4.7.16}
+\contentsline {subsection}{\numberline {4.7.17}1.7.17   金 姑 夫}{322}{subsection.4.7.17}
+\contentsline {subsection}{\numberline {4.7.18}1.7.18   梓 潼 令}{322}{subsection.4.7.18}
+\contentsline {subsection}{\numberline {4.7.19}1.7.19   鬼 津}{323}{subsection.4.7.19}
+\contentsline {subsection}{\numberline {4.7.20}1.7.20   仙 人 岛}{323}{subsection.4.7.20}
+\contentsline {subsection}{\numberline {4.7.21}1.7.21   阎 罗 薨}{326}{subsection.4.7.21}
+\contentsline {subsection}{\numberline {4.7.22}1.7.22   颠 道 人}{327}{subsection.4.7.22}
+\contentsline {subsection}{\numberline {4.7.23}1.7.23   胡 四 娘}{327}{subsection.4.7.23}
+\contentsline {subsection}{\numberline {4.7.24}1.7.24   僧 术}{329}{subsection.4.7.24}
+\contentsline {subsection}{\numberline {4.7.25}1.7.25   禄 数}{330}{subsection.4.7.25}
+\contentsline {subsection}{\numberline {4.7.26}1.7.26   柳 生}{330}{subsection.4.7.26}
+\contentsline {subsection}{\numberline {4.7.27}1.7.27   冤 狱}{332}{subsection.4.7.27}
+\contentsline {subsection}{\numberline {4.7.28}1.7.28   鬼 令}{333}{subsection.4.7.28}
+\contentsline {subsection}{\numberline {4.7.29}1.7.29   甄 后}{333}{subsection.4.7.29}
+\contentsline {subsection}{\numberline {4.7.30}1.7.30   宦 娘}{334}{subsection.4.7.30}
+\contentsline {subsection}{\numberline {4.7.31}1.7.31   阿 绣}{336}{subsection.4.7.31}
+\contentsline {subsection}{\numberline {4.7.32}1.7.32   杨 疤 眼}{339}{subsection.4.7.32}
+\contentsline {subsection}{\numberline {4.7.33}1.7.33   小 翠}{339}{subsection.4.7.33}
+\contentsline {subsection}{\numberline {4.7.34}1.7.34   金 和 尚}{343}{subsection.4.7.34}
+\contentsline {subsection}{\numberline {4.7.35}1.7.35   龙 戏 蛛}{344}{subsection.4.7.35}
+\contentsline {subsection}{\numberline {4.7.36}1.7.36   商 妇}{345}{subsection.4.7.36}
+\contentsline {subsection}{\numberline {4.7.37}1.7.37   阎 罗 宴}{345}{subsection.4.7.37}
+\contentsline {subsection}{\numberline {4.7.38}1.7.38   役 鬼}{345}{subsection.4.7.38}
+\contentsline {subsection}{\numberline {4.7.39}1.7.39   细 柳}{346}{subsection.4.7.39}
+\contentsline {section}{\numberline {4.8}1.8   卷 八}{348}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}1.8.1   画 马}{348}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}1.8.2   局 诈}{349}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}1.8.3   放 蝶}{351}{subsection.4.8.3}
+\contentsline {subsection}{\numberline {4.8.4}1.8.4   男 生 子}{352}{subsection.4.8.4}
+\contentsline {subsection}{\numberline {4.8.5}1.8.5   钟 生}{352}{subsection.4.8.5}
+\contentsline {subsection}{\numberline {4.8.6}1.8.6   鬼 妻}{354}{subsection.4.8.6}
+\contentsline {subsection}{\numberline {4.8.7}1.8.7   黄 将 军}{354}{subsection.4.8.7}
+\contentsline {subsection}{\numberline {4.8.8}1.8.8   三 朝 元 老}{355}{subsection.4.8.8}
+\contentsline {subsection}{\numberline {4.8.9}1.8.9   医 术}{355}{subsection.4.8.9}
+\contentsline {subsection}{\numberline {4.8.10}1.8.10   藏 虱}{356}{subsection.4.8.10}
+\contentsline {subsection}{\numberline {4.8.11}1.8.11   梦 狼}{356}{subsection.4.8.11}
+\contentsline {subsection}{\numberline {4.8.12}1.8.12   夜 明}{358}{subsection.4.8.12}
+\contentsline {subsection}{\numberline {4.8.13}1.8.13   夏 雪}{358}{subsection.4.8.13}
+\contentsline {subsection}{\numberline {4.8.14}1.8.14   化 男}{358}{subsection.4.8.14}
+\contentsline {subsection}{\numberline {4.8.15}1.8.15   禽 侠}{358}{subsection.4.8.15}
+\contentsline {subsection}{\numberline {4.8.16}1.8.16   鸿}{359}{subsection.4.8.16}
+\contentsline {subsection}{\numberline {4.8.17}1.8.17   象}{359}{subsection.4.8.17}
+\contentsline {subsection}{\numberline {4.8.18}1.8.18   负 尸}{360}{subsection.4.8.18}
+\contentsline {subsection}{\numberline {4.8.19}1.8.19   紫 花 和 尚}{360}{subsection.4.8.19}
+\contentsline {subsection}{\numberline {4.8.20}1.8.20   周 克 昌}{360}{subsection.4.8.20}
+\contentsline {subsection}{\numberline {4.8.21}1.8.21   嫦 娥}{361}{subsection.4.8.21}
+\contentsline {subsection}{\numberline {4.8.22}1.8.22   鞠 药 如}{364}{subsection.4.8.22}
+\contentsline {subsection}{\numberline {4.8.23}1.8.23   褚 生}{365}{subsection.4.8.23}
+\contentsline {subsection}{\numberline {4.8.24}1.8.24   盗 户}{366}{subsection.4.8.24}
+\contentsline {subsection}{\numberline {4.8.25}1.8.25   某 乙}{367}{subsection.4.8.25}
+\contentsline {subsection}{\numberline {4.8.26}1.8.26   霍 女}{367}{subsection.4.8.26}
+\contentsline {subsection}{\numberline {4.8.27}1.8.27   司 文 郎}{371}{subsection.4.8.27}
+\contentsline {subsection}{\numberline {4.8.28}1.8.28   丑 狐}{374}{subsection.4.8.28}
+\contentsline {subsection}{\numberline {4.8.29}1.8.29   吕 无 病}{375}{subsection.4.8.29}
+\contentsline {subsection}{\numberline {4.8.30}1.8.30   钱 卜 巫}{378}{subsection.4.8.30}
+\contentsline {subsection}{\numberline {4.8.31}1.8.31   姚 安}{379}{subsection.4.8.31}
+\contentsline {subsection}{\numberline {4.8.32}1.8.32   采 薇 翁}{380}{subsection.4.8.32}
+\contentsline {subsection}{\numberline {4.8.33}1.8.33   崔 猛}{381}{subsection.4.8.33}
+\contentsline {subsection}{\numberline {4.8.34}1.8.34   诗 谳}{384}{subsection.4.8.34}
+\contentsline {subsection}{\numberline {4.8.35}1.8.35   鹿 草}{385}{subsection.4.8.35}
+\contentsline {subsection}{\numberline {4.8.36}1.8.36   小 棺}{385}{subsection.4.8.36}
+\contentsline {subsection}{\numberline {4.8.37}1.8.37   邢 子 仪}{386}{subsection.4.8.37}
+\contentsline {subsection}{\numberline {4.8.38}1.8.38   李 生}{387}{subsection.4.8.38}
+\contentsline {subsection}{\numberline {4.8.39}1.8.39   陆 押 官}{387}{subsection.4.8.39}
+\contentsline {subsection}{\numberline {4.8.40}1.8.40   蒋 太 史}{388}{subsection.4.8.40}
+\contentsline {subsection}{\numberline {4.8.41}1.8.41   邵 士 梅}{389}{subsection.4.8.41}
+\contentsline {subsection}{\numberline {4.8.42}1.8.42   顾 生}{389}{subsection.4.8.42}
+\contentsline {subsection}{\numberline {4.8.43}1.8.43   陈 锡 九}{390}{subsection.4.8.43}
+\contentsline {section}{\numberline {4.9}1.9   卷 九}{393}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}1.9.1   邵 临 淄}{393}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}1.9.2   于 去 恶}{393}{subsection.4.9.2}
+\contentsline {subsection}{\numberline {4.9.3}1.9.3   狂 生}{396}{subsection.4.9.3}
+\contentsline {subsection}{\numberline {4.9.4}1.9.4   澂 俗}{396}{subsection.4.9.4}
+\contentsline {subsection}{\numberline {4.9.5}1.9.5   凤 仙}{396}{subsection.4.9.5}
+\contentsline {subsection}{\numberline {4.9.6}1.9.6   佟 客}{399}{subsection.4.9.6}
+\contentsline {subsection}{\numberline {4.9.7}1.9.7   辽 阳 军}{400}{subsection.4.9.7}
+\contentsline {subsection}{\numberline {4.9.8}1.9.8   张 贡 士}{400}{subsection.4.9.8}
+\contentsline {subsection}{\numberline {4.9.9}1.9.9   爱 奴}{400}{subsection.4.9.9}
+\contentsline {subsection}{\numberline {4.9.10}1.9.10   单 父 宰}{402}{subsection.4.9.10}
+\contentsline {subsection}{\numberline {4.9.11}1.9.11   孙 必 振}{403}{subsection.4.9.11}
+\contentsline {subsection}{\numberline {4.9.12}1.9.12   邑 人}{403}{subsection.4.9.12}
+\contentsline {subsection}{\numberline {4.9.13}1.9.13   元 宝}{403}{subsection.4.9.13}
+\contentsline {subsection}{\numberline {4.9.14}1.9.14   研 石}{403}{subsection.4.9.14}
+\contentsline {subsection}{\numberline {4.9.15}1.9.15   武 夷}{404}{subsection.4.9.15}
+\contentsline {subsection}{\numberline {4.9.16}1.9.16   大 鼠}{404}{subsection.4.9.16}
+\contentsline {subsection}{\numberline {4.9.17}1.9.17   张 不 量}{404}{subsection.4.9.17}
+\contentsline {subsection}{\numberline {4.9.18}1.9.18   牧 竖}{405}{subsection.4.9.18}
+\contentsline {subsection}{\numberline {4.9.19}1.9.19   富 翁}{405}{subsection.4.9.19}
+\contentsline {subsection}{\numberline {4.9.20}1.9.20   王 司 马}{405}{subsection.4.9.20}
+\contentsline {subsection}{\numberline {4.9.21}1.9.21   岳 神}{406}{subsection.4.9.21}
+\contentsline {subsection}{\numberline {4.9.22}1.9.22   小 梅}{406}{subsection.4.9.22}
+\contentsline {subsection}{\numberline {4.9.23}1.9.23   药 僧}{408}{subsection.4.9.23}
+\contentsline {subsection}{\numberline {4.9.24}1.9.24   于 中 丞}{409}{subsection.4.9.24}
+\contentsline {subsection}{\numberline {4.9.25}1.9.25   皂 隶}{410}{subsection.4.9.25}
+\contentsline {subsection}{\numberline {4.9.26}1.9.26   绩 女}{410}{subsection.4.9.26}
+\contentsline {subsection}{\numberline {4.9.27}1.9.27   红 毛 毡}{411}{subsection.4.9.27}
+\contentsline {subsection}{\numberline {4.9.28}1.9.28   抽 肠}{411}{subsection.4.9.28}
+\contentsline {subsection}{\numberline {4.9.29}1.9.29   张 鸿 渐}{412}{subsection.4.9.29}
+\contentsline {subsection}{\numberline {4.9.30}1.9.30   太 医}{415}{subsection.4.9.30}
+\contentsline {subsection}{\numberline {4.9.31}1.9.31   牛 飞}{416}{subsection.4.9.31}
+\contentsline {subsection}{\numberline {4.9.32}1.9.32   王 子 安}{416}{subsection.4.9.32}
+\contentsline {subsection}{\numberline {4.9.33}1.9.33   刁 姓}{416}{subsection.4.9.33}
+\contentsline {subsection}{\numberline {4.9.34}1.9.34   农 妇}{417}{subsection.4.9.34}
+\contentsline {subsection}{\numberline {4.9.35}1.9.35   金 陵 乙}{417}{subsection.4.9.35}
+\contentsline {subsection}{\numberline {4.9.36}1.9.36   郭 安}{418}{subsection.4.9.36}
+\contentsline {subsection}{\numberline {4.9.37}1.9.37   折 狱}{418}{subsection.4.9.37}
+\contentsline {subsection}{\numberline {4.9.38}1.9.38   义 犬}{420}{subsection.4.9.38}
+\contentsline {subsection}{\numberline {4.9.39}1.9.39   杨 大 洪}{420}{subsection.4.9.39}
+\contentsline {subsection}{\numberline {4.9.40}1.9.40   查 牙 山 洞}{421}{subsection.4.9.40}
+\contentsline {subsection}{\numberline {4.9.41}1.9.41   安 期 岛}{422}{subsection.4.9.41}
+\contentsline {subsection}{\numberline {4.9.42}1.9.42   沅 俗}{423}{subsection.4.9.42}
+\contentsline {subsection}{\numberline {4.9.43}1.9.43   云 萝 公 主}{423}{subsection.4.9.43}
+\contentsline {subsection}{\numberline {4.9.44}1.9.44   鸟 语}{427}{subsection.4.9.44}
+\contentsline {subsection}{\numberline {4.9.45}1.9.45   天 宫}{428}{subsection.4.9.45}
+\contentsline {subsection}{\numberline {4.9.46}1.9.46   乔 女}{429}{subsection.4.9.46}
+\contentsline {subsection}{\numberline {4.9.47}1.9.47   蛤}{430}{subsection.4.9.47}
+\contentsline {subsection}{\numberline {4.9.48}1.9.48   刘 夫 人}{431}{subsection.4.9.48}
+\contentsline {subsection}{\numberline {4.9.49}1.9.49   陵 县 狐}{433}{subsection.4.9.49}
+\contentsline {section}{\numberline {4.10}1.10   卷 十}{434}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}1.10.1   王 货 郎}{434}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}1.10.2   疲 龙}{434}{subsection.4.10.2}
+\contentsline {subsection}{\numberline {4.10.3}1.10.3   真 生}{435}{subsection.4.10.3}
+\contentsline {subsection}{\numberline {4.10.4}1.10.4   布 商}{436}{subsection.4.10.4}
+\contentsline {subsection}{\numberline {4.10.5}1.10.5   彭 二 挣}{436}{subsection.4.10.5}
+\contentsline {subsection}{\numberline {4.10.6}1.10.6   何 仙}{436}{subsection.4.10.6}
+\contentsline {subsection}{\numberline {4.10.7}1.10.7   牛 同 人}{437}{subsection.4.10.7}
+\contentsline {subsection}{\numberline {4.10.8}1.10.8   神 女}{437}{subsection.4.10.8}
+\contentsline {subsection}{\numberline {4.10.9}1.10.9   湘 裙}{441}{subsection.4.10.9}
+\contentsline {subsection}{\numberline {4.10.10}1.10.10   三 生}{443}{subsection.4.10.10}
+\contentsline {subsection}{\numberline {4.10.11}1.10.11   长 亭}{444}{subsection.4.10.11}
+\contentsline {subsection}{\numberline {4.10.12}1.10.12   席 方 平}{447}{subsection.4.10.12}
+\contentsline {subsection}{\numberline {4.10.13}1.10.13   素 秋}{450}{subsection.4.10.13}
+\contentsline {subsection}{\numberline {4.10.14}1.10.14   贾 奉 雉}{453}{subsection.4.10.14}
+\contentsline {subsection}{\numberline {4.10.15}1.10.15   胭 脂}{456}{subsection.4.10.15}
+\contentsline {subsection}{\numberline {4.10.16}1.10.16   阿 纤}{460}{subsection.4.10.16}
+\contentsline {subsection}{\numberline {4.10.17}1.10.17   瑞 云}{462}{subsection.4.10.17}
+\contentsline {subsection}{\numberline {4.10.18}1.10.18   仇 大 娘}{463}{subsection.4.10.18}
+\contentsline {subsection}{\numberline {4.10.19}1.10.19   曹 操 冢}{468}{subsection.4.10.19}
+\contentsline {subsection}{\numberline {4.10.20}1.10.20   龙 飞 相 公}{468}{subsection.4.10.20}
+\contentsline {subsection}{\numberline {4.10.21}1.10.21   珊 瑚}{470}{subsection.4.10.21}
+\contentsline {subsection}{\numberline {4.10.22}1.10.22   五 通}{473}{subsection.4.10.22}
+\contentsline {subsection}{\numberline {4.10.23}1.10.23   申 氏}{475}{subsection.4.10.23}
+\contentsline {subsection}{\numberline {4.10.24}1.10.24   恒 娘}{477}{subsection.4.10.24}
+\contentsline {subsection}{\numberline {4.10.25}1.10.25   葛 巾}{479}{subsection.4.10.25}
+\contentsline {section}{\numberline {4.11}1.11   卷 十 一}{482}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}1.11.1   冯 木 匠}{482}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}1.11.2   黄 英}{482}{subsection.4.11.2}
+\contentsline {subsection}{\numberline {4.11.3}1.11.3   书 痴}{485}{subsection.4.11.3}
+\contentsline {subsection}{\numberline {4.11.4}1.11.4   齐 天 大 圣}{487}{subsection.4.11.4}
+\contentsline {subsection}{\numberline {4.11.5}1.11.5   青 蛙 神}{488}{subsection.4.11.5}
+\contentsline {subsection}{\numberline {4.11.6}1.11.6   任 秀}{491}{subsection.4.11.6}
+\contentsline {subsection}{\numberline {4.11.7}1.11.7   晚 霞}{492}{subsection.4.11.7}
+\contentsline {subsection}{\numberline {4.11.8}1.11.8   白 秋 练}{494}{subsection.4.11.8}
+\contentsline {subsection}{\numberline {4.11.9}1.11.9   王 者}{496}{subsection.4.11.9}
+\contentsline {subsection}{\numberline {4.11.10}1.11.10   某 甲}{497}{subsection.4.11.10}
+\contentsline {subsection}{\numberline {4.11.11}1.11.11   衢 州 三 怪}{498}{subsection.4.11.11}
+\contentsline {subsection}{\numberline {4.11.12}1.11.12   拆 楼 人}{498}{subsection.4.11.12}
+\contentsline {subsection}{\numberline {4.11.13}1.11.13   大 蝎}{498}{subsection.4.11.13}
+\contentsline {subsection}{\numberline {4.11.14}1.11.14   陈 云 栖}{498}{subsection.4.11.14}
+\contentsline {subsection}{\numberline {4.11.15}1.11.15   司 札 吏}{502}{subsection.4.11.15}
+\contentsline {subsection}{\numberline {4.11.16}1.11.16   蛐 蜒}{502}{subsection.4.11.16}
+\contentsline {subsection}{\numberline {4.11.17}1.11.17   司 训}{502}{subsection.4.11.17}
+\contentsline {subsection}{\numberline {4.11.18}1.11.18   黑 鬼}{503}{subsection.4.11.18}
+\contentsline {subsection}{\numberline {4.11.19}1.11.19   织 成}{503}{subsection.4.11.19}
+\contentsline {subsection}{\numberline {4.11.20}1.11.20   竹 青}{505}{subsection.4.11.20}
+\contentsline {subsection}{\numberline {4.11.21}1.11.21   段 氏}{506}{subsection.4.11.21}
+\contentsline {subsection}{\numberline {4.11.22}1.11.22   狐 女}{508}{subsection.4.11.22}
+\contentsline {subsection}{\numberline {4.11.23}1.11.23   张 氏 妇}{508}{subsection.4.11.23}
+\contentsline {subsection}{\numberline {4.11.24}1.11.24   于 子 游}{509}{subsection.4.11.24}
+\contentsline {subsection}{\numberline {4.11.25}1.11.25   男 妾}{509}{subsection.4.11.25}
+\contentsline {subsection}{\numberline {4.11.26}1.11.26   汪 可 受}{510}{subsection.4.11.26}
+\contentsline {subsection}{\numberline {4.11.27}1.11.27   牛 犊}{510}{subsection.4.11.27}
+\contentsline {subsection}{\numberline {4.11.28}1.11.28   王 大}{510}{subsection.4.11.28}
+\contentsline {subsection}{\numberline {4.11.29}1.11.29   乐 仲}{512}{subsection.4.11.29}
+\contentsline {subsection}{\numberline {4.11.30}1.11.30   香 玉}{514}{subsection.4.11.30}
+\contentsline {subsection}{\numberline {4.11.31}1.11.31   三 仙}{517}{subsection.4.11.31}
+\contentsline {subsection}{\numberline {4.11.32}1.11.32   鬼 隶}{518}{subsection.4.11.32}
+\contentsline {subsection}{\numberline {4.11.33}1.11.33   王 十}{518}{subsection.4.11.33}
+\contentsline {subsection}{\numberline {4.11.34}1.11.34   大 男}{519}{subsection.4.11.34}
+\contentsline {subsection}{\numberline {4.11.35}1.11.35   外 国 人}{521}{subsection.4.11.35}
+\contentsline {subsection}{\numberline {4.11.36}1.11.36   韦 公 子}{521}{subsection.4.11.36}
+\contentsline {subsection}{\numberline {4.11.37}1.11.37   石 清 虚}{522}{subsection.4.11.37}
+\contentsline {subsection}{\numberline {4.11.38}1.11.38   曾 友 于}{524}{subsection.4.11.38}
+\contentsline {subsection}{\numberline {4.11.39}1.11.39   嘉 平 公 子}{526}{subsection.4.11.39}
+\contentsline {section}{\numberline {4.12}1.12   卷 十 二}{527}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}1.12.1   二 班}{527}{subsection.4.12.1}
+\contentsline {subsection}{\numberline {4.12.2}1.12.2   车 夫}{528}{subsection.4.12.2}
+\contentsline {subsection}{\numberline {4.12.3}1.12.3   乩 仙}{528}{subsection.4.12.3}
+\contentsline {subsection}{\numberline {4.12.4}1.12.4   苗 生}{528}{subsection.4.12.4}
+\contentsline {subsection}{\numberline {4.12.5}1.12.5   蝎 客}{530}{subsection.4.12.5}
+\contentsline {subsection}{\numberline {4.12.6}1.12.6   杜 小 雷}{530}{subsection.4.12.6}
+\contentsline {subsection}{\numberline {4.12.7}1.12.7   毛 大 福}{530}{subsection.4.12.7}
+\contentsline {subsection}{\numberline {4.12.8}1.12.8   雹 神}{531}{subsection.4.12.8}
+\contentsline {subsection}{\numberline {4.12.9}1.12.9   李 八 缸}{532}{subsection.4.12.9}
+\contentsline {subsection}{\numberline {4.12.10}1.12.10   老 龙 舡 户}{532}{subsection.4.12.10}
+\contentsline {subsection}{\numberline {4.12.11}1.12.11   青 城 妇}{533}{subsection.4.12.11}
+\contentsline {subsection}{\numberline {4.12.12}1.12.12   鸮 鸟}{533}{subsection.4.12.12}
+\contentsline {subsection}{\numberline {4.12.13}1.12.13   古 瓶}{534}{subsection.4.12.13}
+\contentsline {subsection}{\numberline {4.12.14}1.12.14   元 少 先 生}{534}{subsection.4.12.14}
+\contentsline {subsection}{\numberline {4.12.15}1.12.15   薛 蔚 娘}{535}{subsection.4.12.15}
+\contentsline {subsection}{\numberline {4.12.16}1.12.16   田 子 成}{537}{subsection.4.12.16}
+\contentsline {subsection}{\numberline {4.12.17}1.12.17   王 桂 庵}{538}{subsection.4.12.17}
+\contentsline {subsection}{\numberline {4.12.18}1.12.18   寄 生}{541}{subsection.4.12.18}
+\contentsline {subsection}{\numberline {4.12.19}1.12.19   周 生}{543}{subsection.4.12.19}
+\contentsline {subsection}{\numberline {4.12.20}1.12.20   褚 遂 良}{544}{subsection.4.12.20}
+\contentsline {subsection}{\numberline {4.12.21}1.12.21   刘 全}{544}{subsection.4.12.21}
+\contentsline {subsection}{\numberline {4.12.22}1.12.22   土 化 兔}{545}{subsection.4.12.22}
+\contentsline {subsection}{\numberline {4.12.23}1.12.23   鸟 使}{545}{subsection.4.12.23}
+\contentsline {subsection}{\numberline {4.12.24}1.12.24   姬 生}{546}{subsection.4.12.24}
+\contentsline {subsection}{\numberline {4.12.25}1.12.25   果 报}{547}{subsection.4.12.25}
+\contentsline {subsection}{\numberline {4.12.26}1.12.26   公 孙 夏}{547}{subsection.4.12.26}
+\contentsline {subsection}{\numberline {4.12.27}1.12.27   韩 方}{548}{subsection.4.12.27}
+\contentsline {subsection}{\numberline {4.12.28}1.12.28   纫 针}{549}{subsection.4.12.28}
+\contentsline {subsection}{\numberline {4.12.29}1.12.29   桓 侯}{551}{subsection.4.12.29}
+\contentsline {subsection}{\numberline {4.12.30}1.12.30   粉 蝶}{552}{subsection.4.12.30}
+\contentsline {subsection}{\numberline {4.12.31}1.12.31   李 檀 斯}{554}{subsection.4.12.31}
+\contentsline {subsection}{\numberline {4.12.32}1.12.32   锦 瑟}{554}{subsection.4.12.32}
+\contentsline {subsection}{\numberline {4.12.33}1.12.33   太 原 狱}{557}{subsection.4.12.33}
+\contentsline {subsection}{\numberline {4.12.34}1.12.34   新 郑 讼}{558}{subsection.4.12.34}
+\contentsline {subsection}{\numberline {4.12.35}1.12.35   李 象 先}{558}{subsection.4.12.35}
+\contentsline {subsection}{\numberline {4.12.36}1.12.36   房 文 淑}{559}{subsection.4.12.36}
+\contentsline {subsection}{\numberline {4.12.37}1.12.37   秦 桧}{560}{subsection.4.12.37}
+\contentsline {subsection}{\numberline {4.12.38}1.12.38   浙 东 生}{560}{subsection.4.12.38}
+\contentsline {subsection}{\numberline {4.12.39}1.12.39   博 兴 女}{561}{subsection.4.12.39}
+\contentsline {subsection}{\numberline {4.12.40}1.12.40   一 员 官}{561}{subsection.4.12.40}
+\contentsline {subsection}{\numberline {4.12.41}1.12.41   丐 仙}{562}{subsection.4.12.41}
+\contentsline {subsection}{\numberline {4.12.42}1.12.42   人 妖}{564}{subsection.4.12.42}
+\contentsline {subsection}{\numberline {4.12.43}1.12.43   附录}{565}{subsection.4.12.43}
+\contentsline {subsection}{\numberline {4.12.44}1.12.44   蛰 蛇}{565}{subsection.4.12.44}
+\contentsline {subsection}{\numberline {4.12.45}1.12.45   晋 人}{565}{subsection.4.12.45}
+\contentsline {subsection}{\numberline {4.12.46}1.12.46   龙}{565}{subsection.4.12.46}
+\contentsline {subsection}{\numberline {4.12.47}1.12.47   爱 才}{565}{subsection.4.12.47}
+\contentsline {chapter}{\numberline {5}1   袁了凡-了凡四训}{567}{chapter.5}
+\contentsline {section}{\numberline {5.1}1.1   第一篇 立命之学}{567}{section.5.1}
+\contentsline {section}{\numberline {5.2}1.2   第二篇 改过之法}{570}{section.5.2}
+\contentsline {section}{\numberline {5.3}1.3   第三篇 积善之方}{571}{section.5.3}
+\contentsline {section}{\numberline {5.4}1.4   第四篇 谦德之效}{576}{section.5.4}
+\contentsline {section}{\numberline {5.5}1.5   【袁了凡居士传】}{577}{section.5.5}
+\contentsline {section}{\numberline {5.6}1.6   【袁了凡居士传】【注】}{579}{section.5.6}
+\contentsline {chapter}{\numberline {6}1   Hi,p01散文}{581}{chapter.6}
+\contentsline {section}{\numberline {6.1}1.1   post}{581}{section.6.1}
+\contentsline {chapter}{\numberline {7}1   宋濂-送东阳马生序}{583}{chapter.7}
+\contentsline {section}{\numberline {7.1}1.1   作品原文}{584}{section.7.1}
+\contentsline {section}{\numberline {7.2}1.2   词句注释}{584}{section.7.2}
+\contentsline {section}{\numberline {7.3}1.3   白话译文}{586}{section.7.3}
+\contentsline {section}{\numberline {7.4}1.4   创作背景}{587}{section.7.4}
+\contentsline {section}{\numberline {7.5}1.5   作品鉴赏}{587}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}1.5.1   第一段}{587}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}1.5.2   第二段}{588}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}1.5.3   第三段}{588}{subsection.7.5.3}
+\contentsline {subsection}{\numberline {7.5.4}1.5.4   总结}{588}{subsection.7.5.4}
+\contentsline {section}{\numberline {7.6}1.6   名家点评}{589}{section.7.6}
+\contentsline {section}{\numberline {7.7}1.7   作者简介}{589}{section.7.7}
+\contentsline {chapter}{\numberline {8}1   岳飞-满江红·怒发冲冠}{591}{chapter.8}
+\contentsline {section}{\numberline {8.1}1.1   作品原文}{592}{section.8.1}
+\contentsline {section}{\numberline {8.2}1.2   词句注释}{592}{section.8.2}
+\contentsline {section}{\numberline {8.3}1.3   白话译文}{593}{section.8.3}
+\contentsline {section}{\numberline {8.4}1.4   创作背景}{593}{section.8.4}
+\contentsline {section}{\numberline {8.5}1.5   作品鉴赏}{593}{section.8.5}
+\contentsline {section}{\numberline {8.6}1.6   名家点评}{594}{section.8.6}
+\contentsline {section}{\numberline {8.7}1.7   作者简介}{594}{section.8.7}
+\contentsline {chapter}{\numberline {9}1   峻青-海滨仲夏夜}{595}{chapter.9}
+\contentsline {section}{\numberline {9.1}1.1   作品原文}{595}{section.9.1}
+\contentsline {section}{\numberline {9.2}1.2   注释}{596}{section.9.2}
+\contentsline {chapter}{\numberline {10}1   曹操-观沧海}{597}{chapter.10}
+\contentsline {section}{\numberline {10.1}1.1   作品原文}{597}{section.10.1}
+\contentsline {section}{\numberline {10.2}1.2   词语注释}{598}{section.10.2}
+\contentsline {section}{\numberline {10.3}1.3   白话译文}{599}{section.10.3}
+\contentsline {section}{\numberline {10.4}1.4   创作背景}{599}{section.10.4}
+\contentsline {section}{\numberline {10.5}1.5   作品鉴赏}{599}{section.10.5}
+\contentsline {section}{\numberline {10.6}1.6   名家点评}{600}{section.10.6}
+\contentsline {section}{\numberline {10.7}1.7   作者简介}{600}{section.10.7}
+\contentsline {chapter}{\numberline {11}1   朱自清-春}{601}{chapter.11}
+\contentsline {section}{\numberline {11.1}1.1   作品原文}{601}{section.11.1}
+\contentsline {chapter}{\numberline {12}1   朱自清-梅雨潭的绿}{603}{chapter.12}
+\contentsline {section}{\numberline {12.1}1.1   作品原文}{603}{section.12.1}
+\contentsline {section}{\numberline {12.2}1.2   梅雨潭位置}{604}{section.12.2}
+\contentsline {section}{\numberline {12.3}1.3   梅雨潭主要景点}{604}{section.12.3}
+\contentsline {subsection}{\numberline {12.3.1}1.3.1   通元洞}{605}{subsection.12.3.1}
+\contentsline {subsection}{\numberline {12.3.2}1.3.2   飞瀑}{605}{subsection.12.3.2}
+\contentsline {subsection}{\numberline {12.3.3}1.3.3   潭水}{605}{subsection.12.3.3}
+\contentsline {chapter}{\numberline {13}1   朱自清-背影}{607}{chapter.13}
+\contentsline {section}{\numberline {13.1}1.1   作品原文}{608}{section.13.1}
+\contentsline {section}{\numberline {13.2}1.2   词语注释编辑}{609}{section.13.2}
+\contentsline {section}{\numberline {13.3}1.3   创作背景}{609}{section.13.3}
+\contentsline {section}{\numberline {13.4}1.4   内容赏析}{609}{section.13.4}
+\contentsline {subsection}{\numberline {13.4.1}1.4.1   第一部分（第一至第三段）}{610}{subsection.13.4.1}
+\contentsline {subsection}{\numberline {13.4.2}1.4.2   第二部分（第四至第六段）}{610}{subsection.13.4.2}
+\contentsline {subsection}{\numberline {13.4.3}1.4.3   第三部分（最后一段）}{611}{subsection.13.4.3}
+\contentsline {section}{\numberline {13.5}1.5   语言特色}{611}{section.13.5}
+\contentsline {section}{\numberline {13.6}1.6   写作特色}{611}{section.13.6}
+\contentsline {section}{\numberline {13.7}1.7   行文立意}{612}{section.13.7}
+\contentsline {section}{\numberline {13.8}1.8   名家点评}{612}{section.13.8}
+\contentsline {chapter}{\numberline {14}1   朱自清-荷塘月色}{613}{chapter.14}
+\contentsline {section}{\numberline {14.1}1.1   作品原文}{613}{section.14.1}
+\contentsline {section}{\numberline {14.2}1.2   词语注释}{614}{section.14.2}
+\contentsline {chapter}{\numberline {15}1   李白-将进酒}{617}{chapter.15}
+\contentsline {section}{\numberline {15.1}1.1   作品原文}{618}{section.15.1}
+\contentsline {section}{\numberline {15.2}1.2   词句注释}{618}{section.15.2}
+\contentsline {section}{\numberline {15.3}1.3   白话译文}{619}{section.15.3}
+\contentsline {section}{\numberline {15.4}1.4   创作背景}{619}{section.15.4}
+\contentsline {section}{\numberline {15.5}1.5   作品鉴赏}{620}{section.15.5}
+\contentsline {section}{\numberline {15.6}1.6   名家点评}{622}{section.15.6}
+\contentsline {section}{\numberline {15.7}1.7   作者简介}{622}{section.15.7}
+\contentsline {chapter}{\numberline {16}1   李白-梦游天姥吟留别}{625}{chapter.16}
+\contentsline {section}{\numberline {16.1}1.1   作品原文}{626}{section.16.1}
+\contentsline {section}{\numberline {16.2}1.2   词句注释}{626}{section.16.2}
+\contentsline {section}{\numberline {16.3}1.3   白话译文}{628}{section.16.3}
+\contentsline {section}{\numberline {16.4}1.4   创作背景}{629}{section.16.4}
+\contentsline {section}{\numberline {16.5}1.5   作品鉴赏}{629}{section.16.5}
+\contentsline {section}{\numberline {16.6}1.6   名家点评}{631}{section.16.6}
+\contentsline {section}{\numberline {16.7}1.7   作者简介}{632}{section.16.7}
+\contentsline {chapter}{\numberline {17}1   李白-蜀道难}{633}{chapter.17}
+\contentsline {section}{\numberline {17.1}1.1   作品原文}{634}{section.17.1}
+\contentsline {section}{\numberline {17.2}1.2   词句注释}{634}{section.17.2}
+\contentsline {section}{\numberline {17.3}1.3   白话译文}{636}{section.17.3}
+\contentsline {section}{\numberline {17.4}1.4   创作背景}{636}{section.17.4}
+\contentsline {section}{\numberline {17.5}1.5   整体赏析}{637}{section.17.5}
+\contentsline {section}{\numberline {17.6}1.6   历代评论}{639}{section.17.6}
+\contentsline {section}{\numberline {17.7}1.7   作者简介}{640}{section.17.7}
+\contentsline {chapter}{\numberline {18}1   毛泽东-七律·长征}{641}{chapter.18}
+\contentsline {section}{\numberline {18.1}1.1   作品原文}{641}{section.18.1}
+\contentsline {section}{\numberline {18.2}1.2   词句注释}{642}{section.18.2}
+\contentsline {section}{\numberline {18.3}1.3   白话译文}{643}{section.18.3}
+\contentsline {section}{\numberline {18.4}1.4   创作背景}{643}{section.18.4}
+\contentsline {chapter}{\numberline {19}1   毛泽东-沁园春·雪}{645}{chapter.19}
+\contentsline {section}{\numberline {19.1}1.1   作品原文}{645}{section.19.1}
+\contentsline {section}{\numberline {19.2}1.2   词句注释}{646}{section.19.2}
+\contentsline {section}{\numberline {19.3}1.3   白话译文}{646}{section.19.3}
+\contentsline {section}{\numberline {19.4}1.4   创作背景}{647}{section.19.4}
+\contentsline {section}{\numberline {19.5}1.5   名家点评}{647}{section.19.5}
+\contentsline {chapter}{\numberline {20}1   老舍-济南的冬天}{649}{chapter.20}
+\contentsline {section}{\numberline {20.1}1.1   作品原文}{649}{section.20.1}
+\contentsline {section}{\numberline {20.2}1.2   写景手法}{650}{section.20.2}
+\contentsline {subsection}{\numberline {20.2.1}1.2.1   1.基调统一，色彩和谐}{650}{subsection.20.2.1}
+\contentsline {subsection}{\numberline {20.2.2}1.2.2   2.景物层次，安排得当}{651}{subsection.20.2.2}
+\contentsline {subsection}{\numberline {20.2.3}1.2.3   3.远近大细，各得其宜}{651}{subsection.20.2.3}
+\contentsline {subsection}{\numberline {20.2.4}1.2.4   4.虚实手法，同时并用}{651}{subsection.20.2.4}
+\contentsline {subsection}{\numberline {20.2.5}1.2.5   5.适当点题，意义深远}{651}{subsection.20.2.5}
+\contentsline {subsection}{\numberline {20.2.6}1.2.6   6.山水画法，以大观小}{652}{subsection.20.2.6}
+\contentsline {chapter}{\numberline {21}1   艾青-大堰河——我的保姆}{653}{chapter.21}
+\contentsline {section}{\numberline {21.1}1.1   作品原文}{653}{section.21.1}
+\contentsline {section}{\numberline {21.2}1.2   创作背景}{657}{section.21.2}
+\contentsline {section}{\numberline {21.3}1.3   作品鉴赏}{657}{section.21.3}
+\contentsline {section}{\numberline {21.4}1.4   名家点评}{658}{section.21.4}
+\contentsline {chapter}{\numberline {22}1   范仲淹-岳阳楼记}{659}{chapter.22}
+\contentsline {section}{\numberline {22.1}1.1   作品原文}{660}{section.22.1}
+\contentsline {section}{\numberline {22.2}1.2   词句注释}{660}{section.22.2}
+\contentsline {section}{\numberline {22.3}1.3   白话译文}{663}{section.22.3}
+\contentsline {section}{\numberline {22.4}1.4   创作背景}{664}{section.22.4}
+\contentsline {section}{\numberline {22.5}1.5   文学赏析}{664}{section.22.5}
+\contentsline {section}{\numberline {22.6}1.6   名家点评}{666}{section.22.6}
+\contentsline {section}{\numberline {22.7}1.7   作者简介}{667}{section.22.7}
+\contentsline {chapter}{\numberline {23}1   茅盾-白杨礼赞}{669}{chapter.23}
+\contentsline {section}{\numberline {23.1}1.1   作品原文}{669}{section.23.1}
+\contentsline {section}{\numberline {23.2}1.2   词语注释}{670}{section.23.2}
+\contentsline {chapter}{\numberline {24}1   荀子-劝学}{673}{chapter.24}
+\contentsline {section}{\numberline {24.1}1.1   作品原文}{673}{section.24.1}
+\contentsline {section}{\numberline {24.2}1.2   词句注释}{675}{section.24.2}
+\contentsline {chapter}{\numberline {25}1   郁达夫-古都的秋}{681}{chapter.25}
+\contentsline {section}{\numberline {25.1}1.1   作品原文}{681}{section.25.1}
+\contentsline {section}{\numberline {25.2}1.2   词语注释}{683}{section.25.2}
+\contentsline {chapter}{\numberline {26}1   韩愈-师说}{685}{chapter.26}
+\contentsline {section}{\numberline {26.1}1.1   作品原文}{686}{section.26.1}
+\contentsline {section}{\numberline {26.2}1.2   词句注释}{686}{section.26.2}
+\contentsline {section}{\numberline {26.3}1.3   白话译文}{688}{section.26.3}
+\contentsline {section}{\numberline {26.4}1.4   创作背景}{689}{section.26.4}
+\contentsline {section}{\numberline {26.5}1.5   文学赏析}{689}{section.26.5}
+\contentsline {section}{\numberline {26.6}1.6   名家点评}{691}{section.26.6}
+\contentsline {subsection}{\numberline {26.6.1}1.6.1   唐代}{691}{subsection.26.6.1}
+\contentsline {subsection}{\numberline {26.6.2}1.6.2   宋代}{691}{subsection.26.6.2}
+\contentsline {subsection}{\numberline {26.6.3}1.6.3   元代}{691}{subsection.26.6.3}
+\contentsline {subsection}{\numberline {26.6.4}1.6.4   明代}{691}{subsection.26.6.4}
+\contentsline {subsection}{\numberline {26.6.5}1.6.5   清代}{691}{subsection.26.6.5}
+\contentsline {chapter}{\numberline {27}1   Hi,p02读书}{693}{chapter.27}
+\contentsline {section}{\numberline {27.1}1.1   post}{693}{section.27.1}
+\contentsline {chapter}{\numberline {28}1   水浒-宋江之绰号}{695}{chapter.28}
+\contentsline {chapter}{\numberline {29}1   Hi,p03旅游}{697}{chapter.29}
+\contentsline {section}{\numberline {29.1}1.1   post}{697}{section.29.1}
+\contentsline {chapter}{\numberline {30}1   五泄瀑布}{699}{chapter.30}
+\contentsline {chapter}{\numberline {31}1   Hi,p04财经}{701}{chapter.31}
+\contentsline {section}{\numberline {31.1}1.1   post}{701}{section.31.1}
+\contentsline {chapter}{\numberline {32}1   Hi,p05技术}{703}{chapter.32}
+\contentsline {section}{\numberline {32.1}1.1   post}{703}{section.32.1}
+\contentsline {chapter}{\numberline {33}1   Hi,p06历史}{705}{chapter.33}
+\contentsline {section}{\numberline {33.1}1.1   post}{705}{section.33.1}
+\contentsline {chapter}{\numberline {34}1   瓦岗寨之李密}{707}{chapter.34}
+\contentsline {chapter}{\numberline {35}1   Hi,p07创投}{709}{chapter.35}
+\contentsline {section}{\numberline {35.1}1.1   post}{709}{section.35.1}
+\contentsline {chapter}{\numberline {36}1   风投的前生}{711}{chapter.36}
+\contentsline {chapter}{\numberline {37}1   Hi,p08写作}{713}{chapter.37}
+\contentsline {section}{\numberline {37.1}1.1   post}{713}{section.37.1}
+\contentsline {chapter}{\numberline {38}1   Hi,p09work}{715}{chapter.38}
+\contentsline {section}{\numberline {38.1}1.1   post}{715}{section.38.1}
+\contentsline {chapter}{\numberline {39}Indices and tables}{717}{chapter.39}
