@@ -36,6 +36,6 @@ $(window).resize(function(){
         $("li.nav-item-0 a").text("Top");
     }
     else {
-        $("li.nav-item-0 a").text("Hi post  文档");
+        $("li.nav-item-0 a").text("003post  文档");
     }
 });
