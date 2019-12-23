@@ -129,7 +129,10 @@
 </li>
 <li><a class="reference internal" href="#latex"><span class="sectnum">1.8</span> LaTex公式案例</a></li>
 <li><a class="reference internal" href="#sublime-tips"><span class="sectnum">1.9</span> sublime 使用TIPS</a><ul>
-<li><a class="reference internal" href="#id10"><span class="sectnum">1.9.1</span> sublime 本身的使用</a></li>
+<li><a class="reference internal" href="#id10"><span class="sectnum">1.9.1</span> sublime 本身的使用</a><ul>
+<li><a class="reference internal" href="#project"><span class="sectnum">1.9.1.1</span> 开启Project文件视图，文件检索，文件搜索</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#sublime-insert-nums"><span class="sectnum">1.9.2</span> sublime 插件： insert nums的使用</a></li>
 </ul>
 </li>
@@ -261,8 +264,12 @@
 <li><p><a class="reference internal" href="#latex" id="id72"><span class="sectnum">1.8</span> LaTex公式案例</a></p></li>
 <li><p><a class="reference internal" href="#sublime-tips" id="id73"><span class="sectnum">1.9</span> sublime 使用TIPS</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#id10" id="id74"><span class="sectnum">1.9.1</span> sublime 本身的使用</a></p></li>
-<li><p><a class="reference internal" href="#sublime-insert-nums" id="id75"><span class="sectnum">1.9.2</span> sublime 插件： insert nums的使用</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id74"><span class="sectnum">1.9.1</span> sublime 本身的使用</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#project" id="id75"><span class="sectnum">1.9.1.1</span> 开启Project文件视图，文件检索，文件搜索</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#sublime-insert-nums" id="id76"><span class="sectnum">1.9.2</span> sublime 插件： insert nums的使用</a></p></li>
 </ul>
 </li>
 </ul>
@@ -420,16 +427,16 @@ you can use CTRL-R to jump to them.</p>
 <p>装完后preferences-package setting中的名字为，sublime-rst-completion</p>
 <p><a class="reference external" href="https://packagecontrol.io/003work002memo001software001install/Restructured%20Text%20(RST)%20Snippets">Restructured Text (RST)
 Snippets</a></p>
-<ul class="simple">
-<li><p>用法链接</p>
 <ul>
+<li><p>用法链接</p>
+<ul class="simple">
 <li><p><a class="reference external" href="https://packagecontrol.io/packages/Restructured%20Text%20(RST)%20Snippets">packagecontrol.io/packages/Restructured Text (RST) Snippets</a></p></li>
 <li><p><a class="reference external" href="H:tmp_H001.work002git000study000miscsublime-rst-completionREADME.rst">本地README</a></p></li>
 <li><p><a class="reference external" href="https://github.com/kevinluolog/sublime-rst-completion/blob/master/README.rst">Git-README</a></p></li>
 </ul>
 </li>
 <li><p>快捷键</p>
-<ul>
+<ul class="simple">
 <li><p>magic table</p>
 <ol class="arabic simple">
 <li><p>grid table <code class="docutils literal notranslate"><span class="pre">ctrl+t,</span> <span class="pre">enter</span></code></p>
@@ -448,6 +455,13 @@ Snippets</a></p>
 <li><p>add new footnote: <code class="docutils literal notranslate"><span class="pre">alt+shift+f</span></code></p></li>
 <li><p>go back to the reference with <code class="docutils literal notranslate"><span class="pre">shift+up</span></code></p></li>
 </ul>
+</li>
+<li><p>如何消除已经生成的表格格式</p>
+<p>进行两次替换动作就可以了。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">-+=</span>\<span class="o">|</span><span class="p">]</span>
+\<span class="n">n</span>\<span class="n">n</span>
+</pre></div>
+</div>
 </li>
 </ul>
 <p>-usage snippets</p>
@@ -1100,6 +1114,8 @@ Selection</a></p>
 <h2><a class="toc-backref" href="#id73"><span class="sectnum">1.9</span> sublime 使用TIPS</a><a class="headerlink" href="#sublime-tips" title="永久链接至标题">¶</a></h2>
 <div class="section" id="id10">
 <h3><a class="toc-backref" href="#id74"><span class="sectnum">1.9.1</span> sublime 本身的使用</a><a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+<div class="section" id="project">
+<h4><a class="toc-backref" href="#id75"><span class="sectnum">1.9.1.1</span> 开启Project文件视图，文件检索，文件搜索</a><a class="headerlink" href="#project" title="永久链接至标题">¶</a></h4>
 <ol class="arabic simple">
 <li><p>开启project侧边栏 ：Project -&gt; Add Forder to Project</p></li>
 <li><p>找文件： Ctrl + P 查找文件</p></li>
@@ -1108,8 +1124,9 @@ Selection</a></p>
 <li><p>定位到行：:行数</p></li>
 </ol>
 </div>
+</div>
 <div class="section" id="sublime-insert-nums">
-<h3><a class="toc-backref" href="#id75"><span class="sectnum">1.9.2</span> sublime 插件： insert nums的使用</a><a class="headerlink" href="#sublime-insert-nums" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id76"><span class="sectnum">1.9.2</span> sublime 插件： insert nums的使用</a><a class="headerlink" href="#sublime-insert-nums" title="永久链接至标题">¶</a></h3>
 </div>
 </div>
 </div>
