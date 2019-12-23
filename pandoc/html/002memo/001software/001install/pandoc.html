@@ -72,6 +72,7 @@
 <li><a href="#rst2md"><span class="toc-section-number">9.1</span> rst2md</a><ul>
 <li><a href="#pandoc不支持的rst部分功能"><span class="toc-section-number">9.1.1</span> PANDOC不支持的RST部分功能</a></li>
 </ul></li>
+<li><a href="#md2slide"><span class="toc-section-number">9.2</span> md2slide</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -422,5 +423,11 @@ Extension: implicit_header_references</code></pre>
 
 Hexo博客从搭建部署到SEO优化等详细教程_
 这样不能引用</code></pre>
+<h2 id="md2slide"><span class="header-section-number">9.2</span> md2slide</h2>
+<ul>
+<li><p>image引用路径问题</p>
+<p>html形式的slide可以正反斜杠都可以,因最后输出到html标识中了，相对路径也可。 beamer形式的pdf slide中需要双反斜杠全路径(windows下)，相对路径不行。</p>
+<pre><code>![image](H:\\tmp_H\\001.work\\002git\\000GT\\001work\\resource\\image\\layoff.jpeg)</code></pre></li>
+</ul>
 </body>
 </html>

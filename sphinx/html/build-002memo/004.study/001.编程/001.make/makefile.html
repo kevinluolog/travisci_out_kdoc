@@ -50,6 +50,10 @@
 <li><a class="reference internal" href="#id4"><span class="sectnum">1.1.4</span> next</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#id5"><span class="sectnum">1.2</span> 用法技巧</a><ul>
+<li><a class="reference internal" href="#multiple-targets-in-a-rule"><span class="sectnum">1.2.1</span> Multiple Targets in a Rule 多目标写在一行</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -76,28 +80,34 @@
           <div class="body" role="main">
             
   <div class="section" id="makefiles">
-<h1><a class="toc-backref" href="#id5"><span class="sectnum">1</span> makefiles</a><a class="headerlink" href="#makefiles" title="永久链接至标题">¶</a></h1>
+<h1><a class="toc-backref" href="#id6"><span class="sectnum">1</span> makefiles</a><a class="headerlink" href="#makefiles" title="永久链接至标题">¶</a></h1>
 <div class="contents topic" id="id1">
 <p class="topic-title first">目录</p>
 <ul class="auto-toc simple">
-<li><p><a class="reference internal" href="#makefiles" id="id5"><span class="sectnum">1</span> makefiles</a></p>
+<li><p><a class="reference internal" href="#makefiles" id="id6"><span class="sectnum">1</span> makefiles</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#id2" id="id6"><span class="sectnum">1.1</span> 案例</a></p>
+<li><p><a class="reference internal" href="#id2" id="id7"><span class="sectnum">1.1</span> 案例</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#makefile" id="id7"><span class="sectnum">1.1.1</span> 通用makefile,自动遍历子目录源文件，自动生成依赖。</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id8"><span class="sectnum">1.1.2</span> makefile操作系统检测方法</a></p></li>
-<li><p><a class="reference internal" href="#next" id="id9"><span class="sectnum">1.1.3</span> next</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id10"><span class="sectnum">1.1.4</span> next</a></p></li>
+<li><p><a class="reference internal" href="#makefile" id="id8"><span class="sectnum">1.1.1</span> 通用makefile,自动遍历子目录源文件，自动生成依赖。</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id9"><span class="sectnum">1.1.2</span> makefile操作系统检测方法</a></p></li>
+<li><p><a class="reference internal" href="#next" id="id10"><span class="sectnum">1.1.3</span> next</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id11"><span class="sectnum">1.1.4</span> next</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id5" id="id12"><span class="sectnum">1.2</span> 用法技巧</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#multiple-targets-in-a-rule" id="id13"><span class="sectnum">1.2.1</span> Multiple Targets in a Rule 多目标写在一行</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </div>
+<p><a class="reference external" href="https://blog.csdn.net/u013896064/article/details/83040906">make之makefile 九 隐含规则</a></p>
 <div class="section" id="id2">
-<h2><a class="toc-backref" href="#id6"><span class="sectnum">1.1</span> 案例</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<h2><a class="toc-backref" href="#id7"><span class="sectnum">1.1</span> 案例</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <div class="section" id="makefile">
-<h3><a class="toc-backref" href="#id7"><span class="sectnum">1.1.1</span> 通用makefile,自动遍历子目录源文件，自动生成依赖。</a><a class="headerlink" href="#makefile" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id8"><span class="sectnum">1.1.1</span> 通用makefile,自动遍历子目录源文件，自动生成依赖。</a><a class="headerlink" href="#makefile" title="永久链接至标题">¶</a></h3>
 <p><a class="reference external" href="https://blog.csdn.net/yuliying/article/details/49635485">一份通用makefile,自动遍历子目录源文件，自动生成依赖Ubuntu和OSX</a></p>
 <p>这份makefile可以将当前makefile所在文件夹以及所有子文件夹中的cpp文件打包成静态库/动态库/可执行文件.
 自动生成所有依赖关系，修改任何文件都可以触发重新编译相应依赖的文件。</p>
@@ -142,7 +152,7 @@ clean:
 </div>
 </div>
 <div class="section" id="id3">
-<h3><a class="toc-backref" href="#id8"><span class="sectnum">1.1.2</span> makefile操作系统检测方法</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id9"><span class="sectnum">1.1.2</span> makefile操作系统检测方法</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
 <p>使用两个简单的技巧检测操作系统：</p>
 <ol class="arabic simple">
 <li><p>首先是环境变量 OS</p></li>
@@ -381,10 +391,29 @@ $(target): main.o
 </div>
 </div>
 <div class="section" id="next">
-<h3><a class="toc-backref" href="#id9"><span class="sectnum">1.1.3</span> next</a><a class="headerlink" href="#next" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id10"><span class="sectnum">1.1.3</span> next</a><a class="headerlink" href="#next" title="永久链接至标题">¶</a></h3>
 </div>
 <div class="section" id="id4">
-<h3><a class="toc-backref" href="#id10"><span class="sectnum">1.1.4</span> next</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id11"><span class="sectnum">1.1.4</span> next</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+</div>
+</div>
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id12"><span class="sectnum">1.2</span> 用法技巧</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<div class="section" id="multiple-targets-in-a-rule">
+<h3><a class="toc-backref" href="#id13"><span class="sectnum">1.2.1</span> Multiple Targets in a Rule 多目标写在一行</a><a class="headerlink" href="#multiple-targets-in-a-rule" title="永久链接至标题">¶</a></h3>
+<p>相同依赖和生成方式的目标可以写在一起。 生成方式也不用一定一样的，可以用自动化变量加处理函数来处理。
+详见说明文档。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>bigoutput littleoutput : text.g
+  generate text.g -$(subst output,,$@) &gt; $@
+</pre></div>
+</div>
+<p>is equivalent to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bigoutput</span> <span class="p">:</span> <span class="n">text</span><span class="o">.</span><span class="n">g</span>
+   <span class="n">generate</span> <span class="n">text</span><span class="o">.</span><span class="n">g</span> <span class="o">-</span><span class="n">big</span> <span class="o">&gt;</span> <span class="n">bigoutput</span>
+<span class="n">littleoutput</span> <span class="p">:</span> <span class="n">text</span><span class="o">.</span><span class="n">g</span>
+   <span class="n">generate</span> <span class="n">text</span><span class="o">.</span><span class="n">g</span> <span class="o">-</span><span class="n">little</span> <span class="o">&gt;</span> <span class="n">littleoutput</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
