@@ -50,7 +50,7 @@
 
 
 \title{memo of study}
-\date{2019 年 12 月 23 日}
+\date{2020 年 01 月 14 日}
 \release{}
 \author{kevinluo}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -4655,6 +4655,12 @@ Unix时间戳（英文为Unix epoch, Unix time, POSIXme 或 Unix timestamp）是
 \item {} 
 \phantomsection\label{\detokenize{001software/001install/make:id40}}{\hyperref[\detokenize{001software/001install/make:id18}]{\sphinxcrossref{1.1.5.4   调试输出变量信息方式}}}
 
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/make:id41}}{\hyperref[\detokenize{001software/001install/make:echo}]{\sphinxcrossref{1.1.5.5   echo输出信息时加上””会使变量显示有问题，不对并且会报错}}}
+
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/make:id42}}{\hyperref[\detokenize{001software/001install/make:pattern-make}]{\sphinxcrossref{1.1.5.6   pattern \% make 模式匹配的限制}}}
+
 \end{itemize}
 
 \end{itemize}
@@ -5229,6 +5235,27 @@ pandoc \PYGZdl{}\PYGZdl{}\PYGZlt{} \PYGZhy{}o \PYGZhy{} \PYGZgt{}\PYGZgt{}\PYGZd
 \end{itemize}
 
 
+\subsubsection{1.1.5.5   echo输出信息时加上””会使变量显示有问题，不对并且会报错}
+\label{\detokenize{001software/001install/make:echo}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+SRC\PYGZus{}PATHDIRNAMES := \PYGZdl{}(shell dir \PYGZdl{}(DIR\PYGZus{}BASE\PYGZus{}SRC) /ad\PYGZhy{}h\PYGZhy{}s /b /w /s)
+SRC\PYGZus{}PATHDIRNAMES\PYGZus{}GITKEEPER := \PYGZdl{}(addsuffix \PYGZbs{}.gitkeeper,\PYGZdl{}(SRC\PYGZus{}PATHDIRNAMES))
+\PYGZdl{}(info \PYGZdl{}(SRC\PYGZus{}PATHDIRNAMES\PYGZus{}GITKEEPER))
+@echo \PYGZdq{}\PYGZdl{}(SRC\PYGZus{}PATHDIRNAMES\PYGZus{}GITKEEPER)\PYGZdq{}
+\end{sphinxVerbatim}
+
+这么一段简单的代码，居然执行的时候会死机，或者报错，\$info显示完全正确。 原因是echo后面 把“”去掉就好了。
+
+
+\subsubsection{1.1.5.6   pattern \% make 模式匹配的限制}
+\label{\detokenize{001software/001install/make:pattern-make}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+SRC\PYGZus{}PATHDIRNAMES := \PYGZdl{}(filter\PYGZhy{}out \PYGZdl{}(DIR\PYGZus{}BASE\PYGZus{}SRC)\PYGZbs{}.git\PYGZpc{},\PYGZdl{}(SRC\PYGZus{}PATHDIRNAMES\PYGZus{}FILTER\PYGZus{}BEFORE))\PYGZdl{}(info \PYGZdl{}(SRC\PYGZus{}PATHDIRNAMES))
+\end{sphinxVerbatim}
+
+此处的模式匹配，\%只能用在中间，不能\%.git\%这种匹配。 匹配不出来。
+
+
 \chapter{1   pandoc}
 \label{\detokenize{001software/001install/pandoc:pandoc}}\label{\detokenize{001software/001install/pandoc::doc}}
 \begin{sphinxShadowBox}
@@ -5387,6 +5414,9 @@ pandoc \PYGZdl{}\PYGZdl{}\PYGZlt{} \PYGZhy{}o \PYGZhy{} \PYGZgt{}\PYGZgt{}\PYGZd
 
 \item {} 
 \phantomsection\label{\detokenize{001software/001install/pandoc:id58}}{\hyperref[\detokenize{001software/001install/pandoc:md2slide}]{\sphinxcrossref{1.9.2   md2slide}}}
+
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/pandoc:id59}}{\hyperref[\detokenize{001software/001install/pandoc:rst2pdf-colorlinks}]{\sphinxcrossref{1.9.3   rst2pdf colorlinks}}}
 
 \end{itemize}
 
@@ -6146,6 +6176,25 @@ beamer形式的pdf slide中需要双反斜杠全路径(windows下)，相对路�
 \end{itemize}
 
 
+\subsection{1.9.3   rst2pdf colorlinks}
+\label{\detokenize{001software/001install/pandoc:rst2pdf-colorlinks}}\begin{itemize}
+\item {} 
+pdf目录颜色是黑色的，改不了蓝色
+
+发现问题在metadata.yaml中，colorlinks没有定义，需要定义成TRUE or FALSE,可以在default.latex中找到代码。
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{}请参见default.latex中的逻辑}
+\PYG{c+c1}{\PYGZsh{}如果colorlinks是TRUE,则表示有link颜色，否则没有}
+\PYG{c+c1}{\PYGZsh{}有的情况下由klbordercolorlink定义与否决定是否linkborder有颜色。如果测定义     才轮到colorlinks来定义文字颜色。}
+\PYG{n}{colorlinks}\PYG{p}{:} \PYG{n}{TRUE}
+\PYG{n}{toccolor}\PYG{p}{:} \PYG{n}{blue}
+\PYG{c+c1}{\PYGZsh{}klbordercolorlink: blue}
+\end{sphinxVerbatim}
+
+\end{itemize}
+
+
 \chapter{1   python}
 \label{\detokenize{001software/001install/python:python}}\label{\detokenize{001software/001install/python::doc}}
 \begin{sphinxShadowBox}
@@ -6691,224 +6740,235 @@ glob只匹配指定文件夹1层，不包括子文件夹。
 \sphinxstyletopictitle{目录}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id11}}{\hyperref[\detokenize{001software/001install/sublime:sublime}]{\sphinxcrossref{1   sublime}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id13}}{\hyperref[\detokenize{001software/001install/sublime:sublime}]{\sphinxcrossref{1   sublime}}}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id12}}{\hyperref[\detokenize{001software/001install/sublime:basic-information}]{\sphinxcrossref{1.1   basic information}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id14}}{\hyperref[\detokenize{001software/001install/sublime:basic-information}]{\sphinxcrossref{1.1   basic information}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id13}}{\hyperref[\detokenize{001software/001install/sublime:website}]{\sphinxcrossref{1.2   website}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id15}}{\hyperref[\detokenize{001software/001install/sublime:website}]{\sphinxcrossref{1.2   website}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id14}}{\hyperref[\detokenize{001software/001install/sublime:install-components}]{\sphinxcrossref{1.3   install components}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id16}}{\hyperref[\detokenize{001software/001install/sublime:install-components}]{\sphinxcrossref{1.3   install components}}}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id15}}{\hyperref[\detokenize{001software/001install/sublime:package-control-install}]{\sphinxcrossref{1.3.1   package control install}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id17}}{\hyperref[\detokenize{001software/001install/sublime:package-control-install}]{\sphinxcrossref{1.3.1   package control install}}}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id16}}{\hyperref[\detokenize{001software/001install/sublime:id2}]{\sphinxcrossref{1.3.1.1   如果想要删除插件，}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id18}}{\hyperref[\detokenize{001software/001install/sublime:id2}]{\sphinxcrossref{1.3.1.1   如果想要删除插件，}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id17}}{\hyperref[\detokenize{001software/001install/sublime:package-control}]{\sphinxcrossref{1.3.1.2   用Package Control安装插件的方法}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id19}}{\hyperref[\detokenize{001software/001install/sublime:package-control}]{\sphinxcrossref{1.3.1.2   用Package Control安装插件的方法}}}
 
 \end{itemize}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id18}}{\hyperref[\detokenize{001software/001install/sublime:sublimegit-package-install}]{\sphinxcrossref{1.3.2   sublimegit package install}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id20}}{\hyperref[\detokenize{001software/001install/sublime:sublimegit-package-install}]{\sphinxcrossref{1.3.2   sublimegit package install}}}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id19}}{\hyperref[\detokenize{001software/001install/sublime:sumlimegit-usage}]{\sphinxcrossref{1.3.2.1   sumlimeGit usage用法}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id21}}{\hyperref[\detokenize{001software/001install/sublime:sumlimegit-usage}]{\sphinxcrossref{1.3.2.1   sumlimeGit usage用法}}}
 
 \end{itemize}
 
 \end{itemize}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id20}}{\hyperref[\detokenize{001software/001install/sublime:id3}]{\sphinxcrossref{1.4   有用的插件}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id22}}{\hyperref[\detokenize{001software/001install/sublime:id3}]{\sphinxcrossref{1.4   有用的插件}}}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id21}}{\hyperref[\detokenize{001software/001install/sublime:converttoutf8}]{\sphinxcrossref{1.4.1   ConvertToUTF8}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id23}}{\hyperref[\detokenize{001software/001install/sublime:converttoutf8}]{\sphinxcrossref{1.4.1   ConvertToUTF8}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id22}}{\hyperref[\detokenize{001software/001install/sublime:markdown}]{\sphinxcrossref{1.4.2   markdown, 也可以用简书直接编辑查看}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id24}}{\hyperref[\detokenize{001software/001install/sublime:markdown}]{\sphinxcrossref{1.4.2   markdown, 也可以用简书直接编辑查看}}}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id23}}{\hyperref[\detokenize{001software/001install/sublime:markdownediting}]{\sphinxcrossref{1.4.2.1   MarkdownEditing}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id25}}{\hyperref[\detokenize{001software/001install/sublime:markdownediting}]{\sphinxcrossref{1.4.2.1   MarkdownEditing}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id24}}{\hyperref[\detokenize{001software/001install/sublime:omnimarkuppreviewer}]{\sphinxcrossref{1.4.2.2   OmniMarkupPreviewer}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id26}}{\hyperref[\detokenize{001software/001install/sublime:omnimarkuppreviewer}]{\sphinxcrossref{1.4.2.2   OmniMarkupPreviewer}}}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id25}}{\hyperref[\detokenize{001software/001install/sublime:toc-render-preview}]{\sphinxcrossref{1.4.2.2.1   TOC render Preview支持}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id27}}{\hyperref[\detokenize{001software/001install/sublime:toc-render-preview}]{\sphinxcrossref{1.4.2.2.1   TOC render Preview支持}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id26}}{\hyperref[\detokenize{001software/001install/sublime:omnimarkuppreviewerlatex}]{\sphinxcrossref{1.4.2.2.2   OmniMarkupPreviewer中支持LaTeX公式显示：}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id28}}{\hyperref[\detokenize{001software/001install/sublime:omnimarkuppreviewerlatex}]{\sphinxcrossref{1.4.2.2.2   OmniMarkupPreviewer中支持LaTeX公式显示：}}}
 
 \end{itemize}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id27}}{\hyperref[\detokenize{001software/001install/sublime:markdown-extended}]{\sphinxcrossref{1.4.2.3   Markdown Extended}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id29}}{\hyperref[\detokenize{001software/001install/sublime:markdown-extended}]{\sphinxcrossref{1.4.2.3   Markdown Extended}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id28}}{\hyperref[\detokenize{001software/001install/sublime:markdownlivepreview-alt-m-sublime}]{\sphinxcrossref{1.4.2.4   MarkdownLivePreview {[}alt+m 在sublime启动并列窗口,实时查看结果{]}}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id30}}{\hyperref[\detokenize{001software/001install/sublime:markdownlivepreview-alt-m-sublime}]{\sphinxcrossref{1.4.2.4   MarkdownLivePreview {[}alt+m 在sublime启动并列窗口,实时查看结果{]}}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id29}}{\hyperref[\detokenize{001software/001install/sublime:markdowntoc}]{\sphinxcrossref{1.4.2.5   MarkdownTOC}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id31}}{\hyperref[\detokenize{001software/001install/sublime:markdowntoc}]{\sphinxcrossref{1.4.2.5   MarkdownTOC}}}
 
 \end{itemize}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id30}}{\hyperref[\detokenize{001software/001install/sublime:restructuredtext-improved}]{\sphinxcrossref{1.4.3   reStructuredText Improved}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id32}}{\hyperref[\detokenize{001software/001install/sublime:restructuredtext-improved}]{\sphinxcrossref{1.4.3   reStructuredText Improved}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id31}}{\hyperref[\detokenize{001software/001install/sublime:restructured-text-rst-snippets-rst-completion}]{\sphinxcrossref{1.4.4   Restructured Text (RST) Snippets rst\sphinxhyphen{}completion}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id33}}{\hyperref[\detokenize{001software/001install/sublime:restructured-text-rst-snippets-rst-completion}]{\sphinxcrossref{1.4.4   Restructured Text (RST) Snippets rst\sphinxhyphen{}completion 用法}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id32}}{\hyperref[\detokenize{001software/001install/sublime:anaconda-python-completion}]{\sphinxcrossref{1.4.5   Anaconda \sphinxhyphen{} python completion}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id34}}{\hyperref[\detokenize{001software/001install/sublime:anaconda-python-completion}]{\sphinxcrossref{1.4.5   Anaconda \sphinxhyphen{} python completion}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id33}}{\hyperref[\detokenize{001software/001install/sublime:hexviewer}]{\sphinxcrossref{1.4.6   HexViewer}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id35}}{\hyperref[\detokenize{001software/001install/sublime:hexviewer}]{\sphinxcrossref{1.4.6   HexViewer}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id34}}{\hyperref[\detokenize{001software/001install/sublime:latex-tools}]{\sphinxcrossref{1.4.7   latex tools}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id36}}{\hyperref[\detokenize{001software/001install/sublime:latex-tools}]{\sphinxcrossref{1.4.7   latex tools}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id35}}{\hyperref[\detokenize{001software/001install/sublime:path-tools}]{\sphinxcrossref{1.4.8   Path Tools}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id37}}{\hyperref[\detokenize{001software/001install/sublime:path-tools}]{\sphinxcrossref{1.4.8   Path Tools}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id36}}{\hyperref[\detokenize{001software/001install/sublime:timenow}]{\sphinxcrossref{1.4.9   timenow}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id38}}{\hyperref[\detokenize{001software/001install/sublime:timenow}]{\sphinxcrossref{1.4.9   timenow}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id37}}{\hyperref[\detokenize{001software/001install/sublime:sidebarenhancements}]{\sphinxcrossref{1.4.10   Side​Bar​Enhancements}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id39}}{\hyperref[\detokenize{001software/001install/sublime:sidebarenhancements}]{\sphinxcrossref{1.4.10   Side​Bar​Enhancements}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id38}}{\hyperref[\detokenize{001software/001install/sublime:chineseopenconvert}]{\sphinxcrossref{1.4.11   Chinese​Open​Convert}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id40}}{\hyperref[\detokenize{001software/001install/sublime:chineseopenconvert}]{\sphinxcrossref{1.4.11   Chinese​Open​Convert}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id39}}{\hyperref[\detokenize{001software/001install/sublime:dictionaryautocomplete}]{\sphinxcrossref{1.4.12   Dictionary​Auto​Complete}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id41}}{\hyperref[\detokenize{001software/001install/sublime:dictionaryautocomplete}]{\sphinxcrossref{1.4.12   Dictionary​Auto​Complete}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id40}}{\hyperref[\detokenize{001software/001install/sublime:chinese-english-bilingual-dictionary}]{\sphinxcrossref{1.4.13   Chinese\sphinxhyphen{}English Bilingual Dictionary}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id42}}{\hyperref[\detokenize{001software/001install/sublime:chinese-english-bilingual-dictionary}]{\sphinxcrossref{1.4.13   Chinese\sphinxhyphen{}English Bilingual Dictionary}}}
 
 \end{itemize}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id41}}{\hyperref[\detokenize{001software/001install/sublime:package}]{\sphinxcrossref{1.5   其它package汇总}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id43}}{\hyperref[\detokenize{001software/001install/sublime:package}]{\sphinxcrossref{1.5   其它package汇总}}}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id42}}{\hyperref[\detokenize{001software/001install/sublime:markdown-numbered-headers}]{\sphinxcrossref{1.5.1   Markdown Numbered Headers}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id44}}{\hyperref[\detokenize{001software/001install/sublime:markdown-numbered-headers}]{\sphinxcrossref{1.5.1   Markdown Numbered Headers}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id43}}{\hyperref[\detokenize{001software/001install/sublime:insert-nums}]{\sphinxcrossref{1.5.2   Insert Nums:}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id45}}{\hyperref[\detokenize{001software/001install/sublime:insert-nums}]{\sphinxcrossref{1.5.2   Insert Nums:}}}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id44}}{\hyperref[\detokenize{001software/001install/sublime:examples}]{\sphinxcrossref{1.5.2.1   Examples:}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id46}}{\hyperref[\detokenize{001software/001install/sublime:examples}]{\sphinxcrossref{1.5.2.1   Examples:}}}
 
 \end{itemize}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id45}}{\hyperref[\detokenize{001software/001install/sublime:emmet}]{\sphinxcrossref{1.5.3   emmet}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id47}}{\hyperref[\detokenize{001software/001install/sublime:emmet}]{\sphinxcrossref{1.5.3   emmet}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id46}}{\hyperref[\detokenize{001software/001install/sublime:valign}]{\sphinxcrossref{1.5.4   VAlign}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id48}}{\hyperref[\detokenize{001software/001install/sublime:valign}]{\sphinxcrossref{1.5.4   VAlign}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id47}}{\hyperref[\detokenize{001software/001install/sublime:alignment}]{\sphinxcrossref{1.5.5   Alignment}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id49}}{\hyperref[\detokenize{001software/001install/sublime:alignment}]{\sphinxcrossref{1.5.5   Alignment}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id48}}{\hyperref[\detokenize{001software/001install/sublime:ctags}]{\sphinxcrossref{1.5.6   Ctags}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id50}}{\hyperref[\detokenize{001software/001install/sublime:ctags}]{\sphinxcrossref{1.5.6   Ctags}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id49}}{\hyperref[\detokenize{001software/001install/sublime:docblockr}]{\sphinxcrossref{1.5.7   DocBlockr}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id51}}{\hyperref[\detokenize{001software/001install/sublime:docblockr}]{\sphinxcrossref{1.5.7   DocBlockr}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id50}}{\hyperref[\detokenize{001software/001install/sublime:jsformat}]{\sphinxcrossref{1.5.8   JsFormat}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id52}}{\hyperref[\detokenize{001software/001install/sublime:jsformat}]{\sphinxcrossref{1.5.8   JsFormat}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id51}}{\hyperref[\detokenize{001software/001install/sublime:tag}]{\sphinxcrossref{1.5.9   Tag}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id53}}{\hyperref[\detokenize{001software/001install/sublime:tag}]{\sphinxcrossref{1.5.9   Tag}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id52}}{\hyperref[\detokenize{001software/001install/sublime:brackethighlighter}]{\sphinxcrossref{1.5.10   BracketHighlighter}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id54}}{\hyperref[\detokenize{001software/001install/sublime:brackethighlighter}]{\sphinxcrossref{1.5.10   BracketHighlighter}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id53}}{\hyperref[\detokenize{001software/001install/sublime:clipboard-history}]{\sphinxcrossref{1.5.11   Clipboard History}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id55}}{\hyperref[\detokenize{001software/001install/sublime:clipboard-history}]{\sphinxcrossref{1.5.11   Clipboard History}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id54}}{\hyperref[\detokenize{001software/001install/sublime:scss}]{\sphinxcrossref{1.5.12   SCSS}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id56}}{\hyperref[\detokenize{001software/001install/sublime:scss}]{\sphinxcrossref{1.5.12   SCSS}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id55}}{\hyperref[\detokenize{001software/001install/sublime:sublime-linter}]{\sphinxcrossref{1.5.13   Sublime Linter}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id57}}{\hyperref[\detokenize{001software/001install/sublime:sublime-linter}]{\sphinxcrossref{1.5.13   Sublime Linter}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id56}}{\hyperref[\detokenize{001software/001install/sublime:sublime-codeintel}]{\sphinxcrossref{1.5.14   Sublime CodeIntel}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id58}}{\hyperref[\detokenize{001software/001install/sublime:sublime-codeintel}]{\sphinxcrossref{1.5.14   Sublime CodeIntel}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id57}}{\hyperref[\detokenize{001software/001install/sublime:copy-filepath-with-line-numbers}]{\sphinxcrossref{1.5.15   Copy Filepath With Line Numbers}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id59}}{\hyperref[\detokenize{001software/001install/sublime:copy-filepath-with-line-numbers}]{\sphinxcrossref{1.5.15   Copy Filepath With Line Numbers}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id58}}{\hyperref[\detokenize{001software/001install/sublime:file-downloader}]{\sphinxcrossref{1.5.16   file\sphinxhyphen{}downloader}}}
-
-\end{itemize}
-
-\item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id59}}{\hyperref[\detokenize{001software/001install/sublime:tips}]{\sphinxcrossref{1.6   tips}}}
-\begin{itemize}
-\item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id60}}{\hyperref[\detokenize{001software/001install/sublime:id4}]{\sphinxcrossref{1.6.1   快捷键介绍}}}
-
-\item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id61}}{\hyperref[\detokenize{001software/001install/sublime:id5}]{\sphinxcrossref{1.6.2   列编辑模式}}}
-
-\item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id62}}{\hyperref[\detokenize{001software/001install/sublime:hex}]{\sphinxcrossref{1.6.3   hex查看模式}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id60}}{\hyperref[\detokenize{001software/001install/sublime:file-downloader}]{\sphinxcrossref{1.5.16   file\sphinxhyphen{}downloader}}}
 
 \end{itemize}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id63}}{\hyperref[\detokenize{001software/001install/sublime:faq}]{\sphinxcrossref{1.7   FAQ}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id61}}{\hyperref[\detokenize{001software/001install/sublime:tips}]{\sphinxcrossref{1.6   tips}}}
 \begin{itemize}
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id64}}{\hyperref[\detokenize{001software/001install/sublime:id6}]{\sphinxcrossref{1.7.1   字体怎么调整回来}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id62}}{\hyperref[\detokenize{001software/001install/sublime:id4}]{\sphinxcrossref{1.6.1   快捷键介绍}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id65}}{\hyperref[\detokenize{001software/001install/sublime:utf8}]{\sphinxcrossref{1.7.2   缺省保存为UTF8文件}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id63}}{\hyperref[\detokenize{001software/001install/sublime:id5}]{\sphinxcrossref{1.6.2   列编辑模式}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id66}}{\hyperref[\detokenize{001software/001install/sublime:id7}]{\sphinxcrossref{1.7.3   为何始终在当前标签打开文件？}}}
-
-\item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id67}}{\hyperref[\detokenize{001software/001install/sublime:id8}]{\sphinxcrossref{1.7.4   总是在新窗口中打开文件?}}}
-
-\item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id68}}{\hyperref[\detokenize{001software/001install/sublime:sublime-text}]{\sphinxcrossref{1.7.5   sublime text的菜单栏隐藏了怎么再显示出来？}}}
-
-\item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id69}}{\hyperref[\detokenize{001software/001install/sublime:sublimetext}]{\sphinxcrossref{1.7.6   SublimeText快速插入多行递增数字}}}
-
-\item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id70}}{\hyperref[\detokenize{001software/001install/sublime:sublime-ctrl-shift-f}]{\sphinxcrossref{1.7.7   sublime ctrl+shift+f快捷键失效的原因}}}
-
-\item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id71}}{\hyperref[\detokenize{001software/001install/sublime:id9}]{\sphinxcrossref{1.7.8   怎么列编辑操作}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id64}}{\hyperref[\detokenize{001software/001install/sublime:hex}]{\sphinxcrossref{1.6.3   hex查看模式}}}
 
 \end{itemize}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id72}}{\hyperref[\detokenize{001software/001install/sublime:latex}]{\sphinxcrossref{1.8   LaTex公式案例}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id65}}{\hyperref[\detokenize{001software/001install/sublime:faq}]{\sphinxcrossref{1.7   FAQ}}}
+\begin{itemize}
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id66}}{\hyperref[\detokenize{001software/001install/sublime:id6}]{\sphinxcrossref{1.7.1   字体怎么调整回来}}}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id73}}{\hyperref[\detokenize{001software/001install/sublime:sublime-tips}]{\sphinxcrossref{1.9   sublime 使用TIPS}}}
-\begin{itemize}
+\phantomsection\label{\detokenize{001software/001install/sublime:id67}}{\hyperref[\detokenize{001software/001install/sublime:utf8}]{\sphinxcrossref{1.7.2   缺省保存为UTF8文件}}}
+
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id74}}{\hyperref[\detokenize{001software/001install/sublime:id10}]{\sphinxcrossref{1.9.1   sublime 本身的使用}}}
-\begin{itemize}
+\phantomsection\label{\detokenize{001software/001install/sublime:id68}}{\hyperref[\detokenize{001software/001install/sublime:id7}]{\sphinxcrossref{1.7.3   为何始终在当前标签打开文件？}}}
+
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id75}}{\hyperref[\detokenize{001software/001install/sublime:project}]{\sphinxcrossref{1.9.1.1   开启Project文件视图，文件检索，文件搜索}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id69}}{\hyperref[\detokenize{001software/001install/sublime:id8}]{\sphinxcrossref{1.7.4   总是在新窗口中打开文件?}}}
+
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id70}}{\hyperref[\detokenize{001software/001install/sublime:sublime-text}]{\sphinxcrossref{1.7.5   sublime text的菜单栏隐藏了怎么再显示出来？}}}
+
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id71}}{\hyperref[\detokenize{001software/001install/sublime:sublimetext}]{\sphinxcrossref{1.7.6   SublimeText快速插入多行递增数字}}}
+
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id72}}{\hyperref[\detokenize{001software/001install/sublime:sublime-ctrl-shift-f}]{\sphinxcrossref{1.7.7   sublime ctrl+shift+f快捷键失效的原因}}}
+
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id73}}{\hyperref[\detokenize{001software/001install/sublime:id9}]{\sphinxcrossref{1.7.8   怎么列编辑操作}}}
 
 \end{itemize}
 
 \item {} 
-\phantomsection\label{\detokenize{001software/001install/sublime:id76}}{\hyperref[\detokenize{001software/001install/sublime:sublime-insert-nums}]{\sphinxcrossref{1.9.2   sublime 插件： insert nums的使用}}}
+\phantomsection\label{\detokenize{001software/001install/sublime:id74}}{\hyperref[\detokenize{001software/001install/sublime:latex}]{\sphinxcrossref{1.8   LaTex公式案例}}}
+
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id75}}{\hyperref[\detokenize{001software/001install/sublime:sublime-tips}]{\sphinxcrossref{1.9   sublime 使用TIPS}}}
+\begin{itemize}
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id76}}{\hyperref[\detokenize{001software/001install/sublime:id10}]{\sphinxcrossref{1.9.1   sublime 本身的使用}}}
+\begin{itemize}
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id77}}{\hyperref[\detokenize{001software/001install/sublime:project}]{\sphinxcrossref{1.9.1.1   开启Project文件视图，文件检索，文件搜索}}}
+
+\end{itemize}
+
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id78}}{\hyperref[\detokenize{001software/001install/sublime:sublime-insert-nums}]{\sphinxcrossref{1.9.2   sublime 插件： insert nums的使用}}}
+
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id79}}{\hyperref[\detokenize{001software/001install/sublime:build-system-build-system}]{\sphinxcrossref{1.9.3   build System 新建或修改build System}}}
+\begin{itemize}
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id80}}{\hyperref[\detokenize{001software/001install/sublime:build-system-python}]{\sphinxcrossref{1.9.3.1   配置自己的build\sphinxhyphen{}system，在命令行中运行python}}}
+
+\item {} 
+\phantomsection\label{\detokenize{001software/001install/sublime:id81}}{\hyperref[\detokenize{001software/001install/sublime:id11}]{\sphinxcrossref{1.9.3.2   sublime怎么修改之前写过的编译系统配置}}}
+
+\end{itemize}
 
 \end{itemize}
 
@@ -7111,7 +7171,7 @@ Headings and terms (from definition lists) are available as symbols, so
 you can use CTRL\sphinxhyphen{}R to jump to them.
 
 
-\subsection{1.4.4   Restructured Text (RST) Snippets rst\sphinxhyphen{}completion}
+\subsection{1.4.4   Restructured Text (RST) Snippets rst\sphinxhyphen{}completion 用法}
 \label{\detokenize{001software/001install/sublime:restructured-text-rst-snippets-rst-completion}}
 装完后preferences\sphinxhyphen{}package setting中的名字为，sublime\sphinxhyphen{}rst\sphinxhyphen{}completion
 
@@ -8084,6 +8144,31 @@ inline an example of a LaTeX
 \subsection{1.9.2   sublime 插件： insert nums的使用}
 \label{\detokenize{001software/001install/sublime:sublime-insert-nums}}
 
+\subsection{1.9.3   build System 新建或修改build System}
+\label{\detokenize{001software/001install/sublime:build-system-build-system}}
+
+\subsubsection{1.9.3.1   配置自己的build\sphinxhyphen{}system，在命令行中运行python}
+\label{\detokenize{001software/001install/sublime:build-system-python}}
+\sphinxhref{https://blog.csdn.net/hey\_melody/article/details/94438969}{配置自己的build\sphinxhyphen{}system，在命令行中运行python}
+
+在【工具】–【编译系统】–【新编译系统】或者你的 \sphinxtitleref{SublimeDataPackagesUser路径下新建一个Python\_cmd.sublime\sphinxhyphen{}build}
+
+更改已有的build system（debian jessie）
+
+\sphinxhref{https://blog.csdn.net/rootie321/article/details/44894361}{sublime text 3更改已有的build system（debian jessie）}
+
+
+\subsubsection{1.9.3.2   sublime怎么修改之前写过的编译系统配置}
+\label{\detokenize{001software/001install/sublime:id11}}
+\sphinxhref{https://blog.csdn.net/a19990412/article/details/82659266}{sublime怎么修改之前写过的编译系统配置}
+
+工具 \sphinxhyphen{}> 编译系统 \sphinxhyphen{}> 新建编译系统, 佯作保存，找到目录。然后编辑原先的BUILD system 文件，用编辑器修改。
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{E}\PYG{p}{:}\PYGZbs{}\PYG{n}{programfiles}\PYGZbs{}\PYG{n}{portable}\PYGZbs{}\PYG{n}{Sublime3207portable}\PYGZbs{}\PYG{n}{Data}\PYGZbs{}\PYG{n}{Packages}\PYGZbs{}\PYG{n}{User}
+\end{sphinxVerbatim}
+
+
 \chapter{1   Little Tools}
 \label{\detokenize{001software/001install/tools:little-tools}}\label{\detokenize{001software/001install/tools::doc}}
 \begin{sphinxShadowBox}
@@ -8347,7 +8432,7 @@ kevinluo
 \item[{Authors}] \leavevmode
 \item[{organization}] \leavevmode
 \item[{date}] \leavevmode
-2019\sphinxhyphen{}12\sphinxhyphen{}23
+2020\sphinxhyphen{}01\sphinxhyphen{}14
 
 \item[{status}] \leavevmode
 \item[{revision}] \leavevmode
