@@ -10,21 +10,21 @@
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script type="text/javascript" src="../../_static/jquery.js"></script>
-    <script type="text/javascript" src="../../_static/underscore.js"></script>
-    <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <script type="text/javascript" src="../../_static/language_data.js"></script>
-    <script type="text/javascript" src="../../_static/translations.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="../../_static/bizstyle.js"></script>
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../../_static/bizstyle.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="next" title="1 python" href="python.html" />
     <link rel="prev" title="1 make" href="make.html" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <script src="_static/css3-mediaqueries.js"></script>
     <![endif]-->
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -112,7 +112,10 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#md2slide"><span class="sectnum">1.9.2</span> md2slide</a></li>
-<li><a class="reference internal" href="#rst2pdf-colorlinks"><span class="sectnum">1.9.3</span> rst2pdf colorlinks</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#head"><span class="sectnum">1.10</span> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</a><ul>
+<li><a class="reference internal" href="#rst2pdf-colorlinks"><span class="sectnum">1.10.1</span> rst2pdf colorlinks</a></li>
 </ul>
 </li>
 </ul>
@@ -134,7 +137,7 @@
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
 
@@ -227,7 +230,11 @@
 </ul>
 </li>
 <li><p><a class="reference internal" href="#md2slide" id="id58"><span class="sectnum">1.9.2</span> md2slide</a></p></li>
-<li><p><a class="reference internal" href="#rst2pdf-colorlinks" id="id59"><span class="sectnum">1.9.3</span> rst2pdf colorlinks</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#head" id="id59"><span class="sectnum">1.10</span> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#rst2pdf-colorlinks" id="id60"><span class="sectnum">1.10.1</span> rst2pdf colorlinks</a></p></li>
 </ul>
 </li>
 </ul>
@@ -802,14 +809,23 @@ Hexo博客从搭建部署到SEO优化等详细教程_
 <li><p>image引用路径问题</p>
 <p>html形式的slide可以正反斜杠都可以,因最后输出到html标识中了，相对路径也可。
 beamer形式的pdf slide中需要双反斜杠全路径(windows下)，相对路径不行。</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>![image](H:\\tmp_H\\001.work\\002git\\000GT\\001work\\resource\\image\\layoff.jpeg)
-</pre></div>
-</div>
 </li>
 </ul>
+<dl class="simple">
+<dt>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</dt><dd><p>同时beamer引用文件时，文件名最好不用中文。有时会引用不到</p>
+</dd>
+</dl>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>![image](H:\\tmp_H\\001.work\\002git\\000GT\\001work\\resource\\image\\layoff.jpeg)
+</pre></div>
 </div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="head">
+<h2><a class="toc-backref" href="#id59"><span class="sectnum">1.10</span> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</a><a class="headerlink" href="#head" title="永久链接至标题">¶</a></h2>
 <div class="section" id="rst2pdf-colorlinks">
-<h3><a class="toc-backref" href="#id59"><span class="sectnum">1.9.3</span> rst2pdf colorlinks</a><a class="headerlink" href="#rst2pdf-colorlinks" title="永久链接至标题">¶</a></h3>
+<h3><a class="toc-backref" href="#id60"><span class="sectnum">1.10.1</span> rst2pdf colorlinks</a><a class="headerlink" href="#rst2pdf-colorlinks" title="永久链接至标题">¶</a></h3>
 <ul>
 <li><p>pdf目录颜色是黑色的，改不了蓝色</p>
 <p>发现问题在metadata.yaml中，colorlinks没有定义，需要定义成TRUE or FALSE,可以在default.latex中找到代码。</p>
@@ -823,6 +839,7 @@ beamer形式的pdf slide中需要双反斜杠全路径(windows下)，相对路�
 </div>
 </li>
 </ul>
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 54d7771b54c748ee1d33ed10f51f07f48a33a2e0</p>
 </div>
 </div>
 </div>
