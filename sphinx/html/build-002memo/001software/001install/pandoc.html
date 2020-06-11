@@ -2,9 +2,10 @@
 
 <!doctype html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1 pandoc &#8212; memo of study  文档</title>
     <link rel="stylesheet" href="../../_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -16,7 +17,7 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/language_data.js"></script>
     <script src="../../_static/translations.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../_static/bizstyle.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -39,107 +40,10 @@
         <li class="right" >
           <a href="make.html" title="1 make"
              accesskey="P">上一页</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">memo of study  文档</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../../index.html">memo of study  文档</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="sectnum">1</span> pandoc</a></li> 
       </ul>
-    </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="../../index.html">目录</a></h3>
-  <ul>
-<li><a class="reference internal" href="#"><span class="sectnum">1</span> pandoc</a><ul>
-<li><a class="reference internal" href="#install"><span class="sectnum">1.1</span> install</a></li>
-<li><a class="reference internal" href="#informations"><span class="sectnum">1.2</span> informations</a></li>
-<li><a class="reference internal" href="#tips"><span class="sectnum">1.3</span> tips</a><ul>
-<li><a class="reference internal" href="#id2"><span class="sectnum">1.3.1</span> 参数</a><ul>
-<li><a class="reference internal" href="#basic"><span class="sectnum">1.3.1.1</span> basic</a></li>
-<li><a class="reference internal" href="#template"><span class="sectnum">1.3.1.2</span> template</a></li>
-<li><a class="reference internal" href="#pdf"><span class="sectnum">1.3.1.3</span> pdf</a></li>
-<li><a class="reference internal" href="#slide"><span class="sectnum">1.3.1.4</span> slide</a></li>
-<li><a class="reference internal" href="#math-rendering-in-html"><span class="sectnum">1.3.1.5</span> Math rendering in HTML</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#command"><span class="sectnum">1.4</span> command</a><ul>
-<li><a class="reference internal" href="#md-web-slide-reveal-js-s5-slideous-slidy"><span class="sectnum">1.4.1</span> md-&gt;web slide (reveal.js s5 slideous slidy)</a><ul>
-<li><a class="reference internal" href="#slide-javascription-solutions"><span class="sectnum">1.4.1.1</span> slide Javascription solutions</a></li>
-<li><a class="reference internal" href="#default-url-location"><span class="sectnum">1.4.1.2</span> default Url location</a></li>
-<li><a class="reference internal" href="#web-slide-commad"><span class="sectnum">1.4.1.3</span> web slide commad:</a></li>
-<li><a class="reference internal" href="#command-md-pdf"><span class="sectnum">1.4.1.4</span> command (md-&gt;pdf):</a></li>
-<li><a class="reference internal" href="#command-md-html"><span class="sectnum">1.4.1.5</span> command (md-&gt;html)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#faq"><span class="sectnum">1.5</span> faq</a><ul>
-<li><a class="reference internal" href="#pandocslide-javascription-s-stand-alone"><span class="sectnum">1.5.1</span> pandoc生成SLIDE时，怎么用本地相对路径嵌入javascription代码？-s –stand-alone</a></li>
-<li><a class="reference internal" href="#id3"><span class="sectnum">1.5.2</span> 怎么直接生成网页SLIDE?</a></li>
-<li><a class="reference internal" href="#javascript-css"><span class="sectnum">1.5.3</span> 怎么把javascript/css链接资源定位到指定目录</a></li>
-<li><a class="reference internal" href="#id4"><span class="sectnum">1.5.4</span> 怎么把图片链接资源定位到指定目录</a></li>
-<li><a class="reference internal" href="#pdfppt-t-beamer"><span class="sectnum">1.5.5</span> 怎么直接生成pdf形式的PPT? -t beamer</a></li>
-<li><a class="reference internal" href="#docx"><span class="sectnum">1.5.6</span> 怎么直接生成DOCX文件？</a></li>
-<li><a class="reference internal" href="#pandocpptx-docx"><span class="sectnum">1.5.7</span> 怎么指定并修改pandoc用的pptx/docX的模板文件？</a></li>
-<li><a class="reference internal" href="#latexbook-chapter"><span class="sectnum">1.5.8</span> 为何LaTex的book类型中，目录及chapter前自动插入空白页面?</a></li>
-<li><a class="reference internal" href="#id5"><span class="sectnum">1.5.9</span> 拼接PDF</a></li>
-<li><a class="reference internal" href="#md-pdfbook-markdown"><span class="sectnum">1.5.10</span> md-pdfbook时，怎么添加章节号？ markdown语法解决</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id6"><span class="sectnum">1.6</span> 参考</a><ul>
-<li><a class="reference internal" href="#id7"><span class="sectnum">1.6.1</span> 参考文章</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#misc"><span class="sectnum">1.7</span> MISC</a><ul>
-<li><a class="reference internal" href="#id8"><span class="sectnum">1.7.1</span> pandoc 基本命令</a></li>
-<li><a class="reference internal" href="#id9"><span class="sectnum">1.7.2</span> pandoc帮助文档摘录</a><ul>
-<li><a class="reference internal" href="#id10"><span class="sectnum">1.7.2.1</span> 待处理摘录</a></li>
-<li><a class="reference internal" href="#heading-identifiers"><span class="sectnum">1.7.2.2</span> Heading identifiers</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#writageword"><span class="sectnum">1.7.3</span> Writage是一款word插件</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#tips-1"><span class="sectnum">1.8</span> tips</a><ul>
-<li><a class="reference internal" href="#id12"><span class="sectnum">1.8.1</span> 列出电脑中已安装字体</a></li>
-<li><a class="reference internal" href="#id13"><span class="sectnum">1.8.2</span> 文档内部跳转</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id14"><span class="sectnum">1.9</span> 转换时发现的注意事项</a><ul>
-<li><a class="reference internal" href="#rst2md"><span class="sectnum">1.9.1</span> rst2md</a><ul>
-<li><a class="reference internal" href="#pandocrst"><span class="sectnum">1.9.1.1</span> PANDOC不支持的RST部分功能</a><ul>
-<li><a class="reference internal" href="#inline-title"><span class="sectnum">1.9.1.1.1</span> 右下划线不能引用链接inline链接，title除外</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#md2slide"><span class="sectnum">1.9.2</span> md2slide</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#head"><span class="sectnum">1.10</span> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</a><ul>
-<li><a class="reference internal" href="#rst2pdf-colorlinks"><span class="sectnum">1.10.1</span> rst2pdf colorlinks</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  <h4>上一个主题</h4>
-  <p class="topless"><a href="make.html"
-                        title="上一章"><span class="sectnum">1</span> make</a></p>
-  <h4>下一个主题</h4>
-  <p class="topless"><a href="python.html"
-                        title="下一章"><span class="sectnum">1</span> python</a></p>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">快速搜索</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="转向" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
-        </div>
-      </div>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -845,7 +749,106 @@ beamer形式的pdf slide中需要双反斜杠全路径(windows下)，相对路�
 </div>
 
 
+            <div class="clearer"></div>
           </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> pandoc</a><ul>
+<li><a class="reference internal" href="#install"><span class="sectnum">1.1</span> install</a></li>
+<li><a class="reference internal" href="#informations"><span class="sectnum">1.2</span> informations</a></li>
+<li><a class="reference internal" href="#tips"><span class="sectnum">1.3</span> tips</a><ul>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.3.1</span> 参数</a><ul>
+<li><a class="reference internal" href="#basic"><span class="sectnum">1.3.1.1</span> basic</a></li>
+<li><a class="reference internal" href="#template"><span class="sectnum">1.3.1.2</span> template</a></li>
+<li><a class="reference internal" href="#pdf"><span class="sectnum">1.3.1.3</span> pdf</a></li>
+<li><a class="reference internal" href="#slide"><span class="sectnum">1.3.1.4</span> slide</a></li>
+<li><a class="reference internal" href="#math-rendering-in-html"><span class="sectnum">1.3.1.5</span> Math rendering in HTML</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#command"><span class="sectnum">1.4</span> command</a><ul>
+<li><a class="reference internal" href="#md-web-slide-reveal-js-s5-slideous-slidy"><span class="sectnum">1.4.1</span> md-&gt;web slide (reveal.js s5 slideous slidy)</a><ul>
+<li><a class="reference internal" href="#slide-javascription-solutions"><span class="sectnum">1.4.1.1</span> slide Javascription solutions</a></li>
+<li><a class="reference internal" href="#default-url-location"><span class="sectnum">1.4.1.2</span> default Url location</a></li>
+<li><a class="reference internal" href="#web-slide-commad"><span class="sectnum">1.4.1.3</span> web slide commad:</a></li>
+<li><a class="reference internal" href="#command-md-pdf"><span class="sectnum">1.4.1.4</span> command (md-&gt;pdf):</a></li>
+<li><a class="reference internal" href="#command-md-html"><span class="sectnum">1.4.1.5</span> command (md-&gt;html)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#faq"><span class="sectnum">1.5</span> faq</a><ul>
+<li><a class="reference internal" href="#pandocslide-javascription-s-stand-alone"><span class="sectnum">1.5.1</span> pandoc生成SLIDE时，怎么用本地相对路径嵌入javascription代码？-s –stand-alone</a></li>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.5.2</span> 怎么直接生成网页SLIDE?</a></li>
+<li><a class="reference internal" href="#javascript-css"><span class="sectnum">1.5.3</span> 怎么把javascript/css链接资源定位到指定目录</a></li>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.5.4</span> 怎么把图片链接资源定位到指定目录</a></li>
+<li><a class="reference internal" href="#pdfppt-t-beamer"><span class="sectnum">1.5.5</span> 怎么直接生成pdf形式的PPT? -t beamer</a></li>
+<li><a class="reference internal" href="#docx"><span class="sectnum">1.5.6</span> 怎么直接生成DOCX文件？</a></li>
+<li><a class="reference internal" href="#pandocpptx-docx"><span class="sectnum">1.5.7</span> 怎么指定并修改pandoc用的pptx/docX的模板文件？</a></li>
+<li><a class="reference internal" href="#latexbook-chapter"><span class="sectnum">1.5.8</span> 为何LaTex的book类型中，目录及chapter前自动插入空白页面?</a></li>
+<li><a class="reference internal" href="#id5"><span class="sectnum">1.5.9</span> 拼接PDF</a></li>
+<li><a class="reference internal" href="#md-pdfbook-markdown"><span class="sectnum">1.5.10</span> md-pdfbook时，怎么添加章节号？ markdown语法解决</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id6"><span class="sectnum">1.6</span> 参考</a><ul>
+<li><a class="reference internal" href="#id7"><span class="sectnum">1.6.1</span> 参考文章</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#misc"><span class="sectnum">1.7</span> MISC</a><ul>
+<li><a class="reference internal" href="#id8"><span class="sectnum">1.7.1</span> pandoc 基本命令</a></li>
+<li><a class="reference internal" href="#id9"><span class="sectnum">1.7.2</span> pandoc帮助文档摘录</a><ul>
+<li><a class="reference internal" href="#id10"><span class="sectnum">1.7.2.1</span> 待处理摘录</a></li>
+<li><a class="reference internal" href="#heading-identifiers"><span class="sectnum">1.7.2.2</span> Heading identifiers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#writageword"><span class="sectnum">1.7.3</span> Writage是一款word插件</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tips-1"><span class="sectnum">1.8</span> tips</a><ul>
+<li><a class="reference internal" href="#id12"><span class="sectnum">1.8.1</span> 列出电脑中已安装字体</a></li>
+<li><a class="reference internal" href="#id13"><span class="sectnum">1.8.2</span> 文档内部跳转</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id14"><span class="sectnum">1.9</span> 转换时发现的注意事项</a><ul>
+<li><a class="reference internal" href="#rst2md"><span class="sectnum">1.9.1</span> rst2md</a><ul>
+<li><a class="reference internal" href="#pandocrst"><span class="sectnum">1.9.1.1</span> PANDOC不支持的RST部分功能</a><ul>
+<li><a class="reference internal" href="#inline-title"><span class="sectnum">1.9.1.1.1</span> 右下划线不能引用链接inline链接，title除外</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#md2slide"><span class="sectnum">1.9.2</span> md2slide</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#head"><span class="sectnum">1.10</span> &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</a><ul>
+<li><a class="reference internal" href="#rst2pdf-colorlinks"><span class="sectnum">1.10.1</span> rst2pdf colorlinks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="make.html"
+                        title="上一章"><span class="sectnum">1</span> make</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="python.html"
+                        title="下一章"><span class="sectnum">1</span> python</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -862,7 +865,8 @@ beamer形式的pdf slide中需要双反斜杠全路径(windows下)，相对路�
         <li class="right" >
           <a href="make.html" title="1 make"
              >上一页</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../index.html">memo of study  文档</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../../index.html">memo of study  文档</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="sectnum">1</span> pandoc</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

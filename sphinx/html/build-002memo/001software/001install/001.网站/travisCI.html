@@ -2,9 +2,10 @@
 
 <!doctype html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1 travis CI &#8212; memo of study  文档</title>
     <link rel="stylesheet" href="../../../_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -16,7 +17,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/language_data.js"></script>
     <script src="../../../_static/translations.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../../_static/bizstyle.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -39,58 +40,10 @@
         <li class="right" >
           <a href="rss.html" title="1 rss"
              accesskey="P">上一页</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="sectnum">1</span> travis CI</a></li> 
       </ul>
-    </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="../../../index.html">目录</a></h3>
-  <ul>
-<li><a class="reference internal" href="#"><span class="sectnum">1</span> travis CI</a><ul>
-<li><a class="reference internal" href="#install"><span class="sectnum">1.1</span> install</a><ul>
-<li><a class="reference internal" href="#id1"><span class="sectnum">1.1.1</span> 教程链接</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id2"><span class="sectnum">1.2</span> 案例</a><ul>
-<li><a class="reference internal" href="#gcc-c"><span class="sectnum">1.2.1</span> gcc c</a></li>
-<li><a class="reference internal" href="#official-deploy-spec"><span class="sectnum">1.2.2</span> official deploy spec</a></li>
-<li><a class="reference internal" href="#official-notification-spec"><span class="sectnum">1.2.3</span> official notification spec</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id3"><span class="sectnum">1.3</span> travis CI 问题集锦</a><ul>
-<li><a class="reference internal" href="#kdoc"><span class="sectnum">1.3.1</span> KDOC:</a><ul>
-<li><a class="reference internal" href="#travis-ci-env-vs"><span class="sectnum">1.3.1.1</span> travis CI环境变量 设置,env: -单行 VS 多行</a></li>
-<li><a class="reference internal" href="#linux-makefile-vs-makefile"><span class="sectnum">1.3.1.2</span> linux上文件名大小写敏感，包括后缀名。Makefile VS makefile</a></li>
-<li><a class="reference internal" href="#cp-mkdir-p"><span class="sectnum">1.3.1.3</span> cp目标目录不存在，先mkdir -p</a></li>
-<li><a class="reference internal" href="#gnumake-filegbk-file-iconv"><span class="sectnum">1.3.1.4</span> gnumake-file写文件命令输出GBK码，$(file, 需iconv转换</a></li>
-<li><a class="reference internal" href="#iconv-gbk-utf8"><span class="sectnum">1.3.1.5</span> iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></li>
-<li><a class="reference internal" href="#id4"><span class="sectnum">1.3.1.6</span> 真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  <h4>上一个主题</h4>
-  <p class="topless"><a href="rss.html"
-                        title="上一章"><span class="sectnum">1</span> rss</a></p>
-  <h4>下一个主题</h4>
-  <p class="topless"><a href="网站相关.html"
-                        title="下一章"><span class="sectnum">1</span> 网站相关</a></p>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">快速搜索</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../../../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="转向" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
-        </div>
-      </div>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -288,7 +241,57 @@ endif
 </div>
 
 
+            <div class="clearer"></div>
           </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> travis CI</a><ul>
+<li><a class="reference internal" href="#install"><span class="sectnum">1.1</span> install</a><ul>
+<li><a class="reference internal" href="#id1"><span class="sectnum">1.1.1</span> 教程链接</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.2</span> 案例</a><ul>
+<li><a class="reference internal" href="#gcc-c"><span class="sectnum">1.2.1</span> gcc c</a></li>
+<li><a class="reference internal" href="#official-deploy-spec"><span class="sectnum">1.2.2</span> official deploy spec</a></li>
+<li><a class="reference internal" href="#official-notification-spec"><span class="sectnum">1.2.3</span> official notification spec</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.3</span> travis CI 问题集锦</a><ul>
+<li><a class="reference internal" href="#kdoc"><span class="sectnum">1.3.1</span> KDOC:</a><ul>
+<li><a class="reference internal" href="#travis-ci-env-vs"><span class="sectnum">1.3.1.1</span> travis CI环境变量 设置,env: -单行 VS 多行</a></li>
+<li><a class="reference internal" href="#linux-makefile-vs-makefile"><span class="sectnum">1.3.1.2</span> linux上文件名大小写敏感，包括后缀名。Makefile VS makefile</a></li>
+<li><a class="reference internal" href="#cp-mkdir-p"><span class="sectnum">1.3.1.3</span> cp目标目录不存在，先mkdir -p</a></li>
+<li><a class="reference internal" href="#gnumake-filegbk-file-iconv"><span class="sectnum">1.3.1.4</span> gnumake-file写文件命令输出GBK码，$(file, 需iconv转换</a></li>
+<li><a class="reference internal" href="#iconv-gbk-utf8"><span class="sectnum">1.3.1.5</span> iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></li>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.3.1.6</span> 真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="rss.html"
+                        title="上一章"><span class="sectnum">1</span> rss</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="网站相关.html"
+                        title="下一章"><span class="sectnum">1</span> 网站相关</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -305,7 +308,8 @@ endif
         <li class="right" >
           <a href="rss.html" title="1 rss"
              >上一页</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="sectnum">1</span> travis CI</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">

@@ -2,9 +2,10 @@
 
 <!doctype html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1 hexo &#8212; memo of study  文档</title>
     <link rel="stylesheet" href="../../../_static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -16,7 +17,7 @@
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/language_data.js"></script>
     <script src="../../../_static/translations.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="../../../_static/bizstyle.js"></script>
     <link rel="index" title="索引" href="../../../genindex.html" />
     <link rel="search" title="搜索" href="../../../search.html" />
@@ -39,133 +40,10 @@
         <li class="right" >
           <a href="gitpage.html" title="1 gitpages"
              accesskey="P">上一页</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="sectnum">1</span> hexo</a></li> 
       </ul>
-    </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="../../../index.html">目录</a></h3>
-  <ul>
-<li><a class="reference internal" href="#"><span class="sectnum">1</span> hexo</a><ul>
-<li><a class="reference internal" href="#install"><span class="sectnum">1.1</span> install</a><ul>
-<li><a class="reference internal" href="#hexo-module"><span class="sectnum">1.1.1</span> hexo module 安装</a></li>
-<li><a class="reference internal" href="#hexo-blog-init"><span class="sectnum">1.1.2</span> hexo blog init</a></li>
-<li><a class="reference internal" href="#configuration"><span class="sectnum">1.1.3</span> configuration</a></li>
-<li><a class="reference internal" href="#commands"><span class="sectnum">1.1.4</span> Commands</a></li>
-<li><a class="reference internal" href="#migration"><span class="sectnum">1.1.5</span> Migration</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#basic-usage"><span class="sectnum">1.2</span> Basic Usage</a></li>
-<li><a class="reference internal" href="#customization"><span class="sectnum">1.3</span> Customization</a></li>
-<li><a class="reference internal" href="#theme"><span class="sectnum">1.4</span> theme分享</a><ul>
-<li><a class="reference internal" href="#id2"><span class="sectnum">1.4.1</span> 几款简单的theme</a></li>
-<li><a class="reference internal" href="#melody"><span class="sectnum">1.4.2</span> melody</a><ul>
-<li><a class="reference internal" href="#id3"><span class="sectnum">1.4.2.1</span> melody-设置</a><ul>
-<li><a class="reference internal" href="#fireworks-live2d-animation"><span class="sectnum">1.4.2.1.1</span> fireworks,live2d 白猫 animation</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#next"><span class="sectnum">1.4.3</span> next</a><ul>
-<li><a class="reference internal" href="#id4"><span class="sectnum">1.4.3.1</span> next-设置</a><ul>
-<li><a class="reference internal" href="#busuanzi-count"><span class="sectnum">1.4.3.1.1</span> busuanzi_count 阅读次数/访问人数</a></li>
-<li><a class="reference internal" href="#symbols-count-time"><span class="sectnum">1.4.3.1.2</span> symbols_count_time 文章字数统计与阅读时长</a></li>
-<li><a class="reference internal" href="#hexo-next"><span class="sectnum">1.4.3.1.3</span> hexo-Next修改内容区域的宽度</a></li>
-<li><a class="reference internal" href="#animation"><span class="sectnum">1.4.3.1.4</span> 实现点击出现桃心效果animation</a></li>
-<li><a class="reference internal" href="#id5"><span class="sectnum">1.4.3.1.5</span> 目录栏链接选中颜色</a></li>
-<li><a class="reference internal" href="#custom-path"><span class="sectnum">1.4.3.1.6</span> custom path</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#maupassant-hexo-cho"><span class="sectnum">1.4.4</span> Maupassant - Hexo最简洁主题 - cho</a><ul>
-<li><a class="reference internal" href="#id6"><span class="sectnum">1.4.4.1</span> 安装</a></li>
-<li><a class="reference internal" href="#id7"><span class="sectnum">1.4.4.2</span> 设置</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#hexo-plugin"><span class="sectnum">1.5</span> hexo plugin插件</a><ul>
-<li><a class="reference internal" href="#generate-flowchart-diagrams-for-hexo"><span class="sectnum">1.5.1</span> Generate flowchart diagrams for Hexo.</a></li>
-<li><a class="reference internal" href="#hexo-generator-feed"><span class="sectnum">1.5.2</span> hexo-generator-feed</a></li>
-<li><a class="reference internal" href="#hexo-generator-search"><span class="sectnum">1.5.3</span> hexo-generator-search</a></li>
-<li><a class="reference internal" href="#hexo-symbols-count-time-for-next-theme"><span class="sectnum">1.5.4</span> hexo-symbols-count-time for next theme</a></li>
-<li><a class="reference internal" href="#hexo-generator-category"><span class="sectnum">1.5.5</span> hexo-generator-category</a></li>
-<li><a class="reference internal" href="#hexo-generator-tag"><span class="sectnum">1.5.6</span> hexo-generator-tag</a></li>
-<li><a class="reference internal" href="#hexo-directory-category"><span class="sectnum">1.5.7</span> hexo-directory-category</a></li>
-<li><a class="reference internal" href="#some-module-install"><span class="sectnum">1.5.8</span> some module install</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id16"><span class="sectnum">1.6</span> hexo高级教程</a><ul>
-<li><a class="reference internal" href="#script"><span class="sectnum">1.6.1</span> 脚本Script</a></li>
-<li><a class="reference internal" href="#id17"><span class="sectnum">1.6.2</span> hexo扩展</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#tips"><span class="sectnum">1.7</span> tips</a><ul>
-<li><a class="reference internal" href="#tortoisegit"><span class="sectnum">1.7.1</span> tortoiseGit使用密钥，为何每次还是需要输入用户名密码</a></li>
-<li><a class="reference internal" href="#copyright"><span class="sectnum">1.7.2</span> 怎么改掉网页底部的COPYRIGHT缺省内容？</a></li>
-<li><a class="reference internal" href="#help"><span class="sectnum">1.7.3</span> help 网址</a></li>
-<li><a class="reference internal" href="#theme-front-matter"><span class="sectnum">1.7.4</span> theme-front-matter</a></li>
-<li><a class="reference internal" href="#hexo-editor"><span class="sectnum">1.7.5</span> hexo editor 编辑器有哪些？</a></li>
-<li><a class="reference internal" href="#yeoman"><span class="sectnum">1.7.6</span> 怎么使用 yeoman 生成基础代码？</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#faq"><span class="sectnum">1.8</span> FAQ</a><ul>
-<li><a class="reference internal" href="#id18"><span class="sectnum">1.8.1</span> Hexo网站名中文乱码</a></li>
-<li><a class="reference internal" href="#id19"><span class="sectnum">1.8.2</span> 怎么列出hexo依赖插件的完整性？</a></li>
-<li><a class="reference internal" href="#id20"><span class="sectnum">1.8.3</span> 路径名和分类名分别设置，需要怎么办呢？</a></li>
-<li><a class="reference internal" href="#package-json"><span class="sectnum">1.8.4</span> package.json是什么？</a></li>
-<li><a class="reference internal" href="#fontawesome"><span class="sectnum">1.8.5</span> fontawesome是什么？</a></li>
-<li><a class="reference internal" href="#id21"><span class="sectnum">1.8.6</span> 怎么添加点击红心和汉字？</a></li>
-<li><a class="reference internal" href="#jquery-cdn"><span class="sectnum">1.8.7</span> 国内Jquery CDN 有哪些？</a></li>
-<li><a class="reference internal" href="#githubpages"><span class="sectnum">1.8.8</span> 怎么解决githubpages不能识别下划线开头的目录？</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#hexo-deploy"><span class="sectnum">1.9</span> hexo deploy 网站部署</a><ul>
-<li><a class="reference internal" href="#hexo-d"><span class="sectnum">1.9.1</span> hexo d 法</a></li>
-<li><a class="reference internal" href="#git-clone"><span class="sectnum">1.9.2</span> 直接git clone 法</a></li>
-<li><a class="reference internal" href="#ci"><span class="sectnum">1.9.3</span> CI 法，</a><ul>
-<li><a class="reference internal" href="#id22"><span class="sectnum">1.9.3.1</span> 十大CI工具:</a></li>
-<li><a class="reference internal" href="#travis-ci"><span class="sectnum">1.9.3.2</span> travis CI：</a><ul>
-<li><a class="reference internal" href="#id23"><span class="sectnum">1.9.3.2.1</span> travis CI 配置步骤:</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id24"><span class="sectnum">1.9.3.3</span> travis CI 配置实例</a><ul>
-<li><a class="reference internal" href="#id25"><span class="sectnum">1.9.3.3.1</span> 创建源码新分支需要改动的文件</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#github-pageshexo"><span class="sectnum">1.9.4</span> 需求：在github pages子目录建立hexo博客</a></li>
-<li><a class="reference internal" href="#my-deploy-kevinluolog-github-io"><span class="sectnum">1.9.5</span> my deploy: kevinluolog.github.io</a><ul>
-<li><a class="reference internal" href="#repo-of-sites"><span class="sectnum">1.9.5.1</span> Repo of sites:</a></li>
-<li><a class="reference internal" href="#repo-of-hexo-source-private"><span class="sectnum">1.9.5.2</span> Repo of hexo source: private</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  <h4>上一个主题</h4>
-  <p class="topless"><a href="gitpage.html"
-                        title="上一章"><span class="sectnum">1</span> gitpages</a></p>
-  <h4>下一个主题</h4>
-  <p class="topless"><a href="jekyll.html"
-                        title="下一章"><span class="sectnum">1</span> jekyll</a></p>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">快速搜索</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../../../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="转向" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
-        </div>
-      </div>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -1413,7 +1291,132 @@ branch: master
 </div>
 
 
+            <div class="clearer"></div>
           </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">目录</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><span class="sectnum">1</span> hexo</a><ul>
+<li><a class="reference internal" href="#install"><span class="sectnum">1.1</span> install</a><ul>
+<li><a class="reference internal" href="#hexo-module"><span class="sectnum">1.1.1</span> hexo module 安装</a></li>
+<li><a class="reference internal" href="#hexo-blog-init"><span class="sectnum">1.1.2</span> hexo blog init</a></li>
+<li><a class="reference internal" href="#configuration"><span class="sectnum">1.1.3</span> configuration</a></li>
+<li><a class="reference internal" href="#commands"><span class="sectnum">1.1.4</span> Commands</a></li>
+<li><a class="reference internal" href="#migration"><span class="sectnum">1.1.5</span> Migration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#basic-usage"><span class="sectnum">1.2</span> Basic Usage</a></li>
+<li><a class="reference internal" href="#customization"><span class="sectnum">1.3</span> Customization</a></li>
+<li><a class="reference internal" href="#theme"><span class="sectnum">1.4</span> theme分享</a><ul>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.4.1</span> 几款简单的theme</a></li>
+<li><a class="reference internal" href="#melody"><span class="sectnum">1.4.2</span> melody</a><ul>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.4.2.1</span> melody-设置</a><ul>
+<li><a class="reference internal" href="#fireworks-live2d-animation"><span class="sectnum">1.4.2.1.1</span> fireworks,live2d 白猫 animation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#next"><span class="sectnum">1.4.3</span> next</a><ul>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.4.3.1</span> next-设置</a><ul>
+<li><a class="reference internal" href="#busuanzi-count"><span class="sectnum">1.4.3.1.1</span> busuanzi_count 阅读次数/访问人数</a></li>
+<li><a class="reference internal" href="#symbols-count-time"><span class="sectnum">1.4.3.1.2</span> symbols_count_time 文章字数统计与阅读时长</a></li>
+<li><a class="reference internal" href="#hexo-next"><span class="sectnum">1.4.3.1.3</span> hexo-Next修改内容区域的宽度</a></li>
+<li><a class="reference internal" href="#animation"><span class="sectnum">1.4.3.1.4</span> 实现点击出现桃心效果animation</a></li>
+<li><a class="reference internal" href="#id5"><span class="sectnum">1.4.3.1.5</span> 目录栏链接选中颜色</a></li>
+<li><a class="reference internal" href="#custom-path"><span class="sectnum">1.4.3.1.6</span> custom path</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#maupassant-hexo-cho"><span class="sectnum">1.4.4</span> Maupassant - Hexo最简洁主题 - cho</a><ul>
+<li><a class="reference internal" href="#id6"><span class="sectnum">1.4.4.1</span> 安装</a></li>
+<li><a class="reference internal" href="#id7"><span class="sectnum">1.4.4.2</span> 设置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#hexo-plugin"><span class="sectnum">1.5</span> hexo plugin插件</a><ul>
+<li><a class="reference internal" href="#generate-flowchart-diagrams-for-hexo"><span class="sectnum">1.5.1</span> Generate flowchart diagrams for Hexo.</a></li>
+<li><a class="reference internal" href="#hexo-generator-feed"><span class="sectnum">1.5.2</span> hexo-generator-feed</a></li>
+<li><a class="reference internal" href="#hexo-generator-search"><span class="sectnum">1.5.3</span> hexo-generator-search</a></li>
+<li><a class="reference internal" href="#hexo-symbols-count-time-for-next-theme"><span class="sectnum">1.5.4</span> hexo-symbols-count-time for next theme</a></li>
+<li><a class="reference internal" href="#hexo-generator-category"><span class="sectnum">1.5.5</span> hexo-generator-category</a></li>
+<li><a class="reference internal" href="#hexo-generator-tag"><span class="sectnum">1.5.6</span> hexo-generator-tag</a></li>
+<li><a class="reference internal" href="#hexo-directory-category"><span class="sectnum">1.5.7</span> hexo-directory-category</a></li>
+<li><a class="reference internal" href="#some-module-install"><span class="sectnum">1.5.8</span> some module install</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id16"><span class="sectnum">1.6</span> hexo高级教程</a><ul>
+<li><a class="reference internal" href="#script"><span class="sectnum">1.6.1</span> 脚本Script</a></li>
+<li><a class="reference internal" href="#id17"><span class="sectnum">1.6.2</span> hexo扩展</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tips"><span class="sectnum">1.7</span> tips</a><ul>
+<li><a class="reference internal" href="#tortoisegit"><span class="sectnum">1.7.1</span> tortoiseGit使用密钥，为何每次还是需要输入用户名密码</a></li>
+<li><a class="reference internal" href="#copyright"><span class="sectnum">1.7.2</span> 怎么改掉网页底部的COPYRIGHT缺省内容？</a></li>
+<li><a class="reference internal" href="#help"><span class="sectnum">1.7.3</span> help 网址</a></li>
+<li><a class="reference internal" href="#theme-front-matter"><span class="sectnum">1.7.4</span> theme-front-matter</a></li>
+<li><a class="reference internal" href="#hexo-editor"><span class="sectnum">1.7.5</span> hexo editor 编辑器有哪些？</a></li>
+<li><a class="reference internal" href="#yeoman"><span class="sectnum">1.7.6</span> 怎么使用 yeoman 生成基础代码？</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#faq"><span class="sectnum">1.8</span> FAQ</a><ul>
+<li><a class="reference internal" href="#id18"><span class="sectnum">1.8.1</span> Hexo网站名中文乱码</a></li>
+<li><a class="reference internal" href="#id19"><span class="sectnum">1.8.2</span> 怎么列出hexo依赖插件的完整性？</a></li>
+<li><a class="reference internal" href="#id20"><span class="sectnum">1.8.3</span> 路径名和分类名分别设置，需要怎么办呢？</a></li>
+<li><a class="reference internal" href="#package-json"><span class="sectnum">1.8.4</span> package.json是什么？</a></li>
+<li><a class="reference internal" href="#fontawesome"><span class="sectnum">1.8.5</span> fontawesome是什么？</a></li>
+<li><a class="reference internal" href="#id21"><span class="sectnum">1.8.6</span> 怎么添加点击红心和汉字？</a></li>
+<li><a class="reference internal" href="#jquery-cdn"><span class="sectnum">1.8.7</span> 国内Jquery CDN 有哪些？</a></li>
+<li><a class="reference internal" href="#githubpages"><span class="sectnum">1.8.8</span> 怎么解决githubpages不能识别下划线开头的目录？</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#hexo-deploy"><span class="sectnum">1.9</span> hexo deploy 网站部署</a><ul>
+<li><a class="reference internal" href="#hexo-d"><span class="sectnum">1.9.1</span> hexo d 法</a></li>
+<li><a class="reference internal" href="#git-clone"><span class="sectnum">1.9.2</span> 直接git clone 法</a></li>
+<li><a class="reference internal" href="#ci"><span class="sectnum">1.9.3</span> CI 法，</a><ul>
+<li><a class="reference internal" href="#id22"><span class="sectnum">1.9.3.1</span> 十大CI工具:</a></li>
+<li><a class="reference internal" href="#travis-ci"><span class="sectnum">1.9.3.2</span> travis CI：</a><ul>
+<li><a class="reference internal" href="#id23"><span class="sectnum">1.9.3.2.1</span> travis CI 配置步骤:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id24"><span class="sectnum">1.9.3.3</span> travis CI 配置实例</a><ul>
+<li><a class="reference internal" href="#id25"><span class="sectnum">1.9.3.3.1</span> 创建源码新分支需要改动的文件</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#github-pageshexo"><span class="sectnum">1.9.4</span> 需求：在github pages子目录建立hexo博客</a></li>
+<li><a class="reference internal" href="#my-deploy-kevinluolog-github-io"><span class="sectnum">1.9.5</span> my deploy: kevinluolog.github.io</a><ul>
+<li><a class="reference internal" href="#repo-of-sites"><span class="sectnum">1.9.5.1</span> Repo of sites:</a></li>
+<li><a class="reference internal" href="#repo-of-hexo-source-private"><span class="sectnum">1.9.5.2</span> Repo of hexo source: private</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="gitpage.html"
+                        title="上一章"><span class="sectnum">1</span> gitpages</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="jekyll.html"
+                        title="下一章"><span class="sectnum">1</span> jekyll</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1430,7 +1433,8 @@ branch: master
         <li class="right" >
           <a href="gitpage.html" title="1 gitpages"
              >上一页</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="../../../index.html">memo of study  文档</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="sectnum">1</span> hexo</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
