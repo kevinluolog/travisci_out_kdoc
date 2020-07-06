@@ -21,21 +21,27 @@
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#iconv-编码转换"><span class="toc-section-number">1</span> iconv 编码转换</a><ul>
-<li><a href="#参考链接"><span class="toc-section-number">1.1</span> 参考链接</a></li>
-<li><a href="#用法"><span class="toc-section-number">1.2</span> 用法</a></li>
-<li><a href="#问题"><span class="toc-section-number">1.3</span> 问题</a><ul>
-<li><a href="#iconv-illegal-input-sequence-at-position的错误"><span class="toc-section-number">1.3.1</span> “iconv: illegal input sequence at position”的错误</a></li>
+<li><a href="#工具应用汇总"><span class="toc-section-number">1</span> 工具应用汇总</a><ul>
+<li><a href="#文件比较"><span class="toc-section-number">1.1</span> 文件比较</a></li>
+<li><a href="#文件解压缩"><span class="toc-section-number">1.2</span> 文件解压缩</a></li>
+<li><a href="#misc"><span class="toc-section-number">1.3</span> MISC</a></li>
+</ul></li>
+<li><a href="#winmerge"><span class="toc-section-number">2</span> winmerge</a></li>
+<li><a href="#iconv-编码转换"><span class="toc-section-number">3</span> iconv 编码转换</a><ul>
+<li><a href="#参考链接"><span class="toc-section-number">3.1</span> 参考链接</a></li>
+<li><a href="#用法"><span class="toc-section-number">3.2</span> 用法</a></li>
+<li><a href="#问题"><span class="toc-section-number">3.3</span> 问题</a><ul>
+<li><a href="#iconv-illegal-input-sequence-at-position的错误"><span class="toc-section-number">3.3.1</span> “iconv: illegal input sequence at position”的错误</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#命令行解压缩-zipunzip7z.exerar.exe"><span class="toc-section-number">2</span> 命令行解压缩-zip/unzip/7z.exe/rar.exe</a><ul>
-<li><a href="#unzip"><span class="toc-section-number">2.1</span> unzip</a><ul>
-<li><a href="#下载"><span class="toc-section-number">2.1.1</span> 下载</a></li>
-<li><a href="#用法-1"><span class="toc-section-number">2.1.2</span> 用法</a></li>
+<li><a href="#命令行解压缩-zipunzip7z.exerar.exe"><span class="toc-section-number">4</span> 命令行解压缩-zip/unzip/7z.exe/rar.exe</a><ul>
+<li><a href="#unzip"><span class="toc-section-number">4.1</span> unzip</a><ul>
+<li><a href="#下载"><span class="toc-section-number">4.1.1</span> 下载</a></li>
+<li><a href="#用法-1"><span class="toc-section-number">4.1.2</span> 用法</a></li>
 </ul></li>
-<li><a href="#z.exe"><span class="toc-section-number">2.2</span> 7z.exe</a><ul>
-<li><a href="#下载-1"><span class="toc-section-number">2.2.1</span> 下载</a></li>
-<li><a href="#用法-2"><span class="toc-section-number">2.2.2</span> 用法</a></li>
+<li><a href="#z.exe"><span class="toc-section-number">4.2</span> 7z.exe</a><ul>
+<li><a href="#下载-1"><span class="toc-section-number">4.2.1</span> 下载</a></li>
+<li><a href="#用法-2"><span class="toc-section-number">4.2.2</span> 用法</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -46,33 +52,71 @@
 <div class="section-numbering">
 
 </div>
-<h1 id="iconv-编码转换"><span class="header-section-number">1</span> iconv 编码转换</h1>
-<h2 id="参考链接"><span class="header-section-number">1.1</span> 参考链接</h2>
+<h1 id="工具应用汇总"><span class="header-section-number">1</span> 工具应用汇总</h1>
+<h2 id="文件比较"><span class="header-section-number">1.1</span> 文件比较</h2>
+<ol type="1">
+<li>winmerge</li>
+</ol>
+<h2 id="文件解压缩"><span class="header-section-number">1.2</span> 文件解压缩</h2>
+<ol type="1">
+<li>Bandizip</li>
+<li>7z</li>
+<li>unzip/zip</li>
+<li></li>
+</ol>
+<h2 id="misc"><span class="header-section-number">1.3</span> MISC</h2>
+<ol type="1">
+<li>iconv</li>
+<li></li>
+</ol>
+<h1 id="winmerge"><span class="header-section-number">2</span> winmerge</h1>
+<ol type="1">
+<li>explorer右键菜单安装</li>
+<li>设置
+<ol type="a">
+<li>file filter: tools-&gt;filter-&gt;,filefilters(指文件名), linfilters(是指文件内容)。 include/exclude 语境是"include或exclude-全部文件除xxx以外"</li>
+<li>tree浏览/Tabular: view-&gt;treemode, 一般是灰的，要valid需要在打开界面folder filter下面勾上：include subfolders. 这样tree可选。</li>
+<li>启用单侧目录内容展开，另一侧没目录时不会展开:edit-&gt;option-&gt;compare-&gt;folder-&gt;,单侧子文件夹内容;子文件夹</li>
+<li>启用比较简单模式，仅用时间和大小。edit-&gt;option-&gt;compare-&gt;folder-&gt;,compare method。</li>
+</ol></li>
+<li>案例
+<ol type="a">
+<li>带目录拷贝/移动。
+<ol start="0" type="1">
+<li>tabular模式查看</li>
+<li>选中要拷贝的文件，拷贝/移动这些文件，自然目录就创建了。如果是tree模式也可以，但是如果拷贝tree的话会把所有tree下的文件拷贝/移动的。</li>
+</ol></li>
+<li></li>
+</ol></li>
+</ol>
+<hr />
+<h1 id="iconv-编码转换"><span class="header-section-number">3</span> iconv 编码转换</h1>
+<h2 id="参考链接"><span class="header-section-number">3.1</span> 参考链接</h2>
 <p><a href=""></a></p>
 <p><a href="https://blog.csdn.net/sunnypotter/article/details/18218707">iconv: illegal input sequence at position</a></p>
 <p><a href=""></a></p>
 <p><a href=""></a></p>
-<h2 id="用法"><span class="header-section-number">1.2</span> 用法</h2>
+<h2 id="用法"><span class="header-section-number">3.2</span> 用法</h2>
 <p>使用iconv 命令</p>
 <pre><code>iconv -f GBK -t UTF-8 file1 -o file2
 
 #   iconv -f GBK -t UTF-8 $$@.tmp &gt;$$@
 # 加入-c，表示忽略那些不能解释的字符
 #   iconv -f GBK -t UTF-8 -c $$@.tmp &gt;$$@</code></pre>
-<h2 id="问题"><span class="header-section-number">1.3</span> 问题</h2>
-<h3 id="iconv-illegal-input-sequence-at-position的错误"><span class="header-section-number">1.3.1</span> “iconv: illegal input sequence at position”的错误</h3>
+<h2 id="问题"><span class="header-section-number">3.3</span> 问题</h2>
+<h3 id="iconv-illegal-input-sequence-at-position的错误"><span class="header-section-number">3.3.1</span> “iconv: illegal input sequence at position”的错误</h3>
 <p><a href="https://blog.csdn.net/sunnypotter/article/details/18218707">iconv: illegal input sequence at position</a></p>
 <p>在使用iconv转换文件的字符编码时，如果遇到类似“iconv: illegal input sequence at position”的错误，原因是需要转换的字符编码没有涵盖文件中的字符，比如，将一个简体中文的GB2312的文件转换为BIG5的编码，而在繁体编码的BIG5里面，不包含很多的简体中文字符，所以在转换的时候就会遇到如上的错误。</p>
 <p>顺便提供一个用于查看文件编码的工具“enca”，我在everest 0.5下做的RPM包。用法很简单， :</p>
 <pre><code>#　enca filename</code></pre>
 <p>解决方法，忽略那些不能解释的字符：</p>
 <pre><code>iconv -f cp936 -t utf-8 -c file1 &gt;  file2</code></pre>
-<h1 id="命令行解压缩-zipunzip7z.exerar.exe"><span class="header-section-number">2</span> 命令行解压缩-zip/unzip/7z.exe/rar.exe</h1>
-<h2 id="unzip"><span class="header-section-number">2.1</span> unzip</h2>
-<h3 id="下载"><span class="header-section-number">2.1.1</span> 下载</h3>
+<h1 id="命令行解压缩-zipunzip7z.exerar.exe"><span class="header-section-number">4</span> 命令行解压缩-zip/unzip/7z.exe/rar.exe</h1>
+<h2 id="unzip"><span class="header-section-number">4.1</span> unzip</h2>
+<h3 id="下载"><span class="header-section-number">4.1.1</span> 下载</h3>
 <p><a href="">win32 zip下载地址 &lt;http://gnuwin32.sourceforge.net/packages/zip.htm &gt;</a></p>
 <p><a href="http://gnuwin32.sourceforge.net/packages/unzip.htm">win32 unzip下载地址</a></p>
-<h3 id="用法-1"><span class="header-section-number">2.1.2</span> 用法</h3>
+<h3 id="用法-1"><span class="header-section-number">4.1.2</span> 用法</h3>
 <p>批处理：</p>
 <blockquote>
 <pre><code>set EXT_DIR=&quot;H:\tmp\downloads\chrome\周读readweek\000\pdf\xx&quot;
@@ -82,9 +126,9 @@
 unzip -j *.zip -d %EXT_DIR%</code></pre>
 </blockquote>
 <p>注意： 需要加入执行路径，如果直接打入路径引用unzip会提示出错。</p>
-<h2 id="z.exe"><span class="header-section-number">2.2</span> 7z.exe</h2>
-<h3 id="下载-1"><span class="header-section-number">2.2.1</span> 下载</h3>
-<h3 id="用法-2"><span class="header-section-number">2.2.2</span> 用法</h3>
+<h2 id="z.exe"><span class="header-section-number">4.2</span> 7z.exe</h2>
+<h3 id="下载-1"><span class="header-section-number">4.2.1</span> 下载</h3>
+<h3 id="用法-2"><span class="header-section-number">4.2.2</span> 用法</h3>
 <p><a href="https://blog.csdn.net/WPwalter/article/details/90638622">使用7-Zip 的命令行版本来压缩和解压文件</a></p>
 <p>运行 7z.exe 后可以看到命令行中列出了可用的命令行命令：</p>
 <pre><code>a：将文件添加到压缩档案中

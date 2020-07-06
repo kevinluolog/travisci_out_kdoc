@@ -51,35 +51,43 @@
           <div class="body" role="main">
             
   <div class="section" id="little-tools">
-<h1><a class="toc-backref" href="#id8"><span class="sectnum">1</span> Little Tools</a><a class="headerlink" href="#little-tools" title="永久链接至标题">¶</a></h1>
+<h1><a class="toc-backref" href="#id11"><span class="sectnum">1</span> Little Tools</a><a class="headerlink" href="#little-tools" title="永久链接至标题">¶</a></h1>
 <div class="contents topic" id="contents">
 <p class="topic-title">contents</p>
 <ul class="auto-toc simple">
-<li><p><a class="reference internal" href="#little-tools" id="id8"><span class="sectnum">1</span> Little Tools</a></p>
+<li><p><a class="reference internal" href="#little-tools" id="id11"><span class="sectnum">1</span> Little Tools</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#iconv" id="id9"><span class="sectnum">1.1</span> iconv 编码转换</a></p>
+<li><p><a class="reference internal" href="#id1" id="id12"><span class="sectnum">1.1</span> 工具应用汇总</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#id1" id="id10"><span class="sectnum">1.1.1</span> 参考链接</a></p></li>
-<li><p><a class="reference internal" href="#id2" id="id11"><span class="sectnum">1.1.2</span> 用法</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id12"><span class="sectnum">1.1.3</span> 问题</a></p>
+<li><p><a class="reference internal" href="#id2" id="id13"><span class="sectnum">1.1.1</span> 文件比较</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id14"><span class="sectnum">1.1.2</span> 文件解压缩</a></p></li>
+<li><p><a class="reference internal" href="#misc" id="id15"><span class="sectnum">1.1.3</span> MISC</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#winmerge" id="id16"><span class="sectnum">1.2</span> winmerge</a></p></li>
+<li><p><a class="reference internal" href="#iconv" id="id17"><span class="sectnum">1.3</span> iconv 编码转换</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#iconv-illegal-input-sequence-at-position" id="id13"><span class="sectnum">1.1.3.1</span> “iconv: illegal input sequence at position”的错误</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id18"><span class="sectnum">1.3.1</span> 参考链接</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id19"><span class="sectnum">1.3.2</span> 用法</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id20"><span class="sectnum">1.3.3</span> 问题</a></p>
+<ul class="auto-toc">
+<li><p><a class="reference internal" href="#iconv-illegal-input-sequence-at-position" id="id21"><span class="sectnum">1.3.3.1</span> “iconv: illegal input sequence at position”的错误</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#zip-unzip-7z-exe-rar-exe" id="id14"><span class="sectnum">1.2</span> 命令行解压缩-zip/unzip/7z.exe/rar.exe</a></p>
+<li><p><a class="reference internal" href="#zip-unzip-7z-exe-rar-exe" id="id22"><span class="sectnum">1.4</span> 命令行解压缩-zip/unzip/7z.exe/rar.exe</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#unzip" id="id15"><span class="sectnum">1.2.1</span> unzip</a></p>
+<li><p><a class="reference internal" href="#unzip" id="id23"><span class="sectnum">1.4.1</span> unzip</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#id4" id="id16"><span class="sectnum">1.2.1.1</span> 下载</a></p></li>
-<li><p><a class="reference internal" href="#id5" id="id17"><span class="sectnum">1.2.1.2</span> 用法</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id24"><span class="sectnum">1.4.1.1</span> 下载</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id25"><span class="sectnum">1.4.1.2</span> 用法</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#z-exe" id="id18"><span class="sectnum">1.2.2</span> 7z.exe</a></p>
+<li><p><a class="reference internal" href="#z-exe" id="id26"><span class="sectnum">1.4.2</span> 7z.exe</a></p>
 <ul class="auto-toc">
-<li><p><a class="reference internal" href="#id6" id="id19"><span class="sectnum">1.2.2.1</span> 下载</a></p></li>
-<li><p><a class="reference internal" href="#id7" id="id20"><span class="sectnum">1.2.2.2</span> 用法</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id27"><span class="sectnum">1.4.2.1</span> 下载</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id28"><span class="sectnum">1.4.2.2</span> 用法</a></p></li>
 </ul>
 </li>
 </ul>
@@ -88,17 +96,66 @@
 </li>
 </ul>
 </div>
-<div class="section" id="iconv">
-<h2><a class="toc-backref" href="#id9"><span class="sectnum">1.1</span> iconv 编码转换</a><a class="headerlink" href="#iconv" title="永久链接至标题">¶</a></h2>
 <div class="section" id="id1">
-<h3><a class="toc-backref" href="#id10"><span class="sectnum">1.1.1</span> 参考链接</a><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h3>
+<h2><a class="toc-backref" href="#id12"><span class="sectnum">1.1</span> 工具应用汇总</a><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id2">
+<h3><a class="toc-backref" href="#id13"><span class="sectnum">1.1.1</span> 文件比较</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<ol class="arabic simple">
+<li><p>winmerge</p></li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h3><a class="toc-backref" href="#id14"><span class="sectnum">1.1.2</span> 文件解压缩</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Bandizip</p></li>
+<li><p>7z</p></li>
+</ol>
+<p>3. unzip/zip
+4.</p>
+</div>
+<div class="section" id="misc">
+<h3><a class="toc-backref" href="#id15"><span class="sectnum">1.1.3</span> MISC</a><a class="headerlink" href="#misc" title="永久链接至标题">¶</a></h3>
+<p>1. iconv
+2.</p>
+</div>
+</div>
+<div class="section" id="winmerge">
+<h2><a class="toc-backref" href="#id16"><span class="sectnum">1.2</span> winmerge</a><a class="headerlink" href="#winmerge" title="永久链接至标题">¶</a></h2>
+<ol class="arabic simple">
+<li><p>explorer右键菜单安装</p></li>
+<li><p>设置</p>
+<ol class="loweralpha simple">
+<li><p>file filter: tools-&gt;filter-&gt;,filefilters(指文件名), linfilters(是指文件内容)。 include/exclude 语境是”include或exclude-全部文件除xxx以外”</p></li>
+<li><p>tree浏览/Tabular: view-&gt;treemode, 一般是灰的，要valid需要在打开界面folder filter下面勾上：include subfolders. 这样tree可选。</p></li>
+<li><p>启用单侧目录内容展开，另一侧没目录时不会展开:edit-&gt;option-&gt;compare-&gt;folder-&gt;,单侧子文件夹内容;子文件夹</p></li>
+<li><p>启用比较简单模式，仅用时间和大小。edit-&gt;option-&gt;compare-&gt;folder-&gt;,compare method。</p></li>
+</ol>
+</li>
+<li><p>案例</p>
+<ol class="loweralpha simple">
+<li><p>带目录拷贝/移动。</p>
+<ol class="arabic simple" start="0">
+<li><p>tabular模式查看</p></li>
+<li><p>选中要拷贝的文件，拷贝/移动这些文件，自然目录就创建了。如果是tree模式也可以，但是如果拷贝tree的话会把所有tree下的文件拷贝/移动的。</p></li>
+</ol>
+</li>
+<li></li>
+</ol>
+</li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="iconv">
+<h2><a class="toc-backref" href="#id17"><span class="sectnum">1.3</span> iconv 编码转换</a><a class="headerlink" href="#iconv" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id4">
+<h3><a class="toc-backref" href="#id18"><span class="sectnum">1.3.1</span> 参考链接</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
 <p>` &lt;&gt;`__</p>
 <p><a class="reference external" href="https://blog.csdn.net/sunnypotter/article/details/18218707">iconv: illegal input sequence at position</a></p>
 <p>` &lt;&gt;`__</p>
 <p>` &lt;&gt;`__</p>
 </div>
-<div class="section" id="id2">
-<h3><a class="toc-backref" href="#id11"><span class="sectnum">1.1.2</span> 用法</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id5">
+<h3><a class="toc-backref" href="#id19"><span class="sectnum">1.3.2</span> 用法</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
 <p>使用iconv 命令</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">iconv</span> <span class="o">-</span><span class="n">f</span> <span class="n">GBK</span> <span class="o">-</span><span class="n">t</span> <span class="n">UTF</span><span class="o">-</span><span class="mi">8</span> <span class="n">file1</span> <span class="o">-</span><span class="n">o</span> <span class="n">file2</span>
 
@@ -108,10 +165,10 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="id3">
-<h3><a class="toc-backref" href="#id12"><span class="sectnum">1.1.3</span> 问题</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id6">
+<h3><a class="toc-backref" href="#id20"><span class="sectnum">1.3.3</span> 问题</a><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
 <div class="section" id="iconv-illegal-input-sequence-at-position">
-<h4><a class="toc-backref" href="#id13"><span class="sectnum">1.1.3.1</span> “iconv: illegal input sequence at position”的错误</a><a class="headerlink" href="#iconv-illegal-input-sequence-at-position" title="永久链接至标题">¶</a></h4>
+<h4><a class="toc-backref" href="#id21"><span class="sectnum">1.3.3.1</span> “iconv: illegal input sequence at position”的错误</a><a class="headerlink" href="#iconv-illegal-input-sequence-at-position" title="永久链接至标题">¶</a></h4>
 <p><a class="reference external" href="https://blog.csdn.net/sunnypotter/article/details/18218707">iconv: illegal input sequence at position</a></p>
 <p>在使用iconv转换文件的字符编码时，如果遇到类似“iconv: illegal input sequence at position”的错误，原因是需要转换的字符编码没有涵盖文件中的字符，比如，将一个简体中文的GB2312的文件转换为BIG5的编码，而在繁体编码的BIG5里面，不包含很多的简体中文字符，所以在转换的时候就会遇到如上的错误。</p>
 <p>顺便提供一个用于查看文件编码的工具“enca”，我在everest 0.5下做的RPM包。用法很简单，</p>
@@ -126,17 +183,17 @@
 </div>
 </div>
 <div class="section" id="zip-unzip-7z-exe-rar-exe">
-<h2><a class="toc-backref" href="#id14"><span class="sectnum">1.2</span> 命令行解压缩-zip/unzip/7z.exe/rar.exe</a><a class="headerlink" href="#zip-unzip-7z-exe-rar-exe" title="永久链接至标题">¶</a></h2>
+<h2><a class="toc-backref" href="#id22"><span class="sectnum">1.4</span> 命令行解压缩-zip/unzip/7z.exe/rar.exe</a><a class="headerlink" href="#zip-unzip-7z-exe-rar-exe" title="永久链接至标题">¶</a></h2>
 <div class="section" id="unzip">
-<h3><a class="toc-backref" href="#id15"><span class="sectnum">1.2.1</span> unzip</a><a class="headerlink" href="#unzip" title="永久链接至标题">¶</a></h3>
-<div class="section" id="id4">
-<h4><a class="toc-backref" href="#id16"><span class="sectnum">1.2.1.1</span> 下载</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h4>
-<p><a href="#id21"><span class="problematic" id="id22">`win32 zip下载地址 &lt;http://gnuwin32.sourceforge.net/packages/zip.htm
+<h3><a class="toc-backref" href="#id23"><span class="sectnum">1.4.1</span> unzip</a><a class="headerlink" href="#unzip" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id7">
+<h4><a class="toc-backref" href="#id24"><span class="sectnum">1.4.1.1</span> 下载</a><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
+<p><a href="#id29"><span class="problematic" id="id30">`win32 zip下载地址 &lt;http://gnuwin32.sourceforge.net/packages/zip.htm
 &gt;`_</span></a></p>
 <p><a class="reference external" href="http://gnuwin32.sourceforge.net/packages/unzip.htm">win32 unzip下载地址</a></p>
 </div>
-<div class="section" id="id5">
-<h4><a class="toc-backref" href="#id17"><span class="sectnum">1.2.1.2</span> 用法</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id8">
+<h4><a class="toc-backref" href="#id25"><span class="sectnum">1.4.1.2</span> 用法</a><a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h4>
 <p>批处理：</p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>set EXT_DIR=&quot;H:\tmp\downloads\chrome\周读readweek\000\pdf\xx&quot;
@@ -151,12 +208,12 @@ unzip -j *.zip -d %EXT_DIR%
 </div>
 </div>
 <div class="section" id="z-exe">
-<h3><a class="toc-backref" href="#id18"><span class="sectnum">1.2.2</span> 7z.exe</a><a class="headerlink" href="#z-exe" title="永久链接至标题">¶</a></h3>
-<div class="section" id="id6">
-<h4><a class="toc-backref" href="#id19"><span class="sectnum">1.2.2.1</span> 下载</a><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h4>
+<h3><a class="toc-backref" href="#id26"><span class="sectnum">1.4.2</span> 7z.exe</a><a class="headerlink" href="#z-exe" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id9">
+<h4><a class="toc-backref" href="#id27"><span class="sectnum">1.4.2.1</span> 下载</a><a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h4>
 </div>
-<div class="section" id="id7">
-<h4><a class="toc-backref" href="#id20"><span class="sectnum">1.2.2.2</span> 用法</a><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id10">
+<h4><a class="toc-backref" href="#id28"><span class="sectnum">1.4.2.2</span> 用法</a><a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h4>
 <p><a class="reference external" href="https://blog.csdn.net/WPwalter/article/details/90638622">使用7-Zip 的命令行版本来压缩和解压文件</a></p>
 <p>运行 7z.exe 后可以看到命令行中列出了可用的命令行命令：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>a：将文件添加到压缩档案中
@@ -196,24 +253,31 @@ x：将压缩档案中的所有文件解压到指定路径，并包含所有文�
   <h3><a href="../../index.html">目录</a></h3>
   <ul>
 <li><a class="reference internal" href="#"><span class="sectnum">1</span> Little Tools</a><ul>
-<li><a class="reference internal" href="#iconv"><span class="sectnum">1.1</span> iconv 编码转换</a><ul>
-<li><a class="reference internal" href="#id1"><span class="sectnum">1.1.1</span> 参考链接</a></li>
-<li><a class="reference internal" href="#id2"><span class="sectnum">1.1.2</span> 用法</a></li>
-<li><a class="reference internal" href="#id3"><span class="sectnum">1.1.3</span> 问题</a><ul>
-<li><a class="reference internal" href="#iconv-illegal-input-sequence-at-position"><span class="sectnum">1.1.3.1</span> “iconv: illegal input sequence at position”的错误</a></li>
+<li><a class="reference internal" href="#id1"><span class="sectnum">1.1</span> 工具应用汇总</a><ul>
+<li><a class="reference internal" href="#id2"><span class="sectnum">1.1.1</span> 文件比较</a></li>
+<li><a class="reference internal" href="#id3"><span class="sectnum">1.1.2</span> 文件解压缩</a></li>
+<li><a class="reference internal" href="#misc"><span class="sectnum">1.1.3</span> MISC</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#winmerge"><span class="sectnum">1.2</span> winmerge</a></li>
+<li><a class="reference internal" href="#iconv"><span class="sectnum">1.3</span> iconv 编码转换</a><ul>
+<li><a class="reference internal" href="#id4"><span class="sectnum">1.3.1</span> 参考链接</a></li>
+<li><a class="reference internal" href="#id5"><span class="sectnum">1.3.2</span> 用法</a></li>
+<li><a class="reference internal" href="#id6"><span class="sectnum">1.3.3</span> 问题</a><ul>
+<li><a class="reference internal" href="#iconv-illegal-input-sequence-at-position"><span class="sectnum">1.3.3.1</span> “iconv: illegal input sequence at position”的错误</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#zip-unzip-7z-exe-rar-exe"><span class="sectnum">1.2</span> 命令行解压缩-zip/unzip/7z.exe/rar.exe</a><ul>
-<li><a class="reference internal" href="#unzip"><span class="sectnum">1.2.1</span> unzip</a><ul>
-<li><a class="reference internal" href="#id4"><span class="sectnum">1.2.1.1</span> 下载</a></li>
-<li><a class="reference internal" href="#id5"><span class="sectnum">1.2.1.2</span> 用法</a></li>
+<li><a class="reference internal" href="#zip-unzip-7z-exe-rar-exe"><span class="sectnum">1.4</span> 命令行解压缩-zip/unzip/7z.exe/rar.exe</a><ul>
+<li><a class="reference internal" href="#unzip"><span class="sectnum">1.4.1</span> unzip</a><ul>
+<li><a class="reference internal" href="#id7"><span class="sectnum">1.4.1.1</span> 下载</a></li>
+<li><a class="reference internal" href="#id8"><span class="sectnum">1.4.1.2</span> 用法</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#z-exe"><span class="sectnum">1.2.2</span> 7z.exe</a><ul>
-<li><a class="reference internal" href="#id6"><span class="sectnum">1.2.2.1</span> 下载</a></li>
-<li><a class="reference internal" href="#id7"><span class="sectnum">1.2.2.2</span> 用法</a></li>
+<li><a class="reference internal" href="#z-exe"><span class="sectnum">1.4.2</span> 7z.exe</a><ul>
+<li><a class="reference internal" href="#id9"><span class="sectnum">1.4.2.1</span> 下载</a></li>
+<li><a class="reference internal" href="#id10"><span class="sectnum">1.4.2.2</span> 用法</a></li>
 </ul>
 </li>
 </ul>
